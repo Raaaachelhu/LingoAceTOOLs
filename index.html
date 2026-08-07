@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LingoAce · 教学工具中心</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F4EF;
+  --surface:#FFFFFF;
+  --surface-2:#FBFAF7;
+  --ink:#1B1D1B;
+  --ink-soft:#63665F;
+  --ink-faint:#9A9C93;
+  --line:#E3E1D8;
+  --line-strong:#CFCDC1;
+  --navy:#1E2A3A;
+  --accent:#C97A2B;
+  --accent-soft:#F1D8B4;
+  --accent-bg:#FBF0DE;
+  --teal:#2E6B62;
+  --teal-bg:#E4EFEC;
+  --rose:#A24A3D;
+  --rose-bg:#F7EAE7;
+  --gold:#D9A66B;
+  --shadow: 0 1px 2px rgba(27,29,27,0.04), 0 8px 24px rgba(27,29,27,0.05);
+  --shadow-lg: 0 16px 48px rgba(20,22,20,0.18);
+  --radius: 16px;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3{ font-family:'Fraunces', serif; }
+.mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; }
+
+header.hero{
+  background:
+    radial-gradient(1100px 420px at 12% -10%, rgba(201,122,43,0.16), transparent 60%),
+    linear-gradient(180deg, var(--navy) 0%, #202C3D 100%);
+  color:#F4F1E8;
+  padding:36px 40px 46px;
+  position:relative; overflow:hidden;
+}
+header.hero::after{
+  content:""; position:absolute; inset:0;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 84px);
+  pointer-events:none;
+}
+.hero-inner{ max-width:1240px; margin:0 auto; position:relative; }
+.hero-topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:26px; }
+.brand-logo{ display:flex; align-items:center; gap:11px; }
+.brand-logo .icon-box{
+  width:38px; height:38px; border-radius:11px; background:rgba(255,255,255,0.18);
+  border:1px solid rgba(255,255,255,0.28);
+  display:flex; align-items:center; justify-content:center;
+  font-size:18px; font-weight:800; color:#fff; flex-shrink:0;
+}
+.brand-logo .wordmark{ font-family:'Inter', sans-serif; font-weight:800; font-size:21px; color:#fff; letter-spacing:-0.01em; }
+.dev-tag{
+  font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.04em;
+  color:#F1D8B4; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22);
+  padding:6px 12px; border-radius:20px;
+}
+.dev-tag b{ color:#fff; font-weight:600; }
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase;
+  color:#D9A66B; display:flex; align-items:center; gap:10px; margin-bottom:14px;
+}
+.eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:#D9A66B; box-shadow:0 0 0 4px rgba(217,166,107,0.18); }
+h1{ font-weight:600; font-size:clamp(26px, 3.2vw, 38px); line-height:1.14; margin:0 0 10px; letter-spacing:-0.01em; }
+h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
+.hero-sub{ font-size:14px; color:#B7BFCB; max-width:70ch; line-height:1.7; margin:0; }
+
+.wrap{ max-width:1240px; margin:0 auto; padding:0 40px 80px; }
+.grid-cards{ display:grid; grid-template-columns:repeat(2, 1fr); gap:22px; margin-top:-26px; position:relative; }
+@media (max-width:880px){ .grid-cards{ grid-template-columns:1fr; } }
+.tool-card.wide{ grid-column:1 / -1; }
+@media (max-width:880px){ .tool-card.wide{ grid-column:auto; } }
+
+.tool-card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); padding:28px 28px 26px; display:flex; flex-direction:column;
+  position:relative; overflow:hidden;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.tool-card::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--card-accent, var(--accent));
+}
+.tool-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lg); }
+.tool-card .tc-index{
+  font-family:'Fraunces', serif; font-size:15px; font-weight:600; color:var(--card-accent, var(--accent));
+  margin-bottom:14px; letter-spacing:0.02em;
+}
+.tool-card .tc-tag{
+  font-family:'IBM Plex Mono', monospace; font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase;
+  font-weight:700; color:var(--ink-faint); margin-bottom:10px; display:block;
+}
+.tool-card h3{ font-size:19px; margin:0 0 8px; }
+.tool-card p{ font-size:13px; color:var(--ink-soft); line-height:1.7; margin:0 0 18px; flex:1; }
+.tool-card .tc-features{ list-style:none; margin:0 0 22px; padding:0; display:flex; flex-direction:column; gap:6px; }
+.tool-card .tc-features li{ font-size:12.3px; color:var(--ink-soft); display:flex; align-items:flex-start; gap:7px; }
+.tool-card .tc-features li::before{ content:"—"; color:var(--card-accent, var(--accent)); font-weight:700; flex-shrink:0; }
+.tc-btn{
+  display:flex; align-items:center; justify-content:center; gap:7px;
+  text-align:center; padding:12px 14px; border-radius:9px; font-size:13.5px; font-weight:700;
+  border:1px solid var(--card-accent, var(--accent)); background:var(--card-accent, var(--accent)); color:#fff;
+}
+.tc-btn:hover{ background:var(--navy); border-color:var(--navy); }
+.tc-btn .arrow{ transition:transform .15s ease; }
+.tc-btn:hover .arrow{ transform:translateX(3px); }
+
+.card-1{ --card-accent:#C97A2B; }
+.card-2{ --card-accent:#A24A3D; }
+.card-3{ --card-accent:#2E6B62; }
+.card-4{ --card-accent:#8C6A2A; }
+.card-5{ --card-accent:#33445A; }
+
+.section-title{ font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-faint); margin:44px 0 16px; }
+.note-box{
+  background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px 24px;
+  font-size:12.8px; color:var(--ink-soft); line-height:1.8; margin-top:10px;
+}
+.note-box b{ color:var(--ink); }
+.note-box code{ background:var(--surface-2); padding:2px 6px; border-radius:5px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-topbar">
+      <div class="brand-logo">
+        <span class="icon-box">⌃</span>
+        <span class="wordmark">LingoAce</span>
+      </div>
+      <div class="dev-tag">Developer: <b>Rachel Hu</b></div>
+    </div>
+    <div class="eyebrow"><span class="dot"></span>教学工具中心</div>
+    <h1>一站式 <em>教学 & 学习</em> 工具合集</h1>
+    <p class="hero-sub">覆盖学习规划报告、阶段总结、词汇卡片生成、学生课后练习 —— 按需打开对应工具，统一品牌视觉，随取随用。</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid-cards">
+
+    <div class="tool-card card-1">
+      <div class="tc-index">01</div>
+      <div class="tc-tag">教师 / 教研</div>
+      <h3>学习规划报告工作台</h3>
+      <p>按学员实际完成课时生成阶段总结，自动给出下一阶段重点、国内考试对标建议，支持教师版/家长版切换，还能一键生成学习里程碑奖状。</p>
+      <ul class="tc-features">
+        <li>课时完成清单，支持跳课场景</li>
+        <li>教材 × Level 难度定位总览</li>
+        <li>阶段表现评估 + 亮点/待加强标签</li>
+        <li>学习里程碑奖状一键生成</li>
+      </ul>
+      <a class="tc-btn" href="planner.html" target="_blank">打开工具 <span class="arrow">→</span></a>
+    </div>
+
+    <div class="tool-card card-2">
+      <div class="tc-index">02</div>
+      <div class="tc-tag">教师 / 家长</div>
+      <h3>课后学习报告生成器 · 词汇卡片版</h3>
+      <p>单课时 / 单元两种模式，自动生成带词汇卡片、星级评价的课后报告，支持导出图片/PDF，方便直接发送给家长。</p>
+      <ul class="tc-features">
+        <li>单节课 / 整单元 双模式切换</li>
+        <li>词汇卡片可视化展示</li>
+        <li>星级评价 + 图标模式互动</li>
+        <li>一键导出图片，微信直接发送</li>
+      </ul>
+      <a class="tc-btn" href="vocab.html" target="_blank">打开工具 <span class="arrow">→</span></a>
+    </div>
+
+    <div class="tool-card card-3">
+      <div class="tc-index">03</div>
+      <div class="tc-tag">学生练习</div>
+      <h3>Reach Higher 课后练习</h3>
+      <p>学生自主选择 Level / Unit / Lesson，在线获取对应课后练习内容，界面简洁，适合家长陪练或学生自主复习使用。</p>
+      <ul class="tc-features">
+        <li>按 Level 分级导航（Level 1-7）</li>
+        <li>逐单元逐课时精准定位</li>
+        <li>学生自助操作，无需老师协助</li>
+      </ul>
+      <a class="tc-btn" href="reach-higher.html" target="_blank">打开工具 <span class="arrow">→</span></a>
+    </div>
+
+    <div class="tool-card card-4">
+      <div class="tc-index">04</div>
+      <div class="tc-tag">学生练习</div>
+      <h3>Power Up 课后练习</h3>
+      <p>Power Up 教材专属课后练习选择器，与 Reach Higher 版本操作逻辑一致，覆盖 Level 1-3 全部单元课时内容。</p>
+      <ul class="tc-features">
+        <li>按 Level 分级导航（Level 1-3）</li>
+        <li>逐单元逐课时精准定位</li>
+        <li>学生自助操作，无需老师协助</li>
+      </ul>
+      <a class="tc-btn" href="power-up.html" target="_blank">打开工具 <span class="arrow">→</span></a>
+    </div>
+
+    <div class="tool-card card-5 wide">
+      <div class="tc-index">05</div>
+      <div class="tc-tag">学生 / 家长</div>
+      <h3>课后练习 · 图片版工作单（Power Up / Reach Higher）</h3>
+      <p>选择教材版本、Level、Unit，直接浏览对应的课后练习题图片，一键下载高清图，方便家长打印给孩子独立完成，不含答案。</p>
+      <ul class="tc-features">
+        <li>Power Up + Reach Higher 双教材合一</li>
+        <li>按教材 → Level → Unit 三步定位</li>
+        <li>练习题以高清图片呈现，支持长按保存 / 一键下载</li>
+      </ul>
+      <a class="tc-btn" href="worksheets.html" target="_blank">打开工具 <span class="arrow">→</span></a>
+    </div>
+
+  </div>
+
+  <div class="section-title">使用说明</div>
+  <div class="note-box">
+    <p style="margin:0;">📁 <b>请将这 6 个 HTML 文件（本页 + 5 个工具）下载到同一个文件夹后再打开</b>，这样「打开工具」按钮的跳转链接才能正常生效；如果只单独打开某一个文件，也可以独立使用，不影响单个工具的功能。</p>
+  </div>
+</div>
+
+</body>
+</html>
