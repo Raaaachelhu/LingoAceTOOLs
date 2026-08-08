@@ -367,15 +367,9 @@ textarea{ min-height:80px; resize:vertical; }
         <label>课时完成情况</label>
         <button type="button" class="btn btn-light" id="btnOpenChecklist" style="justify-content:flex-start; padding:10px 12px;">✅ 管理已完成课时（支持勾选跳课）</button>
         <div class="hint" id="completedHint">尚未标记任何课时。</div>
-      </div>
-      <div class="field">
-        <label>本阶段范围 · 起始课时</label>
-        <select id="fldStart"></select>
-      </div>
-      <div class="field">
-        <label>本阶段范围 · 截止课时（本次课上到这里）</label>
-        <select id="fldEnd"></select>
         <div class="hint" id="progressHint"></div>
+        <select id="fldStart" style="display:none"></select>
+        <select id="fldEnd" style="display:none"></select>
       </div>
       <div class="btn-row">
         <button class="btn btn-light" id="btnSaveStudent">💾 保存学员</button>
@@ -634,20 +628,31 @@ function autoPickDefaultRange(){
   const mat = elMaterial.value, lvl = elLevel.value;
   const flat = flattenLevel(mat, lvl);
   const completed = currentCompletedSet();
-  // default end = last completed entry (by curriculum order); fallback to first entry
-  let lastCompletedIdx = -1;
-  flat.forEach((e, idx) => { if (completed.has(entryKey(e.ui, e.li))) lastCompletedIdx = idx; });
-  const endIdx = lastCompletedIdx >= 0 ? lastCompletedIdx : 0;
-  elEnd.value = String(endIdx);
-  // default start = beginning of the unit containing the end entry
-  const unitUi = flat[endIdx].ui;
-  const startIdx = flat.findIndex(e => e.ui === unitUi);
-  elStart.value = String(Math.max(0, startIdx));
+  // range is driven entirely by what's checked: first checked entry -> last checked entry
+  let firstIdx = -1, lastIdx = -1;
+  flat.forEach((e, idx) => {
+    if (completed.has(entryKey(e.ui, e.li))){
+      if (firstIdx === -1) firstIdx = idx;
+      lastIdx = idx;
+    }
+  });
+  if (firstIdx === -1){ firstIdx = 0; lastIdx = 0; }
+  elStart.value = String(firstIdx);
+  elEnd.value = String(lastIdx);
 }
 function updateProgressHint(){
   const mat = elMaterial.value, lvl = elLevel.value;
   const flat = flattenLevel(mat, lvl);
-  progressHint.textContent = `该教材 Level ${lvl} 共 ${flat.length} 个课时条目。`;
+  const startIdx = parseInt(elStart.value || '0', 10), endIdx = parseInt(elEnd.value || '0', 10);
+  const completed = currentCompletedSet();
+  if (!completed.size){
+    progressHint.textContent = `该教材 Level ${lvl} 共 ${flat.length} 个课时条目，勾选后自动计算本阶段范围。`;
+    return;
+  }
+  const startE = flat[startIdx], endE = flat[endIdx];
+  if (startE && endE){
+    progressHint.textContent = `本阶段范围：Unit ${startE.unitNo} ${stripPrefix(startE.lesson.title)} → Unit ${endE.unitNo} ${stripPrefix(endE.lesson.title)}`;
+  }
 }
 function updateCompletedHint(){
   const completed = currentCompletedSet();
@@ -888,8 +893,11 @@ function renderChecklist(){
   let html = `<div class="hint" style="margin-bottom:14px">勾选该学员<b>实际已完成</b>的课时（如有跳课/未学到的内容，保持不勾选即可）。生成报告时将只统计已勾选的课时。</div>`;
   units.forEach((u, ui) => {
     const label = u.unitTitleCn ? `${u.unitTitle}（${u.unitTitleCn}）` : u.unitTitle;
-    html += `<div class="cl-unit-group"><div class="cl-unit-head"><h5>${escapeHtml(label)}</h5></div>`;
-    (u.lessons || []).forEach((l, li) => {
+    const unitLessons = u.lessons || [];
+    const unitCheckedCount = unitLessons.filter((l, li) => completed.has(entryKey(ui, li))).length;
+    const allChecked = unitLessons.length > 0 && unitCheckedCount === unitLessons.length;
+    html += `<div class="cl-unit-group"><div class="cl-unit-head"><h5>${escapeHtml(label)}</h5><span class="cl-unit-toggle" data-unit-toggle="${ui}" data-state="${allChecked ? 'all' : 'none'}">${allChecked ? '取消本单元' : '一键全选'}</span></div>`;
+    unitLessons.forEach((l, li) => {
       const key = entryKey(ui, li);
       const checked = completed.has(key);
       html += `<div class="cl-row ${checked?'checked':''}">
@@ -910,8 +918,37 @@ function renderChecklist(){
       if (cb.checked) set.add(key); else set.delete(key);
       cb.closest('.cl-row').classList.toggle('checked', cb.checked);
       updateChecklistSummary();
+      updateUnitToggleLabel(ui);
     });
   });
+
+  document.getElementById('checklistBody').querySelectorAll('[data-unit-toggle]').forEach(tg => {
+    tg.addEventListener('click', () => {
+      const ui = parseInt(tg.dataset.unitToggle, 10);
+      const unit = units[ui];
+      const set = currentCompletedSet();
+      const shouldCheckAll = tg.dataset.state !== 'all';
+      (unit.lessons || []).forEach((l, li) => {
+        const key = entryKey(ui, li);
+        if (shouldCheckAll) set.add(key); else set.delete(key);
+      });
+      renderChecklist();
+    });
+  });
+}
+function updateUnitToggleLabel(ui){
+  const mat = elMaterial.value, lvl = elLevel.value;
+  const units = unitsFor(mat, lvl);
+  const unit = units[ui];
+  if (!unit) return;
+  const completed = currentCompletedSet();
+  const unitLessons = unit.lessons || [];
+  const allChecked = unitLessons.length > 0 && unitLessons.every((l, li) => completed.has(entryKey(ui, li)));
+  const tg = document.querySelector(`[data-unit-toggle="${ui}"]`);
+  if (tg){
+    tg.dataset.state = allChecked ? 'all' : 'none';
+    tg.textContent = allChecked ? '取消本单元' : '一键全选';
+  }
 }
 function updateChecklistSummary(){
   const flat = flattenLevel(elMaterial.value, elLevel.value);
@@ -1061,10 +1098,8 @@ document.getElementById('btnGenerate').addEventListener('click', () => {
 let lastReportData = null;
 
 function wireReportButtons(data){
-  const btnPrint = document.getElementById('btnPrint');
   const btnCopy = document.getElementById('btnCopy');
   const btnCert = document.getElementById('btnCertificate');
-  if (btnPrint) btnPrint.addEventListener('click', () => window.print());
   if (btnCopy) btnCopy.addEventListener('click', () => copyReportText());
   if (btnCert) btnCert.addEventListener('click', () => showCertificate(data));
 
@@ -1092,7 +1127,6 @@ function wireReportButtons(data){
 
 function showCertificate(data){
   document.getElementById('reportPanel').innerHTML = buildCertificateHtml(data);
-  document.getElementById('btnPrintCert').addEventListener('click', () => window.print());
   document.getElementById('btnBackToReport').addEventListener('click', () => {
     document.getElementById('reportPanel').innerHTML = data.html;
     wireReportButtons(data);
@@ -1123,7 +1157,6 @@ function buildCertificateHtml(data){
     <div class="report-header">
       <div><h2>学习里程碑奖状</h2></div>
       <div class="report-actions">
-        <button id="btnPrintCert">🖨 打印奖状</button>
         <button id="btnBackToReport">⬅ 返回报告</button>
       </div>
     </div>
@@ -1183,7 +1216,6 @@ function buildTeacherHtml(ctx){
         </div>
       </div>
       <div class="report-actions">
-        <button id="btnPrint">🖨 打印 / 导出PDF</button>
         <button id="btnCopy">📋 复制文本</button>
         <button id="btnCertificate">🏆 学习里程碑奖状</button>
       </div>
@@ -1297,7 +1329,6 @@ function buildParentHtml(ctx){
         </div>
       </div>
       <div class="report-actions">
-        <button id="btnPrint">🖨 打印 / 导出PDF</button>
         <button id="btnCopy">📋 复制文本</button>
         <button id="btnCertificate">🏆 学习里程碑奖状</button>
       </div>
