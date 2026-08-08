@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LingoAce 学员课程信息卡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Sans+SC:wght@400;500;700;900&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1D1B;
+    --indigo:#C97A2B;
+    --indigo-deep:#1E2A3A;
+    --lavender:#FBF0DE;
+    --teal:#2E6B62;
+    --teal-tint:#E4EFEC;
+    --coral:#A24A3D;
+    --coral-tint:#F7EAE7;
+    --paper:#F5F4EF;
+    --card:#FFFFFF;
+    --line:#E3E1D8;
+    --muted:#63665F;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    font-family:'Noto Sans SC','Poppins',sans-serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    padding:28px 20px;
+    display:flex;
+    justify-content:center;
+  }
+  .page{
+    width:100%;
+    max-width:720px;
+  }
+  .card{
+    background:var(--card);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 30px 60px -30px rgba(30,42,58,0.28), 0 2px 8px rgba(30,42,58,0.06);
+    border:1px solid var(--line);
+    display:flex;
+    flex-direction:column;
+  }
+
+  /* header */
+  .hero{
+    position:relative;
+    background:linear-gradient(135deg,var(--indigo-deep) 0%,#2E3E52 55%,var(--indigo) 100%);
+    padding:28px 34px;
+    color:#fff;
+    overflow:hidden;
+    flex:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .hero svg.ribbon{
+    position:absolute;
+    top:-70px; right:-40px;
+    width:260px; height:260px;
+    opacity:0.5;
+    pointer-events:none;
+  }
+  .logo-row{
+    display:flex; align-items:center; gap:10px;
+    position:relative; z-index:2;
+  }
+  .logo-mark{
+    width:34px; height:34px;
+    border-radius:9px;
+    background:rgba(255,255,255,0.16);
+    display:flex; align-items:center; justify-content:center;
+    flex:none;
+  }
+  .logo-mark svg{width:18px;height:18px;}
+  .logo-word{
+    font-family:'Poppins',sans-serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.2px;
+  }
+  .hero-right{
+    position:relative; z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+  }
+  .hero-tag{
+    font-family:'Poppins',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.14);
+    padding:5px 12px;
+    border-radius:20px;
+  }
+  .hero-title{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:21px;
+    line-height:1.2;
+    margin:0;
+    text-align:right;
+  }
+
+  /* body */
+  .body{
+    flex:1;
+    min-height:0;
+    padding:30px 34px 34px;
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+  }
+
+  .section{}
+  .sec-head{
+    display:flex; align-items:baseline; gap:10px;
+    margin-bottom:10px;
+  }
+  .sec-dot{
+    width:8px; height:8px; border-radius:50%;
+    flex:none;
+    margin-bottom:2px;
+  }
+  .dot-indigo{background:var(--indigo);}
+  .dot-teal{background:var(--teal);}
+  .dot-coral{background:var(--coral);}
+  .sec-eyebrow{
+    font-family:'Poppins',sans-serif;
+    font-size:11px;
+    letter-spacing:1.8px;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+  .sec-title{
+    font-size:19px;
+    font-weight:700;
+    margin:0 0 0 auto;
+  }
+
+  /* form grid */
+  .field-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+  }
+  .field{
+    background:var(--lavender);
+    border-radius:14px;
+    padding:13px 15px;
+  }
+  .field label{
+    display:block;
+    font-size:12.5px;
+    color:var(--muted);
+    margin-bottom:5px;
+    font-weight:500;
+  }
+  .field input{
+    width:100%;
+    border:none;
+    background:transparent;
+    font-family:'Noto Sans SC',sans-serif;
+    font-size:17px;
+    font-weight:700;
+    color:var(--ink);
+    padding:0;
+    outline:none;
+    border-bottom:1.5px solid transparent;
+    transition:border-color .15s ease;
+  }
+  .field input:focus{ border-bottom-color:var(--indigo); }
+  .field input::placeholder{ color:#B7AE96; font-weight:500; }
+
+  .package-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+  }
+  .package-grid .field{ background:var(--lavender); }
+
+  .selector-grid{
+    grid-template-columns:repeat(3,1fr);
+    margin-bottom:12px;
+  }
+  .field.select-field{ position:relative; }
+  .field.select-field select{
+    width:100%;
+    border:none;
+    background:transparent;
+    font-family:'Noto Sans SC',sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:var(--ink);
+    padding:0 18px 0 0;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236E6A93' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right center;
+    background-size:14px;
+  }
+
+  .detail-grid{
+    grid-template-columns:repeat(auto-fit, minmax(118px,1fr));
+    margin-bottom:12px;
+  }
+  .detail-grid .field label{ font-size:11.5px; }
+  .detail-grid .field .field-value{
+    font-family:'Noto Sans SC',sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+    color:var(--ink);
+    display:block;
+  }
+  .detail-grid .field.price .field-value{ color:var(--indigo); }
+  .field-value.placeholder-value{ color:#B7AE96; font-weight:500; }
+  .field-note{
+    display:block;
+    font-size:10.5px;
+    line-height:1.35;
+    color:var(--muted);
+    margin-top:4px;
+    font-weight:400;
+  }
+  .field.total{
+    grid-column:1 / -1;
+    background:linear-gradient(135deg,var(--teal) 0%,#1F4E47 100%);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .field.total label{ color:rgba(255,255,255,0.82); margin-bottom:0; }
+  .total-value{ display:flex; align-items:baseline; gap:4px; }
+  .field.total .total-num{
+    font-family:'Fraunces',serif;
+    font-size:26px;
+    font-weight:600;
+    line-height:1;
+  }
+  .field.total.placeholder .total-num{
+    color:rgba(255,255,255,0.65);
+    font-weight:500;
+  }
+  .field.total .total-unit{
+    font-size:13px;
+    font-weight:400;
+    margin-left:4px;
+    color:rgba(255,255,255,0.82);
+  }
+  .field input[type=number]::-webkit-outer-spin-button,
+  .field input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance:none; margin:0;
+  }
+  .field input[type=number]{ -moz-appearance:textfield; }
+
+  /* text sections */
+  .prose{
+    font-size:15px;
+    line-height:1.65;
+    color:#4A4A3E;
+  }
+  .prose p{ margin:0 0 8px; }
+  .prose p:last-child{ margin-bottom:0; }
+  .prose strong{ color:var(--ink); font-weight:700; }
+
+  .rule-box{
+    background:var(--lavender);
+    border-radius:14px;
+    padding:15px 18px;
+  }
+  .steps-box{
+    background:var(--teal-tint);
+    border-radius:14px;
+    padding:15px 18px;
+    display:flex; align-items:center; gap:14px;
+  }
+  .steps-box .path{
+    font-size:15px;
+    line-height:1.6;
+    color:#1F4E47;
+  }
+  .steps-box .path b{ color:var(--teal); font-weight:700; }
+  .validity-box{
+    background:var(--lavender);
+    border-radius:14px;
+    padding:15px 18px;
+  }
+  .refund-box{
+    background:var(--coral-tint);
+    border-radius:14px;
+    padding:15px 18px;
+  }
+  .refund-box .prose{ color:#6B3226; }
+  .refund-box .prose strong{ color:#4A2016; }
+
+  @media (max-width:520px){
+    .card{ aspect-ratio:auto; }
+    .field-grid{ grid-template-columns:1fr 1fr; }
+    .package-grid{ grid-template-columns:1fr 1fr; }
+    .package-grid .field.total{ grid-column:span 2; }
+  }
+
+  .download-bar{
+    max-width:720px;
+    margin:20px auto 0;
+    display:flex;
+    justify-content:center;
+  }
+  .download-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--indigo);
+    color:#fff;
+    border:none;
+    font-family:'Noto Sans SC',sans-serif;
+    font-size:14.5px;
+    font-weight:700;
+    padding:12px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    box-shadow:0 12px 24px -10px rgba(201,122,43,0.5);
+    transition:background .15s ease, transform .1s ease;
+  }
+  .download-btn:hover{ background:var(--indigo-deep); }
+  .download-btn:active{ transform:scale(0.97); }
+  .download-btn:disabled{ opacity:0.65; cursor:default; transform:none; }
+  .download-btn svg{ width:16px; height:16px; flex:none; }
+  .download-hint{
+    text-align:center;
+    font-size:11.5px;
+    color:var(--muted);
+    margin:10px 0 0;
+  }
+
+  @media print{
+    .download-bar, .download-hint{ display:none; }
+  }
+  .internal-panel{
+    background:#FFF8EC;
+    border:1.5px dashed #E8B44A;
+    border-radius:18px;
+    padding:16px 18px 18px;
+    margin-bottom:16px;
+  }
+  .internal-panel-label{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    font-family:'Poppins',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.6px;
+    color:#9A6B0C;
+    margin-bottom:12px;
+  }
+  .internal-panel-label-left{
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .internal-panel-credit{
+    font-weight:500;
+    font-size:10.5px;
+    letter-spacing:0.2px;
+    color:#B99356;
+    white-space:nowrap;
+  }
+  .internal-panel-label svg{ width:14px; height:14px; flex:none; }
+  .internal-panel .selector-grid{ margin-bottom:0; }
+  .internal-panel .field.select-field{ background:#FFFFFF; }
+
+  @media print{
+    .internal-panel{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+    <div class="internal-panel">
+      <div class="internal-panel-label">
+        <span class="internal-panel-label-left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12S5 4 12 4s11 8 11 8-4 8-11 8-11-8-11-8Z"/><path d="M12 15a3 3 0 100-6 3 3 0 000 6Z"/><line x1="3" y1="3" x2="21" y2="21"/></svg>
+          内部选课工具 · 家长端不会显示
+        </span>
+        <span class="internal-panel-credit">Developer- Rachel Hu（Shumin.Hu）</span>
+      </div>
+      <div class="package-grid selector-grid">
+        <div class="field select-field">
+          <label>渠道来源</label>
+          <select id="channel-select">
+            <option value="MA">MA渠道</option>
+            <option value="OTPM">OT/PM渠道</option>
+            <option value="RF">RF渠道</option>
+          </select>
+        </div>
+        <div class="field select-field">
+          <label>课包地区</label>
+          <select id="region-select">
+            <option value="NA">北美课包</option>
+            <option value="EU">欧美课包</option>
+          </select>
+        </div>
+        <div class="field select-field">
+          <label>购买方案</label>
+          <select id="plan-select"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" id="capture-card">
+
+    <div class="hero">
+      <svg class="ribbon" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-20 210C40 160 70 260 130 230C190 200 160 90 230 70C280 55 300 110 340 90" stroke="#F1D8B4" stroke-width="16" stroke-linecap="round"/>
+        <path d="M-30 100C30 130 60 40 120 60C180 80 150 190 220 200C270 208 290 150 350 175" stroke="#D98A78" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+        <path d="M0 300C60 260 100 340 160 300C220 260 190 170 260 150" stroke="#CFCDC1" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+      </svg>
+      <div class="logo-row">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 20c3-9 7-14 8-14s5 5 8 14" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="logo-word">LingoAce</span>
+      </div>
+      <div class="hero-right">
+        <span class="hero-tag">Student course card</span>
+        <h1 class="hero-title">你的专属课程凭证</h1>
+      </div>
+    </div>
+
+    <div class="body">
+
+        <div class="section">
+          <div class="sec-head">
+            <span class="sec-dot dot-indigo"></span>
+            <span class="sec-eyebrow">Student profile</span>
+            <span class="sec-title">学员基本信息</span>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label>姓名</label>
+              <input type="text" placeholder="如：Roger">
+            </div>
+            <div class="field">
+              <label>教材</label>
+              <input type="text" placeholder="如：Power Up">
+            </div>
+            <div class="field">
+              <label>级别</label>
+              <input type="text" placeholder="如：L3">
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="sec-head">
+            <span class="sec-dot dot-indigo"></span>
+            <span class="sec-eyebrow">Course package</span>
+            <span class="sec-title">课包信息</span>
+          </div>
+
+          <div class="package-grid detail-grid" id="detail-grid"></div>
+
+          <div class="field total placeholder" id="total-field" style="margin-bottom:12px;">
+            <label>总课时</label>
+            <div class="total-value"><span class="total-num" id="total-hours">如：100</span><span class="total-unit" id="total-unit"></span></div>
+          </div>
+
+        </div>
+
+        <div class="section">
+          <div class="sec-head">
+            <span class="sec-dot dot-teal"></span>
+            <span class="sec-eyebrow">Booking &amp; cancellation</span>
+            <span class="sec-title">约课及取消课规则</span>
+          </div>
+          <div class="rule-box prose">
+            <p><strong>约课：</strong>需提前 12 小时。</p>
+            <p><strong>取消课：</strong>需提前 2 个小时；2 小时内忘记取消并缺席，无法返还课时！</p>
+            <p>取消课程可在 LingoAce Connect 家长端操作。</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="sec-head">
+            <span class="sec-dot dot-teal"></span>
+            <span class="sec-eyebrow">How to cancel</span>
+            <span class="sec-title">取消课步骤</span>
+          </div>
+          <div class="steps-box">
+            <div class="path">LingoAce Connect APP 家长端 — <b>我的</b> → <b>我的课表</b> → <b>更多</b> → <b>取消</b></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="sec-head">
+            <span class="sec-dot dot-coral"></span>
+            <span class="sec-eyebrow">Refund policy</span>
+            <span class="sec-title">退费政策</span>
+          </div>
+          <div class="refund-box prose">
+            <p>正常学习期间可以申请办理退费，没有任何的服务费和手续费，会按照报名时的折扣价除以购买课时（赠课不算）核算单价，上几节扣几节，剩余学费退回，一般 14 个工作日内到账。</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="download-bar">
+    <button class="download-btn" id="download-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+      <span id="download-btn-text">下载高清图片</span>
+    </button>
+  </div>
+  <p class="download-hint">点击输入框填写学员信息后再下载，图片会保存到你的下载文件夹</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+  const PACKAGE_DATA = {
+    MA: {
+      label: 'MA渠道',
+      NA: { label:'北美课包', plans: {
+        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节']], total:44 },
+        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','8节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节']], total:93 }
+      }},
+      EU: { label:'欧美课包', plans: {
+        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节']], total:39 },
+        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','1节'],['打卡赠课','6节']], total:79 }
+      }}
+    },
+    OTPM: {
+      label: 'OT/PM渠道',
+      NA: { label:'北美课包', plans: {
+        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节']], total:44 },
+        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','13节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节']], total:98 },
+        '方案三': { price:'¥19,999.00', hours:144, items:[['课包直赠','15节'],['当月福利赠课','20节'],['试听24小时内付费赠课','6节'],['打卡赠课','3节']], total:188 }
+      }},
+      EU: { label:'欧美课包', plans: {
+        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节']], total:39 },
+        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','6节'],['打卡赠课','6节']], total:84 },
+        '方案三': { price:'¥14,000.00', hours:144, items:[['当月福利赠课','12节'],['打卡赠课','9节']], total:165 }
+      }}
+    },
+    RF: {
+      label: 'RF渠道',
+      NA: { label:'北美课包', plans: {
+        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节'],['新生赠课','2节','满5节课后，积分自动到账，可用积分兑换课时']], total:46 },
+        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','8节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节'],['新生赠课','7节','满5节课后，积分自动到账，可用积分兑换课时']], total:100 },
+        '方案三': { price:'¥19,999.00', hours:144, items:[['课包直赠','15节'],['当月福利赠课','10节'],['试听24小时内付费赠课','6节'],['打卡赠课','3节'],['新生赠课','16节','满5节课后，积分自动到账，可用积分兑换课时']], total:194 }
+      }},
+      EU: { label:'欧美课包', plans: {
+        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节'],['新生赠课','2节','满5节课后，积分自动到账，可用积分兑换课时']], total:41 },
+        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','1节'],['打卡赠课','6节'],['新生赠课','6节','满5节课后，积分自动到账，可用积分兑换课时']], total:85 },
+        '方案三': { price:'¥14,000.00', hours:144, items:[['当月福利赠课','2节'],['打卡赠课','9节'],['新生赠课','20节','满5节课后，积分自动到账，可用积分兑换课时']], total:175 }
+      }}
+    }
+  };
+
+  const channelSelect = document.getElementById('channel-select');
+  const regionSelect = document.getElementById('region-select');
+  const planSelect = document.getElementById('plan-select');
+  const detailGrid = document.getElementById('detail-grid');
+  const total = document.getElementById('total-hours');
+  const totalUnit = document.getElementById('total-unit');
+  const totalField = document.getElementById('total-field');
+  function fieldHTML(label, value, extraClass, note){
+    return `<div class="field ${extraClass||''}"><label>${label}</label><span class="field-value">${value}</span>${note ? `<span class="field-note">${note}</span>` : ''}</div>`;
+  }
+
+  function populatePlans(){
+    const channel = channelSelect.value;
+    const region = regionSelect.value;
+    const regionData = PACKAGE_DATA[channel] && PACKAGE_DATA[channel][region];
+    const plans = regionData ? regionData.plans : {};
+    const planNames = Object.keys(plans);
+    const prevValue = planSelect.value;
+    planSelect.innerHTML = planNames.map(name => `<option value="${name}">${name}（${plans[name].hours}节课）</option>`).join('');
+    if(planNames.includes(prevValue)){
+      planSelect.value = prevValue;
+    }
+  }
+
+  function render(){
+    const channel = channelSelect.value;
+    const region = regionSelect.value;
+    const regionData = PACKAGE_DATA[channel] && PACKAGE_DATA[channel][region];
+    const planName = planSelect.value;
+    const plan = regionData && regionData.plans[planName];
+
+    if(!plan){
+      detailGrid.innerHTML = '';
+      total.textContent = '如：100';
+      totalUnit.textContent = '';
+      totalField.classList.add('placeholder');
+      return;
+    }
+
+    let html = '';
+    html += fieldHTML('特惠价', plan.price, 'price');
+    html += fieldHTML('课时数量', plan.hours + ' 节');
+    plan.items.forEach(([label, value, note]) => {
+      html += fieldHTML(label, value, null, note);
+    });
+    detailGrid.innerHTML = html;
+
+    total.textContent = plan.total;
+    totalUnit.textContent = '课时';
+    totalField.classList.remove('placeholder');
+  }
+
+  function onChannelOrRegionChange(){
+    populatePlans();
+    render();
+  }
+
+  channelSelect.addEventListener('change', onChannelOrRegionChange);
+  regionSelect.addEventListener('change', onChannelOrRegionChange);
+  planSelect.addEventListener('change', render);
+
+  populatePlans();
+  render();
+
+  const downloadBtn = document.getElementById('download-btn');
+  const downloadBtnText = document.getElementById('download-btn-text');
+  const captureCard = document.getElementById('capture-card');
+  const nameInput = document.querySelector('.field-grid input[type="text"]');
+
+  downloadBtn.addEventListener('click', async () => {
+    downloadBtn.disabled = true;
+    downloadBtnText.textContent = '正在生成高清图片…';
+    try{
+      await document.fonts.ready;
+      const canvas = await html2canvas(captureCard, {
+        scale: 4,
+        useCORS: true,
+        backgroundColor: '#ffffff',
+        logging: false
+      });
+      const link = document.createElement('a');
+      const studentName = (nameInput.value || '').trim();
+      const fileName = studentName ? `LingoAce-${studentName}-课程信息卡.png` : 'LingoAce-课程信息卡.png';
+      link.download = fileName;
+      link.href = canvas.toDataURL('image/png', 1.0);
+      link.click();
+    }catch(err){
+      console.error(err);
+      alert('图片生成失败，请刷新页面后重试。');
+    }finally{
+      downloadBtn.disabled = false;
+      downloadBtnText.textContent = '下载高清图片';
+    }
+  });
+</script>
+
+</body>
+</html>
