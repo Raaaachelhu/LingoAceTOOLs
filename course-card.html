@@ -261,6 +261,35 @@
     margin-left:4px;
     color:rgba(255,255,255,0.82);
   }
+  .field.total .total-input{
+    font-family:'Fraunces',serif;
+    font-size:26px;
+    font-weight:600;
+    line-height:1;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    width:90px;
+    border-bottom:1.5px solid rgba(255,255,255,0.45);
+  }
+  .field.total .total-input::placeholder{ color:rgba(255,255,255,0.65); font-weight:500; }
+  .field.total .total-input:focus{ border-bottom-color:#fff; }
+  .detail-grid .field .field-value-input{
+    width:100%;
+    border:none;
+    background:transparent;
+    outline:none;
+    font-family:'Noto Sans SC',sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+    color:var(--ink);
+    padding:0;
+    border-bottom:1.5px solid transparent;
+    transition:border-color .15s ease;
+  }
+  .detail-grid .field .field-value-input:focus{ border-bottom-color:var(--indigo); }
+  .detail-grid .field .field-value-input::placeholder{ color:#B7AE96; font-weight:500; }
   .field input[type=number]::-webkit-outer-spin-button,
   .field input[type=number]::-webkit-inner-spin-button{
     -webkit-appearance:none; margin:0;
@@ -391,7 +420,6 @@
 </style>
 </head>
 <body>
-<div id="gatedContent" style="display:none">
 <div class="page">
 
     <div class="internal-panel">
@@ -534,43 +562,62 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
+  // 北美 / 欧美 新签价格表，三个渠道统一使用同一套数据
+  const NA_PLANS = {
+    '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['打卡赠课','1节','共可打卡2次'],['九周年专享赠课','0节'],['开学季福利赠课','2节']], total:44 },
+    '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['打卡赠课','2节','共可打卡4次'],['九周年专享赠课','4节'],['开学季福利赠课','8节']], total:93 },
+    '方案三': { price:'¥19,999.00', hours:144, items:[['课包直赠','15节'],['打卡赠课','3节','共可打卡6次'],['九周年专享赠课','7节'],['开学季福利赠课','11节']], total:180 }
+  };
+  const EU_PLANS = {
+    '方案一': { price:'¥4,050.00', hours:36, items:[['打卡赠课','3节','共可打卡4次'],['九周年专享赠课','0节'],['开学季福利赠课','0节']], total:39 },
+    '方案二': { price:'¥7,600.00', hours:72, items:[['打卡赠课','3节','共可打卡4次'],['九周年专享赠课','1节'],['开学季福利赠课','3节']], total:79 },
+    '方案三': { price:'¥14,000.00', hours:144, items:[['打卡赠课','6节','共可打卡8次'],['九周年专享赠课','2节'],['开学季福利赠课','5节']], total:157 }
+  };
+  // RF渠道 = 转介绍课包，基础赠课与其他渠道一致，另外叠加老生赠课/新生赠课
+  function withReferralBonus(plans, referralByPlan){
+    const out = {};
+    Object.keys(plans).forEach(name => {
+      const p = plans[name];
+      const bonus = referralByPlan[name];
+      const items = p.items.slice();
+      items.push(['老生赠课', bonus.old + '节']);
+      items.push(['新生赠课', bonus.new + '节']);
+      const extraTotal = bonus.old + bonus.new;
+      out[name] = {
+        price: p.price,
+        hours: p.hours,
+        items: items,
+        total: p.total + extraTotal
+      };
+    });
+    return out;
+  }
+  const RF_NA_PLANS = withReferralBonus(NA_PLANS, {
+    '方案一': { old:6, new:2 },
+    '方案二': { old:11, new:7 },
+    '方案三': { old:19, new:16 }
+  });
+  const RF_EU_PLANS = withReferralBonus(EU_PLANS, {
+    '方案一': { old:5, new:2 },
+    '方案二': { old:10, new:6 },
+    '方案三': { old:22, new:20 }
+  });
+
   const PACKAGE_DATA = {
     MA: {
       label: 'MA渠道',
-      NA: { label:'北美课包', plans: {
-        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节']], total:44 },
-        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','8节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节']], total:93 }
-      }},
-      EU: { label:'欧美课包', plans: {
-        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节']], total:39 },
-        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','1节'],['打卡赠课','6节']], total:79 }
-      }}
+      NA: { label:'北美课包', plans: NA_PLANS },
+      EU: { label:'欧美课包', plans: EU_PLANS }
     },
     OTPM: {
       label: 'OT/PM渠道',
-      NA: { label:'北美课包', plans: {
-        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节']], total:44 },
-        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','13节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节']], total:98 },
-        '方案三': { price:'¥19,999.00', hours:144, items:[['课包直赠','15节'],['当月福利赠课','20节'],['试听24小时内付费赠课','6节'],['打卡赠课','3节']], total:188 }
-      }},
-      EU: { label:'欧美课包', plans: {
-        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节']], total:39 },
-        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','6节'],['打卡赠课','6节']], total:84 },
-        '方案三': { price:'¥14,000.00', hours:144, items:[['当月福利赠课','12节'],['打卡赠课','9节']], total:165 }
-      }}
+      NA: { label:'北美课包', plans: NA_PLANS },
+      EU: { label:'欧美课包', plans: EU_PLANS }
     },
     RF: {
       label: 'RF渠道',
-      NA: { label:'北美课包', plans: {
-        '方案一': { price:'¥6,399.00', hours:36, items:[['课包直赠','5节'],['当月福利赠课','1节'],['试听24小时内付费赠课','1节'],['打卡赠课','1节'],['新生赠课','2节','满5节课后，积分自动到账，可用积分兑换课时']], total:46 },
-        '方案二': { price:'¥11,599.00', hours:72, items:[['课包直赠','7节'],['当月福利赠课','8节'],['试听24小时内付费赠课','4节'],['打卡赠课','2节'],['新生赠课','7节','满5节课后，积分自动到账，可用积分兑换课时']], total:100 },
-        '方案三': { price:'¥19,999.00', hours:144, items:[['课包直赠','15节'],['当月福利赠课','10节'],['试听24小时内付费赠课','6节'],['打卡赠课','3节'],['新生赠课','16节','满5节课后，积分自动到账，可用积分兑换课时']], total:194 }
-      }},
-      EU: { label:'欧美课包', plans: {
-        '方案一': { price:'¥4,050.00', hours:36, items:[['当月福利赠课','0节'],['打卡赠课','3节'],['新生赠课','2节','满5节课后，积分自动到账，可用积分兑换课时']], total:41 },
-        '方案二': { price:'¥7,600.00', hours:72, items:[['当月福利赠课','1节'],['打卡赠课','6节'],['新生赠课','6节','满5节课后，积分自动到账，可用积分兑换课时']], total:85 },
-        '方案三': { price:'¥14,000.00', hours:144, items:[['当月福利赠课','2节'],['打卡赠课','9节'],['新生赠课','20节','满5节课后，积分自动到账，可用积分兑换课时']], total:175 }
-      }}
+      NA: { label:'北美课包', plans: RF_NA_PLANS },
+      EU: { label:'欧美课包', plans: RF_EU_PLANS }
     }
   };
 
@@ -579,9 +626,11 @@
   const planSelect = document.getElementById('plan-select');
   const detailGrid = document.getElementById('detail-grid');
   const total = document.getElementById('total-hours');
-  const totalUnit = document.getElementById('total-unit');
   const totalField = document.getElementById('total-field');
   function fieldHTML(label, value, extraClass, note){
+    if(value === null){
+      return `<div class="field ${extraClass||''}"><label>${label}</label><input type="text" class="field-value-input" placeholder="待填写"></div>`;
+    }
     return `<div class="field ${extraClass||''}"><label>${label}</label><span class="field-value">${value}</span>${note ? `<span class="field-note">${note}</span>` : ''}</div>`;
   }
 
@@ -604,11 +653,11 @@
     const regionData = PACKAGE_DATA[channel] && PACKAGE_DATA[channel][region];
     const planName = planSelect.value;
     const plan = regionData && regionData.plans[planName];
+    const totalValueBox = document.querySelector('.total-value');
 
     if(!plan){
       detailGrid.innerHTML = '';
-      total.textContent = '如：100';
-      totalUnit.textContent = '';
+      totalValueBox.innerHTML = `<span class="total-num" id="total-hours">如：100</span><span class="total-unit" id="total-unit"></span>`;
       totalField.classList.add('placeholder');
       return;
     }
@@ -621,8 +670,11 @@
     });
     detailGrid.innerHTML = html;
 
-    total.textContent = plan.total;
-    totalUnit.textContent = '课时';
+    if(plan.total === null){
+      totalValueBox.innerHTML = `<input type="text" id="total-hours" class="total-input" placeholder="待填写"><span class="total-unit" id="total-unit">课时</span>`;
+    } else {
+      totalValueBox.innerHTML = `<span class="total-num" id="total-hours">${plan.total}</span><span class="total-unit" id="total-unit">课时</span>`;
+    }
     totalField.classList.remove('placeholder');
   }
 
@@ -670,51 +722,5 @@
   });
 </script>
 
-</div>
-<div id="authGate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1E2A3A 0%,#202C3D 100%);font-family:'Inter',system-ui,sans-serif;">
-  <div style="width:100%;max-width:360px;padding:0 24px;text-align:center;">
-    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;margin:0 auto 18px;">&#8963;</div>
-    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A66B;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">LingoAce &middot; &#21463;&#38480;&#35775;&#38382;</div>
-    <div style="font-size:15px;color:#F4F1E8;margin-bottom:22px;line-height:1.6;">&#35831;&#36755;&#20837;&#35775;&#38382;&#23494;&#30721;</div>
-    <input id="authGateInput" type="password" placeholder="&#23494;&#30721;" style="width:100%;padding:12px 14px;border-radius:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;margin-bottom:12px;outline:none;box-sizing:border-box;text-align:center;">
-    <button id="authGateBtn" style="width:100%;padding:12px 14px;border-radius:9px;border:none;background:#C97A2B;color:#fff;font-size:14px;font-weight:700;cursor:pointer;">&#36827;&#20837;</button>
-    <div id="authGateError" style="color:#E39A8A;font-size:12.5px;margin-top:12px;display:none;">&#23494;&#30721;&#19981;&#27491;&#30830;&#65292;&#35831;&#37325;&#35797;</div>
-  </div>
-</div>
-<script>
-(function(){
-  var PASSWORD = "lyp82nlf";
-  var STORAGE_KEY = "la_tools_auth_v2";
-  var VALID_HOURS = 168;
-  function unlock(){
-    var g = document.getElementById('authGate');
-    var c = document.getElementById('gatedContent');
-    if (g) g.style.display = 'none';
-    if (c) c.style.display = '';
-  }
-  try{
-    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-    if (saved && saved.ok && (Date.now() - saved.ts) < VALID_HOURS*3600*1000){
-      unlock();
-    }
-  }catch(e){}
-  var btn = document.getElementById('authGateBtn');
-  var input = document.getElementById('authGateInput');
-  var err = document.getElementById('authGateError');
-  function tryLogin(){
-    if (input.value === PASSWORD){
-      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ok:true, ts:Date.now()})); }catch(e){}
-      unlock();
-    } else {
-      err.style.display = 'block';
-      input.value = '';
-      input.focus();
-    }
-  }
-  if (btn) btn.addEventListener('click', tryLogin);
-  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') tryLogin(); });
-  setTimeout(function(){ if (input) input.focus(); }, 50);
-})();
-</script>
 </body>
 </html>
