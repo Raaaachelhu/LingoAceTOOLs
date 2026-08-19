@@ -25,13 +25,24 @@
   }
   .wrap{max-width:1180px;margin:0 auto;padding:28px 20px 60px;}
 
-  header.top{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:6px;}
-  .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;letter-spacing:0.5px;}
-  .brand span{color:var(--ring);}
-  .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
-  .tagline{color:var(--muted);font-size:14px;}
-  .dev-tag{font-family:ui-monospace,"IBM Plex Mono",monospace;font-size:11px;letter-spacing:0.03em;color:var(--muted);opacity:0.65;padding:3px 10px;border:1px solid #E3E1D8;border-radius:20px;background:#FBFAF7;}
-  .dev-tag b{color:var(--ink);font-weight:600;}
+  header.top{
+    display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;
+    margin-bottom:26px; position:relative; overflow:hidden;
+    background:linear-gradient(135deg,#1E2A3A 0%,#2E3E52 55%,#C97A2B 100%);
+    color:#fff; padding:30px 32px; border-radius:22px;
+    box-shadow:0 24px 48px -18px rgba(20,24,32,0.35);
+  }
+  header.top::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 84px);
+  }
+  header.top > *{ position:relative; z-index:1; }
+  .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;letter-spacing:0.5px;color:#fff;}
+  .brand span{color:#D9A66B;}
+  .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
+  .tagline{color:#DCE1E8;font-size:14px;}
+  .dev-tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:#F1D8B4;letter-spacing:0.02em;white-space:nowrap;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);padding:5px 12px;border-radius:20px;}
+  .dev-tag b{color:#fff;font-weight:600;}
 
   .subhead{margin:2px 0 26px;color:var(--muted);font-size:15px;}
 
@@ -174,7 +185,7 @@
     <div class="brand">课后练习 <span>Student Worksheets</span></div>
     <div class="top-right">
       <div class="tagline">学生练习版 · 家长可直接下载打印</div>
-      <div class="dev-tag">Developer: <b>Rachel Hu</b></div>
+      <div class="dev-tag">Developer：<b>Rachel Hu（Shumin）</b></div>
     </div>
   </header>
   <p class="subhead">选择教材版本、Level 和 Unit，即可查看并下载对应的课后练习题（不含答案，适合独立完成后由家长或老师批改）。</p>

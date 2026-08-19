@@ -25,15 +25,24 @@ h1,h2,h3,h4{font-family:"Noto Serif SC",serif;font-weight:700;margin:0 0 .4em;}
 p{margin:0 0 .8em;color:var(--ink-soft);}
 strong{color:var(--ink);font-weight:600;}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px;}
-.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:10px;}
-.eyebrow::before{content:"";width:20px;height:1px;background:var(--ink-soft);}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#D9A66B;display:flex;align-items:center;gap:10px;}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:#D9A66B;box-shadow:0 0 0 4px rgba(217,166,107,0.18);}
 
-header.hero{padding:44px 0 26px;background:
-  radial-gradient(900px 400px at 8% -20%, rgba(232,131,58,.10), transparent 60%),
-  radial-gradient(900px 400px at 92% -20%, rgba(74,85,201,.10), transparent 60%), var(--bg);
-  border-bottom:1px solid var(--line);}
-.hero h1{font-size:clamp(22px,3vw,30px);margin-bottom:6px;}
-.hero p{max-width:720px;font-size:14px;margin-bottom:0;}
+header.hero{
+  padding:46px 0 30px; position:relative; overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 12% -10%, rgba(201,122,43,0.16), transparent 60%),
+    linear-gradient(180deg, #1E2A3A 0%, #202C3D 100%);
+  color:#F4F1E8;
+}
+header.hero::after{
+  content:""; position:absolute; inset:0;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 84px);
+  pointer-events:none;
+}
+header.hero .wrap{ position:relative; z-index:1; }
+.hero h1{font-size:clamp(24px,3.2vw,34px);margin-bottom:8px;color:#fff;font-weight:600;letter-spacing:-0.01em;}
+.hero p{max-width:720px;font-size:14px;margin-bottom:0;color:#B7BFCB;line-height:1.7;}
 
 /* ===== TABS ===== */
 .tabbar{display:flex;gap:10px;padding:18px 0;flex-wrap:wrap;}
@@ -165,8 +174,10 @@ section.oralval p{color:var(--ink-soft);}
 </style>
 <style>
   .devcredit{
-    font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-soft);
+    font-family:"IBM Plex Mono",monospace; font-size:11px; color:#F1D8B4;
     letter-spacing:.02em; white-space:nowrap;
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22);
+    padding:6px 12px; border-radius:20px;
   }
   .hero-top{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:2px;}
   @media (max-width:640px){ .hero-top{flex-direction:column-reverse; gap:6px;} }
@@ -179,7 +190,7 @@ section.oralval p{color:var(--ink-soft);}
   <div class="wrap">
     <div class="hero-top">
       <div class="eyebrow">学管老师专用 · 一线试听 &amp; 续费沟通速查台</div>
-      <div class="devcredit">Developer：Rachel Hu（Shumin.Hu）</div>
+      <div class="devcredit">Developer：Rachel Hu（Shumin）</div>
     </div>
     <h1>LingoAce 教材速查台</h1>
     <p>点选教材体系 → 级别 → 单元，即可查看该单元具体教什么、对标校内哪个年级/教材、比校内多出哪些亮点。数据整理自公司官方培训资料。</p>

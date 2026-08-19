@@ -9,39 +9,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F5F4EF;
+  --bg:#F7F7F3;
   --surface:#FFFFFF;
   --surface-2:#FBFAF7;
-  --ink:#1B1D1B;
-  --ink-soft:#63665F;
+  --ink:#1E2420;
+  --ink-soft:#565F58;
   --ink-faint:#9A9C93;
-  --line:#E3E1D8;
+  --line:#DDD9CC;
   --line-strong:#CFCDC1;
   --navy:#1E2A3A;
   --navy-soft:#33445A;
   --amber:#C97A2B;
+  --amber-d:#B4611F;
   --amber-soft:#F1D8B4;
-  --amber-bg:#FBF0DE;
-  --teal:#2E6B62;
-  --teal-bg:#E4EFEC;
-  --brick:#A24A3D;
-  --brick-bg:#F7EAE7;
+  --amber-bg:#FCEEE1;
+  --teal:#279E93;
+  --teal-d:#1A6A62;
+  --teal-bg:#E2F3F1;
+  --brick:#A6192E;
+  --brick-d:#84121F;
+  --brick-bg:#F8E4E7;
+  --indigo:#4A55C9;
+  --indigo-d:#333C99;
+  --indigo-bg:#E7E8F8;
   --mint:#D9A66B;
   --mint-bg:#FBF0DE;
   --shadow: 0 1px 2px rgba(27,32,54,0.05), 0 8px 24px rgba(27,32,54,0.07);
-  --shadow-lg: 0 12px 40px rgba(20,24,44,0.22);
-  --radius: 10px;
+  --shadow-lg: 0 12px 40px rgba(20,24,44,0.18);
+  --radius: 12px;
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
-  background:var(--bg);
+  background:
+    radial-gradient(1000px 500px at 8% -5%, rgba(201,122,43,0.07), transparent 60%),
+    radial-gradient(900px 500px at 100% 10%, rgba(39,158,147,0.06), transparent 55%),
+    var(--bg);
   color:var(--ink);
   font-family:'Inter',system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;
   min-height:100vh;
 }
 ::selection{ background:var(--amber-soft); }
+.field input::placeholder, .field textarea::placeholder{ color:var(--ink-faint); }
 a{ color:inherit; }
 button{ font-family:inherit; cursor:pointer; }
 .mono{ font-family:'IBM Plex Mono', ui-monospace, monospace; font-feature-settings:"tnum"; }
@@ -109,7 +119,7 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 .wrap{ max-width:1400px; margin:0 auto; padding:28px 40px 80px; display:grid; grid-template-columns:380px 1fr; gap:24px; align-items:start; }
 @media (max-width:1000px){ .wrap{ grid-template-columns:1fr; } }
 
-.panel{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+.panel{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); transition:box-shadow .2s ease; }
 .panel-pad{ padding:22px; }
 .panel + .panel{ margin-top:20px; }
 
@@ -135,7 +145,7 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 /* performance dashboard */
 .perf-dashboard{ border:1px solid var(--line-strong); border-radius:11px; padding:18px 20px; background:var(--surface-2); }
 .perf-stat-row{ display:flex; gap:28px; margin-bottom:16px; }
-.perf-stat-num{ font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:var(--navy); line-height:1; }
+.perf-stat-num{ font-family:'Fraunces',serif; font-size:28px; font-weight:700; color:var(--amber); line-height:1; }
 .perf-stat-label{ font-size:11.5px; color:var(--ink-faint); margin-top:6px; text-transform:uppercase; letter-spacing:0.04em; }
 .perf-star-table{ display:flex; flex-direction:column; gap:7px; border-top:1px solid var(--line-strong); padding-top:14px; }
 .perf-star-row{ display:flex; justify-content:space-between; align-items:center; font-size:13px; }
@@ -155,44 +165,45 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
     radial-gradient(600px 260px at 90% 110%, rgba(201,122,43,0.10), transparent 60%),
     #FFFFFF;
 }
-.cert-corner{ position:absolute; width:34px; height:34px; border:3px solid var(--amber); }
+.cert-corner{ position:absolute; width:34px; height:34px; border:3px solid #C97A2B; }
 .cert-corner.tl{ top:10px; left:10px; border-right:none; border-bottom:none; border-radius:8px 0 0 0; }
 .cert-corner.tr{ top:10px; right:10px; border-left:none; border-bottom:none; border-radius:0 8px 0 0; }
 .cert-corner.bl{ bottom:10px; left:10px; border-right:none; border-top:none; border-radius:0 0 0 8px; }
 .cert-corner.br{ bottom:10px; right:10px; border-left:none; border-top:none; border-radius:0 0 8px 0; }
 .cert-badge{ font-size:40px; margin-bottom:6px; }
-.cert-eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.2em; color:var(--amber); font-weight:700; margin-bottom:8px; }
-.cert-title{ font-family:'Fraunces', serif; font-size:30px; font-weight:700; color:var(--navy); margin:0 0 18px; }
-.cert-sub{ font-size:13px; color:var(--ink-faint); margin-bottom:8px; }
-.cert-name{ font-family:'Fraunces', serif; font-size:34px; font-weight:700; color:var(--ink); margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid var(--amber-bg); display:inline-block; min-width:280px; }
-.cert-body-text{ font-size:14px; color:var(--ink-soft); margin-bottom:16px; }
+.cert-eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.2em; color:#C97A2B; font-weight:700; margin-bottom:8px; }
+.cert-title{ font-family:'Fraunces', serif; font-size:30px; font-weight:700; color:#1E2A3A; margin:0 0 18px; }
+.cert-sub{ font-size:13px; color:#9A9C93; margin-bottom:8px; }
+.cert-name{ font-family:'Fraunces', serif; font-size:34px; font-weight:700; color:#1B1D1B; margin-bottom:20px; padding-bottom:14px; border-bottom:2px solid #FBF0DE; display:inline-block; min-width:280px; }
+.cert-body-text{ font-size:14px; color:#63665F; margin-bottom:16px; }
 .cert-achievements{ display:flex; flex-direction:column; gap:9px; align-items:center; margin-bottom:18px; }
-.cert-ach-item{ font-size:13.5px; color:var(--ink); background:var(--amber-bg); padding:8px 18px; border-radius:20px; }
+.cert-ach-item{ font-size:13.5px; color:#1B1D1B; background:#FBF0DE; padding:8px 18px; border-radius:20px; }
 .cert-highlights{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:16px; }
-.cert-chip{ font-size:11.5px; font-weight:600; padding:5px 12px; border-radius:14px; background:var(--teal-bg); color:var(--teal); }
-.cert-stars{ font-size:22px; color:var(--amber); letter-spacing:3px; margin-bottom:22px; }
-.cert-footer{ display:flex; align-items:flex-end; justify-content:space-between; margin-top:28px; padding-top:18px; border-top:1px dashed var(--line-strong); }
+.cert-chip{ font-size:11.5px; font-weight:600; padding:5px 12px; border-radius:14px; background:#E4EFEC; color:#2E6B62; }
+.cert-stars{ font-size:22px; color:#C97A2B; letter-spacing:3px; margin-bottom:22px; }
+.cert-footer{ display:flex; align-items:flex-end; justify-content:space-between; margin-top:28px; padding-top:18px; border-top:1px dashed #CFCDC1; }
 .cert-sign{ flex:1; text-align:center; }
-.cert-sign-line{ font-family:'Fraunces',serif; font-size:14px; color:var(--ink); border-bottom:1px solid var(--line-strong); padding-bottom:8px; margin-bottom:6px; min-height:20px; }
-.cert-sign-label{ font-size:10.5px; color:var(--ink-faint); letter-spacing:0.05em; }
+.cert-sign-line{ font-family:'Fraunces',serif; font-size:14px; color:#1B1D1B; border-bottom:1px solid #CFCDC1; padding-bottom:8px; margin-bottom:6px; min-height:20px; }
+.cert-sign-label{ font-size:10.5px; color:#9A9C93; letter-spacing:0.05em; }
 .cert-stamp{
-  width:76px; height:76px; border-radius:50%; border:2px solid var(--teal); color:var(--teal);
+  width:76px; height:76px; border-radius:50%; border:2px solid #2E6B62; color:#2E6B62;
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   font-family:'Fraunces',serif; font-weight:700; font-size:13px; line-height:1.3; margin:0 16px; flex-shrink:0;
   transform:rotate(-8deg);
 }
-.cert-no{ margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--ink-faint); letter-spacing:0.05em; }
+.cert-no{ margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:10px; color:#9A9C93; letter-spacing:0.05em; }
 
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:7px;
   padding:11px 18px; border-radius:8px; font-size:13.5px; font-weight:600; border:1px solid transparent;
-  width:100%;
+  width:100%; transition:background .15s ease, transform .15s ease, box-shadow .15s ease;
 }
 .btn-primary{ background:var(--navy); color:#fff; }
-.btn-primary:hover{ background:var(--navy-soft); }
+.btn-primary:hover{ background:var(--navy-soft); transform:translateY(-1px); box-shadow:0 6px 16px rgba(30,42,58,0.28); }
 .btn-light{ background:var(--surface-2); color:var(--ink); border-color:var(--line-strong); }
-.btn-light:hover{ background:var(--line); }
-.btn-amber{ background:var(--amber); color:#fff; }
+.btn-light:hover{ background:var(--line); transform:translateY(-1px); }
+.btn-amber{ background:var(--amber); color:#fff; box-shadow:0 4px 14px rgba(201,122,43,0.28); }
+.btn-amber:hover{ background:var(--amber-d); transform:translateY(-1px); box-shadow:0 8px 20px rgba(201,122,43,0.35); }
 .btn-row{ display:flex; gap:8px; }
 .btn-row .btn{ flex:1; }
 
@@ -227,14 +238,19 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 .block-head h3{ margin:0; font-size:16.5px; }
 .block-sub{ font-size:12px; color:var(--ink-faint); margin:-8px 0 14px 36px; }
 
-.lesson-card{ border:1px solid var(--line); border-radius:9px; padding:14px 16px; margin-bottom:10px; background:var(--surface-2); }
-.lesson-card.review{ border-left:3px solid var(--amber); }
+.lesson-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:12px; margin-bottom:10px; }
+.lesson-card{ border:1px solid var(--line); border-radius:11px; padding:14px 16px; background:var(--surface-2); }
+.lesson-card.review{ border-left:3px solid var(--brick); }
+.lesson-card.review:not(.grid-card){ border-left:3px solid var(--brick); }
 .lesson-card .lt{ font-weight:600; font-size:13.5px; margin-bottom:6px; }
 .lesson-card .lt .unit-tag{ font-size:10.5px; font-weight:600; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.04em; margin-right:8px; }
+.lesson-card .lc-pill{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:9.5px; font-weight:700; padding:2px 9px; border-radius:100px; margin-top:8px; letter-spacing:0.03em; }
+.lc-pill.pill-new{ background:var(--teal-bg); color:var(--teal-d); }
+.lc-pill.pill-review{ background:var(--brick-bg); color:var(--brick-d); }
 .tag-list{ display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
-.tag{ font-size:11.5px; padding:3px 9px; border-radius:12px; background:var(--teal-bg); color:var(--teal); font-weight:600; }
-.tag.pattern{ background:var(--amber-bg); color:var(--amber); }
-.tag.extra{ background:var(--teal-bg); color:var(--ink); }
+.tag{ font-size:11.5px; padding:3px 9px; border-radius:12px; background:var(--teal-bg); color:var(--teal-d); font-weight:600; }
+.tag.pattern{ background:var(--indigo-bg); color:var(--indigo-d); }
+.tag.extra{ background:var(--amber-bg); color:var(--amber-d); }
 .small-note{ font-size:11.5px; color:var(--ink-faint); margin-top:6px; }
 
 .vocab-pool{ display:flex; flex-wrap:wrap; gap:6px; }
@@ -244,7 +260,7 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 .pattern-list li{ list-style:none; font-size:13px; padding:9px 12px; background:var(--amber-bg); border-radius:7px; color:var(--ink); }
 
 .focus-box{ background:var(--amber-bg); color:var(--ink); border:1px solid var(--line-strong); border-left:4px solid var(--amber); border-radius:11px; padding:20px 22px; }
-.focus-box h4{ margin:0 0 10px; font-family:'Fraunces',serif; font-size:16px; color:var(--navy); }
+.focus-box h4{ margin:0 0 10px; font-family:'Fraunces',serif; font-size:16px; color:var(--amber); }
 .focus-box p{ margin:0 0 10px; font-size:13.5px; line-height:1.7; color:var(--ink-soft); }
 .focus-box ul{ margin:8px 0 0; padding-left:18px; }
 .focus-box li{ font-size:13px; line-height:1.7; color:var(--ink-soft); }
@@ -272,11 +288,11 @@ textarea{ min-height:80px; resize:vertical; }
 .modal-close{ background:var(--surface-2); border:1px solid var(--line-strong); border-radius:50%; width:30px; height:30px; font-size:14px; }
 .modal-body{ padding:22px 26px; overflow-y:auto; }
 .tier-badge{ display:inline-block; font-size:10.5px; font-weight:700; padding:3px 10px; border-radius:12px; text-transform:uppercase; letter-spacing:0.03em; }
-.tier-0{ background:var(--mint-bg); color:var(--teal); }
-.tier-1{ background:var(--teal-bg); color:var(--teal); }
-.tier-2{ background:var(--amber-bg); color:var(--amber); }
-.tier-3{ background:#F1E7D0; color:#8C6A2A; }
-.tier-4{ background:var(--brick-bg); color:var(--brick); }
+.tier-0{ background:var(--teal-bg); color:var(--teal-d); }
+.tier-1{ background:var(--teal-bg); color:var(--teal-d); }
+.tier-2{ background:var(--amber-bg); color:var(--amber-d); }
+.tier-3{ background:var(--indigo-bg); color:var(--indigo-d); }
+.tier-4{ background:var(--brick-bg); color:var(--brick-d); }
 .overview-group{ margin-bottom:26px; }
 .overview-group h4{ margin:0 0 10px; font-size:15px; }
 .overview-table{ width:100%; border-collapse:collapse; font-size:12.6px; }
@@ -332,7 +348,7 @@ textarea{ min-height:80px; resize:vertical; }
     <h1>学员 <em>阶段性</em> 学习总结与下一阶段规划</h1>
     <p class="hero-sub">选择学员当前使用的教材、Level 与已学进度，一键生成 3 次课 / 6 次课 / 9 次课 / 单元结束的阶段总结，并自动给出下一阶段学习重点与国内考试对标建议。</p>
     <div style="margin-top:16px">
-      <button class="btn btn-light" id="btnOpenOverview" style="width:auto; padding:9px 16px;">📊 查看全部教材 / Level 考试对标总览</button>
+      <button class="btn btn-light" id="btnOpenOverview" style="width:auto; padding:9px 16px;">查看全部教材 / Level 考试对标总览</button>
     </div>
   </div>
 </header>
@@ -366,14 +382,14 @@ textarea{ min-height:80px; resize:vertical; }
       </div>
       <div class="field">
         <label>课时完成情况</label>
-        <button type="button" class="btn btn-light" id="btnOpenChecklist" style="justify-content:flex-start; padding:10px 12px;">✅ 管理已完成课时（支持勾选跳课）</button>
+        <button type="button" class="btn btn-light" id="btnOpenChecklist" style="justify-content:flex-start; padding:10px 12px;">管理已完成课时（支持勾选跳课）</button>
         <div class="hint" id="completedHint">尚未标记任何课时。</div>
         <div class="hint" id="progressHint"></div>
         <select id="fldStart" style="display:none"></select>
         <select id="fldEnd" style="display:none"></select>
       </div>
       <div class="btn-row">
-        <button class="btn btn-light" id="btnSaveStudent">💾 保存学员</button>
+        <button class="btn btn-light" id="btnSaveStudent">保存学员</button>
         <button class="btn btn-light" id="btnNewStudent">＋ 新建</button>
       </div>
     </div>
@@ -404,7 +420,7 @@ textarea{ min-height:80px; resize:vertical; }
 
     <div class="panel panel-pad">
       <div class="section-title">阶段表现评估</div>
-      <div class="hint" style="margin-bottom:12px">💡 出勤/完成率会根据左侧「已完成课时」自动计算，无需手动填写。</div>
+      <div class="hint" style="margin-bottom:12px">出勤/完成率会根据左侧「已完成课时」自动计算，无需手动填写。</div>
       <div class="perf-grid">
         <div class="field">
           <label>课堂参与度</label>
@@ -445,18 +461,18 @@ textarea{ min-height:80px; resize:vertical; }
     <div class="panel panel-pad">
       <div class="section-title">报告风格</div>
       <div class="chip-row" id="styleChips">
-        <div class="chip" data-style="teacher">🧑‍🏫 教师专业版</div>
-        <div class="chip active" data-style="parent">👨‍👩‍👧 家长易懂版</div>
+        <div class="chip" data-style="teacher">教师专业版</div>
+        <div class="chip active" data-style="parent">家长易懂版</div>
       </div>
       <div style="height:16px"></div>
-      <button class="btn btn-amber" id="btnGenerate">📄 生成阶段报告</button>
+      <button class="btn btn-amber" id="btnGenerate">生成阶段报告</button>
     </div>
   </div>
 
   <!-- RIGHT: report -->
   <div class="panel report-panel" id="reportPanel">
     <div class="report-empty">
-      <div class="big">📘</div>
+      <div class="big">✦</div>
       填写左侧学员信息并点击「生成阶段报告」<br>即可查看完整的阶段总结与下一阶段学习规划
     </div>
   </div>
@@ -1005,10 +1021,11 @@ function renderEntryCard(e, opts){
   const extra = (l.extra||[]);
   return `
     <div class="lesson-card ${l.isReview ? 'review' : ''}">
-      <div class="lt"><span class="unit-tag">${escapeHtml(unitTag)}</span>${escapeHtml(stripPrefix(l.title))}${l.isReview ? '（复习/测验）' : ''}</div>
-      ${vocab.length ? `<div class="tag-list">${vocab.map(v=>`<span class="tag">${escapeHtml(v)}</span>`).join('')}</div>` : ''}
-      ${patterns.length ? `<div class="tag-list">${patterns.map(p=>`<span class="tag pattern">${escapeHtml(p)}</span>`).join('')}</div>` : ''}
-      ${extra.length ? `<div class="tag-list">${extra.map(x=>`<span class="tag extra">${escapeHtml(x)}</span>`).join('')}</div>` : ''}
+      <div class="lt"><span class="unit-tag">${escapeHtml(unitTag)}</span>${escapeHtml(stripPrefix(l.title))}</div>
+      <span class="lc-pill ${l.isReview ? 'pill-review' : 'pill-new'}">${l.isReview ? '复习 · REVIEW' : '新授 · NEW'}</span>
+      ${vocab.length ? `<div class="tag-list">${vocab.slice(0,6).map(v=>`<span class="tag">${escapeHtml(v)}</span>`).join('')}${vocab.length>6?`<span class="tag" style="background:var(--surface); color:var(--ink-faint);">+${vocab.length-6}</span>`:''}</div>` : ''}
+      ${patterns.length ? `<div class="tag-list">${patterns.slice(0,3).map(p=>`<span class="tag pattern">${escapeHtml(p)}</span>`).join('')}</div>` : ''}
+      ${extra.length ? `<div class="tag-list">${extra.slice(0,3).map(x=>`<span class="tag extra">${escapeHtml(x)}</span>`).join('')}</div>` : ''}
       ${l.note ? `<div class="small-note">备注：${escapeHtml(l.note)}</div>` : ''}
     </div>
   `;
@@ -1167,7 +1184,7 @@ function buildCertificateHtml(data){
         <div class="cert-corner tr"></div>
         <div class="cert-corner bl"></div>
         <div class="cert-corner br"></div>
-        <div class="cert-badge">🏆</div>
+        <div class="cert-badge">✦</div>
         <div class="cert-eyebrow">CERTIFICATE OF ACHIEVEMENT</div>
         <h2 class="cert-title">学习里程碑奖状</h2>
         <div class="cert-sub">本奖状颁发给</div>
@@ -1217,8 +1234,8 @@ function buildTeacherHtml(ctx){
         </div>
       </div>
       <div class="report-actions">
-        <button id="btnCopy">📋 复制文本</button>
-        <button id="btnCertificate">🏆 学习里程碑奖状</button>
+        <button id="btnCopy">复制文本</button>
+        <button id="btnCertificate">学习里程碑奖状</button>
       </div>
     </div>
     <div class="report-body" id="reportBody">
@@ -1239,17 +1256,17 @@ function buildTeacherHtml(ctx){
       <div class="block">
         <div class="block-head"><div class="block-num">1</div><h3>本阶段学习内容回顾</h3></div>
         <div class="block-sub">已完成 ${reviewEntries.length} 个课时条目（所选范围共 ${reviewEntries.length + skippedEntries.length} 条）· 截至 ${escapeHtml(currentUnit.unitTitle)}${currentUnit.unitTitleCn ? '（'+escapeHtml(currentUnit.unitTitleCn)+'）' : ''}</div>
-        ${currentUnit.unitSummary ? `<div class="lesson-card" style="background:var(--surface); border-style:dashed;"><div class="lt">📎 本单元学习目标概览</div><div class="small-note" style="white-space:pre-line; color:var(--ink-soft); font-size:12.3px; line-height:1.7;">${escapeHtml(currentUnit.unitSummary)}</div></div>` : ''}
-        ${reviewEntries.length ? reviewEntries.map(e => renderEntryCard(e)).join('') : `<div class="lesson-card" style="border-color:var(--brick); color:var(--brick);">所选范围内暂无标记为"已完成"的课时，请点击左侧「管理已完成课时」先勾选该学员实际学过的内容。</div>`}
-        ${skippedEntries.length ? `<div class="small-note" style="margin-top:10px; padding:10px 12px; background:var(--brick-bg); border-radius:8px; color:var(--brick);">⚠ 所选范围内以下 ${skippedEntries.length} 个课时未标记为已完成（可能是跳课或尚未学习）：${skippedEntries.map(e=>escapeHtml(stripPrefix(e.lesson.title))).join('、')}</div>` : ''}
+        ${currentUnit.unitSummary ? `<div class="lesson-card" style="background:var(--surface); border-style:dashed;"><div class="lt">本单元学习目标概览</div><div class="small-note" style="white-space:pre-line; color:var(--ink-soft); font-size:12.3px; line-height:1.7;">${escapeHtml(currentUnit.unitSummary)}</div></div>` : ''}
+        ${reviewEntries.length ? `<div class="lesson-grid">${reviewEntries.map(e => renderEntryCard(e)).join('')}</div>` : `<div class="lesson-card" style="border-color:var(--brick); color:var(--brick-d);">所选范围内暂无标记为"已完成"的课时，请点击左侧「管理已完成课时」先勾选该学员实际学过的内容。</div>`}
+        ${skippedEntries.length ? `<div class="small-note" style="margin-top:10px; padding:10px 12px; background:var(--brick-bg); border-radius:8px; color:var(--brick);">所选范围内以下 ${skippedEntries.length} 个课时未标记为已完成（可能是跳课或尚未学习）：${skippedEntries.map(e=>escapeHtml(stripPrefix(e.lesson.title))).join('、')}</div>` : ''}
       </div>
 
       <div class="block">
         <div class="block-head"><div class="block-num">2</div><h3>本阶段核心词汇 & 句型汇总</h3></div>
-        <div class="hint" style="margin-bottom:10px">💡 点击下方词汇/句型可标记为"需要加强"，标记后点击右侧按钮即可更新第 4 部分的下一阶段建议。</div>
+        <div class="hint" style="margin-bottom:10px">点击下方词汇/句型可标记为"需要加强"，标记后点击右侧按钮即可更新第 4 部分的下一阶段建议。</div>
         ${reviewVocab.length ? `<div style="margin-bottom:14px"><div class="small-note" style="margin-bottom:8px">核心词汇（共 ${reviewVocab.length} 个）</div><div class="vocab-pool" id="vocabPool">${reviewVocab.map(v=>`<span class="markable" data-wp="${escapeHtml(v)}">${escapeHtml(v)}</span>`).join('')}</div></div>` : ''}
         ${reviewPatterns.length ? `<div><div class="small-note" style="margin-bottom:8px">重点句型</div><ul class="pattern-list" id="patternPool">${reviewPatterns.map(p=>`<li class="markable" data-wp="${escapeHtml(p)}">${escapeHtml(p)}</li>`).join('')}</ul></div>` : ''}
-        <div style="margin-top:12px"><button class="btn btn-light" id="btnUpdateWeak" style="width:auto; padding:8px 14px; font-size:12.5px;">🔄 根据标记更新下一阶段建议</button></div>
+        <div style="margin-top:12px"><button class="btn btn-light" id="btnUpdateWeak" style="width:auto; padding:8px 14px; font-size:12.5px;">根据标记更新下一阶段建议</button></div>
       </div>
 
       <div class="block">
@@ -1273,9 +1290,9 @@ function buildTeacherHtml(ctx){
                 <span class="perf-star-value">${'★'.repeat(stars[k])}${'☆'.repeat(5-stars[k])}</span>
               </div>` : '').join('')}
           </div>` : `<div class="hint">尚未填写星级评分。</div>`}
-          ${hlTags.length ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">✅ 本阶段亮点</div><div class="tag-list">${hlTags.map(t=>`<span class="tag" style="background:var(--teal-bg); color:var(--teal);">${escapeHtml(t)}</span>`).join('')}</div></div>` : ''}
-          ${imTags.length ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">🔧 待加强方面</div><div class="tag-list">${imTags.map(t=>`<span class="tag" style="background:var(--brick-bg); color:var(--brick);">${escapeHtml(t)}</span>`).join('')}</div></div>` : ''}
-          ${teacherNote ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">📝 老师寄语</div><p style="font-size:13.5px;line-height:1.7;color:var(--ink-soft); margin:0;">${escapeHtml(teacherNote)}</p></div>` : ''}
+          ${hlTags.length ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">本阶段亮点</div><div class="tag-list">${hlTags.map(t=>`<span class="tag" style="background:var(--teal-bg); color:var(--teal);">${escapeHtml(t)}</span>`).join('')}</div></div>` : ''}
+          ${imTags.length ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">待加强方面</div><div class="tag-list">${imTags.map(t=>`<span class="tag" style="background:var(--brick-bg); color:var(--brick);">${escapeHtml(t)}</span>`).join('')}</div></div>` : ''}
+          ${teacherNote ? `<div style="margin-top:14px"><div class="small-note" style="margin-bottom:8px">老师寄语</div><p style="font-size:13.5px;line-height:1.7;color:var(--ink-soft); margin:0;">${escapeHtml(teacherNote)}</p></div>` : ''}
         </div>
       </div>
 
@@ -1323,56 +1340,56 @@ function buildParentHtml(ctx){
   return `
     <div class="report-header">
       <div>
-        <h2>${escapeHtml(name)} 的英语学习小结 💬<span style="font-size:12px; font-weight:600; color:var(--ink-faint); margin-left:10px;">家长易懂版</span></h2>
+        <h2>${escapeHtml(name)} 的英语学习小结<span style="font-size:12px; font-weight:600; color:var(--ink-faint); margin-left:10px;">家长易懂版</span></h2>
         <div class="report-meta">
           <span>阶段：<b>${escapeHtml(stageLabel(reviewEntries.length))}</b></span>
           <span>日期：<b>${todayStr()}</b></span>
         </div>
       </div>
       <div class="report-actions">
-        <button id="btnCopy">📋 复制文本</button>
-        <button id="btnCertificate">🏆 学习里程碑奖状</button>
+        <button id="btnCopy">复制文本</button>
+        <button id="btnCertificate">学习里程碑奖状</button>
       </div>
     </div>
     <div class="report-body" id="reportBody">
 
       <div class="block">
-        <div class="block-head"><div class="block-num">👋</div><h3>亲爱的${escapeHtml(name)}家长</h3></div>
+        <div class="block-head"><div class="block-num">Ⅰ</div><h3>亲爱的${escapeHtml(name)}家长</h3></div>
         <p style="font-size:13.5px; line-height:1.9; color:var(--ink-soft);">${topicList.length ? `这是孩子最近这段时间（${escapeHtml(stageLabel(reviewEntries.length))}）的英语学习小结。孩子这段时间主要在学习<b>「${escapeHtml(topicList.join('」「'))}」</b>相关的内容，下面是详细情况，供您参考～` : `暂未查到该学员在所选范围内的已完成课时记录，请先在左侧"管理已完成课时"中勾选孩子实际学过的内容，再重新生成报告～`}</p>
       </div>
 
       <div class="block">
-        <div class="block-head"><div class="block-num">📚</div><h3>这段时间学了什么</h3></div>
+        <div class="block-head"><div class="block-num">Ⅱ</div><h3>这段时间学了什么</h3></div>
         ${reviewVocab.length ? `<div style="margin-bottom:14px"><div class="small-note" style="margin-bottom:8px">学过的单词（共 ${reviewVocab.length} 个）</div><div class="vocab-pool">${reviewVocab.map(v=>`<span>${escapeHtml(v)}</span>`).join('')}</div></div>` : ''}
         ${reviewPatterns.length ? `<div><div class="small-note" style="margin-bottom:8px">学过的句子怎么说</div><ul class="pattern-list">${reviewPatterns.slice(0,8).map(p=>`<li>${escapeHtml(p)}</li>`).join('')}</ul></div>` : ''}
-        <p style="font-size:12.5px; color:var(--ink-faint); margin-top:10px;">💡 建议：不用要求孩子把每个单词都"翻译"出来，能听懂、能在对话里用出来就是掌握了。</p>
+        <p style="font-size:12.5px; color:var(--ink-faint); margin-top:10px;">建议：不用要求孩子把每个单词都"翻译"出来，能听懂、能在对话里用出来就是掌握了。</p>
       </div>
 
       <div class="block">
-        <div class="block-head"><div class="block-num">🌟</div><h3>孩子的课堂表现</h3></div>
+        <div class="block-head"><div class="block-num">Ⅲ</div><h3>孩子的课堂表现</h3></div>
         <div class="focus-box">
           <p style="font-size:14px; margin-bottom:12px;">这段时间应该完成 <b>${completionStats.total}</b> 节课，孩子实际完成了 <b>${completionStats.completed}</b> 节（完成率 ${completionStats.rate}%）。</p>
           ${overallStar ? `<p style="font-size:15px; margin-bottom:12px;">${'⭐'.repeat(overallStar)}${'☆'.repeat(5-overallStar)}　${escapeHtml(skillBadge(overallStar))}</p>` : ''}
-          ${hlParents.length ? `<p><b style="color:var(--teal)">👍 孩子做得好的地方：</b></p><ul>${hlParents.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
-          ${imParents.length ? `<p><b style="color:var(--brick)">🌱 可以再多加把劲的地方：</b></p><ul>${imParents.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
+          ${hlParents.length ? `<p><b style="color:var(--teal)">孩子做得好的地方：</b></p><ul>${hlParents.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
+          ${imParents.length ? `<p><b style="color:var(--brick)">可以再多加把劲的地方：</b></p><ul>${imParents.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
           ${teacherNote ? `<p>老师的话：${escapeHtml(teacherNote)}</p>` : (!hlParents.length && !imParents.length ? `<p>孩子这段时间学习状态整体稳定，欢迎有任何疑问随时和老师沟通～</p>` : '')}
         </div>
       </div>
 
       <div class="block">
-        <div class="block-head"><div class="block-num">🎯</div><h3>接下来会学什么 · 家长可以怎么帮</h3></div>
+        <div class="block-head"><div class="block-num">Ⅳ</div><h3>接下来会学什么 · 家长可以怎么帮</h3></div>
         <div class="focus-box">
           ${nextInfo.entries.length ? `
             <p>接下来孩子会继续学习和 <b>${escapeHtml(Array.from(new Set(nextInfo.entries.map(e=>e.unitTitle))).join('、'))}</b> 相关的内容。</p>
             ${nextVocab.length ? `<p>会用到的新单词包括：${nextVocab.slice(0,12).map(escapeHtml).join('、')}${nextVocab.length>12?' 等':''}。</p>` : ''}
           ` : `<p>${(nextLevelNote || '孩子已经完成了当前阶段的全部内容，非常棒！接下来会进入新的学习阶段。').replace(/<[^>]+>/g,'')}</p>`}
           ${buildParentFocusAdvice(nextInfo.entries)}
-          ${weakList.length ? `<p><b style="color:var(--teal)">💡 建议在家多练习：</b>${weakList.map(escapeHtml).join('、')}</p>` : ''}
+          ${weakList.length ? `<p><b style="color:var(--teal)">建议在家多练习：</b>${weakList.map(escapeHtml).join('、')}</p>` : ''}
         </div>
       </div>
 
       <div class="block">
-        <div class="block-head"><div class="block-num">🎓</div><h3>孩子目前学到哪儿了</h3></div>
+        <div class="block-head"><div class="block-num">Ⅴ</div><h3>孩子目前学到哪儿了</h3></div>
         ${levelMeta ? `
         <div class="level-meta-box">
           <p><b>目前阶段：</b>${escapeHtml(levelMeta.tierInfo.parentGrade)}</p>
@@ -1383,7 +1400,7 @@ function buildParentHtml(ctx){
 
       ${examMatches.length ? `
       <div class="block">
-        <div class="block-head"><div class="block-num">📝</div><h3>这些内容以后会用到哪里</h3></div>
+        <div class="block-head"><div class="block-num">Ⅵ</div><h3>这些内容以后会用到哪里</h3></div>
         ${examMatches.slice(0,5).map(m => `
           <div class="exam-card">
             <p>${escapeHtml(m.parentNote || m.note)}</p>
@@ -1392,7 +1409,7 @@ function buildParentHtml(ctx){
       </div>` : ''}
 
       <div class="block">
-        <p style="text-align:center; font-size:12.5px; color:var(--ink-faint);">感谢您陪伴孩子一起学习英语 💛 如有任何疑问，欢迎随时联系老师沟通。</p>
+        <p style="text-align:center; font-size:12.5px; color:var(--ink-faint);">感谢您陪伴孩子一起学习英语，如有任何疑问，欢迎随时联系老师沟通。</p>
       </div>
 
     </div>
@@ -1423,7 +1440,7 @@ function renderFocusBoxInner(nextInfo, nextLevelNote, currentUnit){
     ` : `<p>${nextLevelNote || '当前进度已到达该 Level 末尾，建议与教研确认后续教材安排。'}</p>`}
     ${nextLevelNote && nextInfo.entries.length ? `<p>${nextLevelNote}</p>` : ''}
     ${buildFocusAdvice(nextInfo.entries, currentUnit)}
-    ${weakList.length ? `<p><b style="color:var(--teal)">⚠ 需要重点巩固：</b>本阶段标记为待加强的内容包括：${weakList.map(escapeHtml).join('、')}。建议在下一阶段课程开始前安排 5-10 分钟快速复习这些内容，避免影响新课理解。</p>` : ''}
+    ${weakList.length ? `<p><b style="color:var(--teal)">需要重点巩固：</b>本阶段标记为待加强的内容包括：${weakList.map(escapeHtml).join('、')}。建议在下一阶段课程开始前安排 5-10 分钟快速复习这些内容，避免影响新课理解。</p>` : ''}
   `;
 }
 
@@ -1463,7 +1480,7 @@ function copyReportText(){
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.getElementById('btnCopy');
     const old = btn.textContent;
-    btn.textContent = '✅ 已复制';
+    btn.textContent = '已复制';
     setTimeout(() => btn.textContent = old, 1600);
   }).catch(() => alert('复制失败，请手动选择文本复制。'));
 }
