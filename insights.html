@@ -9,43 +9,77 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F7F7F3;
-  --surface:#FFFFFF;
-  --surface-2:#FBFAF7;
-  --ink:#1E2420;
-  --ink-soft:#565F58;
-  --ink-faint:#9A9C93;
-  --line:#DDD9CC;
-  --line-strong:#CFCDC1;
+  --bg-page:#10151C;
+  --surface:rgba(255,255,255,0.05);
+  --surface-2:rgba(255,255,255,0.035);
+  --ink:#F1EEE6;
+  --ink-soft:#A6ADBB;
+  --ink-faint:#6E7684;
+  --line:rgba(255,255,255,0.1);
+  --line-strong:rgba(255,255,255,0.17);
   --navy:#1E2A3A;
   --navy-soft:#33445A;
-  --amber:#C97A2B;
-  --amber-d:#B4611F;
-  --amber-soft:#F1D8B4;
-  --amber-bg:#FCEEE1;
-  --teal:#279E93;
-  --teal-d:#1A6A62;
-  --teal-bg:#E2F3F1;
+  --amber:#D98A3D;
+  --amber-d:#C97A2B;
+  --amber-soft:rgba(217,138,61,0.28);
+  --amber-bg:rgba(217,138,61,0.15);
+  --teal:#4FA396;
+  --teal-d:#3C8175;
+  --teal-bg:rgba(79,163,150,0.15);
+  --brick:#DB8770;
+  --brick-d:#C06A52;
+  --brick-bg:rgba(219,135,112,0.15);
+  --indigo:#8B92E0;
+  --indigo-d:#6D74C4;
+  --indigo-bg:rgba(139,146,224,0.15);
+  --mint:#E0B37D;
+  --mint-bg:rgba(217,138,61,0.13);
+  --shadow: 0 1px 2px rgba(0,0,0,0.2), 0 10px 30px rgba(0,0,0,0.32);
+  --shadow-lg: 0 20px 50px rgba(0,0,0,0.45);
+  --radius: 14px;
+  --glow-1:rgba(201,122,43,0.16);
+  --glow-2:rgba(79,163,150,0.12);
+}
+[data-theme="day"]{
+  --bg-page:#EEF1EC;
+  --surface:rgba(255,255,255,0.62);
+  --surface-2:rgba(255,255,255,0.42);
+  --ink:#262B33;
+  --ink-soft:#5B6472;
+  --ink-faint:#9A9C93;
+  --line:rgba(38,43,51,0.1);
+  --line-strong:rgba(38,43,51,0.17);
+  --navy:#3B4A5A;
+  --navy-soft:#4E5F72;
+  --amber:#B4611F;
+  --amber-d:#96501A;
+  --amber-soft:rgba(180,97,31,0.22);
+  --amber-bg:rgba(180,97,31,0.1);
+  --teal:#1A6A62;
+  --teal-d:#14544D;
+  --teal-bg:rgba(26,106,98,0.1);
   --brick:#A6192E;
   --brick-d:#84121F;
-  --brick-bg:#F8E4E7;
+  --brick-bg:rgba(166,25,46,0.09);
   --indigo:#4A55C9;
   --indigo-d:#333C99;
-  --indigo-bg:#E7E8F8;
-  --mint:#D9A66B;
-  --mint-bg:#FBF0DE;
-  --shadow: 0 1px 2px rgba(27,32,54,0.05), 0 8px 24px rgba(27,32,54,0.07);
-  --shadow-lg: 0 12px 40px rgba(20,24,44,0.18);
-  --radius: 12px;
+  --indigo-bg:rgba(74,85,201,0.09);
+  --mint:#B4611F;
+  --mint-bg:rgba(180,97,31,0.08);
+  --shadow: 0 1px 2px rgba(38,43,51,0.06), 0 8px 24px rgba(38,43,51,0.08);
+  --shadow-lg: 0 16px 40px rgba(38,43,51,0.14);
+  --glow-1:rgba(243,199,158,0.5);
+  --glow-2:rgba(207,224,232,0.5);
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
   background:
-    radial-gradient(1000px 500px at 8% -5%, rgba(201,122,43,0.07), transparent 60%),
-    radial-gradient(900px 500px at 100% 10%, rgba(39,158,147,0.06), transparent 55%),
-    var(--bg);
+    radial-gradient(1100px 560px at 8% -8%, var(--glow-1), transparent 60%),
+    radial-gradient(1000px 560px at 100% 6%, var(--glow-2), transparent 55%),
+    var(--bg-page);
   color:var(--ink); font-family:'Inter',system-ui,sans-serif; -webkit-font-smoothing:antialiased; min-height:100vh;
+  transition:background 1s ease, color .5s ease;
 }
 .field input::placeholder{ color:var(--ink-faint); }
 ::selection{ background:var(--amber-soft); }
@@ -56,31 +90,30 @@ h1,h2,h3{ font-family:'Fraunces', serif; }
 
 header.hero{
   background:
-    radial-gradient(1100px 420px at 12% -10%, rgba(201,122,43,0.16), transparent 60%),
-    linear-gradient(180deg, var(--navy) 0%, #202C3D 100%);
-  color:#F4F1E8; padding:34px 40px 28px; position:relative; overflow:hidden;
+    radial-gradient(1100px 420px at 12% -10%, rgba(217,138,61,0.18), transparent 60%);
+  color:var(--ink); padding:34px 40px 28px; position:relative; overflow:hidden;
 }
 header.hero::after{
   content:""; position:absolute; inset:0;
-  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 84px);
+  background-image: repeating-linear-gradient(90deg, rgba(var(--ink-rgb,244,241,232),0.03) 0, rgba(var(--ink-rgb,244,241,232),0.03) 1px, transparent 1px, transparent 84px);
   pointer-events:none;
 }
 .hero-inner{ max-width:1400px; margin:0 auto; position:relative; }
 .hero-topbar{ display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; }
 .brand-logo{ display:flex; align-items:center; gap:11px; }
-.brand-logo .icon-box{ width:38px; height:38px; border-radius:11px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.28); display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:800; color:#fff; flex-shrink:0; }
-.brand-logo .wordmark{ font-family:'Inter', sans-serif; font-weight:800; font-size:21px; color:#fff; letter-spacing:-0.01em; }
-.dev-tag{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.04em; color:#F1D8B4; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:6px 12px; border-radius:20px; }
-.dev-tag b{ color:#fff; font-weight:600; }
-.eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:#D9A66B; display:flex; align-items:center; gap:10px; margin-bottom:14px; }
-.eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:#D9A66B; box-shadow:0 0 0 4px rgba(217,166,107,0.18); }
-h1{ font-weight:600; font-size:clamp(24px, 3vw, 34px); line-height:1.12; margin:0 0 8px; letter-spacing:-0.01em; }
-h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
-.hero-sub{ font-size:13.5px; color:#B7BFCB; max-width:74ch; line-height:1.6; margin:0; }
+.brand-logo .icon-box{ width:38px; height:38px; border-radius:11px; background:var(--surface); border:1px solid var(--line-strong); backdrop-filter:blur(14px); display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:800; color:var(--ink); flex-shrink:0; }
+.brand-logo .wordmark{ font-family:'Inter', sans-serif; font-weight:800; font-size:21px; color:var(--ink); letter-spacing:-0.01em; }
+.dev-tag{ font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.04em; color:var(--amber); background:var(--surface); border:1px solid var(--line-strong); backdrop-filter:blur(14px); padding:6px 12px; border-radius:20px; }
+.dev-tag b{ color:var(--ink); font-weight:600; }
+.eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber); display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+.eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--amber); box-shadow:0 0 0 4px var(--amber-bg); }
+h1{ font-weight:600; font-size:clamp(22px, 2.6vw, 30px); line-height:1.15; margin:0 0 8px; letter-spacing:-0.01em; color:var(--ink); }
+h1 em{ font-style:italic; font-weight:500; color:var(--amber); }
+.hero-sub{ font-size:13.5px; color:var(--ink-soft); max-width:74ch; line-height:1.6; margin:0; }
 
-.wrap{ max-width:1400px; margin:0 auto; padding:28px 40px 80px; display:grid; grid-template-columns:360px 1fr; gap:24px; align-items:start; }
+.wrap{ max-width:1400px; margin:0 auto; padding:8px 40px 80px; display:grid; grid-template-columns:360px 1fr; gap:24px; align-items:start; }
 @media (max-width:1000px){ .wrap{ grid-template-columns:1fr; } }
-.panel{ background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+.panel{ background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--radius); box-shadow:var(--shadow); backdrop-filter:blur(22px) saturate(160%); -webkit-backdrop-filter:blur(22px) saturate(160%); transition:background 1s ease, border-color 1s ease; }
 .panel-pad{ padding:22px; }
 .panel + .panel{ margin-top:20px; }
 .field{ margin-bottom:16px; }
@@ -89,21 +122,27 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 .field input:focus, .field select:focus{ outline:2px solid var(--amber-soft); border-color:var(--amber); }
 .section-title{ font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-faint); margin:0 0 10px; }
 .hint{ font-size:12px; color:var(--ink-faint); line-height:1.5; margin-top:4px; }
-.btn{ display:inline-flex; align-items:center; justify-content:center; gap:7px; padding:11px 18px; border-radius:8px; font-size:13.5px; font-weight:600; border:1px solid transparent; width:100%; transition:background .15s ease, transform .15s ease, box-shadow .15s ease; }
-.btn-amber{ background:var(--amber); color:#fff; box-shadow:0 4px 14px rgba(201,122,43,0.25); }
-.btn-amber:hover{ background:var(--amber-d); transform:translateY(-1px); box-shadow:0 8px 20px rgba(201,122,43,0.35); }
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:7px; padding:12px 18px; border-radius:10px; font-size:13.5px; font-weight:700; letter-spacing:0.02em; border:1px solid transparent; width:100%; transition:background .18s ease, transform .18s ease, box-shadow .18s ease; text-transform:uppercase; }
+.btn-amber{
+  color:var(--amber);
+  background:var(--amber-bg);
+  border:1px solid var(--amber-soft);
+  backdrop-filter:blur(10px) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(0,0,0,0.18);
+}
+.btn-amber:hover{ background:var(--amber-soft); transform:translateY(-1px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.18), 0 10px 24px rgba(0,0,0,0.22); }
 
 .report-empty{ padding:80px 30px; text-align:center; color:var(--ink-faint); }
 .report-empty .big{ font-size:40px; margin-bottom:14px; }
 .report-header{ padding:26px 30px 20px; border-bottom:1px solid var(--line); }
-.report-header h2{ margin:0 0 6px; font-size:22px; }
+.report-header h2{ margin:0 0 6px; font-size:22px; color:var(--ink); }
 .report-meta{ display:flex; flex-wrap:wrap; gap:8px 18px; font-size:12.5px; color:var(--ink-soft); }
 .report-meta b{ color:var(--ink); }
 .report-body{ padding:26px 30px 40px; }
 .block{ margin-bottom:32px; }
 .block-head{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
 .block-num{ width:26px; height:26px; border-radius:50%; background:var(--amber); color:#fff; font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center; font-family:'IBM Plex Mono',monospace; flex-shrink:0; }
-.block-head h3{ margin:0; font-size:16.5px; }
+.block-head h3{ margin:0; font-size:16.5px; color:var(--ink); }
 
 .compare-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 @media (max-width:700px){ .compare-grid{ grid-template-columns:1fr; } }
@@ -150,9 +189,20 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 .vocab-table .vs{ color:var(--ink-soft); }
 .vocab-table .vo{ color:var(--ink-faint); font-size:11px; white-space:nowrap; }
 </style>
+<script>
+(function(){
+  var parts = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', hour:'2-digit', minute:'2-digit', hour12:false }).formatToParts(new Date());
+  var h = parseInt(parts.find(function(p){return p.type==='hour';}).value, 10);
+  var m = parseInt(parts.find(function(p){return p.type==='minute';}).value, 10);
+  var hm = h + m/60;
+  var isDay = hm >= 6 && hm < 18.5;
+  document.documentElement.setAttribute('data-theme', isDay ? 'day' : 'night');
+})();
+</script>
 </head>
 <body>
 <div id="gatedContent" style="display:none">
+
 
 <header class="hero">
   <div class="hero-inner">
@@ -236,6 +286,17 @@ h1 em{ font-style:italic; font-weight:500; color:#D9A66B; }
 <script>
 const CURRICULUM = JSON.parse(document.getElementById('curriculum-data').textContent);
 const LEVEL_META = JSON.parse(document.getElementById('level-meta-data').textContent);
+
+/* ---------------- theme auto-refresh (day/night by Beijing time) ---------------- */
+function applyThemeInsights(){
+  const parts = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', hour:'2-digit', minute:'2-digit', hour12:false }).formatToParts(new Date());
+  const h = parseInt(parts.find(p=>p.type==='hour').value, 10);
+  const m = parseInt(parts.find(p=>p.type==='minute').value, 10);
+  const hm = h + m/60;
+  const isDay = hm >= 6 && hm < 18.5;
+  document.documentElement.setAttribute('data-theme', isDay ? 'day' : 'night');
+}
+setInterval(applyThemeInsights, 60000);
 
 function materials(){ return Object.keys(CURRICULUM); }
 function levelsFor(material){ return Object.keys(CURRICULUM[material] || {}); }

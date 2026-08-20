@@ -213,7 +213,23 @@ a{ color:inherit; text-decoration:none; }
 }
 .globe-tip .gt-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:600; color:var(--amber-light); margin-right:6px; }
 .globe-tip::after{ content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:rgba(15,22,32,0.95); }
-.globe-caption{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(var(--rgb-text),0.32); margin-bottom:16px; }
+.globe-caption{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(var(--rgb-text),0.32); margin-bottom:18px; }
+
+/* ===================== STATS ROW ===================== */
+.stats-row{ display:flex; gap:12px; width:100%; max-width:560px; margin-bottom:16px; }
+.stat-chip{
+  flex:1; text-align:left; padding:13px 16px 12px; border-radius:14px;
+  background:linear-gradient(155deg, rgba(var(--rgb-panel),0.07), rgba(var(--rgb-panel),0.025));
+  border:1px solid var(--glass-border);
+  box-shadow:inset 1px 1px 1px rgba(var(--rgb-panel),0.06), 0 8px 20px rgba(0,0,0,0.18);
+}
+.stat-spark{ width:100%; height:18px; display:block; margin-bottom:6px; }
+.stat-spark polyline{ fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.stat-spark .spark-fill{ stroke:none; }
+.stat-num{ font-family:'Fraunces',serif; font-weight:700; font-size:19px; color:var(--text-strong); line-height:1; white-space:nowrap; }
+.stat-num .stat-plus{ font-size:13px; color:var(--stat-color, var(--amber-light)); font-weight:600; }
+.stat-label{ font-size:10px; color:rgba(var(--rgb-text),0.48); margin-top:4px; letter-spacing:0.01em; }
+@media (max-width:980px){ .stats-row{ flex-wrap:wrap; } .stat-chip{ min-width:150px; } }
 
 .stage-hint{
   display:inline-flex; align-items:center; gap:10px; font-size:12.5px; color:rgba(var(--rgb-text),0.55);
@@ -312,6 +328,7 @@ a{ color:inherit; text-decoration:none; }
 
 
 
+
 <div class="bg-scene">
   <div class="bg-blob blob-1"></div>
   <div class="bg-blob blob-2"></div>
@@ -349,6 +366,36 @@ a{ color:inherit; text-decoration:none; }
       <div class="globe-tip" id="globeTip"><span class="gt-word" id="globeTipWord"></span><span id="globeTipLang"></span></div>
     </div>
     <div class="globe-caption">世界各地打招呼的方式 · 悬停查看</div>
+
+    <div class="stats-row" id="statsRow">
+      <div class="stat-chip" style="--stat-color:var(--amber-light)">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:var(--amber-light); stop-opacity:0.35"/><stop offset="100%" style="stop-color:var(--amber-light); stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad1)" points="0,22 0,18 14,15 28,17 42,11 56,13 70,7 84,9 100,3 100,22"/>
+          <polyline points="0,18 14,15 28,17 42,11 56,13 70,7 84,9 100,3" style="stroke:var(--amber-light)"/>
+        </svg>
+        <div class="stat-num">180<span class="stat-plus">+</span></div>
+        <div class="stat-label">国家和地区学员覆盖</div>
+      </div>
+      <div class="stat-chip" style="--stat-color:var(--teal)">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:var(--teal); stop-opacity:0.35"/><stop offset="100%" style="stop-color:var(--teal); stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad2)" points="0,22 0,20 14,19 28,16 42,17 56,12 70,10 84,6 100,2 100,22"/>
+          <polyline points="0,20 14,19 28,16 42,17 56,12 70,10 84,6 100,2" style="stroke:var(--teal)"/>
+        </svg>
+        <div class="stat-num">2200<span class="stat-plus">万+</span></div>
+        <div class="stat-label">累计授课节数</div>
+      </div>
+      <div class="stat-chip" style="--stat-color:#8B92E0">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:#8B92E0; stop-opacity:0.35"/><stop offset="100%" style="stop-color:#8B92E0; stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad3)" points="0,22 0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5 100,22"/>
+          <polyline points="0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5" style="stroke:#8B92E0"/>
+        </svg>
+        <div class="stat-num">7000<span class="stat-plus">+</span></div>
+        <div class="stat-label">资深教师团队</div>
+      </div>
+    </div>
 
     <div class="wod-card" id="wodCard">
       <div class="wod-word" id="wodWord">—</div>
