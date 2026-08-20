@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学管师服务工作台 · LingoAce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+  --bg-page:#FAF9F5;
+  --surface:#FFFFFF;
+  --surface-2:#F5F4EF;
+  --ink:#1B1D1B;
+  --ink-soft:#63665F;
+  --ink-faint:#9A9C93;
+  --line:#E3E1D8;
+  --line-strong:#CFCDC1;
+  --navy:#1E2A3A;
+  --navy-soft:#33445A;
+  --amber:#C97A2B;
+  --amber-d:#B4611F;
+  --amber-soft:#F1D8B4;
+  --amber-bg:#FBF0DE;
+  --teal:#2E6B62;
+  --teal-d:#1F4E47;
+  --teal-bg:#E4EFEC;
+  --brick:#A24A3D;
+  --brick-d:#7A392F;
+  --brick-bg:#F7EAE7;
+  --shadow: 0 1px 2px rgba(27,29,27,0.05), 0 8px 24px rgba(27,29,27,0.06);
+  --shadow-lg: 0 16px 40px rgba(27,29,27,0.1);
+  --glow-1:rgba(243,199,158,0.45);
+  --glow-2:rgba(180,224,214,0.4);
+  /* legacy aliases used by original markup */
+  --gold:var(--amber);
+  --mint:var(--teal);
+  --coral:var(--brick);
+  --cream:var(--ink);
+  --cream-dim:var(--ink-soft);
+  --text:var(--ink);
+  --text-dim:var(--ink-soft);
+  --ink-2:var(--surface-2);
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:'Noto Sans SC', 'Inter', sans-serif;
+  background:
+    radial-gradient(1100px 560px at 8% -8%, var(--glow-1), transparent 60%),
+    radial-gradient(1000px 560px at 100% 6%, var(--glow-2), transparent 55%),
+    var(--bg-page);
+  color:var(--ink);
+  transition:background 1s ease, color .5s ease;
+}
+.app{
+  display:grid;
+  grid-template-columns:360px 1fr;
+  min-height:100vh;
+  max-width:1500px;
+  margin:0 auto;
+  gap:24px;
+  padding:64px 32px 40px;
+}
+@media (max-width:900px){
+  .app{ grid-template-columns:1fr; padding:64px 18px 32px; }
+}
+
+/* ---------- LEFT PANEL ---------- */
+.panel{
+  background:var(--surface);
+  border:1px solid var(--line-strong);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(22px) saturate(160%);
+  -webkit-backdrop-filter:blur(22px) saturate(160%);
+  color:var(--ink);
+  padding:26px 24px 32px;
+  position:sticky;
+  top:24px;
+  max-height:calc(100vh - 48px);
+  overflow-y:auto;
+  transition:background 1s ease, border-color 1s ease;
+}
+@media (max-width:900px){ .panel{ position:relative; top:0; max-height:none; } }
+
+.brand{ display:flex; align-items:center; gap:10px; margin-bottom:4px; }
+.brand .logo{
+  width:34px; height:34px; border-radius:10px;
+  background:linear-gradient(135deg, var(--amber), var(--amber-d));
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Fraunces',serif; font-weight:700; color:#fff; font-size:16px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+.brand .t1{ font-size:15px; font-weight:700; color:var(--ink); }
+.brand .t2{ font-size:11px; color:var(--ink-faint); }
+.panel-sub{ font-size:12px; color:var(--ink-faint); opacity:0.9; margin:8px 0 24px; line-height:1.6; }
+
+.field{ margin-bottom:16px; }
+.field label{
+  display:block; font-size:11.5px; font-weight:700; color:var(--amber);
+  margin-bottom:6px; letter-spacing:0.04em; text-transform:uppercase;
+}
+.field .hint{ font-size:10.5px; color:var(--ink-faint); margin-top:5px; line-height:1.5; }
+.row2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+input, select, textarea{
+  width:100%;
+  background:var(--surface-2);
+  border:1px solid var(--line-strong);
+  color:var(--ink);
+  border-radius:9px;
+  padding:10px 12px;
+  font-family:'Noto Sans SC', sans-serif;
+  font-size:13.5px;
+  outline:none;
+}
+input::placeholder, textarea::placeholder{ color:var(--ink-faint); }
+textarea{ resize:vertical; min-height:56px; line-height:1.5; }
+select{ appearance:none; cursor:pointer; }
+input:focus, select:focus, textarea:focus{ outline:2px solid var(--amber-soft); border-color:var(--amber); }
+
+.level-badge-preview{
+  margin-top:8px;
+  background:var(--teal-bg);
+  border:1px dashed var(--teal);
+  border-radius:9px;
+  padding:9px 11px;
+  font-size:11.5px;
+  line-height:1.6;
+  color:var(--ink-soft);
+}
+.level-badge-preview b{ color:var(--teal-d); }
+
+.generate-btn{
+  width:100%;
+  background:var(--amber-bg);
+  color:var(--amber);
+  border:1px solid var(--amber-soft);
+  border-radius:11px;
+  padding:14px;
+  font-size:14.5px;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:8px;
+  font-family:'Noto Sans SC',sans-serif;
+  backdrop-filter:blur(10px) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(0,0,0,0.18);
+  transition:background .18s ease, transform .18s ease;
+  text-transform:uppercase; letter-spacing:0.02em;
+}
+.generate-btn:hover{ background:var(--amber-soft); transform:translateY(-1px); }
+.generate-btn:active{ transform:translateY(1px); }
+.demo-btn{
+  width:100%; background:transparent; color:var(--ink-soft);
+  border:1px solid var(--line-strong); border-radius:11px;
+  padding:10px; font-size:12px; margin-top:10px; cursor:pointer;
+  font-family:'Noto Sans SC',sans-serif;
+}
+.demo-btn:hover{ background:var(--surface-2); }
+
+/* ---------- RIGHT PANEL ---------- */
+.content{
+  background:var(--surface);
+  border:1px solid var(--line-strong);
+  border-radius:18px;
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(22px) saturate(160%);
+  -webkit-backdrop-filter:blur(22px) saturate(160%);
+  padding:28px 32px 44px;
+  transition:background 1s ease, border-color 1s ease;
+}
+.content-header{ margin-bottom:22px; }
+.content-header h1{ font-family:'Fraunces',serif; font-size:21px; margin:0 0 4px; color:var(--ink); font-weight:600; }
+.content-header p{ font-size:13px; color:var(--ink-soft); margin:0; }
+
+.tabs{
+  display:flex; gap:6px; margin-bottom:20px; flex-wrap:wrap;
+  border-bottom:1px solid var(--line-strong); padding-bottom:0;
+}
+.tab-btn{
+  background:none; border:none; cursor:pointer;
+  padding:10px 16px; font-size:13.5px; font-weight:700; color:var(--ink-faint);
+  font-family:'Noto Sans SC',sans-serif;
+  border-bottom:3px solid transparent;
+  display:flex; align-items:center; gap:6px;
+}
+.tab-btn.active{ color:var(--amber); border-bottom-color:var(--amber); }
+
+.tab-panel{ display:none; }
+.tab-panel.active{ display:block; animation:fadein 0.2s ease; }
+@keyframes fadein{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
+
+.card-box{
+  background:var(--surface-2); border:1px solid var(--line-strong); border-radius:16px;
+  padding:22px 24px; margin-bottom:18px;
+}
+.card-box h3{
+  font-size:12px; text-transform:uppercase; letter-spacing:0.1em;
+  color:var(--brick); margin:0 0 12px; display:flex; align-items:center; gap:8px; font-weight:700;
+}
+.output-text{
+  white-space:pre-wrap; font-size:14px; line-height:1.85; color:var(--ink);
+  font-family:'Noto Sans SC', sans-serif;
+}
+.copy-btn{
+  background:var(--amber); color:#fff; border:none; border-radius:8px;
+  padding:9px 18px; font-size:12.5px; cursor:pointer; margin-top:14px;
+  font-family:'Noto Sans SC',sans-serif; font-weight:700;
+  box-shadow:0 4px 12px rgba(201,122,43,0.28);
+}
+.copy-btn.copied{ background:var(--teal); }
+
+table.cmp-table{ width:100%; border-collapse:collapse; font-size:13px; margin-top:6px; }
+table.cmp-table th{
+  background:var(--navy); color:#F4F1E8; padding:10px 12px; text-align:left; font-size:12px;
+}
+table.cmp-table td{ padding:10px 12px; border-bottom:1px solid var(--line-strong); color:var(--ink); }
+table.cmp-table tr:nth-child(even) td{ background:var(--surface-2); }
+table.cmp-table td.hl{ color:var(--brick); font-weight:700; }
+
+.empty-state{ text-align:center; padding:60px 20px; color:var(--ink-faint); }
+.empty-state .big{ font-size:15px; font-weight:700; color:var(--ink); margin-bottom:8px; }
+.empty-state .small{ font-size:12.5px; line-height:1.7; max-width:360px; margin:0 auto; }
+
+/* ---------- CARD PREVIEW (exportable, fixed palette regardless of theme) ---------- */
+.card-export-wrap{
+  display:flex; justify-content:center; padding:20px;
+  background:radial-gradient(circle at 20% -10%, #33445A 0%, #1E2A3A 55%, #131C27 100%);
+  border-radius:16px;
+}
+#studentCard{
+  width:100%; max-width:420px;
+  background:#F4F1E8;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 24px 50px rgba(0,0,0,0.4);
+}
+.sc-header{
+  background:linear-gradient(160deg, #1E2A3A 0%, #33445A 100%);
+  padding:24px 22px; color:#F4F1E8;
+}
+.sc-brand-row{
+  display:flex; justify-content:space-between; align-items:center;
+  font-size:11px; letter-spacing:1.5px; text-transform:uppercase;
+  color:#C7CCD6; opacity:0.85; margin-bottom:18px;
+}
+.sc-student-row{ display:flex; align-items:center; gap:14px; }
+.sc-avatar{
+  width:52px; height:52px; border-radius:15px; flex-shrink:0;
+  background:linear-gradient(135deg, #C97A2B, #A6601F);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Fraunces', serif; font-weight:700; font-size:22px; color:#fff;
+}
+.sc-name{ font-size:20px; font-weight:700; }
+.sc-meta{ font-size:12.5px; color:#C7CCD6; margin-top:3px; }
+
+.sc-level-block{
+  margin:16px 0 0; background:rgba(255,255,255,0.08); border-radius:14px;
+  padding:14px 16px; display:flex; align-items:center; gap:14px;
+  border:1px solid rgba(201,122,43,0.35);
+}
+.sc-ring{ width:56px; height:56px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+.sc-ring-inner{
+  width:44px; height:44px; border-radius:50%; background:#33445A;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; color:#F4F1E8;
+}
+.sc-ring-inner .pct{ font-size:13px; font-weight:600; line-height:1; }
+.sc-ring-inner .lv{ font-size:8px; opacity:0.7; margin-top:2px; }
+.sc-level-text .big{ font-family:'Fraunces', serif; font-size:15px; font-weight:600; color:#F4F1E8; }
+.sc-level-text .small{ font-size:11.5px; color:#C7CCD6; margin-top:2px; }
+
+.sc-body{ padding:22px; }
+.sc-section-title{
+  font-size:12px; font-weight:700; color:#1E2A3A;
+  display:flex; align-items:center; gap:6px; margin-bottom:10px;
+  text-transform:uppercase; letter-spacing:0.08em; opacity:0.9;
+}
+.sc-dot{ width:6px; height:6px; border-radius:50%; background:#A24A3D; flex-shrink:0; }
+
+.sc-highlight{
+  background:#fff; border:1px solid #E3E1D8; border-left:4px solid #2E6B62;
+  border-radius:12px; padding:13px 15px; font-size:13px; line-height:1.65; color:#2A2E22;
+  margin-bottom:18px;
+}
+.sc-highlight b{ color:#1E2A3A; }
+
+.sc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:18px; }
+.sc-item{ background:#fff; border-radius:12px; padding:11px 12px; border:1px solid #E3E1D8; }
+.sc-item .tag{
+  font-family:'Fraunces', serif; font-size:10.5px; font-weight:600; color:#4D4A3C;
+  background:#F1EEE6; display:inline-block; padding:2px 8px; border-radius:6px; margin-bottom:5px;
+}
+.sc-item .desc{ font-size:11.5px; color:#4A4636; line-height:1.5; }
+
+.sc-progress{
+  background:linear-gradient(135deg,#fff, #FDFBF5); border:1px solid #E3E1D8;
+  border-radius:14px; padding:15px 16px; margin-bottom:18px;
+}
+.sc-progress-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:9px; }
+.sc-progress-top .label{ font-size:12.5px; font-weight:700; color:#1E2A3A; }
+.sc-progress-top .value{ font-family:'Fraunces', serif; font-size:12.5px; color:#A24A3D; font-weight:600; }
+.sc-bar-track{ width:100%; height:9px; background:#EDE4CF; border-radius:6px; overflow:hidden; }
+.sc-bar-fill{ height:100%; background:linear-gradient(90deg, #2E6B62, #4FA396); border-radius:6px; }
+.sc-progress-note{ font-size:11px; color:#8A8262; margin-top:8px; line-height:1.55; }
+
+.sc-cta{ background:#1E2A3A; border-radius:14px; padding:15px 16px; color:#F4F1E8; display:flex; align-items:center; gap:11px; }
+.sc-cta .icon{ width:32px; height:32px; border-radius:9px; flex-shrink:0; background:#C97A2B; display:flex; align-items:center; justify-content:center; font-size:15px; }
+.sc-cta .txt{ font-size:11.5px; line-height:1.55; color:#C7CCD6; }
+.sc-cta .txt b{ color:#D9A66B; }
+
+.sc-footer{ text-align:center; font-size:10px; color:#B7AE93; padding:14px 22px 20px; }
+
+.export-actions{ display:flex; gap:10px; margin-top:16px; }
+.export-actions button{
+  flex:1; border:none; border-radius:10px; padding:12px; font-size:13px; font-weight:700;
+  cursor:pointer; font-family:'Noto Sans SC',sans-serif;
+}
+.btn-primary{ background:#1E2A3A; color:#F4F1E8; }
+.btn-secondary{ background:#fff; color:#1E2A3A; border:1px solid #E3E1D8 !important; }
+
+.foot-note{ font-size:11px; color:var(--ink-faint); text-align:center; margin-top:10px; }
+
+.dev-credit{
+  position:fixed; top:20px; right:20px; z-index:999;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px; letter-spacing:0.04em; color:var(--amber);
+  background:var(--surface);
+  backdrop-filter:blur(14px);
+  padding:6px 14px;
+  border-radius:20px;
+  border:1px solid var(--line-strong);
+}
+.dev-credit b{ color:var(--ink); font-weight:600; }
+@media (max-width:900px){ .dev-credit{ position:static; display:inline-block; margin:10px 0 0 24px; } }
+</style>
+
+</head>
+<body>
+<div id="gatedContent" style="display:none">
+
+
+<div class="dev-credit">Developer：<b>Rachel Hu</b>（Shumin）</div>
+
+<div class="app">
+
+  <!-- LEFT: INPUT PANEL -->
+  <div class="panel">
+    <div class="brand">
+      <div class="logo">L</div>
+      <div>
+        <div class="t1">学管师服务工作台</div>
+        <div class="t2">续费 · 加课 · 转介绍 · 学情卡片</div>
+      </div>
+    </div>
+    <div class="panel-sub">填写学员信息 → 自动匹配自研 / Reach Higher / Power Up 官方课程大纲数据 → 一键生成四份物料。数据仅来自教研组提供的课程大纲文件，如有更新请联系教研组同步。</div>
+
+    <div class="field">
+      <label>学员姓名 / 昵称</label>
+      <input type="text" id="f_name" placeholder="如：Leo">
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label>年龄</label>
+        <input type="number" id="f_age" placeholder="8" min="2" max="18">
+      </div>
+      <div class="field">
+        <label>所在城市</label>
+        <input type="text" id="f_city" placeholder="广州">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>使用教材</label>
+      <select id="f_curriculum" onchange="onCurriculumChange()">
+        <option value="ziyan">自研课程（ESL自研 L0-L8）</option>
+        <option value="rh">Reach Higher（国家地理原版）</option>
+        <option value="pu">Power Up（牛津原版）</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>当前级别</label>
+      <select id="f_level" onchange="renderLevelPreview()"></select>
+      <div class="level-badge-preview" id="levelPreview">选择级别后，这里会显示官方大纲对该级别的能力描述</div>
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label>当前频率（次/周）</label>
+        <input type="number" id="f_freq" value="1" min="1" max="7">
+      </div>
+      <div class="field">
+        <label>建议调整为（次/周）</label>
+        <input type="number" id="f_freqNew" value="2" min="1" max="7">
+      </div>
+    </div>
+
+    <div class="row2">
+      <div class="field">
+        <label>已上课时</label>
+        <input type="number" id="f_used" placeholder="35" min="0">
+      </div>
+      <div class="field">
+        <label>本级别总课时</label>
+        <input type="number" id="f_total" value="60" min="1">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>近期课堂表现亮点</label>
+      <textarea id="f_highlight" placeholder="如：外教反馈孩子现在敢主动开口对话了，能用完整句子提问"></textarea>
+    </div>
+
+    <div class="field">
+      <label>家长顾虑 / 意向（选填）</label>
+      <textarea id="f_concern" placeholder="如：想等孩子学得差不多再续费"></textarea>
+    </div>
+
+    <div class="field">
+      <label>本地校内对标信息（选填）</label>
+      <textarea id="f_local" placeholder="如：广州公立小学三年级起点，词汇要求以基础认读为主 —— 留空则使用通用表述"></textarea>
+    </div>
+
+    <button class="generate-btn" onclick="generateAll()">✨ 一键生成四份物料</button>
+    <button class="demo-btn" onclick="loadDemo()">载入示例学员（Leo）</button>
+  </div>
+
+  <!-- RIGHT: OUTPUT PANEL -->
+  <div class="content">
+    <div class="content-header">
+      <h1 id="outputTitle">学员服务物料</h1>
+      <p id="outputSub">填写左侧信息并点击"一键生成"，四份物料会出现在这里</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="renewal" onclick="switchTab('renewal')">🎯 续费话术</button>
+      <button class="tab-btn" data-tab="freq" onclick="switchTab('freq')">🚀 加课频对比</button>
+      <button class="tab-btn" data-tab="referral" onclick="switchTab('referral')">🎁 转介绍文案</button>
+      <button class="tab-btn" data-tab="card" onclick="switchTab('card')">📊 可视化卡片</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-renewal">
+      <div class="empty-state" id="empty-renewal">
+        <div class="big">还没有生成内容</div>
+        <div class="small">左侧填写学员信息后点击"一键生成四份物料"，这里会出现基于官方课程大纲自动生成的续费沟通话术。</div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-freq"></div>
+    <div class="tab-panel" id="tab-referral"></div>
+    <div class="tab-panel" id="tab-card"></div>
+
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   课程数据库
+   来源说明：
+   - ziyan（自研 L0-L8）数据严格来自《ESL自研各级别各阶段进阶说明240416.xlsx》
+     与《自研课程各级别一句话总结250423.xlsx》两份教研组文件，不与其他教材混用。
+   - rh（Reach Higher）数据来自各 Level 官方课程大纲 PDF + 《Reach Higher讲解话术》
+     中的 CEFR / 剑桥 / 蓝思 对照表。
+   - pu（Power Up）数据来自官方课程大纲 PDF，因未提供完整的 CEFR/剑桥对照表，
+     标注为"通用参考"，不做精确考级对标。
+   ========================================================= */
+
+const DATA = {
+
+ziyan: {
+  0: { age:"4-6岁", vocab:"120+", topics:"身体部位、家庭成员、颜色和动物、心情（认识自我主题）",
+    listening:"能够在语速非常慢、发音清晰、有动作/图片支持下，听懂课堂指令和基本提问，如打招呼、年龄、姓名、家庭成员等",
+    speaking:"能够见图读词；能够根据老师提问用单词或短语回答，如打招呼、回答年龄颜色、介绍家人",
+    reading:"能够识别首字母发音，结合图片认读单词；尝试认读30个单词以内的绘本故事",
+    writing:"可以按照正确的笔顺描写26个字母，能够描写单词",
+    grammar:"句型以短语和简单句为主，如打招呼、回答姓名年龄、基本指令（祈使句）；时态：一般现在时",
+    phonics:"能够认读并熟记26个字母的字母名和字母音，识别32个单词的首字母音；能够进行解码阅读，单句1-6词，全文<30词",
+    clil:"/", value:"学会勇敢、乐于助人、结交朋友",
+    oneLiner:"英语启蒙为主，听说能听懂课堂指令、日常会说hello、\"how are you\"并能简单运用10以内的数字表达。读写能掌握26个字母的大小写，积累am/is/are之类的常见词。",
+    example:"U1学习 hello, I'm a boy/girl；U4学习 Open/Close your book；U8学习 The dog can run/the fish can swim。读写：学完26个字母大小写；学习like/have等高频词理解和书写。" },
+  1: { age:"5-7岁", vocab:"320+", topics:"数字、玩具、教室物品、食物、爱好、家具、衣服",
+    listening:"能够在语速非常慢的情况下，听懂老师的基本提问和课堂指令，如喜好、这是什么、最喜欢什么动物等",
+    speaking:"能够在老师引导下，用完整的句子回答老师的提问，如姓名、年龄、爱好、这是什么动物等",
+    reading:"能够阅读60个单词以内的故事和非故事类文章；能跟读课文并回答基本的What类问题；初步接触比较、分类、因果3种阅读技巧",
+    writing:"开始学习英文书写的基本规范，如首字母大小写、标点、词距等",
+    grammar:"掌握基本语法知识，如名词单复数、形容词等；句型以简单句为主（祈使句、There be句型、主谓结构陈述/疑问句）；时态：一般现在时",
+    phonics:"能够认读、解码和拼读带有短元音a、e、i、o的CVC单词；能够认读高频词并结合情景应用；解码阅读单句1-6词，全文<48词",
+    clil:"动物的伪装、不同的人种、学校规则、不同类型的建筑、足球运动、健康的饮食习惯", value:"学会道歉、学会寻求帮助、不插队",
+    oneLiner:"强调日常听说，能表达喜好和描述穿着等日常交流，能融入简单的时态表达。阅读能理解故事情节和价值观，写作能写出完整句子。",
+    example:"U1学习 How old are you? I am…；U4学习 The lizard is in/on/under the bag；U8学习 Is she wearing brown shoes? Yes/No, she is/isn't。" },
+  2: { age:"6-8岁", vocab:"520+", topics:"身体部位、动作、休闲生活、野生动物、水果、交通工具",
+    listening:"能够在语速较慢、发音清晰情况下，听懂简单的日常问题和日常指令，如方向位置、房间物品、交通工具、时间安排等；能懂故事5-10词/句，全文<100词",
+    speaking:"能够用2-3个完整的句子回答老师提问，用3-4句话介绍自己；能够尝试用一般疑问句和特殊疑问句提问，表达喜好、谈论能力、时间、建筑位置等",
+    reading:"能够阅读100个单词以内的故事和非故事类文章；能朗读课文回答基本的what/who类问题；初步接触比较、分类、因果、比较和对比、主旨和细节5种阅读技巧",
+    writing:"能够掌握英文基本的书写规范，如词性（形容词、名词、动词）及不同词性在句子中的正确使用",
+    grammar:"掌握名词单复数、第三人称单数、be动词缩写等；句型以简单句为主（祈使句、There be句型、肯定/否定/疑问句）；时态：一般现在时",
+    phonics:"能够认读、解码和拼读带有短元音u的CVC单词和长元音a、i的CVCe结构单词；能结合情景应用高频词；解码阅读单句1-8词，全文<64词",
+    clil:"不同动物的栖息地、动物和人的骨骼、不同的地理位置、世界上不同的国家", value:"学会坚持、每个人独一无二、拒绝作弊",
+    oneLiner:"夯实日常听说，涉及方位、时间等表达；阅读涉及基础问答，写作要求内容更丰富、能添加具体的描述，比如车是什么颜色，人们在干什么等。",
+    example:"U2学习 There's a bookcase / There are some chairs；U5学习 What time is it?；U8学习 The library is between the school and the store。写作：This is my bus, it's blue and red. It's very big.（细节扩充）" },
+  3: { age:"7-9岁", vocab:"760+", topics:"面部特征、情绪、运动、天气、学科、海洋动物",
+    listening:"能够在语速较慢的情况下，听懂日常生活类话题，比如天气、交通、衣服、休闲计划等；懂故事8-12词/句，全文<120词",
+    speaking:"能够用完整的句子和同伴就日常生活话题进行3-4轮次的互动交流；能提问并表达建议、请求、询问原因或给出理由；能使用形容词进行句子扩展",
+    reading:"能够阅读120个单词以内的故事和非故事类文章；能流利朗读课文回答4W（what/who/when/where）类问题；初步理解8种阅读技巧和策略",
+    writing:"可以写出2-3个完整的句子；能够使用简单的语法结构",
+    grammar:"掌握名词、名词所有格、情态动词等；句型以what/when/which/why/who/how等特殊疑问句为主；时态：一般现在时",
+    phonics:"能够认读、解码和拼读带有长元音o和u的CVCe结构单词，以及复合元音字母组合单词；解码阅读单句1-8词，全文<64词",
+    clil:"认知自己的情绪、棒球运动、不同的材料和材质、不同的俱乐部", value:"同理心、关心照顾动物、创造性克服困难",
+    oneLiner:"听说主题拓展，从个人到自然科学，强调逻辑性如因果关系。阅读主题相比前一级更广泛，涉及比较、分类等技巧；写作要求能基于话题写1-2句话，并能使用简单的语法结构如一般过去时。",
+    example:"U4学习 Why do you like math class best? I like math class because I'm good at it；U8学习 Look at these/those sharks. What are they doing? They are swimming. What do sharks eat? Sharks eat seals and penguins。" },
+  4: { age:"8-10岁", vocab:"1000+", topics:"点餐、日期、家务、购物、就医、假期",
+    listening:"能够在适当放慢语速的情况下，听懂日常生活类话题，如点餐、家务、就医、假期等；懂故事9-13词/句，全文<130词",
+    speaking:"能够用完整的句子就日常生活话题进行4-5轮的互动交流，包括个人和家庭信息、购物、假期安排等；能使用并列复合句、因果关系等较丰富句型；能在引导下尝试使用不同时态",
+    reading:"能够阅读130个单词以内的故事和非故事类文章；能流利朗读回答5W类问题；能使用8种阅读技巧策略分析归纳总结文章信息",
+    writing:"能够就话题写出一个3-5句话的段落；能够尝试使用描述性语言书写句子",
+    grammar:"掌握量词、专有名词、形容词、频率副词、方位介词、比较级等；句型以并列句和从句为主（but/and/so、because引导的原因状语从句）；时态：be going to表将来、过去时",
+    phonics:"/",
+    clil:"公共场所的规则、世界著名景点、火灾逃生指南、制造不同的声音", value:"尊重个体独特性、关爱动物、责任与义务",
+    oneLiner:"听说主题更广泛，从食物的味道到旅行计划，涉及因果关系、转折词、比较级等较复杂的表达；阅读主题从生日邀请到度假饮食，要求抓住细节理解因果关系；写作能围绕主题展开细节描写，完整性更高。",
+    example:"U1学习 I want a piece of cheese on my salad；U2学习 When is your birthday party? It's on November 4th；U4学习 I think whales are the heaviest animals；U8一般过去式表达假期经历：What did you do on your vacation? We visited the United States, but we didn't go to China。" },
+  5: { age:"9-11岁", vocab:"1500+", topics:"外太空、户外活动、乐器和音乐会、餐厅点餐、旅行冒险",
+    listening:"能够在适当放慢语速的情况下，听懂日常生活的基本对话；懂故事10-15词/句，全文<150词",
+    speaking:"能够陈述意见并给出行动理由；理解和讲故事；总结简短对话；说服某人做某事，谈论因果关系；能通过从句或连词让表达更丰富更有逻辑；提高流利度和准确度，注意时态切换",
+    reading:"能够复述课文回答5W+1H类问题；除故事文体外能阅读采访、紧急电话、博物馆规章等不同文体；理解并运用16个阅读技巧和策略",
+    writing:"能够就常见话题写出一段4-6句话的段落；能够使用相对复杂的语法结构",
+    grammar:"掌握动词不定式、连词、could/would提出请求等；句型以并列句和从句为主（but/because/so/when）；时态：一般过去时、现在完成时",
+    phonics:"/",
+    clil:"公共场所规则、世界著名景点、火灾逃生指南、制造不同的声音；讨论科学试验、极限运动、出行指南、动物味觉、极地特征", value:"保持好奇心、学会自我保护、团队合作",
+    oneLiner:"听说主题从历史到太空，范围更广，并要求能用例如\"how+形容词/量词\"这样的特定句型进行表达；阅读侧重理解作者意图和文本结构，理解深度提高；写作要求有逻辑性并能表达不同观点。",
+    example:"U1学习使用介词和动词不定式讨论皇室成员如何以及为何使用某些物品；U3学习使用一般过去时和过去进行时；U8学习使用\"how+形容词/量词\"询问时间、尺寸、大小等信息。" },
+  6: { age:"10-12岁", vocab:"2000+", topics:"团体运动、工作和职责、抵抗气候变化",
+    listening:"能够在语速比较正常的情况下，听懂日常生活中的大部分主题谈话，如学校、动物、社区活动、环境等；旅行时能听懂日常对话，文本12-20词/句，全文<200词",
+    speaking:"可以对熟悉而日常的事物完成简单直接的交流，能结合自己经验给出观点及1-2句理由；能使用较高级词汇及语言结构（如从句扩充）；提高表达流利度和准确度，有意识使用正确语法结构和时态",
+    reading:"能够阅读主题广泛、文体多样的文章，如人物传记、科学报告、杂志、博客、通知、日记、明信片等；理解并运用16个阅读技巧和策略",
+    writing:"能够自选主题，独立写出几个意义连贯、表意清楚的语句和段落；能使用较丰富的词汇和相对复杂的语法结构",
+    grammar:"扩展学习可数/不可数名词、代词和物主代词、副词、介词短语、名词复数、名词前缀、反义词近义词、be/have变形；句型：主谓一致、一般现在/过去/将来时、命令句、复合句",
+    phonics:"/",
+    clil:"讨论团体运动、工作和职责、抵抗气候变化等话题", value:"保持好奇心、心态调整、应变能力、团队精神，并尝试给出批判性看法",
+    oneLiner:"听说主题从职业规划到世界探索，积累更多主题词汇，能用复杂句型（比较级、最高级）表达，强调准确性与流畅性；阅读涉及图表理解并能找出论据；写作涉及议论文，注重说服力；阅写互相促进。",
+    example:"U1用\"动名词\"和\"不定式\"表达职业愿望；U4使用\"should\"给旅行建议，用\"Could I...\"和\"Do you mind if I...\"表达礼貌请求；U8用比较级/最高级描述大洲，用\"such…that\"和\"so...that\"谈论风景。" },
+  7: { age:"11-13岁", vocab:"2500+", topics:"学校设施、船舱结构、海盗寻宝、未来发明、古埃及人和金字塔、太空旅行",
+    listening:"对工作、学校和休闲生活中经常碰到的熟悉话题或事件，能理解其清晰而标准的表述",
+    speaking:"能够描述经历和事件、希望、梦想和抱负，并简要说明观点和计划的理由；注重表达流利度、逻辑性、准确性和完整度，如使用定语从句、时间介词和顺序连词有逻辑地叙述细节；能用不同时态熟练讨论过去现在将来",
+    reading:"能够阅读主题广泛、文体多样的文章，涉及地图等更丰富的体裁如日记、新闻；能对信息作出准确判断",
+    writing:"能够写出一个逻辑完整的故事或一篇关于日常话题的简单说明文；能准确地使用丰富词汇和复杂语法结构",
+    grammar:"掌握情态动词、被动语态、条件状语从句、动词不定式、动名词等；句型以从句为主（If引导的条件状语从句、so…that结果状语从句）；时态：一般现在时、现在完成时",
+    phonics:"/",
+    clil:"学校设施、船舱结构、海盗寻宝、未来发明、古埃及人和金字塔、太空旅行", value:"提升主动性、适应能力、自律意识，并尝试给出批判性看法",
+    oneLiner:"听说在之前基础上说出复合句型，能把不同时态和语态结合；阅读涉及地图等更丰富的体裁如日记、新闻，要求对信息作出准确判断；写作方面会加深语法的运用，强调信息组织和逻辑性。",
+    example:"U2使用从句、现在进行时讨论船上的生活；U4用不可数名词谈论气候变化；U7用used to和going to句型谈论北极。" },
+  8: { age:"12-14岁", vocab:"3000+", topics:"人物个性、网络生活、法律、规章制度、太空探索、文化习俗",
+    listening:"对工作、学校和休闲生活中经常碰到的熟悉话题或事件，能理解其清晰而标准的表述；能讨论不同学科领域的话题，基于话题进行来有回的深度讨论",
+    speaking:"能够就抽象话题给出自己的观点，并用2-3个细节支撑观点；能以相对准确的语法进行表达，仍会出现错误",
+    reading:"能够自主阅读4大文体文章，但以记叙文和说明文为主，如人物传记、科学评论、新闻、诗歌、影评、信件等；使用20个阅读技巧和策略深度阅读",
+    writing:"能够书写一篇100字左右的完整文章；开始接触4大类文体写作，以记叙文、说明文为主",
+    grammar:"系统学习被动语态、虚拟语气、直接引语间接引语、反义疑问句等；句型以从句为主（条件状语从句、宾语从句、时间状语从句）；时态：现在完成时、过去完成时",
+    phonics:"/",
+    clil:"人物个性、网络生活、规章制度、太空探索、文化习俗", value:"责任与意识、真理探索、尊重文化差异、关爱环境，并尝试给出批判性看法",
+    oneLiner:"听说学习主题逐步渗透中外文化、世界观等主题，并要求孩子结合语法、时态、特定句型进行表达；阅读体裁更丰富，从议论文说明文到新闻博客；写作涉猎不同体裁，从新闻案件戏剧脚本到提倡书诗歌。同时系统学习从句、倒装句、虚拟语气等语法规则及词根词缀。",
+    example:"U1使用含\"ever\"和\"never\"的现在完成时以及\"because\"和\"because of\"描述对某人的钦佩及原因；U7使用if引导的虚拟语气讨论探索宇宙太空的条件和风险；U8使用虚拟语气表达允许和遗憾。" }
+},
+
+rh: {
+  "L1": { age:"美国幼儿园阶段 · 中国幼儿园-小学低年级", cambridge:"YLE Starters 一级", lexile:"—", cefr:"启蒙阶段",
+    vocab:"200-300", patterns:"27个核心句式", topics:"自我、家庭、学校（3个单元）",
+    goal:"巩固知识根基，夯实听说基础，培养孩子英语学习自信心。孩子将逐步学会简单课堂指令，建立字母与发音对应关系，掌握高频词、主题词汇（身体部位、地点、数字、衣物、天气、食物、宠物、玩具、学具、运动、零食等）以及核心句型。" },
+  "L2": { age:"美国幼儿园中班 · 中国小学四五年级", cambridge:"YLE Movers 二级", lexile:"150L-300L", cefr:"A1",
+    vocab:"400-500", patterns:"30个句式结构", topics:"农场、植物、季节（日常科学话题，3个单元）",
+    goal:"培养思维能力，输出完整句式，养成孩子良好学习习惯。孩子将阅读理解20+篇主题故事，逐步从单词句型掌握过渡到用完整句子回答问题，同时学习字母及单词书写规范，掌握CVC结构自然拼读。" },
+  "L3": { age:"美国幼儿园大班 · 中国小学五六年级", cambridge:"YLE Movers 二级", lexile:"150L-300L", cefr:"A1",
+    vocab:"600-800", patterns:"27个句式结构", topics:"社区、工作、天体（日常科普领域，3个单元）",
+    goal:"提高表达能力，拓展知识领域，建立贴切实际生活的认知。着重锻炼英语表达能力，学习使用问句对事物进行细节描述，开始学习辅音、元音及元音组合，从单词书写过渡到完整句子的规范书写。" },
+  "G1(L4)": { age:"美国小学一年级 · 中国初一二", cambridge:"YLE Flyers 三级 / MSE-KET", lexile:"300L-730L", cefr:"A2",
+    vocab:"200基础阅读词 + 200-232话题词", patterns:"24个句型", topics:"自然科学与社会科学：人文历史、地理、宇宙等",
+    goal:"开启自由讨论，训练完整写作，帮助孩子灵活运用阅读技巧和阅读策略。通过40+篇深度阅读文章，系统运用思维工具与阅读策略，学会分析观点、参与互动讨论，开始接触正式文体写作（图片文章、感谢信、故事、报道、信件、文学评论等）。" },
+  "G2(L5)": { age:"美国小学二年级 · 中国初二三", cambridge:"MSE-KET / PET", lexile:"350L-690L", cefr:"A2",
+    vocab:"300-350基础词 + 74-87学术词", patterns:"25个句型", topics:"综合学科能力，阅读精读策略",
+    goal:"聚焦独立自主阅读能力，读懂不同文体篇章。词汇学习上解码更多学科领域词汇，语法上扩展学习可数/不可数名词、代词、副词等，学习正式文体的完整写作（个人叙述、总结、科学文章、论说文等8种文体）。" },
+  "G3(L6)": { age:"美国小学三年级 · 中国高一二", cambridge:"MSE-PET", lexile:"470L-820L", cefr:"B1",
+    vocab:"87-95学术词", patterns:"24-30个句型", topics:"社会科学（移民文化融合、政府职能、经济循环）与自然科学（生态系统、地质形态、能源）",
+    goal:"独立自主阅读，强化写作技巧，注重批判性思维和创新能力培养。学习进行观点性段落写作（带支撑论据）、研究性写作入门，学习因果逻辑表达，通过对比性阅读深化理解。" },
+  "G4(L7)": { age:"美国小学四年级 · 中国高二三", cambridge:"MSE-PET", lexile:"510L-1010L", cefr:"B1",
+    vocab:"深层学术词汇，多元词汇运用", patterns:"复合句型、四种句型综合运用", topics:"地貌地理、自然科学、未来探索、不同国家文化传统等",
+    goal:"拓展认知视野，双向提升思维和技能，系统提高学术综合能力。阅读涵盖30+篇跨学科话题文章（科普、社会研究、小说、诗歌、戏剧、游记等），注重提升写作逻辑和地道表达能力，全方位提升学科综合能力。" }
+},
+
+pu: {
+  "Level 1": { note:"Power Up 为牛津大学出版社原版分级教材，采用跨学科（Cross-curricular）+ 文化（Culture）+ 文学（Literature）+ 语法（Grammar）四模块结构。Level 1 聚焦基础语法功能与生活化话题，适合有一定自然拼读基础、需要拓展语法体系和阅读量的学员。",
+    topics:"日常生活场景、基础语法功能句型（现在时、方位、简单描述等）" },
+  "Level 2": { note:"在 Level 1 基础上拓展跨学科话题广度（如地图与符号、职业、自然现象等），语法覆盖情态动词（should/shouldn't）、be good at 句型等，文化板块引入真实世界地理人文内容，适合语言基础较稳固、希望提升知识面和语法系统性的学员。",
+    topics:"地图与方位、职业与爱好、跨学科话题（自然、地理）" },
+  "Level 3": { note:"话题进一步深化（如远足指南、地貌方位、灾难应对、体操与运动员传记等），词汇密度和篇章长度提升，语法与阅读要求更贴近高年级学员的应试与拓展阅读需求。",
+    topics:"方位与指南针、地形地貌、人物传记、灾难与应对策略" }
+}
+};
+
+const CURRICULUM_LABEL = { ziyan:"自研课程", rh:"Reach Higher", pu:"Power Up" };
+
+/* ============================================================
+   UI 逻辑
+   ============================================================ */
+
+function onCurriculumChange(){
+  const cur = document.getElementById('f_curriculum').value;
+  const levelSelect = document.getElementById('f_level');
+  levelSelect.innerHTML = '';
+  const keys = Object.keys(DATA[cur]);
+  keys.forEach(k=>{
+    const opt = document.createElement('option');
+    opt.value = k;
+    opt.textContent = cur === 'ziyan' ? ('Level ' + k) : k;
+    levelSelect.appendChild(opt);
+  });
+  renderLevelPreview();
+}
+
+function renderLevelPreview(){
+  const cur = document.getElementById('f_curriculum').value;
+  const lvl = document.getElementById('f_level').value;
+  const d = DATA[cur][lvl];
+  const box = document.getElementById('levelPreview');
+  if(!d){ box.innerHTML = '暂无数据'; return; }
+  if(cur === 'ziyan'){
+    box.innerHTML = `<b>适龄参考：</b>${d.age}　<b>累计词汇量：</b>${d.vocab}<br><b>本级话题：</b>${d.topics}`;
+  } else if(cur === 'rh'){
+    box.innerHTML = `<b>对标：</b>${d.cambridge} · CEFR ${d.cefr}${d.lexile!=='—' ? ' · 蓝思 '+d.lexile : ''}<br><b>词汇量：</b>${d.vocab}　<b>句型：</b>${d.patterns}`;
+  } else {
+    box.innerHTML = `<b>话题：</b>${d.topics}<br><span style="opacity:0.8">${d.note.slice(0,40)}...</span>`;
+  }
+}
+
+function switchTab(name){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===name));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+}
+
+function copyText(id, btn){
+  const el = document.getElementById(id);
+  const text = el.innerText || el.textContent;
+  navigator.clipboard.writeText(text).then(()=>{
+    const original = btn.textContent;
+    btn.textContent = '✓ 已复制';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent = original; btn.classList.remove('copied'); }, 1600);
+  });
+}
+
+function loadDemo(){
+  document.getElementById('f_name').value = 'Leo';
+  document.getElementById('f_age').value = 8;
+  document.getElementById('f_city').value = '广州';
+  document.getElementById('f_curriculum').value = 'ziyan';
+  onCurriculumChange();
+  document.getElementById('f_level').value = '2';
+  renderLevelPreview();
+  document.getElementById('f_freq').value = 1;
+  document.getElementById('f_freqNew').value = 2;
+  document.getElementById('f_used').value = 35;
+  document.getElementById('f_total').value = 60;
+  document.getElementById('f_highlight').value = '外教反馈孩子现在敢主动开口对话了，能用完整句子提问时间和位置';
+  document.getElementById('f_concern').value = '想等课上得差不多再续费，觉得一周1节挺好的';
+  document.getElementById('f_local').value = '';
+  generateAll();
+}
+
+/* ---------------- 生成逻辑 ---------------- */
+
+function generateAll(){
+  const name = document.getElementById('f_name').value.trim() || '学员';
+  const age = document.getElementById('f_age').value || '—';
+  const city = document.getElementById('f_city').value.trim();
+  const cur = document.getElementById('f_curriculum').value;
+  const lvl = document.getElementById('f_level').value;
+  const d = DATA[cur][lvl];
+  const freq = parseInt(document.getElementById('f_freq').value) || 1;
+  const freqNew = parseInt(document.getElementById('f_freqNew').value) || 2;
+  const used = parseInt(document.getElementById('f_used').value) || 0;
+  const total = parseInt(document.getElementById('f_total').value) || 60;
+  const remaining = Math.max(total - used, 0);
+  const highlight = document.getElementById('f_highlight').value.trim() || '孩子近期在课堂上表现出明显进步';
+  const concern = document.getElementById('f_concern').value.trim();
+  const local = document.getElementById('f_local').value.trim();
+
+  const weeksOld = freq>0 ? Math.ceil(remaining/freq) : 0;
+  const weeksNew = freqNew>0 ? Math.ceil(remaining/freqNew) : 0;
+  const monthsOld = (weeksOld/4.33).toFixed(1);
+  const monthsNew = (weeksNew/4.33).toFixed(1);
+
+  const levelLabel = cur==='ziyan' ? ('Level '+lvl) : lvl;
+  const curLabel = CURRICULUM_LABEL[cur];
+
+  document.getElementById('outputTitle').textContent = `${name} 的服务物料 · ${curLabel} ${levelLabel}`;
+  document.getElementById('outputSub').textContent = `已根据官方课程大纲数据生成，剩余课时 ${remaining} 节 · 当前频率 ${freq} 次/周`;
+
+  renderRenewal({name,age,city,cur,lvl,d,remaining,used,total,weeksOld,monthsOld,highlight,concern,levelLabel,curLabel});
+  renderFreq({name,remaining,freq,freqNew,weeksOld,weeksNew,monthsOld,monthsNew,levelLabel});
+  renderReferral({name,age,city,highlight,curLabel,levelLabel,cur,d});
+  renderCard({name,age,city,cur,lvl,d,remaining,used,total,freq,highlight,levelLabel,curLabel});
+}
+
+function renderRenewal(ctx){
+  const {name,city,cur,d,remaining,used,total,weeksOld,monthsOld,highlight,concern,levelLabel,curLabel} = ctx;
+
+  let benchmark = '';
+  const localText = document.getElementById('f_local').value.trim();
+
+  if(cur === 'rh'){
+    benchmark = `参考对标：${d.cambridge}，CEFR ${d.cefr}${d.lexile!=='—' ? '，蓝思 '+d.lexile : ''}。这是国际公认的英语能力标尺，家长可以直观感受到孩子的真实水平。`;
+  } else if(cur === 'ziyan'){
+    benchmark = localText
+      ? `本地对标：${localText}`
+      : `公立学校英语通常从三年级左右才系统教学，课标基础阶段词汇句型要求相对基础；${name}目前累计词汇量已达${d.vocab}，且是"四会"要求（听说读写都要会），并非纸面认读。（不同学校、教材版本存在差异，仅供参考）`;
+  } else {
+    benchmark = d.note;
+  }
+
+  const concernLine = concern
+    ? `我理解您提到"${concern}"这个想法，续费的事完全不着急，等您感受更明显了我们再聊。`
+    : `续费这件事不着急，我们可以先聊聊孩子的进步，您感受一下节奏。`;
+
+  const text =
+`${name}妈妈/爸爸，您好呀～
+
+想跟您同步一下${name}最近的进步：${highlight}。这个变化特别值得关注——正是${curLabel} ${levelLabel}阶段的关键能力跨越。
+
+【本阶段能力小结】
+${d.oneLiner || d.goal || d.note}
+
+【剩余课时提醒】
+${name}目前${curLabel} ${levelLabel}已上${used}节，还剩${remaining}节课。按当前节奏计算，大约还需要${weeksOld}周（约${monthsOld}个月）才能读完本级别。建议提前规划好后续排课和续费节点，避免临近用完时排不到心仪外教、或衔接出现空档。
+
+【能力对标，让您更有感知】
+${benchmark}
+
+${concernLine}我这边会持续帮您留意课时进度，有任何问题随时找我～`;
+
+  document.getElementById('tab-renewal').innerHTML = `
+    <div class="card-box">
+      <h3>🎯 续费沟通话术（可直接复制发送微信）</h3>
+      <div class="output-text" id="renewalText">${escapeHtml(text)}</div>
+      <button class="copy-btn" onclick="copyText('renewalText', this)">复制话术</button>
+    </div>`;
+}
+
+function renderFreq(ctx){
+  const {name,remaining,freq,freqNew,weeksOld,weeksNew,monthsOld,monthsNew,levelLabel} = ctx;
+
+  const text =
+`${name}妈妈/爸爸，跟您商量一件事～
+
+${name}现在${levelLabel}还剩${remaining}节课，按现在一周${freq}节的节奏，大概需要${weeksOld}周（约${monthsOld}个月）才能学完。
+
+语言学习有个特点：巩固的速度往往跟不上遗忘的速度。一周只开口一次，课程间隔拉得越长，孩子刚建立起来的语感和自信就越容易在等待中被消耗掉。
+
+如果调整成一周${freqNew}节：
+1️⃣ 巩固更牢：间隔缩短，刚学的内容还没忘就能马上复习巩固；
+2️⃣ 进度更稳：剩余${remaining}节课，大约${weeksNew}周（约${monthsNew}个月）就能读完，顺利衔接下一阶段，不会"学一半又要从头找感觉"；
+3️⃣ 性价比更高：同样的课时，只是把节奏抓紧了，对孩子反而是更省心的学习曲线。
+
+要不要这周先帮孩子加排1-2节课，感受一下节奏？合适的话我们再长期这样安排。`;
+
+  const tableHtml = `
+    <table class="cmp-table">
+      <tr><th>对比维度</th><th>一周${freq}节（现状）</th><th>一周${freqNew}节（建议）</th></tr>
+      <tr><td>剩余${remaining}节耗时</td><td>约${weeksOld}周（${monthsOld}个月）</td><td class="hl">约${weeksNew}周（${monthsNew}个月）</td></tr>
+      <tr><td>课程间隔</td><td>${Math.round(7/freq)}天左右</td><td class="hl">${Math.round(7/freqNew)}天左右</td></tr>
+      <tr><td>遗忘风险</td><td>较高（语感易断档）</td><td class="hl">较低（趁热打铁）</td></tr>
+      <tr><td>下一级别衔接</td><td>拖延，衔接生疏</td><td class="hl">连贯，无缝过渡</td></tr>
+    </table>`;
+
+  document.getElementById('tab-freq').innerHTML = `
+    <div class="card-box">
+      <h3>🚀 学习加速器对比表</h3>
+      ${tableHtml}
+    </div>
+    <div class="card-box">
+      <h3>加课频沟通话术（可直接复制发送微信）</h3>
+      <div class="output-text" id="freqText">${escapeHtml(text)}</div>
+      <button class="copy-btn" onclick="copyText('freqText', this)">复制话术</button>
+    </div>`;
+}
+
+function renderReferral(ctx){
+  const {name,age,city,highlight,curLabel,levelLabel} = ctx;
+
+  const moments = `孩子最近${highlight.length>26 ? highlight.slice(0,26)+'…' : highlight}`;
+
+  const momentsCopy =
+`✨ 记录一下${name}的小进步
+
+learning英语这件事，最打动我的不是背了多少单词，而是那个瞬间——${highlight}。
+
+${age!=='—' ? age+'岁' : ''}的孩子，能有这样的松弛感和自信，比任何分数都珍贵。
+
+一对一外教的好处就是：每一次开口，都有人真实地回应他。 🌱
+
+#成长记录 #英语启蒙 ${city ? '#'+city+'妈妈' : ''}`;
+
+  const inviteCopy =
+`${name}妈妈/爸爸，跟您说件事～
+
+最近看到${name}的进步真的挺替他开心的，${highlight}。
+
+我知道您身边可能也有朋友家孩子在英语启蒙这块比较焦虑，如果方便的话，要不要把${name}的学习经历分享给他们参考一下？如果朋友最终报名，您和朋友都会有老学员权益礼遇（具体活动内容我这边同步给您最新的），也算是把${name}的进步变成一份实实在在的福利～
+
+不勉强哈，就是想着好东西一起分享，您看方便的话随时找我聊～`;
+
+  document.getElementById('tab-referral').innerHTML = `
+    <div class="card-box">
+      <h3>🎁 家长朋友圈文案（不痕迹晒娃）</h3>
+      <div class="output-text" id="momentsText">${escapeHtml(momentsCopy)}</div>
+      <button class="copy-btn" onclick="copyText('momentsText', this)">复制文案</button>
+    </div>
+    <div class="card-box">
+      <h3>转介绍私聊邀请话术</h3>
+      <div class="output-text" id="inviteText">${escapeHtml(inviteCopy)}</div>
+      <button class="copy-btn" onclick="copyText('inviteText', this)">复制话术</button>
+    </div>`;
+}
+
+function renderCard(ctx){
+  const {name,age,city,cur,d,remaining,used,total,freq,highlight,levelLabel,curLabel} = ctx;
+  const pct = total>0 ? Math.round((used/total)*100) : 0;
+  const avatarLetter = (name && name[0]) ? name[0].toUpperCase() : '?';
+
+  let ring1 = pct*3.6;
+  let ability1='', ability2='', ability3='', ability4='';
+  if(cur === 'ziyan'){
+    ability1 = `<div class="sc-item"><div class="tag">Speaking 说</div><div class="desc">${(d.speaking||'').slice(0,34)}…</div></div>`;
+    ability2 = `<div class="sc-item"><div class="tag">Listening 听</div><div class="desc">${(d.listening||'').slice(0,34)}…</div></div>`;
+    ability3 = `<div class="sc-item"><div class="tag">Vocabulary 词</div><div class="desc">累计词汇量 <b>${d.vocab}</b>，${(d.topics||'').slice(0,16)}</div></div>`;
+    ability4 = `<div class="sc-item"><div class="tag">Reading 读</div><div class="desc">${(d.reading||'').slice(0,34)}…</div></div>`;
+  } else if(cur === 'rh'){
+    ability1 = `<div class="sc-item"><div class="tag">对标体系</div><div class="desc">${d.cambridge}</div></div>`;
+    ability2 = `<div class="sc-item"><div class="tag">CEFR</div><div class="desc">${d.cefr}${d.lexile!=='—' ? ' · 蓝思'+d.lexile : ''}</div></div>`;
+    ability3 = `<div class="sc-item"><div class="tag">Vocabulary 词</div><div class="desc">${d.vocab}</div></div>`;
+    ability4 = `<div class="sc-item"><div class="tag">Patterns 句型</div><div class="desc">${d.patterns}</div></div>`;
+  } else {
+    ability1 = `<div class="sc-item"><div class="tag">课程话题</div><div class="desc">${(d.topics||'').slice(0,34)}</div></div>`;
+    ability2 = `<div class="sc-item"><div class="tag">教材体系</div><div class="desc">牛津原版分级教材</div></div>`;
+    ability3 = `<div class="sc-item"><div class="tag">模块</div><div class="desc">跨学科+文化+文学+语法</div></div>`;
+    ability4 = `<div class="sc-item"><div class="tag">适用</div><div class="desc">拓展提升 / 应试衔接</div></div>`;
+  }
+
+  document.getElementById('tab-card').innerHTML = `
+    <div class="card-box">
+      <h3>📊 可视化学情卡片（可直接导出图片发送家长）</h3>
+      <div class="card-export-wrap">
+        <div id="studentCard">
+          <div class="sc-header">
+            <div class="sc-brand-row"><span>LingoAce · 学习成长报告</span><span>Grade Report</span></div>
+            <div class="sc-student-row">
+              <div class="sc-avatar">${avatarLetter}</div>
+              <div>
+                <div class="sc-name">${escapeHtml(name)}</div>
+                <div class="sc-meta">${age!=='—' ? age+'岁' : ''}${city ? ' · '+escapeHtml(city) : ''} · ${curLabel}</div>
+              </div>
+            </div>
+            <div class="sc-level-block">
+              <div class="sc-ring" style="background:conic-gradient(var(--mint) 0deg ${ring1}deg, rgba(255,255,255,0.12) 0deg)">
+                <div class="sc-ring-inner"><div class="pct">${pct}%</div><div class="lv">${levelLabel}</div></div>
+              </div>
+              <div class="sc-level-text">
+                <div class="big">${levelLabel} · 进阶中</div>
+                <div class="small">已上${used}节 / 共${total}节</div>
+              </div>
+            </div>
+          </div>
+          <div class="sc-body">
+            <div class="sc-section-title"><span class="sc-dot"></span>本阶段最大突破</div>
+            <div class="sc-highlight">${escapeHtml(highlight)}</div>
+            <div class="sc-section-title"><span class="sc-dot"></span>能力小档案</div>
+            <div class="sc-grid">${ability1}${ability2}${ability3}${ability4}</div>
+            <div class="sc-progress">
+              <div class="sc-progress-top"><span class="label">课时进度提醒</span><span class="value">剩余 ${remaining} 节</span></div>
+              <div class="sc-bar-track"><div class="sc-bar-fill" style="width:${pct}%"></div></div>
+              <div class="sc-progress-note">按当前${freq}节/周节奏，建议提前规划排课与续费节点，避免衔接断档。</div>
+            </div>
+            <div class="sc-cta">
+              <div class="icon">💡</div>
+              <div class="txt"><b>学管师建议：</b>趁孩子学习节奏正好，适当规划课频可让能力巩固更牢、衔接更顺畅。</div>
+            </div>
+          </div>
+          <div class="sc-footer">本报告基于课堂表现与官方课程大纲生成 · 仅供家长参考</div>
+        </div>
+      </div>
+      <div class="export-actions">
+        <button class="btn-primary" onclick="exportCard()">⬇ 导出为图片</button>
+        <button class="btn-secondary" onclick="window.print()">🖨 打印 / 存为PDF</button>
+      </div>
+      <div class="foot-note">导出的图片可直接发送到微信聊天或朋友圈</div>
+    </div>`;
+}
+
+function exportCard(){
+  const el = document.getElementById('studentCard');
+  html2canvas(el, {scale:2, backgroundColor:'#FBF6EA'}).then(canvas=>{
+    const link = document.createElement('a');
+    const name = document.getElementById('f_name').value.trim() || 'student';
+    link.download = name + '_学情卡片.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
+}
+
+function escapeHtml(str){
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+/* 初始化 */
+onCurriculumChange();
+
+</script>
+</div>
+<div id="authGate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1E2A3A 0%,#202C3D 100%);font-family:'Inter',system-ui,sans-serif;">
+  <div style="width:100%;max-width:360px;padding:0 24px;text-align:center;">
+    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;margin:0 auto 18px;">&#8963;</div>
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A66B;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">LingoAce &middot; &#21463;&#38480;&#35775;&#38382;</div>
+    <div style="font-size:15px;color:#F4F1E8;margin-bottom:22px;line-height:1.6;">&#35831;&#36755;&#20837;&#35775;&#38382;&#23494;&#30721;</div>
+    <input id="authGateInput" type="password" placeholder="&#23494;&#30721;" style="width:100%;padding:12px 14px;border-radius:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;margin-bottom:12px;outline:none;box-sizing:border-box;text-align:center;">
+    <button id="authGateBtn" style="width:100%;padding:12px 14px;border-radius:9px;border:none;background:#C97A2B;color:#fff;font-size:14px;font-weight:700;cursor:pointer;">&#36827;&#20837;</button>
+    <div id="authGateError" style="color:#E39A8A;font-size:12.5px;margin-top:12px;display:none;">&#23494;&#30721;&#19981;&#27491;&#30830;&#65292;&#35831;&#37325;&#35797;</div>
+  </div>
+</div>
+<script>
+(function(){
+  var PASSWORD = "lyp82nlf";
+  var STORAGE_KEY = "la_tools_auth_v2";
+  var VALID_HOURS = 168;
+  function unlock(){
+    var g = document.getElementById('authGate');
+    var c = document.getElementById('gatedContent');
+    if (g) g.style.display = 'none';
+    if (c) c.style.display = '';
+  }
+  try{
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved && saved.ok && (Date.now() - saved.ts) < VALID_HOURS*3600*1000){
+      unlock();
+    }
+  }catch(e){}
+  var btn = document.getElementById('authGateBtn');
+  var input = document.getElementById('authGateInput');
+  var err = document.getElementById('authGateError');
+  function tryLogin(){
+    if (input.value === PASSWORD){
+      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ok:true, ts:Date.now()})); }catch(e){}
+      unlock();
+    } else {
+      err.style.display = 'block';
+      input.value = '';
+      input.focus();
+    }
+  }
+  if (btn) btn.addEventListener('click', tryLogin);
+  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') tryLogin(); });
+  setTimeout(function(){ if (input) input.focus(); }, 50);
+})();
+</script>
+</body>
+</html>

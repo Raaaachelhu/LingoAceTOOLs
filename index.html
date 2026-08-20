@@ -329,6 +329,8 @@ a{ color:inherit; text-decoration:none; }
 
 
 
+
+
 <div class="bg-scene">
   <div class="bg-blob blob-1"></div>
   <div class="bg-blob blob-2"></div>
@@ -457,24 +459,21 @@ const TOOLS = [
   { color:'#A24A3D', tag:'教师 / 家长', label:'词汇报告', title:'课后学习报告生成器 · 词汇卡片版', href:'vocab.html',
     desc:'单课时 / 单元两种模式，自动生成带词汇卡片、星级评价的课后报告，支持导出图片/PDF，方便直接发送给家长。',
     features:['单节课 / 整单元 双模式切换','词汇卡片可视化展示','星级评价 + 图标模式互动','一键导出图片，微信直接发送'] },
-  { color:'#2E6B62', tag:'学生练习', label:'RH 练习', title:'Reach Higher 课后练习', href:'reach-higher.html',
-    desc:'学生自主选择 Level / Unit / Lesson，在线获取对应课后练习内容，界面简洁，适合家长陪练或学生自主复习使用。',
-    features:['按 Level 分级导航（Level 1-7）','逐单元逐课时精准定位','学生自助操作，无需老师协助'] },
-  { color:'#8C6A2A', tag:'学生练习', label:'PU 练习', title:'Power Up 课后练习', href:'power-up.html',
-    desc:'Power Up 教材专属课后练习选择器，与 Reach Higher 版本操作逻辑一致，覆盖 Level 1-3 全部单元课时内容。',
-    features:['按 Level 分级导航（Level 1-3）','逐单元逐课时精准定位','学生自助操作，无需老师协助'] },
   { color:'#33445A', tag:'教师 / 销售', label:'课程信息卡', title:'学员课程信息卡', href:'course-card.html',
     desc:'按渠道、课包地区、购买方案自动生成课包价格与课时明细，填写学员姓名/教材/级别后一键导出高清课程凭证图片，可直接发送给家长确认。',
     features:['渠道 / 地区 / 方案三级联动，自动核算总课时','约课规则、取消课步骤、退费政策一并展示','一键导出高清图片，学员姓名自动生成文件名'] },
   { color:'#2E6B62', tag:'学生 / 家长', label:'练习工作单', title:'课后练习 · 图片版工作单', href:'worksheets.html',
     desc:'选择教材版本、Level、Unit，直接浏览对应的课后练习题图片，一键下载高清图，方便家长打印给孩子独立完成，不含答案。',
-    features:['Power Up + Reach Higher 双教材合一','按教材 → Level → Unit 三步定位','练习题以高清图片呈现，支持长按保存 / 一键下载'] },
+    features:['Power Up + Reach Higher 双教材合一，覆盖全部 Level','按教材 → Level → Unit 三步定位','练习题以高清图片呈现，支持长按保存 / 一键下载'] },
   { color:'#E8833A', tag:'学管老师专用', label:'教材速查', title:'LingoAce 教材速查台', href:'curriculum-lookup.html',
     desc:'点选教材体系 → 级别 → 单元，查看该单元具体教什么、对标校内哪个年级/教材、比校内多出哪些亮点，附新课标政策解读与续费沟通话术。',
     features:['Power Up / Reach Higher / 自研教材三大体系全覆盖','逐单元对标校内年级教材，附详细异同分析','内置新课标政策解读、家长沟通话术'] },
   { color:'#A24A3D', tag:'学管老师 / 家长', label:'学习画像', title:'学员学习画像与拓展资源库', href:'insights.html',
     desc:'输入学员当前教材、Level、所在学校教材版本与考试需求，一键生成横纵向对比、当前内容解读、下一阶段规划，并匹配学员水平的课外绘本、动画、影视推荐。',
-    features:['横向对比校内教材，纵向定位 LingoAce 体系进度','当前内容解读 + 下一阶段学习规划','按学员水平匹配绘本 / 动画 / 影视，附同 Level 词汇例句出处'] }
+    features:['横向对比校内教材，纵向定位 LingoAce 体系进度','当前内容解读 + 下一阶段学习规划','按学员水平匹配绘本 / 动画 / 影视，附同 Level 词汇例句出处'] },
+  { color:'#D98A3D', tag:'学管老师', label:'学管工作台', title:'学管师服务工作台', href:'gm-workbench.html',
+    desc:'填写学员信息，自动匹配自研 / Reach Higher / Power Up 官方课程大纲数据，一键生成续费话术、加课频对比、转介绍文案、可视化学情卡片四份物料。',
+    features:['续费沟通话术，基于真实课程大纲能力对标','加课频对比表 + 话术，进度可视化说服力强','转介绍文案 + 私聊邀请话术一键生成','可视化学情卡片，一键导出发给家长'] }
 ];
 
 const navList = document.getElementById('navList');
