@@ -1,3 +1,1080 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Rachel Hu 的 LingoAce 教学与学管工作空间。按教材、Level、Unit 查找词卡、拓展和学习工具。"><title>LingoAce Studio · 教学工作空间</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="cockpit.css"><link rel="stylesheet" href="home-fit.css"><link rel="stylesheet" href="vivid-theme.css"><link rel="stylesheet" href="auth.css"><script src="auth.js"></script></head>
-<body><canvas id="ambient-field" aria-hidden="true"></canvas><aside id="sidebar"><a href="#home" class="brand" aria-label="工作台"><span class="brand-icon">a<span>✦</span></span><div>lingoace<span>TEACHING STUDIO</span></div></a><nav id="nav" aria-label="主导航"></nav><div class="sidebar-bottom"><div class="soft-label">A LITTLE MORE EVERY DAY</div><p>把专业留在日常，<br>把成长带给孩子。</p><div class="signature">Curated by Rachel Hu <span>↗</span></div></div></aside><div class="scrim" id="scrim"></div><div class="shell"><header><div class="breadcrumbs"><button id="menu" class="icon-button" aria-label="打开导航">☰</button><span>教学工作空间</span><span>/</span><b id="crumb">工作台</b></div><div class="header-actions"><button class="motion-toggle" id="motion-toggle" aria-pressed="true"><span>✧</span> 动态已开启</button><span class="divider"></span><span class="developer">developer: <b>Rachel Hu</b></span><span class="avatar small-avatar">RH</span></div></header><main id="main"><div class="loading">正在整理你的教学工作空间…</div></main><footer>lingoace · Teaching Studio <span>From Rachel Hu · 2026</span></footer></div><dialog id="viewer"><div class="viewer-toolbar"><div id="viewer-title"></div><div><button id="prev" aria-label="上一张">←</button><button id="next" aria-label="下一张">→</button><a id="download" download>下载图片 ↓</a><button id="close-viewer" aria-label="关闭预览">✕</button></div></div><div class="viewer-body"><img id="viewer-image" alt="教学资源海报"></div></dialog><div class="toast" id="toast" role="status"></div><script src="catalog.js" defer></script><script src="cockpit.js" defer></script><script src="app.js" defer></script><script src="ambient.js" defer></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LingoAce · 教学工具中心</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E2A3A;
+  --navy-deep:#07070F;
+  --amber:#C97A2B;
+  --amber-light:#D9A66B;
+  --teal:#2E6B62;
+  --brick:#A24A3D;
+  --cream:#F4F1E8;
+  --cream-soft:#C7CCD6;
+  --rgb-text:244,241,232;
+  --rgb-panel:255,255,255;
+  --text-strong:#ffffff;
+  --sky-1:#9B6FF2;
+  --sky-2:#E85BAE;
+  --sky-3:#3F8FE0;
+  --sky-4:#E89A4D;
+  --sky-5:#4DC9BE;
+  --page-bg:var(--navy-deep);
+  --vignette-c:5,5,12;
+  --vignette-a1:0;
+  --vignette-a2:0.48;
+  --particle-rgb:230,236,240;
+  --glass:rgba(var(--rgb-text),0.05);
+  --glass-strong:rgba(var(--rgb-text),0.09);
+  --glass-border:rgba(var(--rgb-text),0.13);
+  --fy-bg-1:rgba(30,42,58,0.86);
+  --fy-bg-2:rgba(15,22,32,0.9);
+  --fy-border:rgba(255,255,255,0.14);
+  --radius-lg:22px;
+}
+[data-theme="day"]{
+  --navy:#3B4A5A;
+  --navy-deep:#EAF1F5;
+  --amber:#B4611F;
+  --amber-light:#C97A2B;
+  --teal:#1A6A62;
+  --brick:#A6192E;
+  --cream:#262B33;
+  --cream-soft:#5B6472;
+  --rgb-text:38,43,51;
+  --rgb-panel:59,74,90;
+  --text-strong:#1B2027;
+  --sky-1:#F3C79E;
+  --sky-2:#CFE0E8;
+  --sky-3:#E9DACB;
+  --sky-4:#B9CBD6;
+  --sky-5:#D6E8E4;
+  --page-bg:#EEF1EC;
+  --vignette-c:255,248,238;
+  --vignette-a1:0.05;
+  --vignette-a2:0.4;
+  --particle-rgb:120,132,145;
+  --fy-bg-1:rgba(255,255,255,0.78);
+  --fy-bg-2:rgba(238,241,236,0.82);
+  --fy-border:rgba(38,43,51,0.14);
+  --mist-opacity:0.5;
+  --sun-opacity:0;
+}
+[data-theme="day"][data-daymood="sunrise"]{
+  --sky-1:#F6B98A;
+  --sky-2:#F0DDBB;
+  --sky-3:#E8C9D6;
+  --sky-4:#C9DCE8;
+  --sky-5:#F9D8AE;
+  --page-bg:#F5ECE0;
+  --mist-opacity:0.7;
+  --sun-opacity:0.9;
+}
+[data-theme="day"][data-daymood="midday"]{
+  --sky-1:#EFDBB8;
+  --sky-2:#CFE3EE;
+  --sky-3:#E6EEE4;
+  --sky-4:#C3D6E2;
+  --sky-5:#DCEDE8;
+  --page-bg:#F1F3EE;
+  --mist-opacity:0.32;
+  --sun-opacity:0.55;
+}
+[data-theme="day"][data-daymood="sunset"]{
+  --sky-1:#EE9A6B;
+  --sky-2:#E7B7C4;
+  --sky-3:#D9C3E0;
+  --sky-4:#B7C6DE;
+  --sky-5:#F0C39A;
+  --page-bg:#F0E6E2;
+  --mist-opacity:0.55;
+  --sun-opacity:0.85;
+}
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; height:100%; }
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--cream);
+  overflow:hidden;
+  -webkit-font-smoothing:antialiased;
+  transition:color .5s ease;
+}
+h1,h2,h3,h4{ font-family:'Fraunces',serif; margin:0; }
+.mono{ font-family:'IBM Plex Mono',ui-monospace,monospace; font-feature-settings:"tnum"; }
+a{ color:inherit; text-decoration:none; }
+
+/* ===================== BACKGROUND ===================== */
+.bg-scene{ position:fixed; inset:0; z-index:0; background:var(--page-bg); overflow:hidden; transition:background 1s ease; }
+.bg-nebula{ position:absolute; inset:-10%; animation:nebulaSpin 140s linear infinite; }
+@media (prefers-reduced-motion: reduce){ .bg-nebula{ animation:none; } }
+.bg-blob{ position:absolute; border-radius:50%; filter:blur(90px); opacity:0.55; will-change:transform; transition:background 1s ease, opacity 1s ease; }
+[data-theme="day"] .bg-blob{ opacity:0.6; filter:blur(100px); }
+[data-theme="night"] .bg-blob{ opacity:0.85; filter:blur(75px); mix-blend-mode:screen; }
+.blob-1{ width:56vw; height:56vw; left:-16vw; top:-18vw; background:radial-gradient(circle at 30% 30%, var(--sky-1), transparent 68%); animation:drift1 34s ease-in-out infinite; }
+.blob-2{ width:46vw; height:46vw; right:-14vw; top:-10vw; background:radial-gradient(circle at 60% 40%, var(--sky-2), transparent 68%); animation:drift2 40s ease-in-out infinite; }
+.blob-3{ width:50vw; height:50vw; left:18vw; bottom:-22vw; background:radial-gradient(circle at 50% 50%, var(--sky-3), transparent 70%); animation:drift3 46s ease-in-out infinite; }
+.blob-4{ width:34vw; height:34vw; right:12vw; bottom:-12vw; background:radial-gradient(circle at 50% 50%, var(--sky-4), transparent 65%); opacity:0.7; }
+.blob-5{ width:38vw; height:38vw; left:34vw; top:28vw; background:radial-gradient(circle at 50% 50%, var(--sky-5), transparent 68%); opacity:0; animation:drift2 52s ease-in-out infinite reverse; }
+[data-theme="night"] .blob-5{ opacity:0.55; }
+@keyframes nebulaSpin{ from{ transform:rotate(0deg); } to{ transform:rotate(360deg); } }
+@keyframes drift1{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(4vw,3vw) scale(1.08); } }
+@keyframes drift2{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(-3vw,4vw) scale(1.05); } }
+@keyframes drift3{ 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(3vw,-3vw) scale(1.1); } }
+.bg-vignette{ position:absolute; inset:0; background:radial-gradient(ellipse at 50% 50%, rgba(var(--vignette-c),var(--vignette-a1)) 40%, rgba(var(--vignette-c),var(--vignette-a2)) 100%); transition:background 1s ease; }
+.bg-grain{ position:absolute; inset:0; opacity:0.05; mix-blend-mode:overlay; pointer-events:none; }
+.bg-stars{ position:absolute; inset:0; opacity:0; transition:opacity 1.2s ease; pointer-events:none; }
+[data-theme="night"] .bg-stars{ opacity:1; }
+.star-dot{ position:absolute; border-radius:50%; background:#fff; animation:twinkle 3.5s ease-in-out infinite; }
+.star-dot.big{ box-shadow:0 0 6px 1px currentColor; }
+@keyframes twinkle{ 0%,100%{ opacity:0.15; } 50%{ opacity:0.95; } }
+.bg-moon{ position:absolute; top:8%; right:10%; width:64px; height:64px; border-radius:50%; opacity:0; transition:opacity 1.2s ease; background:radial-gradient(circle at 35% 32%, #fdfaf3, #d8d3c4 60%, #a8a397 100%); box-shadow:0 0 70px 16px rgba(180,150,230,0.3); }
+[data-theme="night"] .bg-moon{ opacity:0.9; }
+.bg-sun{ position:absolute; left:10%; bottom:6%; width:220px; height:220px; border-radius:50%; opacity:0; transition:opacity 1.5s ease, bottom 3s ease, left 3s ease; background:radial-gradient(circle, rgba(255,224,168,0.9), rgba(255,200,140,0.35) 45%, transparent 72%); filter:blur(2px); }
+[data-theme="day"] .bg-sun{ opacity:var(--sun-opacity); }
+[data-theme="day"][data-daymood="sunrise"] .bg-sun{ left:8%; bottom:4%; }
+[data-theme="day"][data-daymood="midday"] .bg-sun{ left:70%; bottom:58%; width:170px; height:170px; }
+[data-theme="day"][data-daymood="sunset"] .bg-sun{ left:78%; bottom:8%; }
+.bg-mist{ position:absolute; inset:0; opacity:0; transition:opacity 1.5s ease; pointer-events:none; }
+[data-theme="day"] .bg-mist{ opacity:var(--mist-opacity); }
+.mist-layer{ position:absolute; height:140px; border-radius:50%; background:linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent); filter:blur(18px); }
+.mist-1{ width:70vw; top:58%; left:-20vw; animation:mistDrift1 46s ease-in-out infinite; }
+.mist-2{ width:60vw; top:70%; right:-18vw; animation:mistDrift2 58s ease-in-out infinite; }
+.mist-3{ width:80vw; top:48%; left:10vw; animation:mistDrift1 64s ease-in-out infinite reverse; opacity:0.6; }
+@keyframes mistDrift1{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(6vw); } }
+@keyframes mistDrift2{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(-7vw); } }
+.bg-particles{ position:absolute; inset:0; pointer-events:none; }
+@media (prefers-reduced-motion: reduce){ .bg-blob{ animation:none !important; } .star-dot{ animation:none !important; } .mist-layer{ animation:none !important; } }
+
+/* ===================== LAYOUT SHELL ===================== */
+.shell{ position:relative; z-index:1; height:100vh; display:grid; grid-template-columns:112px 1fr 300px; }
+
+/* ===================== LEFT RAIL ===================== */
+.rail-left{
+  background:var(--glass); backdrop-filter:blur(24px) saturate(140%); -webkit-backdrop-filter:blur(24px) saturate(140%);
+  border-right:1px solid var(--glass-border);
+  display:flex; flex-direction:column; align-items:center;
+  padding:26px 0 20px;
+}
+.rail-logo{
+  width:42px; height:42px; border-radius:12px; background:rgba(var(--rgb-panel),0.08); border:1px solid var(--glass-border);
+  display:flex; align-items:center; justify-content:center; font-weight:800; font-size:18px; color:var(--cream);
+  margin-bottom:34px; flex-shrink:0;
+}
+.nav-list{ display:flex; flex-direction:column; gap:16px; flex:1; justify-content:center; }
+.nav-item{
+  position:relative; width:68px; height:60px; border-radius:16px;
+  background:rgba(var(--rgb-panel),0.05); border:1px solid var(--glass-border);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:2px; cursor:pointer;
+  transition:background .2s ease, transform .2s ease, border-color .2s ease;
+}
+.nav-item::before{
+  content:""; position:absolute; left:-1px; top:12px; bottom:12px; width:3px; border-radius:2px;
+  background:var(--dot-color, var(--amber)); opacity:0.85;
+}
+.nav-item .ni-num{ font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:600; color:rgba(var(--rgb-text),0.4); letter-spacing:0.02em; line-height:1; }
+.nav-item .ni-label{ font-size:11.5px; font-weight:600; color:var(--cream-soft); margin-top:1px; letter-spacing:0.01em; line-height:1.2; white-space:nowrap; }
+.nav-item:hover, .nav-item.active{ background:rgba(var(--rgb-panel),0.14); border-color:rgba(var(--rgb-panel),0.3); transform:translateX(2px); }
+.nav-item:hover .ni-num, .nav-item.active .ni-num{ color:var(--dot-color, var(--amber-light)); }
+.nav-item:hover .ni-label, .nav-item.active .ni-label{ color:var(--text-strong); }
+.rail-foot{ font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:rgba(var(--rgb-text),0.35); writing-mode:vertical-rl; letter-spacing:0.12em; margin-top:20px; }
+
+/* ===================== DEV BADGE ===================== */
+.dev-badge{
+  position:fixed; top:20px; right:316px; z-index:60;
+  font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.03em; color:rgba(var(--rgb-text),0.55);
+  background:var(--glass); border:1px solid var(--glass-border); backdrop-filter:blur(12px);
+  padding:6px 13px; border-radius:20px;
+}
+.dev-badge b{ color:var(--cream); font-weight:600; }
+@media (max-width:980px){ .dev-badge{ position:static; display:inline-block; margin:14px 0 0 16px; } }
+
+/* ===================== FAN FLYOUT ===================== */
+.flyout{
+  position:fixed; left:104px; width:430px; max-width:calc(100vw - 436px);
+  z-index:50; pointer-events:none; opacity:0;
+  transform:scaleX(0.35) translateX(-14px); transform-origin:0% 50%;
+  transition:opacity .32s cubic-bezier(.22,1,.36,1), transform .38s cubic-bezier(.22,1,.36,1);
+}
+.flyout.show{ opacity:1; pointer-events:auto; transform:scaleX(1) translateX(0); }
+.flyout-inner{
+  clip-path: polygon(0% 50%, 4% 32%, 10% 17%, 20% 7%, 34% 2%, 52% 0%, 100% 0%, 100% 100%, 52% 100%, 34% 98%, 20% 93%, 10% 83%, 4% 68%);
+  background:linear-gradient(155deg, var(--fy-bg-1), var(--fy-bg-2));
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  border:1px solid var(--fy-border);
+  padding:30px 34px 26px 46px;
+  filter:drop-shadow(0 24px 50px rgba(0,0,0,0.35)) drop-shadow(0 2px 10px rgba(0,0,0,0.22));
+  transition:background 1s ease, border-color 1s ease;
+}
+.flyout-tag{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--fy-color, var(--amber-light)); margin-bottom:10px; font-weight:600; }
+.flyout h3{ font-size:20px; color:var(--text-strong); line-height:1.25; margin-bottom:10px; }
+.flyout p{ font-size:12.8px; line-height:1.7; color:var(--cream-soft); margin:0 0 14px; }
+.flyout ul{ margin:0 0 20px; padding:0; list-style:none; display:flex; flex-direction:column; gap:6px; }
+.flyout li{ font-size:12px; line-height:1.6; color:var(--cream-soft); padding-left:14px; position:relative; }
+.flyout li::before{ content:""; position:absolute; left:0; top:7px; width:5px; height:5px; border-radius:50%; background:var(--fy-color, var(--amber-light)); }
+.flyout-btn{
+  display:inline-flex; align-items:center; gap:9px; font-size:12.5px; font-weight:700; letter-spacing:0.04em;
+  color:var(--fy-color, var(--amber-light));
+  background:rgba(var(--fy-color-rgb, 217,166,107), 0.14);
+  border:1px solid rgba(var(--fy-color-rgb, 217,166,107), 0.45);
+  padding:10px 22px; border-radius:10px;
+  backdrop-filter:blur(10px) saturate(160%);
+  -webkit-backdrop-filter:blur(10px) saturate(160%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(0,0,0,0.18);
+  transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
+  text-transform:uppercase;
+}
+.flyout-btn:hover{ background:rgba(var(--fy-color-rgb, 217,166,107), 0.24); transform:translateX(2px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.18), 0 8px 20px rgba(0,0,0,0.22); }
+.flyout-btn{ border:none; font-family:inherit; }
+
+/* ===================== INLINE TOOL VIEWER ===================== */
+body.tool-open{ overflow:hidden; }
+.tool-overlay{
+  position:fixed; inset:0; z-index:200; background:var(--navy-deep);
+  opacity:0; pointer-events:none; transform:scale(1.02);
+  transition:opacity .32s cubic-bezier(.22,1,.36,1), transform .32s cubic-bezier(.22,1,.36,1);
+  display:flex; flex-direction:column;
+}
+.tool-overlay.show{ opacity:1; pointer-events:auto; transform:scale(1); }
+.tool-bar{
+  display:flex; align-items:center; gap:16px; padding:12px 20px;
+  background:linear-gradient(180deg, var(--navy) 0%, #202C3D 100%);
+  flex-shrink:0; box-shadow:0 4px 16px rgba(0,0,0,0.25); position:relative; z-index:1;
+}
+.tool-back-btn{
+  display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700;
+  color:#F4F1E8; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18);
+  padding:8px 16px; border-radius:9px; cursor:pointer; font-family:inherit;
+  transition:background .15s ease, transform .15s ease;
+}
+.tool-back-btn:hover{ background:rgba(255,255,255,0.18); transform:translateX(-2px); }
+.tool-back-arrow{ display:inline-block; transition:transform .15s ease; }
+.tool-back-btn:hover .tool-back-arrow{ transform:translateX(-3px); }
+.tool-back-label{ font-size:12.5px; color:rgba(244,241,232,0.6); font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em; }
+.tool-iframe{ flex:1; width:100%; border:none; background:#fff; }
+
+/* ===================== CENTER STAGE ===================== */
+.stage{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 40px; text-align:center; overflow-y:auto; max-height:100vh; }
+.stage-badge{
+  font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--amber-light); display:flex; align-items:center; gap:10px; margin-bottom:14px;
+}
+.stage-badge .dot{ width:6px; height:6px; border-radius:50%; background:#6FBF8B; box-shadow:0 0 0 4px rgba(111,191,139,0.18); }
+.stage h1{ font-size:clamp(17px,1.7vw,21px); font-weight:500; color:rgba(var(--rgb-text),0.82); line-height:1.3; margin-bottom:8px; letter-spacing:0.01em; }
+.stage h1 em{ font-style:italic; font-weight:600; color:var(--amber-light); }
+.stage p.sub{ font-size:12.5px; color:var(--cream-soft); max-width:52ch; line-height:1.6; margin-bottom:14px; opacity:0.75; }
+
+.globe-wrap{ position:relative; width:100%; max-width:620px; height:300px; margin-bottom:14px; }
+.globe-glow{ position:absolute; inset:-40px; background:radial-gradient(ellipse 60% 60% at 50% 50%, rgba(var(--rgb-text),0.10), transparent 70%); }
+.globe-map{ position:absolute; inset:0; width:100%; height:100%; }
+.particle-dot{ fill:rgba(var(--particle-rgb),0.75); transition:fill 1s ease; }
+.globe-badge{ position:absolute; width:30px; height:30px; margin-left:-15px; margin-top:-48px; cursor:pointer; z-index:3; }
+.globe-badge-inner{
+  width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center;
+  font-size:15px; box-shadow:0 6px 14px rgba(0,0,0,0.4), 0 0 0 3px rgba(20,26,34,0.6);
+  transition:transform .18s ease; background:var(--badge-color, var(--amber-light));
+}
+.globe-badge:hover .globe-badge-inner{ transform:translateY(-2px) scale(1.08); }
+.globe-badge-stem{ position:absolute; left:50%; top:30px; width:1px; height:16px; background:linear-gradient(rgba(var(--rgb-text),0.5), rgba(var(--rgb-text),0)); transform:translateX(-50%); }
+.globe-marker-ring{ position:absolute; width:14px; height:14px; margin-left:-7px; margin-top:-7px; border-radius:50%; border:2px solid rgba(var(--rgb-text),0.55); z-index:2; }
+.globe-marker-ring::after{ content:""; position:absolute; inset:3px; border-radius:50%; background:var(--badge-color, var(--amber-light)); }
+.globe-marker-base{ position:absolute; width:16px; height:5px; margin-left:-8px; margin-top:-2px; border-radius:50%; background:rgba(0,0,0,0.4); filter:blur(2px); z-index:1; }
+.globe-links{ position:absolute; inset:0; pointer-events:none; z-index:1; }
+.globe-links path{ fill:none; stroke:rgba(217,166,107,0.35); stroke-width:1; stroke-dasharray:3 4; }
+.globe-tip{
+  position:absolute; bottom:52px; left:50%; transform:translateX(-50%) translateY(6px); opacity:0; pointer-events:none;
+  white-space:nowrap; background:rgba(15,22,32,0.95); border:1px solid rgba(255,255,255,0.15);
+  padding:7px 14px; border-radius:10px; font-size:12.5px; color:#fff; transition:opacity .18s ease, transform .18s ease;
+  box-shadow:0 10px 24px rgba(0,0,0,0.4); z-index:4;
+}
+.globe-tip .gt-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:600; color:var(--amber-light); margin-right:6px; }
+.globe-tip::after{ content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:rgba(15,22,32,0.95); }
+.globe-caption{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(var(--rgb-text),0.32); margin-bottom:18px; }
+
+/* ===================== STATS ROW ===================== */
+.stats-row{ display:flex; gap:12px; width:100%; max-width:560px; margin-bottom:16px; }
+.stat-chip{
+  flex:1; text-align:left; padding:13px 16px 12px; border-radius:14px;
+  background:linear-gradient(155deg, rgba(var(--rgb-panel),0.07), rgba(var(--rgb-panel),0.025));
+  border:1px solid var(--glass-border);
+  box-shadow:inset 1px 1px 1px rgba(var(--rgb-panel),0.06), 0 8px 20px rgba(0,0,0,0.18);
+}
+.stat-spark{ width:100%; height:18px; display:block; margin-bottom:6px; }
+.stat-spark polyline{ fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.stat-spark .spark-fill{ stroke:none; }
+.stat-num{ font-family:'Fraunces',serif; font-weight:700; font-size:19px; color:var(--text-strong); line-height:1; white-space:nowrap; }
+.stat-num .stat-plus{ font-size:13px; color:var(--stat-color, var(--amber-light)); font-weight:600; }
+.stat-label{ font-size:10px; color:rgba(var(--rgb-text),0.48); margin-top:4px; letter-spacing:0.01em; }
+@media (max-width:980px){ .stats-row{ flex-wrap:wrap; } .stat-chip{ min-width:150px; } }
+
+.stage-hint{
+  display:inline-flex; align-items:center; gap:10px; font-size:12.5px; color:rgba(var(--rgb-text),0.55);
+  padding:11px 20px; border-radius:30px; border:1px solid var(--glass-border); background:var(--glass);
+}
+.stage-hint .arrow-left{ animation:nudge 1.6s ease-in-out infinite; }
+@keyframes nudge{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(-4px); } }
+@media (prefers-reduced-motion: reduce){ .stage-hint .arrow-left{ animation:none; } }
+.stage{ transition:opacity .3s ease, filter .3s ease; }
+.shell.flyout-active .stage{ opacity:0.28; filter:blur(1px); }
+.stage-footnote{ margin-top:14px; font-size:10.5px; color:rgba(var(--rgb-text),0.32); letter-spacing:0.02em; }
+
+/* ===================== WORD OF THE DAY ===================== */
+.wod-card{
+  margin:0 0 16px; padding:14px 24px; border-radius:16px; max-width:560px;
+  display:flex; align-items:center; gap:16px; text-align:left;
+  background:linear-gradient(155deg, rgba(var(--rgb-panel),0.09), rgba(var(--rgb-panel),0.03));
+  border:1px solid rgba(var(--rgb-panel),0.16);
+  box-shadow:
+    inset 1px 1px 1px rgba(var(--rgb-panel),0.1),
+    inset -2px -2px 8px rgba(0,0,0,0.35),
+    0 14px 34px rgba(0,0,0,0.3);
+}
+.wod-label{ font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber-light); margin-bottom:4px; }
+.wod-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:600; font-size:22px; color:var(--text-strong); line-height:1.1; flex-shrink:0; }
+.wod-body{ min-width:0; }
+.wod-sentence{ font-size:12.5px; color:var(--cream-soft); line-height:1.5; margin-bottom:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.wod-source{ font-family:'IBM Plex Mono',monospace; font-size:9.5px; color:rgba(var(--rgb-text),0.4); }
+
+/* ===================== RIGHT RAIL ===================== */
+.rail-right{
+  background:var(--glass); backdrop-filter:blur(24px) saturate(140%); -webkit-backdrop-filter:blur(24px) saturate(140%);
+  border-left:1px solid var(--glass-border);
+  padding:26px 22px; display:flex; flex-direction:column; gap:18px; overflow-y:auto;
+}
+.widget{
+  border-radius:16px; padding:18px 19px; background:rgba(var(--rgb-panel),0.055);
+  box-shadow:
+    inset 1px 1px 1px rgba(var(--rgb-panel),0.09),
+    inset -2px -2px 6px rgba(0,0,0,0.35),
+    0 8px 20px rgba(0,0,0,0.25);
+  border:1px solid rgba(var(--rgb-panel),0.1);
+}
+.widget-label{ font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(var(--rgb-text),0.4); margin-bottom:10px; }
+
+/* clock */
+.clock-time{ font-family:'Fraunces',serif; font-size:36px; font-weight:600; color:var(--text-strong); letter-spacing:0.01em; line-height:1; }
+.clock-time .sec{ font-size:16px; color:var(--amber-light); font-family:'IBM Plex Mono',monospace; margin-left:4px; }
+.clock-date{ margin-top:8px; font-size:12px; color:var(--cream-soft); }
+.clock-sun{ margin-top:6px; font-size:11px; color:rgba(var(--rgb-text),0.5); font-family:'IBM Plex Mono',monospace; }
+
+/* quote */
+.quote-text{ font-family:'Fraunces',serif; font-style:italic; font-size:15px; line-height:1.6; color:var(--text-strong); min-height:76px; transition:opacity .4s ease; }
+.quote-cn{ margin-top:10px; font-size:11.5px; color:var(--cream-soft); line-height:1.6; }
+
+/* calendar */
+.cal-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; }
+.cal-month{ font-family:'Fraunces',serif; font-size:15px; color:var(--text-strong); }
+.cal-year{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:rgba(var(--rgb-text),0.4); }
+.cal-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.cal-dow{ font-size:9px; text-align:center; color:rgba(var(--rgb-text),0.35); font-family:'IBM Plex Mono',monospace; padding-bottom:4px; }
+.cal-day{ aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--cream-soft); border-radius:8px; font-family:'IBM Plex Mono',monospace; }
+.cal-day.empty{ visibility:hidden; }
+.cal-day.today{ background:var(--amber); color:#fff; font-weight:700; box-shadow:0 2px 8px rgba(201,122,43,0.5); }
+.cal-day.weekend{ color:rgba(217,166,107,0.6); }
+
+/* responsive fallback (basic) */
+@media (max-width:980px){
+  body{ overflow:auto; }
+  .shell{ grid-template-columns:1fr; grid-template-rows:auto auto auto; height:auto; min-height:100vh; }
+  .rail-left{ flex-direction:row; padding:16px; border-right:none; border-bottom:1px solid var(--glass-border); }
+  .nav-list{ flex-direction:row; flex-wrap:wrap; }
+  .rail-logo{ margin-bottom:0; margin-right:16px; }
+  .rail-foot{ display:none; }
+  .flyout{ position:static; width:auto; max-width:none; transform:none; opacity:1; pointer-events:auto; display:none; margin:12px 16px; }
+  .flyout.show{ display:block; }
+  .flyout-inner{ clip-path:none; padding:22px; border-radius:16px; }
+  .stage{ padding:40px 24px; }
+  .rail-right{ flex-direction:row; flex-wrap:wrap; border-left:none; border-top:1px solid var(--glass-border); }
+  .widget{ flex:1; min-width:200px; }
+}
+</style>
+<script>
+(function(){
+  var parts = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', hour:'2-digit', minute:'2-digit', hour12:false }).formatToParts(new Date());
+  var h = parseInt(parts.find(function(p){return p.type==='hour';}).value, 10);
+  var m = parseInt(parts.find(function(p){return p.type==='minute';}).value, 10);
+  var hm = h + m/60;
+  var isDay = hm >= 6 && hm < 18.5;
+  document.documentElement.setAttribute('data-theme', isDay ? 'day' : 'night');
+})();
+</script>
+</head>
+<body>
+<div id="gatedContent" style="display:none">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-scene">
+  <div class="bg-nebula">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+    <div class="bg-blob blob-5"></div>
+  </div>
+  <div class="bg-moon"></div>
+  <div class="bg-sun"></div>
+  <div class="bg-mist">
+    <div class="mist-layer mist-1"></div>
+    <div class="mist-layer mist-2"></div>
+    <div class="mist-layer mist-3"></div>
+  </div>
+  <canvas class="bg-particles" id="bgParticles"></canvas>
+  <div class="bg-stars" id="bgStars"></div>
+  <div class="bg-vignette"></div>
+  <svg class="bg-grain" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+</div>
+
+<div class="dev-badge">Developer：<b>Rachel Hu（Shumin）</b></div>
+
+<div class="shell">
+  <nav class="rail-left">
+    <div class="rail-logo">⌃</div>
+    <div class="nav-list" id="navList"></div>
+    <div class="rail-foot">LINGOACE TOOLS</div>
+  </nav>
+
+  <main class="stage">
+    <div class="stage-badge"><span class="dot"></span><span id="greetingText">教学工具中心</span></div>
+    <h1>一站式 <em>教学 &amp; 学习</em> 工具合集</h1>
+    <p class="sub">覆盖学习规划报告、教材速查、学员画像、课后练习与课程凭证生成</p>
+
+
+
+    <div class="globe-wrap" id="globeWrap">
+      <div class="globe-glow"></div>
+      <svg class="globe-map" id="globeMapSvg" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet">
+        <g id="particleLayer"></g>
+      </svg>
+      <svg class="globe-links" id="globeLinks" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet"></svg>
+      <div id="globeMarkers"></div>
+      <div class="globe-tip" id="globeTip"><span class="gt-word" id="globeTipWord"></span><span id="globeTipLang"></span></div>
+    </div>
+    <div class="globe-caption">世界各地打招呼的方式 · 悬停查看</div>
+
+    <div class="stats-row" id="statsRow">
+      <div class="stat-chip" style="--stat-color:var(--amber-light)">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:var(--amber-light); stop-opacity:0.35"/><stop offset="100%" style="stop-color:var(--amber-light); stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad1)" points="0,22 0,18 14,15 28,17 42,11 56,13 70,7 84,9 100,3 100,22"/>
+          <polyline points="0,18 14,15 28,17 42,11 56,13 70,7 84,9 100,3" style="stroke:var(--amber-light)"/>
+        </svg>
+        <div class="stat-num">180<span class="stat-plus">+</span></div>
+        <div class="stat-label">国家和地区学员覆盖</div>
+      </div>
+      <div class="stat-chip" style="--stat-color:var(--teal)">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:var(--teal); stop-opacity:0.35"/><stop offset="100%" style="stop-color:var(--teal); stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad2)" points="0,22 0,20 14,19 28,16 42,17 56,12 70,10 84,6 100,2 100,22"/>
+          <polyline points="0,20 14,19 28,16 42,17 56,12 70,10 84,6 100,2" style="stroke:var(--teal)"/>
+        </svg>
+        <div class="stat-num">2200<span class="stat-plus">万+</span></div>
+        <div class="stat-label">累计授课节数</div>
+      </div>
+      <div class="stat-chip" style="--stat-color:#8B92E0">
+        <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
+          <defs><linearGradient id="sparkGrad3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:#8B92E0; stop-opacity:0.35"/><stop offset="100%" style="stop-color:#8B92E0; stop-opacity:0"/></linearGradient></defs>
+          <polyline class="spark-fill" fill="url(#sparkGrad3)" points="0,22 0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5 100,22"/>
+          <polyline points="0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5" style="stroke:#8B92E0"/>
+        </svg>
+        <div class="stat-num">7000<span class="stat-plus">+</span></div>
+        <div class="stat-label">资深教师团队</div>
+      </div>
+    </div>
+
+    <div class="wod-card" id="wodCard">
+      <div class="wod-word" id="wodWord">—</div>
+      <div class="wod-body">
+        <div class="wod-label">每日单词</div>
+        <div class="wod-sentence" id="wodSentence"></div>
+        <div class="wod-source" id="wodSource"></div>
+      </div>
+    </div>
+
+    <div class="stage-hint"><span class="arrow-left">←</span> 移到左侧图标查看工具介绍</div>
+    <div class="stage-footnote">首次使用请将全部工具文件保存在同一文件夹内，再打开本页</div>
+  </main>
+
+  <aside class="rail-right">
+    <div class="widget" id="clockWidget">
+      <div class="widget-label">北京时间 · Beijing Time</div>
+      <div class="clock-time"><span id="clockHM">--:--</span><span class="sec" id="clockSec">--</span></div>
+      <div class="clock-date" id="clockDate">—</div>
+      <div class="clock-sun" id="sunInfo">—</div>
+    </div>
+
+    <div class="widget" id="quoteWidget">
+      <div class="widget-label">每日一句 · Daily Line</div>
+      <div class="quote-text" id="quoteText">Loading…</div>
+      <div class="quote-cn" id="quoteCn"></div>
+    </div>
+
+    <div class="widget" id="calWidget">
+      <div class="cal-head"><span class="cal-month" id="calMonth">—</span><span class="cal-year" id="calYear">—</span></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+
+  </aside>
+</div>
+
+<div class="flyout" id="flyout">
+  <div class="flyout-inner" id="flyoutInner"></div>
+</div>
+
+<div class="tool-overlay" id="toolOverlay">
+  <div class="tool-bar">
+    <button class="tool-back-btn" id="toolBackBtn"><span class="tool-back-arrow">←</span> 返回</button>
+    <div class="tool-back-label" id="toolBackLabel"></div>
+  </div>
+  <iframe class="tool-iframe" id="toolFrame" src="about:blank"></iframe>
+</div>
+
+<script id="wod-data" type="application/json">[{"word": "bag", "sentence": "This is a bag. It's green.", "source": "Power Up · Level 1 · Unit 1 · Lesson 1"}, {"word": "pencil", "sentence": "This is a pencil case. It's grey.", "source": "Power Up · Level 1 · Unit 1 · Lesson 2"}, {"word": "pencil case", "sentence": "This is a pencil case. It's grey.", "source": "Power Up · Level 1 · Unit 1 · Lesson 2"}, {"word": "bookcase", "sentence": "The book is in / on / under / next to the bookcase.", "source": "Power Up · Level 1 · Unit 1 · Lesson 4"}, {"word": "window", "sentence": "The teacher is next to the window.", "source": "Power Up · Level 1 · Unit 1 · Lesson 5"}, {"word": "wall", "sentence": "The bag is on the wall.", "source": "Power Up · Level 1 · Unit 1 · Lesson 5"}, {"word": "help", "sentence": "Help your friends.", "source": "Power Up · Level 1 · Unit 1 · Lesson 7"}, {"word": "listen", "sentence": "Listen to your classmates.", "source": "Power Up · Level 1 · Unit 1 · Lesson 7"}, {"word": "share", "sentence": "Share your things.", "source": "Power Up · Level 1 · Unit 1 · Lesson 7"}, {"word": "work together", "sentence": "Work together in the classroom.", "source": "Power Up · Level 1 · Unit 1 · Lesson 7"}, {"word": "body", "sentence": "Move your body.", "source": "Power Up · Level 1 · Unit 2 · Lesson 4"}, {"word": "arm", "sentence": "Put your arm up.", "source": "Power Up · Level 1 · Unit 2 · Lesson 4"}, {"word": "head", "sentence": "Touch your head.", "source": "Power Up · Level 1 · Unit 2 · Lesson 5"}, {"word": "mouth", "sentence": "Open your mouth.", "source": "Power Up · Level 1 · Unit 2 · Lesson 5"}, {"word": "see", "sentence": "I can see with my eyes.", "source": "Power Up · Level 1 · Unit 2 · Lesson 7"}, {"word": "touch", "sentence": "I can touch with my hands.", "source": "Power Up · Level 1 · Unit 2 · Lesson 7"}, {"word": "taste", "sentence": "I can taste with my tongue.", "source": "Power Up · Level 1 · Unit 2 · Lesson 7"}, {"word": "smell", "sentence": "I can smell with my nose.", "source": "Power Up · Level 1 · Unit 2 · Lesson 7"}, {"word": "hear", "sentence": "I can hear with my ears.", "source": "Power Up · Level 1 · Unit 2 · Lesson 7"}, {"word": "cat", "sentence": "Is he/she your cat? Yes, he/she is./No, he/she isn't.", "source": "Power Up · Level 1 · Unit 3 · Lesson 1"}, {"word": "funny", "sentence": "She's a funny dog with a brown nose and a long tail.", "source": "Power Up · Level 1 · Unit 3 · Lesson 4"}, {"word": "angry", "sentence": "He is an angry cat, with a black nose and a black tail.", "source": "Power Up · Level 1 · Unit 3 · Lesson 5"}, {"word": "milk", "sentence": "Cows give us milk.", "source": "Power Up · Level 1 · Unit 3 · Lesson 7"}, {"word": "wool", "sentence": "Sheep give us wool.", "source": "Power Up · Level 1 · Unit 3 · Lesson 7"}, {"word": "honey", "sentence": "Bees give us honey.", "source": "Power Up · Level 1 · Unit 3 · Lesson 7"}, {"word": "burger", "sentence": "Have you got your burger?", "source": "Power Up · Level 1 · Unit 4 · Lesson 1"}, {"word": "water", "sentence": "Who's got the water?", "source": "Power Up · Level 1 · Unit 4 · Lesson 2"}, {"word": "fruit", "sentence": "What fruit do you like?", "source": "Power Up · Level 1 · Unit 4 · Lesson 4"}, {"word": "meat", "sentence": "Do you like meat? No, I don't.", "source": "Power Up · Level 1 · Unit 4 · Lesson 5"}, {"word": "kite", "sentence": "It's a kite.", "source": "Power Up · Level 1 · Unit 5 · Lesson 1"}, {"word": "house", "sentence": "Look at Eva! She is playing the toy house.", "source": "Power Up · Level 1 · Unit 5 · Lesson 2"}, {"word": "computer", "sentence": "I've got a computer.", "source": "Power Up · Level 1 · Unit 5 · Lesson 4"}, {"word": "helicopter", "sentence": "He's got a helicopter.", "source": "Power Up · Level 1 · Unit 5 · Lesson 5"}, {"word": "circle", "sentence": "I can see a circle.", "source": "Power Up · Level 1 · Unit 5 · Lesson 7"}, {"word": "square", "sentence": "I can see a square.", "source": "Power Up · Level 1 · Unit 5 · Lesson 7"}, {"word": "rectangle", "sentence": "I can see a rectangle.", "source": "Power Up · Level 1 · Unit 5 · Lesson 7"}, {"word": "triangle", "sentence": "I can see a triangle.", "source": "Power Up · Level 1 · Unit 5 · Lesson 7"}, {"word": "park", "sentence": "It's got some flowers in the park.", "source": "Power Up · Level 1 · Unit 6 · Lesson 1"}, {"word": "bus", "sentence": "The motorbike is next to the bus stop.", "source": "Power Up · Level 1 · Unit 6 · Lesson 2"}, {"word": "bus stop", "sentence": "The motorbike is next to the bus stop.", "source": "Power Up · Level 1 · Unit 6 · Lesson 2"}, {"word": "motorbike", "sentence": "Where is the motorbike?", "source": "Power Up · Level 1 · Unit 6 · Lesson 2"}, {"word": "tiger", "sentence": "There is a tiger.", "source": "Power Up · Level 1 · Unit 6 · Lesson 4"}, {"word": "giraffe", "sentence": "There is a giraffe.", "source": "Power Up · Level 1 · Unit 6 · Lesson 5"}, {"word": "sea", "sentence": "It can eat (fish) and drink (sea water).", "source": "Power Up · Level 1 · Unit 6 · Lesson 7"}, {"word": "play tennis", "sentence": "Let's play tennis!", "source": "Power Up · Level 1 · Unit 7 · Lesson 1"}, {"word": "play the guitar", "sentence": "No, thank you. I'd like to play the guitar.", "source": "Power Up · Level 1 · Unit 7 · Lesson 2"}, {"word": "swim", "sentence": "Would you like to swim?", "source": "Power Up · Level 1 · Unit 7 · Lesson 2"}, {"word": "bedroom", "sentence": "Where is Jenny? She's in the bedroom.", "source": "Power Up · Level 1 · Unit 8 · Lesson 1"}, {"word": "radio", "sentence": "She is listening to the radio.", "source": "Power Up · Level 1 · Unit 8 · Lesson 1"}, {"word": "living room", "sentence": "Who is in the living room?", "source": "Power Up · Level 1 · Unit 8 · Lesson 2"}, {"word": "sofa", "sentence": "There is a red sofa under the window.", "source": "Power Up · Level 1 · Unit 8 · Lesson 4"}, {"word": "rug", "sentence": "There is a rug on the floor.", "source": "Power Up · Level 1 · Unit 8 · Lesson 5"}, {"word": "floor", "sentence": "There is a rug on the floor.", "source": "Power Up · Level 1 · Unit 8 · Lesson 5"}, {"word": "boots", "sentence": "I'm wearing green boots.", "source": "Power Up · Level 1 · Unit 9 · Lesson 1"}, {"word": "jeans", "sentence": "Do you like those jeans?", "source": "Power Up · Level 1 · Unit 9 · Lesson 2"}, {"word": "camera", "sentence": "Grandpa's got a camera.", "source": "Power Up · Level 1 · Unit 9 · Lesson 4"}, {"word": "sun", "sentence": "He's taking photos in the sun.", "source": "Power Up · Level 1 · Unit 9 · Lesson 4"}, {"word": "boat", "sentence": "I can see a boat on the sea.", "source": "Power Up · Level 1 · Unit 9 · Lesson 5"}, {"word": "fishing", "sentence": "Dad and Jenny are fishing on the boat.", "source": "Power Up · Level 1 · Unit 9 · Lesson 5"}, {"word": "forest", "sentence": "We can see trees and flowers in the forest.", "source": "Power Up · Level 1 · Unit 9 · Lesson 7"}, {"word": "field", "sentence": "There is a tractor in the field.", "source": "Power Up · Level 2 · Unit 1 · Lesson 1"}, {"word": "mountain", "sentence": "There are rocks on the mountain.", "source": "Power Up · Level 2 · Unit 1 · Lesson 1"}, {"word": "leaves", "sentence": "There aren't any leaves on the tree.", "source": "Power Up · Level 2 · Unit 1 · Lesson 2"}, {"word": "ground", "sentence": "There isn't any grass on the ground.", "source": "Power Up · Level 2 · Unit 1 · Lesson 2"}, {"word": "wake up", "sentence": "Wake up, get up. Go and have a shower.", "source": "Power Up · Level 2 · Unit 1 · Lesson 4"}, {"word": "get up", "sentence": "Wake up, get up. Go and have a shower.", "source": "Power Up · Level 2 · Unit 1 · Lesson 4"}, {"word": "have a shower", "sentence": "Wake up, get up. Go and have a shower.", "source": "Power Up · Level 2 · Unit 1 · Lesson 4"}, {"word": "towel", "sentence": "Get your towel, get dry. Time for us to run!", "source": "Power Up · Level 2 · Unit 1 · Lesson 4"}, {"word": "get dressed", "sentence": "Go and get dressed.", "source": "Power Up · Level 2 · Unit 1 · Lesson 5"}, {"word": "have breakfast", "sentence": "Sit down and have breakfast.", "source": "Power Up · Level 2 · Unit 1 · Lesson 5"}, {"word": "toothbrush", "sentence": "Put the toothpaste on your toothbrush.", "source": "Power Up · Level 2 · Unit 1 · Lesson 5"}, {"word": "toothpaste", "sentence": "Put the toothpaste on your toothbrush.", "source": "Power Up · Level 2 · Unit 1 · Lesson 5"}, {"word": "recycle", "sentence": "Recycle bottles.", "source": "Power Up · Level 2 · Unit 1 · Lesson 7"}, {"word": "book club", "sentence": "We've got book club on Fridays.", "source": "Power Up · Level 2 · Unit 2 · Lesson 2"}, {"word": "listen to music", "sentence": "How often do you listen to music?", "source": "Power Up · Level 2 · Unit 2 · Lesson 4"}, {"word": "write an email", "sentence": "Do you ever write an email?", "source": "Power Up · Level 2 · Unit 2 · Lesson 4"}, {"word": "go shopping", "sentence": "How often do you go shopping?", "source": "Power Up · Level 2 · Unit 2 · Lesson 5"}, {"word": "listen to a CD", "sentence": "Do you ever listen to a CD?", "source": "Power Up · Level 2 · Unit 2 · Lesson 5"}, {"word": "clown", "sentence": "She is a clown. She's got a present.", "source": "Power Up · Level 2 · Unit 3 · Lesson 1"}, {"word": "pirate", "sentence": "He is a pirate. He's got some treasure.", "source": "Power Up · Level 2 · Unit 3 · Lesson 1"}, {"word": "present", "sentence": "She is a clown. She's got a present.", "source": "Power Up · Level 2 · Unit 3 · Lesson 1"}, {"word": "treasure", "sentence": "He is a pirate. He's got some treasure.", "source": "Power Up · Level 2 · Unit 3 · Lesson 1"}, {"word": "doctor", "sentence": "He is a doctor.", "source": "Power Up · Level 2 · Unit 3 · Lesson 2"}, {"word": "nurse", "sentence": "She is a nurse.", "source": "Power Up · Level 2 · Unit 3 · Lesson 2"}, {"word": "tall", "sentence": "She is tall.", "source": "Power Up · Level 2 · Unit 3 · Lesson 4"}, {"word": "blonde", "sentence": "He's got blonde hair.", "source": "Power Up · Level 2 · Unit 3 · Lesson 4"}, {"word": "beard", "sentence": "He's got a green beard.", "source": "Power Up · Level 2 · Unit 3 · Lesson 5"}, {"word": "curly", "sentence": "He's got curly purple hair.", "source": "Power Up · Level 2 · Unit 3 · Lesson 5"}, {"word": "parents", "sentence": "The parents are standing behind Jenny.", "source": "Power Up · Level 2 · Unit 4 · Lesson 1"}, {"word": "uncle", "sentence": "Jenny's aunt is sitting between her mum and uncle.", "source": "Power Up · Level 2 · Unit 4 · Lesson 1"}, {"word": "aunt", "sentence": "Jenny's aunt is sitting between her mum and uncle.", "source": "Power Up · Level 2 · Unit 4 · Lesson 1"}, {"word": "balcony", "sentence": "His flat has got a balcony.", "source": "Power Up · Level 2 · Unit 4 · Lesson 4"}, {"word": "roof", "sentence": "There's a garden on the roof.", "source": "Power Up · Level 2 · Unit 4 · Lesson 4"}, {"word": "third floor", "sentence": "She lives on the third floor.", "source": "Power Up · Level 2 · Unit 4 · Lesson 4"}, {"word": "inside", "sentence": "Inside our house, we've got two showers.", "source": "Power Up · Level 2 · Unit 4 · Lesson 5"}, {"word": "upstairs", "sentence": "My bedroom is upstairs.", "source": "Power Up · Level 2 · Unit 4 · Lesson 5"}, {"word": "washing machine", "sentence": "This is a washing machine.", "source": "Power Up · Level 2 · Unit 4 · Lesson 7"}, {"word": "fish", "sentence": "They eat fish.", "source": "Power Up · Level 2 · Unit 5 · Lesson 7"}, {"word": "hot", "sentence": "Is it _______ (cold/hot/rainy/windy/snowy)? Yes, it is. / No, it isn't.", "source": "Power Up · Level 2 · Unit 6 · Lesson 2"}, {"word": "cold", "sentence": "Is it _______ (cold/hot/rainy/windy/snowy)? Yes, it is. / No, it isn't.", "source": "Power Up · Level 2 · Unit 6 · Lesson 2"}, {"word": "T-shirt", "sentence": "I'm wearing my T-shirt.", "source": "Power Up · Level 2 · Unit 6 · Lesson 4"}, {"word": "coat", "sentence": "Put on your coat.", "source": "Power Up · Level 2 · Unit 6 · Lesson 5"}, {"word": "put on", "sentence": "Put on your coat.", "source": "Power Up · Level 2 · Unit 6 · Lesson 5"}, {"word": "take off", "sentence": "Take off your boots.", "source": "Power Up · Level 2 · Unit 6 · Lesson 5"}, {"word": "wash", "sentence": "Wash the glasses.", "source": "Power Up · Level 2 · Unit 7 · Lesson 4"}, {"word": "drop", "sentence": "Don't drop the plates.", "source": "Power Up · Level 2 · Unit 7 · Lesson 4"}, {"word": "cinema", "sentence": "We saw a film at the cinema.", "source": "Power Up · Level 2 · Unit 8 · Lesson 4"}, {"word": "library", "sentence": "We got a book from the library.", "source": "Power Up · Level 2 · Unit 8 · Lesson 4"}, {"word": "sports centre", "sentence": "We played tennis at the sports centre.", "source": "Power Up · Level 2 · Unit 8 · Lesson 5"}, {"word": "bus station", "sentence": "We caught a bus home from the bus station.", "source": "Power Up · Level 2 · Unit 8 · Lesson 5"}, {"word": "pavement", "sentence": "We have to walk on the pavement.", "source": "Power Up · Level 2 · Unit 8 · Lesson 7"}, {"word": "email", "sentence": "I've got an email.", "source": "Power Up · Level 2 · Unit 9 · Lesson 4"}, {"word": "apartment", "sentence": "I live in an apartment.", "source": "Power Up · Level 2 · Unit 9 · Lesson 4"}, {"word": "adventure", "sentence": "Let's go on an adventure.", "source": "Power Up · Level 2 · Unit 9 · Lesson 4"}, {"word": "travel", "sentence": "We can travel round the world.", "source": "Power Up · Level 2 · Unit 9 · Lesson 5"}, {"word": "round", "sentence": "We can travel round the world.", "source": "Power Up · Level 2 · Unit 9 · Lesson 5"}, {"word": "blanket", "sentence": "Let's get a blanket.", "source": "Power Up · Level 2 · Unit 9 · Lesson 5"}, {"word": "text", "sentence": "Text our family.", "source": "Power Up · Level 2 · Unit 9 · Lesson 5"}, {"word": "Australia", "sentence": "It is near Australia.", "source": "Power Up · Level 2 · Unit 9 · Lesson 7"}, {"word": "laugh", "sentence": "You mustn't shout/laugh.", "source": "Power Up · Level 3 · Unit 1 · Lesson 4"}, {"word": "shout", "sentence": "You mustn't shout/laugh.", "source": "Power Up · Level 3 · Unit 1 · Lesson 4"}, {"word": "hop", "sentence": "Don't hop/skip.", "source": "Power Up · Level 3 · Unit 1 · Lesson 4"}, {"word": "skip", "sentence": "Don't hop/skip.", "source": "Power Up · Level 3 · Unit 1 · Lesson 4"}, {"word": "brain", "sentence": "Your brain controls your sense of balance.", "source": "Power Up · Level 3 · Unit 1 · Lesson 6"}, {"word": "balance", "sentence": "Your brain controls your sense of balance.", "source": "Power Up · Level 3 · Unit 1 · Lesson 6"}, {"word": "cereal", "sentence": "I'd like a bowl of cereal.", "source": "Power Up · Level 3 · Unit 2 · Lesson 1"}, {"word": "built", "sentence": "After lunch we climbed the Great Wall, which they built years before.", "source": "Power Up · Level 3 · Unit 2 · Lesson 4"}, {"word": "grew up", "sentence": "We saw the place where May grew up.", "source": "Power Up · Level 3 · Unit 2 · Lesson 4"}, {"word": "taught", "sentence": "She told us about her teacher who taught her there.", "source": "Power Up · Level 3 · Unit 2 · Lesson 4"}, {"word": "dairy", "sentence": "Milk and cheese are dairy.", "source": "Power Up · Level 3 · Unit 2 · Lesson 6"}, {"word": "fat", "sentence": "Burgers and chocolate have a lot of fat.", "source": "Power Up · Level 3 · Unit 2 · Lesson 6"}, {"word": "backache", "sentence": "I've got a backache.", "source": "Power Up · Level 3 · Unit 3 · Lesson 4"}, {"word": "sore throat", "sentence": "He/She's got sore throat.", "source": "Power Up · Level 3 · Unit 3 · Lesson 4"}, {"word": "shape", "sentence": "Bones shape our body and hold us together.", "source": "Power Up · Level 3 · Unit 3 · Lesson 6"}, {"word": "hold", "sentence": "Bones shape our body and hold us together.", "source": "Power Up · Level 3 · Unit 3 · Lesson 6"}, {"word": "sky", "sentence": "Look at the stars which shine in the sky.", "source": "Power Up · Level 3 · Unit 4 · Lesson 1"}, {"word": "waterfall", "sentence": "Look at the waterfall which is tall and beautiful.", "source": "Power Up · Level 3 · Unit 4 · Lesson 1"}, {"word": "stem", "sentence": "Plants have three main parts: roots, a stem, and leaves.", "source": "Power Up · Level 3 · Unit 4 · Lesson 6"}, {"word": "chick", "sentence": "What is the chick's mother?-It is a___.", "source": "Reach Higher · Level 2 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "food", "sentence": "What food is it?-The food is a/an___.", "source": "Reach Higher · Level 2 · Unit 2 · Lesson 1-16（话题课）"}, {"word": "plant", "sentence": "It is good/bad for a plant.", "source": "Reach Higher · Level 2 · Unit 2 · Lesson 1-16（话题课）"}, {"word": "fall", "sentence": "What's the weather like in fall?", "source": "Reach Higher · Level 2 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "favorite", "sentence": "What's your favorite season?-My favorite season is___.", "source": "Reach Higher · Level 2 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "wear", "sentence": "Is it___in___?-I wear this___(hat/cap).", "source": "Reach Higher · Level 2 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "weather", "sentence": "What's the weather like?-It is___.", "source": "Reach Higher · Level 2 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "city", "sentence": "I have a___in my city/country.", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "country", "sentence": "I have a___in my city/country.", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "under", "sentence": "学习和使用介词in, on, under, in front of, behind, beside, above, between；学习和使用人称代词He, She, I, They", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "in front of", "sentence": "学习和使用介词in, on, under, in front of, behind, beside, above, between；学习和使用人称代词He, She, I, They", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "behind", "sentence": "学习和使用介词in, on, under, in front of, behind, beside, above, between；学习和使用人称代词He, She, I, They", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "beside", "sentence": "学习和使用介词in, on, under, in front of, behind, beside, above, between；学习和使用人称代词He, She, I, They", "source": "Reach Higher · Level 3 · Unit 1 · Lesson 1-16（话题课）"}, {"word": "morning", "sentence": "What do you do in the morning?-I___in the morning.", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "high", "sentence": "学习和使用专有名词；学习和使用介词in, at；学习和使用反义词light/dark, early/late, high/low", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "low", "sentence": "学习和使用专有名词；学习和使用介词in, at；学习和使用反义词light/dark, early/late, high/low", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "dark", "sentence": "学习和使用专有名词；学习和使用介词in, at；学习和使用反义词light/dark, early/late, high/low", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "early", "sentence": "学习和使用专有名词；学习和使用介词in, at；学习和使用反义词light/dark, early/late, high/low", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "late", "sentence": "学习和使用专有名词；学习和使用介词in, at；学习和使用反义词light/dark, early/late, high/low", "source": "Reach Higher · Level 3 · Unit 3 · Lesson 1-16（话题课）"}, {"word": "together", "sentence": "My ___ is in my family. / My family ___. / My family is ___. / I learned about families which ___ together. / My family helps me ___. / We go to the ___. / We like to ___ together.", "source": "Reach Higher · Level 4 · Unit 1 · Lesson 1（话题课1（第1循环））"}, {"word": "alive", "sentence": "20组，围绕Living/nonliving things话题（如：___ is/are alive. / ___ can ___. / Living things can ___. / A plant needs air, water, and ___. 等）", "source": "Reach Higher · Level 4 · Unit 2 · Lesson 1（话题课1（第1循环））"}, {"word": "delivery", "sentence": "I need ___. / I want ___. / First,___, then,___, last, ___. / What___. Where___. Why___. / A delivery can bring ___ to___. / What/Where/How/Who/Why ___? / What things do you pay for? I pay for___. / How do you pay with? I pay with ___.", "source": "Reach Higher · Level 4 · Unit 3 · Lesson 1（话题课1（第1循环））"}, {"word": "bring", "sentence": "I need ___. / I want ___. / First,___, then,___, last, ___. / What___. Where___. Why___. / A delivery can bring ___ to___. / What/Where/How/Who/Why ___? / What things do you pay for? I pay for___. / How do you pay with? I pay with ___.", "source": "Reach Higher · Level 4 · Unit 3 · Lesson 1（话题课1（第1循环））"}, {"word": "alike", "sentence": "A/An ___ has ___, but ___ a/an ___ has ___. / ___ and ___ are alike because ___. / ___ and ___ are different because ___. 等", "source": "Reach Higher · Level 4 · Unit 5 · Lesson 1（话题课1（第1循环））"}, {"word": "different", "sentence": "A/An ___ has ___, but ___ a/an ___ has ___. / ___ and ___ are alike because ___. / ___ and ___ are different because ___. 等", "source": "Reach Higher · Level 4 · Unit 5 · Lesson 1（话题课1（第1循环））"}, {"word": "communicate", "sentence": "The main idea is ___. / There are many tools at the farm. They are ___. / Long ago, people ___. Now, I can communicate by ___. 等", "source": "Reach Higher · Level 4 · Unit 7 · Lesson 1（话题课1（第1循环））"}, {"word": "map", "sentence": "We can use a/an ___ map to ___. / The symbol of the ___ stands for ___. / First, ___. / There, he ___. 等", "source": "Reach Higher · Level 4 · Unit 8 · Lesson 1（话题课1（第1循环））"}, {"word": "symbol", "sentence": "We can use a/an ___ map to ___. / The symbol of the ___ stands for ___. / First, ___. / There, he ___. 等", "source": "Reach Higher · Level 4 · Unit 8 · Lesson 1（话题课1（第1循环））"}, {"word": "safe", "sentence": "The ___ of ___ help them stay safe in their habitat. / ___ need(s) to survive. / The picture shows ___. 等", "source": "Reach Higher · Level 5 · Unit 2 · Lesson 1（话题课1（第1循环））"}, {"word": "survive", "sentence": "The ___ of ___ help them stay safe in their habitat. / ___ need(s) to survive. / The picture shows ___. 等", "source": "Reach Higher · Level 5 · Unit 2 · Lesson 1（话题课1（第1循环））"}, {"word": "change", "sentence": "Water comes from ___, and it goes to ___. / What/Who/Where/When/Why/How ___? / Water can change from ___ to ___. 等", "source": "Reach Higher · Level 5 · Unit 3 · Lesson 1（话题课1（第1循环））"}, {"word": "celebrate", "sentence": "In my country we celebrate ___. / To celebrate it we ___ and we ___. / I feel ___ because ___. / This place has ___. 等", "source": "Reach Higher · Level 5 · Unit 8 · Lesson 1（话题课1（第1循环））"}, {"word": "landform", "sentence": "The landform has ___. This landform is ___. Which landform did I describe? / I was in ___. It was so ___! One thing we did was ___.", "source": "Reach Higher · Level 7 · Unit 3 · Lesson 1（话题课1（第1循环））"}, {"word": "control", "sentence": "Before ___. During ___. After ___. / To control the spread of COVID-19, we should ___. / ___ contains ___. / At first ___. Then, ___. After that, ___. In the end, ___. 等", "source": "Reach Higher · Level 7 · Unit 5 · Lesson 1（话题课1（第1循环））"}, {"word": "spread", "sentence": "Before ___. During ___. After ___. / To control the spread of COVID-19, we should ___. / ___ contains ___. / At first ___. Then, ___. After that, ___. In the end, ___. 等", "source": "Reach Higher · Level 7 · Unit 5 · Lesson 1（话题课1（第1循环））"}]</script>
+<script>
+const WOD_POOL = JSON.parse(document.getElementById('wod-data').textContent);
+function renderWordOfDay(){
+  const shanghaiNow = new Date(new Date().toLocaleString('en-US', { timeZone:'Asia/Shanghai' }));
+  const start = new Date(shanghaiNow.getFullYear(), 0, 0);
+  const dayOfYear = Math.floor((shanghaiNow - start) / 86400000);
+  const item = WOD_POOL[dayOfYear % WOD_POOL.length];
+  document.getElementById('wodWord').textContent = item.word;
+  document.getElementById('wodSentence').textContent = item.sentence;
+  document.getElementById('wodSource').textContent = '出自 ' + item.source;
+}
+renderWordOfDay();
+</script>
+<script>
+const TOOLS = [
+  { color:'#C97A2B', tag:'教师 / 教研', label:'学习规划', title:'学习规划报告工作台', href:'planner.html',
+    desc:'按学员实际完成课时生成阶段总结，自动给出下一阶段重点、国内考试对标建议，支持教师版/家长版切换，还能一键生成学习里程碑奖状。',
+    features:['课时完成清单，支持跳课场景','教材 × Level 难度定位总览','阶段表现评估 + 亮点/待加强标签','学习里程碑奖状一键生成'] },
+  { color:'#A24A3D', tag:'教师 / 家长', label:'词汇报告', title:'课后学习报告生成器 · 词汇卡片版', href:'vocab.html',
+    desc:'单课时 / 单元两种模式，自动生成带词汇卡片、星级评价的课后报告，支持导出图片/PDF，方便直接发送给家长。',
+    features:['单节课 / 整单元 双模式切换','词汇卡片可视化展示','星级评价 + 图标模式互动','一键导出图片，微信直接发送'] },
+  { color:'#33445A', tag:'教师 / 销售', label:'课程信息卡', title:'学员课程信息卡', href:'course-card.html',
+    desc:'按渠道、课包地区、购买方案自动生成课包价格与课时明细，填写学员姓名/教材/级别后一键导出高清课程凭证图片，可直接发送给家长确认。',
+    features:['渠道 / 地区 / 方案三级联动，自动核算总课时','约课规则、取消课步骤、退费政策一并展示','一键导出高清图片，学员姓名自动生成文件名'] },
+  { color:'#2E6B62', tag:'学生 / 家长', label:'练习工作单', title:'课后练习 · 图片版工作单', href:'worksheets.html',
+    desc:'选择教材版本、Level、Unit，直接浏览对应的课后练习题图片，一键下载高清图，方便家长打印给孩子独立完成，不含答案。',
+    features:['Power Up + Reach Higher 双教材合一，覆盖全部 Level','按教材 → Level → Unit 三步定位','练习题以高清图片呈现，支持长按保存 / 一键下载'] },
+  { color:'#E8833A', tag:'学管老师专用', label:'教材速查', title:'LingoAce 教材速查台', href:'curriculum-lookup.html',
+    desc:'点选教材体系 → 级别 → 单元，查看该单元具体教什么、对标校内哪个年级/教材、比校内多出哪些亮点，附新课标政策解读与续费沟通话术。',
+    features:['Power Up / Reach Higher / 自研教材三大体系全覆盖','逐单元对标校内年级教材，附详细异同分析','内置新课标政策解读、家长沟通话术'] },
+  { color:'#A24A3D', tag:'学管老师 / 家长', label:'学习画像', title:'学员学习画像与拓展资源库', href:'insights.html',
+    desc:'输入学员当前教材、Level、所在学校教材版本与考试需求，一键生成横纵向对比、当前内容解读、下一阶段规划，并匹配学员水平的课外绘本、动画、影视推荐。',
+    features:['横向对比校内教材，纵向定位 LingoAce 体系进度','当前内容解读 + 下一阶段学习规划','按学员水平匹配绘本 / 动画 / 影视，附同 Level 词汇例句出处'] },
+  { color:'#D98A3D', tag:'学管老师', label:'学管工作台', title:'学管师服务工作台', href:'gm-workbench.html',
+    desc:'填写学员信息，自动匹配自研 / Reach Higher / Power Up 官方课程大纲数据，一键生成续费话术、加课频对比、转介绍文案、可视化学情卡片四份物料。',
+    features:['续费沟通话术，基于真实课程大纲能力对标','加课频对比表 + 话术，进度可视化说服力强','转介绍文案 + 私聊邀请话术一键生成','可视化学情卡片，一键导出发给家长'] },
+  { color:'#4A55C9', tag:'教师 / 教研', label:'学习方案', title:'学员个性化学习方案生成器', href:'learning-plan.html',
+    desc:'填写学员基础信息，或直接导入成绩单/机构课表，一键生成教材课程对标分析、教育政策与英语教学趋势解读，以及分阶段的个性化学习方案，支持投屏演示与导出高清图片。',
+    features:['支持 PDF / Excel / 图片 / 文本智能提取学员信息','教材课程对标雷达图 + 政策趋势可视化','分阶段（基础巩固/能力提升/定向冲刺）学习路径','投屏模式、打印/导出PDF、导出高清图片三种输出方式'] }
+];
+
+const navList = document.getElementById('navList');
+const flyout = document.getElementById('flyout');
+const flyoutInner = document.getElementById('flyoutInner');
+let hideTimer = null;
+
+TOOLS.forEach((t, i) => {
+  const item = document.createElement('div');
+  item.className = 'nav-item';
+  item.style.setProperty('--dot-color', t.color);
+  item.innerHTML = `<span class="ni-num">${String(i+1).padStart(2,'0')}</span><span class="ni-label">${t.label}</span>`;
+  item.addEventListener('mouseenter', () => showFlyout(item, t));
+  item.addEventListener('mouseleave', scheduleHide);
+  item.addEventListener('click', () => openTool(t));
+  navList.appendChild(item);
+});
+
+/* ---------------- inline tool viewer (no new tabs) ---------------- */
+const toolOverlay = document.getElementById('toolOverlay');
+const toolFrame = document.getElementById('toolFrame');
+const toolBackLabel = document.getElementById('toolBackLabel');
+function openTool(t){
+  flyout.classList.remove('show');
+  document.querySelector('.shell').classList.remove('flyout-active');
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  toolBackLabel.textContent = t.title;
+  toolFrame.src = t.href;
+  toolOverlay.classList.add('show');
+  document.body.classList.add('tool-open');
+}
+function closeTool(){
+  toolOverlay.classList.remove('show');
+  document.body.classList.remove('tool-open');
+  setTimeout(() => { toolFrame.src = 'about:blank'; }, 400);
+}
+document.getElementById('toolBackBtn').addEventListener('click', closeTool);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeTool(); });
+
+function hexToRgbStr(hex){
+  const h = hex.replace('#','');
+  const r = parseInt(h.substring(0,2),16), g = parseInt(h.substring(2,4),16), b = parseInt(h.substring(4,6),16);
+  return `${r},${g},${b}`;
+}
+function showFlyout(item, t){
+  clearTimeout(hideTimer);
+  document.querySelector('.shell').classList.add('flyout-active');
+  const rect = item.getBoundingClientRect();
+  flyout.style.top = Math.max(16, rect.top + rect.height/2 - 140) + 'px';
+  flyoutInner.style.setProperty('--fy-color', t.color);
+  flyoutInner.style.setProperty('--fy-color-rgb', hexToRgbStr(t.color));
+  flyoutInner.innerHTML = `
+    <div class="flyout-tag">${t.tag}</div>
+    <h3>${t.title}</h3>
+    <p>${t.desc}</p>
+    <ul>${t.features.map(f => `<li>${f}</li>`).join('')}</ul>
+    <button class="flyout-btn" id="flyoutStartBtn">Start →</button>
+  `;
+  document.getElementById('flyoutStartBtn').addEventListener('click', () => openTool(t));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  item.classList.add('active');
+  flyout.classList.add('show');
+}
+function scheduleHide(){
+  hideTimer = setTimeout(() => {
+    flyout.classList.remove('show');
+    document.querySelector('.shell').classList.remove('flyout-active');
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  }, 220);
+}
+flyout.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+flyout.addEventListener('mouseleave', scheduleHide);
+
+/* ---------------- theme (day/night by Beijing time) ---------------- */
+function getBeijingHM(){
+  const parts = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', hour:'2-digit', minute:'2-digit', hour12:false }).formatToParts(new Date());
+  const h = parseInt(parts.find(p=>p.type==='hour').value, 10);
+  const m = parseInt(parts.find(p=>p.type==='minute').value, 10);
+  return h + m/60;
+}
+function applyTheme(){
+  const hm = getBeijingHM();
+  const isDay = hm >= 6 && hm < 18.5; // 06:00 - 18:30
+  document.documentElement.setAttribute('data-theme', isDay ? 'day' : 'night');
+  let mood = 'midday';
+  if (hm >= 6 && hm < 8.5) mood = 'sunrise';
+  else if (hm >= 16 && hm < 18.5) mood = 'sunset';
+  document.documentElement.setAttribute('data-daymood', mood);
+
+  let greeting = '教学工具中心';
+  if (hm >= 5 && hm < 11) greeting = '早安 · 教学工具中心';
+  else if (hm >= 11 && hm < 13.5) greeting = '午安 · 教学工具中心';
+  else if (hm >= 13.5 && hm < 18) greeting = '下午好 · 教学工具中心';
+  else if (hm >= 18 && hm < 23) greeting = '晚上好 · 教学工具中心';
+  else greeting = '夜深了，辛苦啦 · 教学工具中心';
+  const gEl = document.getElementById('greetingText');
+  if (gEl) gEl.textContent = greeting;
+}
+applyTheme();
+setInterval(applyTheme, 60000);
+
+/* ---------------- sunrise / sunset (approximate, Beijing) ---------------- */
+function computeSunTimes(){
+  // simplified solar approximation for Beijing (lat 39.9, lon 116.4), CST UTC+8
+  const now = new Date();
+  const start = new Date(Date.UTC(now.getUTCFullYear(),0,1));
+  const dayOfYear = Math.floor((now - start) / 86400000) + 1;
+  const lat = 39.9 * Math.PI/180;
+  const decl = 23.44 * Math.PI/180 * Math.sin(2*Math.PI*(284+dayOfYear)/365);
+  const hourAngle = Math.acos(-Math.tan(lat)*Math.tan(decl)) * 180/Math.PI;
+  const solarNoonUTC = 12 - 116.4/15; // approx, ignoring equation of time
+  const sunriseUTC = solarNoonUTC - hourAngle/15;
+  const sunsetUTC = solarNoonUTC + hourAngle/15;
+  const toHM = (utcHour) => {
+    let h = (utcHour + 8 + 24) % 24; // CST = UTC+8
+    const hh = Math.floor(h);
+    const mm = Math.round((h-hh)*60);
+    return `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`;
+  };
+  return { sunrise: toHM(sunriseUTC), sunset: toHM(sunsetUTC) };
+}
+function renderSunTimes(){
+  const { sunrise, sunset } = computeSunTimes();
+  const isDay = document.documentElement.getAttribute('data-theme') === 'day';
+  const el = document.getElementById('sunInfo');
+  if (el) el.innerHTML = `${isDay ? '☀️' : '🌙'} 日出 ${sunrise} · 日落 ${sunset}`;
+}
+renderSunTimes();
+setInterval(renderSunTimes, 60000);
+
+/* ---------------- interactive particle field (cursor-reactive) ---------------- */
+(function(){
+  const canvas = document.getElementById('bgParticles');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+  let sparkles = [];
+  const COUNT = 90;
+  let mouse = { x:-9999, y:-9999 };
+
+  function resize(){
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  function initParticles(){
+    particles = [];
+    for (let i=0;i<COUNT;i++){
+      const x = Math.random()*W, y = Math.random()*H;
+      particles.push({ hx:x, hy:y, x, y, r:Math.random()*1.6+0.6, vx:0, vy:0 });
+    }
+  }
+  resize();
+  initParticles();
+  window.addEventListener('resize', () => { resize(); initParticles(); });
+  window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
+  window.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
+
+  const SPARKLE_COLORS_DAY = ['#E8A93D','#E88BA8','#7FA8D9','#8FB4D9'];
+  const SPARKLE_COLORS_NIGHT = ['#D9A66B','#9B6FF2','#E85BAE','#4DC9BE'];
+  window.addEventListener('click', (e) => {
+    if (e.target.closest('.panel, .flyout, .nav-item, .widget, .rail-left, .rail-right')) return;
+    const isDay = document.documentElement.getAttribute('data-theme') === 'day';
+    const palette = isDay ? SPARKLE_COLORS_DAY : SPARKLE_COLORS_NIGHT;
+    const n = 10 + Math.floor(Math.random()*6);
+    for (let i=0;i<n;i++){
+      const angle = (Math.PI*2) * (i/n) + Math.random()*0.5;
+      const speed = Math.random()*2.2 + 0.8;
+      sparkles.push({
+        x:e.clientX, y:e.clientY,
+        vx:Math.cos(angle)*speed, vy:Math.sin(angle)*speed,
+        r:Math.random()*2 + 1.2, life:1,
+        color:palette[Math.floor(Math.random()*palette.length)]
+      });
+    }
+  });
+
+  function isDayNow(){ return document.documentElement.getAttribute('data-theme') === 'day'; }
+
+  function tick(){
+    ctx.clearRect(0,0,W,H);
+    const dotColor = isDayNow() ? '90,100,110' : '230,236,240';
+    const alphaBase = isDayNow() ? 0.35 : 0.55;
+    particles.forEach(p => {
+      const dx = p.x - mouse.x, dy = p.y - mouse.y;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      const radius = 140;
+      if (dist < radius){
+        const force = (radius - dist) / radius;
+        p.vx += (dx/dist || 0) * force * 0.9;
+        p.vy += (dy/dist || 0) * force * 0.9;
+      }
+      // spring back to home position
+      p.vx += (p.hx - p.x) * 0.012;
+      p.vy += (p.hy - p.y) * 0.012;
+      p.vx *= 0.9; p.vy *= 0.9;
+      p.x += p.vx; p.y += p.vy;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${dotColor},${alphaBase})`;
+      ctx.fill();
+    });
+
+    sparkles.forEach(s => {
+      s.x += s.vx; s.y += s.vy;
+      s.vx *= 0.96; s.vy *= 0.96;
+      s.life -= 0.018;
+      if (s.life > 0){
+        ctx.save();
+        ctx.globalAlpha = Math.max(s.life, 0);
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r * s.life, 0, Math.PI*2);
+        ctx.fillStyle = s.color;
+        ctx.shadowColor = s.color;
+        ctx.shadowBlur = 6;
+        ctx.fill();
+        ctx.restore();
+      }
+    });
+    sparkles = sparkles.filter(s => s.life > 0);
+
+    requestAnimationFrame(tick);
+  }
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    requestAnimationFrame(tick);
+  }
+})();
+
+/* ---------------- star field (night only) ---------------- */
+const starsEl = document.getElementById('bgStars');
+if (starsEl){
+  const starCount = 170;
+  const starColors = ['#fff','#fff','#fff','#E9D9FF','#FFE1F0','#D6ECFF'];
+  for (let i=0;i<starCount;i++){
+    const s = document.createElement('div');
+    const isBig = Math.random() < 0.12;
+    s.className = 'star-dot' + (isBig ? ' big' : '');
+    const size = isBig ? (Math.random()*1.4 + 1.8) : (Math.random()*1.3 + 0.5);
+    const color = starColors[Math.floor(Math.random()*starColors.length)];
+    s.style.width = size + 'px';
+    s.style.height = size + 'px';
+    s.style.left = Math.random()*100 + '%';
+    s.style.top = Math.random()*82 + '%';
+    s.style.background = color;
+    s.style.color = color;
+    s.style.animationDelay = (Math.random()*3.5) + 's';
+    s.style.animationDuration = (Math.random()*2.5 + 2.5) + 's';
+    starsEl.appendChild(s);
+  }
+}
+
+/* ---------------- clock ---------------- */
+function updateClock(){
+  const now = new Date();
+  const parts = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false }).formatToParts(now);
+  const get = (type) => parts.find(p => p.type === type).value;
+  document.getElementById('clockHM').textContent = `${get('hour')}:${get('minute')}`;
+  document.getElementById('clockSec').textContent = get('second');
+  const dateFmt = new Intl.DateTimeFormat('zh-CN', { timeZone:'Asia/Shanghai', year:'numeric', month:'long', day:'numeric', weekday:'long' });
+  document.getElementById('clockDate').textContent = dateFmt.format(now);
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+/* ---------------- quotes ---------------- */
+const QUOTES = [
+  ["Every word learned today is a door opened tomorrow.", "今天学的每个单词，都是通向明天的一扇门。"],
+  ["Small steps in speaking build big confidence.", "开口说的每一小步，都在积累大大的自信。"],
+  ["Curiosity is the best teacher a child can have.", "好奇心，是孩子最好的老师。"],
+  ["Mistakes are proof that you are trying.", "犯错，正说明你在努力尝试。"],
+  ["A new language is a new window to see the world.", "多一门语言，就多一扇看世界的窗。"],
+  ["Progress is quiet, but it never stops.", "进步总是安静的，但从未停止。"],
+  ["Reading a little every day adds up to a lot.", "每天读一点，日积月累就是很多。"],
+  ["Confidence grows every time you speak up.", "每一次开口，都是自信的一次生长。"],
+  ["Practice makes progress, not perfection.", "练习带来的是进步，而不是完美。"],
+  ["The best time to start was yesterday, the next best is now.", "最好的开始是昨天，其次是现在。"],
+  ["Great learners are not afraid to sound silly.", "真正会学习的孩子，不怕说错、不怕听起来奇怪。"],
+  ["Every fluent speaker was once a beginner.", "每一个说得流利的人，都曾是初学者。"],
+  ["Language grows roots the moment it is used out loud.", "语言只有被大声说出来的那一刻，才真正开始扎根。"],
+  ["A child's accent is proof they are brave enough to try.", "孩子的口音，恰恰证明了他们敢于尝试。"],
+  ["Every story you read plants a seed you don't see yet.", "读过的每一个故事，都种下了暂时看不见的种子。"],
+  ["Fluency is built one imperfect sentence at a time.", "流利，是由一句句不完美的话堆出来的。"],
+  ["The quietest learners often listen the hardest.", "最安静的孩子，往往听得最认真。"],
+  ["Vocabulary is a bridge between what you feel and what you can say.", "词汇量，是感受和表达之间的桥。"],
+  ["Learning a language is learning to see differently.", "学一门语言，也是在学一种看世界的方式。"],
+  ["A supportive teacher turns fear of mistakes into joy of trying.", "一个好老师，能把怕犯错变成愿意试。"],
+  ["Habits carry children further than motivation ever could.", "习惯比一时的动力，能带孩子走得更远。"],
+  ["What feels hard today becomes automatic tomorrow.", "今天觉得难的，明天就会变成自然而然。"],
+  ["Every question a child asks is a sign they are truly listening.", "孩子问出的每一个问题，都是认真在听的证明。"],
+  ["Consistency quietly outperforms intensity.", "细水长流，往往比一时冲刺更有效。"],
+  ["The goal isn't a perfect accent, it's a willing voice.", "目标从不是完美的口音，而是愿意开口的勇气。"],
+  ["Children learn languages the way they learn to walk: by falling first.", "孩子学语言就像学走路——都是先摔了几次才会的。"],
+  ["A single new word today can unlock a whole new sentence tomorrow.", "今天学的一个新词，可能是明天一整句话的钥匙。"],
+  ["Encouragement remembered outlasts correction forgotten.", "被记住的鼓励，比被忘记的纠正更有力量。"],
+  ["The best lessons often look like play.", "最好的学习，看起来常常像是在玩。"],
+  ["Every language carries a way of thinking worth discovering.", "每一门语言，都藏着一种值得被发现的思维方式。"]
+];
+const quoteText = document.getElementById('quoteText');
+const quoteCn = document.getElementById('quoteCn');
+let qIdx = Math.floor(Math.random()*QUOTES.length);
+function renderQuote(){
+  quoteText.style.opacity = 0;
+  setTimeout(() => {
+    quoteText.textContent = '“' + QUOTES[qIdx][0] + '”';
+    quoteCn.textContent = QUOTES[qIdx][1];
+    quoteText.style.opacity = 1;
+  }, 300);
+}
+renderQuote();
+setInterval(() => { qIdx = (qIdx+1) % QUOTES.length; renderQuote(); }, 9000);
+
+/* ---------------- calendar ---------------- */
+function renderCalendar(){
+  const now = new Date();
+  const shanghaiNow = new Date(now.toLocaleString('en-US', { timeZone:'Asia/Shanghai' }));
+  const y = shanghaiNow.getFullYear(), m = shanghaiNow.getMonth(), today = shanghaiNow.getDate();
+  const monthNames = ['一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月'];
+  document.getElementById('calMonth').textContent = monthNames[m];
+  document.getElementById('calYear').textContent = y;
+  const grid = document.getElementById('calGrid');
+  grid.innerHTML = '';
+  ['日','一','二','三','四','五','六'].forEach(d => {
+    const el = document.createElement('div'); el.className = 'cal-dow'; el.textContent = d; grid.appendChild(el);
+  });
+  const firstDow = new Date(y, m, 1).getDay();
+  const daysInMonth = new Date(y, m+1, 0).getDate();
+  for (let i=0;i<firstDow;i++){ const el = document.createElement('div'); el.className='cal-day empty'; grid.appendChild(el); }
+  for (let d=1; d<=daysInMonth; d++){
+    const el = document.createElement('div');
+    const dow = new Date(y,m,d).getDay();
+    el.className = 'cal-day' + (d===today ? ' today' : '') + ((dow===0||dow===6) ? ' weekend' : '');
+    el.textContent = d;
+    grid.appendChild(el);
+  }
+}
+renderCalendar();
+
+/* ---------------- particle world map ---------------- */
+const CONTINENTS = [
+  [[95,120],[150,75],[195,65],[235,85],[245,115],[225,105],[210,130],[245,150],[260,140],[250,175],[225,205],[235,235],[205,250],[180,220],[165,240],[140,210],[110,225],[90,190],[100,160],[75,150],[70,120]],
+  [[218,258],[255,250],[280,265],[300,300],[295,345],[305,390],[280,435],[255,415],[245,370],[215,340],[210,290]],
+  [[460,68],[500,55],[540,62],[555,85],[535,100],[555,115],[530,130],[495,120],[470,100],[475,80]],
+  [[470,168],[510,150],[545,158],[565,190],[558,225],[575,255],[562,300],[570,340],[545,385],[515,400],[495,375],[500,330],[478,290],[465,240],[472,200]],
+  [[565,70],[620,50],[680,45],[740,55],[800,50],[860,75],[890,105],[875,135],[895,160],[860,185],[820,175],[790,205],[750,195],[715,220],[695,265],[665,255],[680,215],[650,190],[610,175],[580,140],[595,105]],
+  [[815,335],[865,325],[905,340],[910,375],[880,400],[840,395],[810,370]]
+];
+function pointInPolygon(x, y, poly){
+  let inside = false;
+  for (let i=0, j=poly.length-1; i<poly.length; j=i++){
+    const xi=poly[i][0], yi=poly[i][1], xj=poly[j][0], yj=poly[j][1];
+    const intersect = ((yi>y) !== (yj>y)) && (x < (xj-xi)*(y-yi)/(yj-yi)+xi);
+    if (intersect) inside = !inside;
+  }
+  return inside;
+}
+function bboxOf(poly){
+  const xs = poly.map(p=>p[0]), ys = poly.map(p=>p[1]);
+  return { minX:Math.min(...xs), maxX:Math.max(...xs), minY:Math.min(...ys), maxY:Math.max(...ys) };
+}
+const particleLayer = document.getElementById('particleLayer');
+const svgNS = 'http://www.w3.org/2000/svg';
+CONTINENTS.forEach(poly => {
+  const box = bboxOf(poly);
+  const area = (box.maxX-box.minX) * (box.maxY-box.minY);
+  const targetCount = Math.max(40, Math.round(area / 55));
+  let placed = 0, attempts = 0;
+  while (placed < targetCount && attempts < targetCount * 12){
+    attempts++;
+    const x = box.minX + Math.random()*(box.maxX-box.minX);
+    const y = box.minY + Math.random()*(box.maxY-box.minY);
+    if (pointInPolygon(x, y, poly)){
+      const dot = document.createElementNS(svgNS, 'circle');
+      const r = Math.random()*1.3 + 0.5;
+      dot.setAttribute('cx', x.toFixed(1));
+      dot.setAttribute('cy', y.toFixed(1));
+      dot.setAttribute('r', r.toFixed(2));
+      dot.setAttribute('class', 'particle-dot');
+      dot.style.opacity = (Math.random()*0.55 + 0.4).toFixed(2);
+      particleLayer.appendChild(dot);
+      placed++;
+    }
+  }
+});
+
+/* ---------------- world map markers ---------------- */
+const WORLD_GREETINGS = [
+  { name:'美国', left:15, top:28, word:'Hello', lang:'英语', flag:'🇺🇸', color:'#DB8770' },
+  { name:'巴西', left:26, top:68, word:'Olá', lang:'葡萄牙语', flag:'🇧🇷', color:'#4FA396' },
+  { name:'法国', left:50, top:18, word:'Bonjour', lang:'法语', flag:'🇫🇷', color:'#8B92E0' },
+  { name:'俄罗斯', left:75, top:14, word:'Привет', lang:'俄语', flag:'🇷🇺', color:'#D98A3D' },
+  { name:'印度', left:70, top:42, word:'नमस्ते', lang:'印地语', flag:'🇮🇳', color:'#DB8770' },
+  { name:'日本', left:87, top:22, word:'こんにちは', lang:'日语', flag:'🇯🇵', color:'#4FA396' },
+  { name:'澳大利亚', left:85.5, top:73, word:"G'day", lang:'英语（澳式）', flag:'🇦🇺', color:'#8B92E0' },
+  { name:'中国', left:80, top:27, word:'你好', lang:'中文', flag:'🇨🇳', color:'#A24A3D' }
+];
+const LINK_PAIRS = [[0,2],[2,3],[4,5],[7,5]];
+const globeMarkers = document.getElementById('globeMarkers');
+const globeLinks = document.getElementById('globeLinks');
+const globeTip = document.getElementById('globeTip');
+const globeTipWord = document.getElementById('globeTipWord');
+const globeTipLang = document.getElementById('globeTipLang');
+
+LINK_PAIRS.forEach(([ai, bi]) => {
+  const a = WORLD_GREETINGS[ai], b = WORLD_GREETINGS[bi];
+  const x1 = a.left*10, y1 = a.top*5, x2 = b.left*10, y2 = b.top*5;
+  const mx = (x1+x2)/2, my = Math.min(y1,y2) - 40;
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d', `M${x1},${y1} Q${mx},${my} ${x2},${y2}`);
+  globeLinks.appendChild(path);
+});
+
+WORLD_GREETINGS.forEach(g => {
+  const base = document.createElement('div');
+  base.className = 'globe-marker-base';
+  base.style.left = g.left + '%';
+  base.style.top = g.top + '%';
+  globeMarkers.appendChild(base);
+
+  const ring = document.createElement('div');
+  ring.className = 'globe-marker-ring';
+  ring.style.left = g.left + '%';
+  ring.style.top = g.top + '%';
+  ring.style.setProperty('--badge-color', g.color);
+  globeMarkers.appendChild(ring);
+
+  const m = document.createElement('div');
+  m.className = 'globe-badge';
+  m.style.left = g.left + '%';
+  m.style.top = g.top + '%';
+  m.style.setProperty('--badge-color', g.color);
+  m.innerHTML = `<div class="globe-badge-stem"></div><div class="globe-badge-inner">${g.flag}</div>`;
+  m.addEventListener('mouseenter', () => {
+    globeTipWord.textContent = g.word;
+    globeTipLang.textContent = `${g.name} · ${g.lang}`;
+    globeTip.style.left = g.left + '%';
+    globeTip.style.bottom = (100 - g.top + 12) + '%';
+    globeTip.style.opacity = 1;
+    globeTip.style.transform = 'translateX(-50%) translateY(-4px)';
+  });
+  m.addEventListener('mouseleave', () => {
+    globeTip.style.opacity = 0;
+    globeTip.style.transform = 'translateX(-50%) translateY(6px)';
+  });
+  globeMarkers.appendChild(m);
+});
+</script>
+
+</div>
+<div id="authGate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1E2A3A 0%,#202C3D 100%);font-family:'Inter',system-ui,sans-serif;">
+  <div style="width:100%;max-width:360px;padding:0 24px;text-align:center;">
+    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;margin:0 auto 18px;">&#8963;</div>
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A66B;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">LingoAce &middot; &#21463;&#38480;&#35775;&#38382;</div>
+    <div style="font-size:15px;color:#F4F1E8;margin-bottom:22px;line-height:1.6;">&#35831;&#36755;&#20837;&#35775;&#38382;&#23494;&#30721;</div>
+    <input id="authGateInput" type="password" placeholder="&#23494;&#30721;" style="width:100%;padding:12px 14px;border-radius:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;margin-bottom:12px;outline:none;box-sizing:border-box;text-align:center;">
+    <button id="authGateBtn" style="width:100%;padding:12px 14px;border-radius:9px;border:none;background:#C97A2B;color:#fff;font-size:14px;font-weight:700;cursor:pointer;">&#36827;&#20837;</button>
+    <div id="authGateError" style="color:#E39A8A;font-size:12.5px;margin-top:12px;display:none;">&#23494;&#30721;&#19981;&#27491;&#30830;&#65292;&#35831;&#37325;&#35797;</div>
+  </div>
+</div>
+<script>
+(function(){
+  var PASSWORD = "lyp82nlf";
+  var STORAGE_KEY = "la_tools_auth_v2";
+  var VALID_HOURS = 168;
+  function unlock(){
+    var g = document.getElementById('authGate');
+    var c = document.getElementById('gatedContent');
+    if (g) g.style.display = 'none';
+    if (c) c.style.display = '';
+  }
+  try{
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved && saved.ok && (Date.now() - saved.ts) < VALID_HOURS*3600*1000){
+      unlock();
+    }
+  }catch(e){}
+  var btn = document.getElementById('authGateBtn');
+  var input = document.getElementById('authGateInput');
+  var err = document.getElementById('authGateError');
+  function tryLogin(){
+    if (input.value === PASSWORD){
+      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ok:true, ts:Date.now()})); }catch(e){}
+      unlock();
+    } else {
+      err.style.display = 'block';
+      input.value = '';
+      input.focus();
+    }
+  }
+  if (btn) btn.addEventListener('click', tryLogin);
+  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') tryLogin(); });
+  setTimeout(function(){ if (input) input.focus(); }, 50);
+})();
+</script>
+</body>
+</html>

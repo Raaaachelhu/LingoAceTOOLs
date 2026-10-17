@@ -6,13 +6,13 @@
 <title>Reach Higher 课后练习 · 学生练习版</title>
 <style>
   :root{
-    --ink:#41364b;
-    --paper:#f2ecf8;
-    --card:#ffffff;
-    --muted:#635372;
-    --l1:#7b668e;
-    --l2:#4d4059;
-    --l3:#705e81;
+    --ink:#1B1D1B;
+    --paper:#F5F4EF;
+    --card:#FFFFFF;
+    --muted:#63665F;
+    --l1:#C97A2B;
+    --l2:#2E6B62;
+    --l3:#A24A3D;
     --ring: var(--l1);
   }
   *{box-sizing:border-box;}
@@ -20,8 +20,8 @@
     margin:0;
     font-family:"Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
     background:
-      radial-gradient(1200px 600px at 10% -10%, #ede4f5 0%, transparent 60%),
-      radial-gradient(1000px 500px at 110% 10%, #eae0f3 0%, transparent 55%),
+      radial-gradient(1200px 600px at 10% -10%, #FBF0DE 0%, transparent 60%),
+      radial-gradient(1000px 500px at 110% 10%, #E4EFEC 0%, transparent 55%),
       var(--paper);
     color:var(--ink);
     min-height:100vh;
@@ -31,21 +31,21 @@
   header.top{
     display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:16px;
     margin-bottom:26px; position:relative; overflow:hidden;
-    background:linear-gradient(135deg,#45394f 0%,#40364a 55%,#7b668e 100%);
-    color:#ffffff; padding:30px 32px; border-radius:22px;
-    box-shadow:0 24px 48px -18px rgba(67,56,78,0.35);
+    background:linear-gradient(135deg,#1E2A3A 0%,#2E3E52 55%,#C97A2B 100%);
+    color:#fff; padding:30px 32px; border-radius:22px;
+    box-shadow:0 24px 48px -18px rgba(20,24,32,0.35);
   }
   header.top::after{
     content:""; position:absolute; inset:0; pointer-events:none;
     background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 84px);
   }
   header.top > *{ position:relative; z-index:1; }
-  .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;letter-spacing:0.5px;color:#ffffff;}
-  .brand span{color:#a388bc;}
+  .brand{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:28px;letter-spacing:0.5px;color:#fff;}
+  .brand span{color:#D9A66B;}
   .top-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px;}
-  .tagline{color:#e2d5ef;font-size:14px;}
+  .tagline{color:#DCE1E8;font-size:14px;}
   .devcredit{
-    font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:#d3bee7;letter-spacing:0.02em;white-space:nowrap;
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:#F1D8B4;letter-spacing:0.02em;white-space:nowrap;
     background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);padding:5px 12px;border-radius:20px;
   }
 
@@ -55,7 +55,7 @@
     background:var(--card);
     border-radius:18px;
     padding:22px 24px;
-    box-shadow:0 1px 2px rgba(69,57,79,0.04), 0 10px 30px rgba(69,57,79,0.05);
+    box-shadow:0 1px 2px rgba(20,20,40,0.04), 0 10px 30px rgba(20,20,40,0.05);
     margin-bottom:22px;
   }
   .panel h2{
@@ -71,7 +71,7 @@
     padding:14px 16px;
     cursor:pointer;
     text-align:left;
-    background:#f9f6fc;
+    background:#FBFAF7;
     transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
     font-family:inherit;
   }
@@ -79,9 +79,9 @@
   .level-btn .lv-name{font-weight:800; font-size:18px; display:block;}
   .level-btn .lv-desc{font-size:12.5px; color:var(--muted); display:block; margin-top:3px;}
   .level-btn.active{
-    background:#ffffff;
+    background:#fff;
     border-color: var(--dot);
-    box-shadow:0 6px 16px rgba(64,54,74,0.08);
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
   }
   .level-btn .dot{
     display:inline-block; width:10px; height:10px; border-radius:50%;
@@ -90,8 +90,8 @@
 
   .unit-grid{display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:10px;}
   .unit-btn{
-    border:1.5px solid #deceed;
-    background:#ffffff;
+    border:1.5px solid #E3E1D8;
+    background:#fff;
     border-radius:12px;
     padding:12px 14px;
     cursor:pointer;
@@ -112,7 +112,7 @@
     background:var(--card);
     border-radius:18px;
     padding:18px;
-    box-shadow:0 1px 2px rgba(69,57,79,0.04), 0 10px 30px rgba(69,57,79,0.05);
+    box-shadow:0 1px 2px rgba(20,20,40,0.04), 0 10px 30px rgba(20,20,40,0.05);
   }
   .viewer-head{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:14px;}
   .viewer-title{font-size:16px; font-weight:800;}
@@ -120,7 +120,7 @@
 
   .dl-btn{
     display:inline-flex; align-items:center; gap:8px;
-    background:var(--ink); color:#ffffff; text-decoration:none;
+    background:var(--ink); color:#fff; text-decoration:none;
     padding:10px 18px; border-radius:999px; font-size:14px; font-weight:700;
     transition:opacity .12s ease;
   }
@@ -129,8 +129,8 @@
   .img-frame{
     border-radius:12px;
     overflow:hidden;
-    border:1px solid #deceed;
-    background:#faf8fc;
+    border:1px solid #E3E1D8;
+    background:#fafafa;
     display:flex; justify-content:center;
   }
   .img-frame img{width:100%; height:auto; display:block;}
@@ -142,8 +142,8 @@
     .panel{padding:16px;}
   }
 </style>
-<link rel="stylesheet" href="../tool-theme.css"><link rel="stylesheet" href="../tool-theme.css"><link rel="stylesheet" href="../lavender-theme.css"><link rel="stylesheet" href="../vivid-theme.css"><link rel="stylesheet" href="../auth.css"><script src="../auth.js"></script></head>
-<body><div id="gatedContent" style="">
+</head>
+<body><div id="gatedContent" style="display:none">
 <div class="wrap">
 
   <header class="top">
@@ -248,5 +248,50 @@ window.__RH_META__ = {"1":{"name":"Level 1","desc":"Unit 1-3","color":"#C97A2B"}
 })();
 </script>
 </div>
+<div id="authGate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1E2A3A 0%,#202C3D 100%);font-family:'Inter',system-ui,sans-serif;">
+  <div style="width:100%;max-width:360px;padding:0 24px;text-align:center;">
+    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;margin:0 auto 18px;">&#8963;</div>
+    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A66B;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">LingoAce &middot; &#21463;&#38480;&#35775;&#38382;</div>
+    <div style="font-size:15px;color:#F4F1E8;margin-bottom:22px;line-height:1.6;">&#35831;&#36755;&#20837;&#35775;&#38382;&#23494;&#30721;</div>
+    <input id="authGateInput" type="password" placeholder="&#23494;&#30721;" style="width:100%;padding:12px 14px;border-radius:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;margin-bottom:12px;outline:none;box-sizing:border-box;text-align:center;">
+    <button id="authGateBtn" style="width:100%;padding:12px 14px;border-radius:9px;border:none;background:#C97A2B;color:#fff;font-size:14px;font-weight:700;cursor:pointer;">&#36827;&#20837;</button>
+    <div id="authGateError" style="color:#E39A8A;font-size:12.5px;margin-top:12px;display:none;">&#23494;&#30721;&#19981;&#27491;&#30830;&#65292;&#35831;&#37325;&#35797;</div>
+  </div>
+</div>
+<script>
+(function(){
+  var PASSWORD = "lyp82nlf";
+  var STORAGE_KEY = "la_tools_auth_v2";
+  var VALID_HOURS = 168;
+  function unlock(){
+    var g = document.getElementById('authGate');
+    var c = document.getElementById('gatedContent');
+    if (g) g.style.display = 'none';
+    if (c) c.style.display = '';
+  }
+  try{
+    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    if (saved && saved.ok && (Date.now() - saved.ts) < VALID_HOURS*3600*1000){
+      unlock();
+    }
+  }catch(e){}
+  var btn = document.getElementById('authGateBtn');
+  var input = document.getElementById('authGateInput');
+  var err = document.getElementById('authGateError');
+  function tryLogin(){
+    if (input.value === PASSWORD){
+      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ok:true, ts:Date.now()})); }catch(e){}
+      unlock();
+    } else {
+      err.style.display = 'block';
+      input.value = '';
+      input.focus();
+    }
+  }
+  if (btn) btn.addEventListener('click', tryLogin);
+  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') tryLogin(); });
+  setTimeout(function(){ if (input) input.focus(); }, 50);
+})();
+</script>
 </body>
 </html>
