@@ -9,22 +9,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#1E2A3A;
-  --navy-deep:#07070F;
-  --amber:#C97A2B;
-  --amber-light:#D9A66B;
-  --teal:#2E6B62;
-  --brick:#A24A3D;
-  --cream:#F4F1E8;
-  --cream-soft:#C7CCD6;
+  --navy:#45394f;
+  --navy-deep:#453a50;
+  --amber:#7b668e;
+  --amber-light:#a388bc;
+  --teal:#4d4059;
+  --brick:#705e81;
+  --cream:#eee6f6;
+  --cream-soft:#cfb8e5;
   --rgb-text:244,241,232;
   --rgb-panel:255,255,255;
   --text-strong:#ffffff;
-  --sky-1:#9B6FF2;
-  --sky-2:#E85BAE;
-  --sky-3:#3F8FE0;
-  --sky-4:#E89A4D;
-  --sky-5:#4DC9BE;
+  --sky-1:#b19bc6;
+  --sky-2:#a287bc;
+  --sky-3:#9170af;
+  --sky-4:#9c7eb7;
+  --sky-5:#8c6bab;
   --page-bg:var(--navy-deep);
   --vignette-c:5,5,12;
   --vignette-a1:0;
@@ -33,66 +33,66 @@
   --glass:rgba(var(--rgb-text),0.05);
   --glass-strong:rgba(var(--rgb-text),0.09);
   --glass-border:rgba(var(--rgb-text),0.13);
-  --fy-bg-1:rgba(30,42,58,0.86);
-  --fy-bg-2:rgba(15,22,32,0.9);
+  --fy-bg-1:rgba(69,57,79,0.86);
+  --fy-bg-2:rgba(69,58,80,0.9);
   --fy-border:rgba(255,255,255,0.14);
   --radius-lg:22px;
 }
 [data-theme="day"]{
-  --navy:#3B4A5A;
-  --navy-deep:#EAF1F5;
-  --amber:#B4611F;
-  --amber-light:#C97A2B;
-  --teal:#1A6A62;
-  --brick:#A6192E;
-  --cream:#262B33;
-  --cream-soft:#5B6472;
+  --navy:#4b3f56;
+  --navy-deep:#f0e8f7;
+  --amber:#6a597a;
+  --amber-light:#7b668e;
+  --teal:#42374d;
+  --brick:#60506f;
+  --cream:#42374c;
+  --cream-soft:#675677;
   --rgb-text:38,43,51;
   --rgb-panel:59,74,90;
-  --text-strong:#1B2027;
-  --sky-1:#F3C79E;
-  --sky-2:#CFE0E8;
-  --sky-3:#E9DACB;
-  --sky-4:#B9CBD6;
-  --sky-5:#D6E8E4;
-  --page-bg:#EEF1EC;
+  --text-strong:#43384d;
+  --sky-1:#c9afe2;
+  --sky-2:#dccbec;
+  --sky-3:#dbc9eb;
+  --sky-4:#c8aee1;
+  --sky-5:#e0d0ee;
+  --page-bg:#efe7f6;
   --vignette-c:255,248,238;
   --vignette-a1:0.05;
   --vignette-a2:0.4;
   --particle-rgb:120,132,145;
   --fy-bg-1:rgba(255,255,255,0.78);
-  --fy-bg-2:rgba(238,241,236,0.82);
-  --fy-border:rgba(38,43,51,0.14);
+  --fy-bg-2:rgba(239,231,246,0.82);
+  --fy-border:rgba(66,55,76,0.14);
   --mist-opacity:0.5;
   --sun-opacity:0;
 }
 [data-theme="day"][data-daymood="sunrise"]{
-  --sky-1:#F6B98A;
-  --sky-2:#F0DDBB;
-  --sky-3:#E8C9D6;
-  --sky-4:#C9DCE8;
-  --sky-5:#F9D8AE;
-  --page-bg:#F5ECE0;
+  --sky-1:#c1aed2;
+  --sky-2:#d6c2e9;
+  --sky-3:#d9c7ea;
+  --sky-4:#d9c7ea;
+  --sky-5:#d4bfe8;
+  --page-bg:#ebe1f4;
   --mist-opacity:0.7;
   --sun-opacity:0.9;
 }
 [data-theme="day"][data-daymood="midday"]{
-  --sky-1:#EFDBB8;
-  --sky-2:#CFE3EE;
-  --sky-3:#E6EEE4;
-  --sky-4:#C3D6E2;
-  --sky-5:#DCEDE8;
-  --page-bg:#F1F3EE;
+  --sky-1:#d4bfe8;
+  --sky-2:#dfd0ed;
+  --sky-3:#e9dff3;
+  --sky-4:#d3bee7;
+  --sky-5:#e5d8f1;
+  --page-bg:#f1eaf7;
   --mist-opacity:0.32;
   --sun-opacity:0.55;
 }
 [data-theme="day"][data-daymood="sunset"]{
-  --sky-1:#EE9A6B;
-  --sky-2:#E7B7C4;
-  --sky-3:#D9C3E0;
-  --sky-4:#B7C6DE;
-  --sky-5:#F0C39A;
-  --page-bg:#F0E6E2;
+  --sky-1:#ad95c4;
+  --sky-2:#d0b9e5;
+  --sky-3:#d2bde6;
+  --sky-4:#cbb2e3;
+  --sky-5:#c6aae0;
+  --page-bg:#e9dff3;
   --mist-opacity:0.55;
   --sun-opacity:0.85;
 }
@@ -130,12 +130,12 @@ a{ color:inherit; text-decoration:none; }
 .bg-grain{ position:absolute; inset:0; opacity:0.05; mix-blend-mode:overlay; pointer-events:none; }
 .bg-stars{ position:absolute; inset:0; opacity:0; transition:opacity 1.2s ease; pointer-events:none; }
 [data-theme="night"] .bg-stars{ opacity:1; }
-.star-dot{ position:absolute; border-radius:50%; background:#fff; animation:twinkle 3.5s ease-in-out infinite; }
+.star-dot{ position:absolute; border-radius:50%; background:#ffffff; animation:twinkle 3.5s ease-in-out infinite; }
 .star-dot.big{ box-shadow:0 0 6px 1px currentColor; }
 @keyframes twinkle{ 0%,100%{ opacity:0.15; } 50%{ opacity:0.95; } }
-.bg-moon{ position:absolute; top:8%; right:10%; width:64px; height:64px; border-radius:50%; opacity:0; transition:opacity 1.2s ease; background:radial-gradient(circle at 35% 32%, #fdfaf3, #d8d3c4 60%, #a8a397 100%); box-shadow:0 0 70px 16px rgba(180,150,230,0.3); }
+.bg-moon{ position:absolute; top:8%; right:10%; width:64px; height:64px; border-radius:50%; opacity:0; transition:opacity 1.2s ease; background:radial-gradient(circle at 35% 32%, #f8f5fb, #cfb7e5 60%, #a085ba 100%); box-shadow:0 0 70px 16px rgba(191,172,208,0.3); }
 [data-theme="night"] .bg-moon{ opacity:0.9; }
-.bg-sun{ position:absolute; left:10%; bottom:6%; width:220px; height:220px; border-radius:50%; opacity:0; transition:opacity 1.5s ease, bottom 3s ease, left 3s ease; background:radial-gradient(circle, rgba(255,224,168,0.9), rgba(255,200,140,0.35) 45%, transparent 72%); filter:blur(2px); }
+.bg-sun{ position:absolute; left:10%; bottom:6%; width:220px; height:220px; border-radius:50%; opacity:0; transition:opacity 1.5s ease, bottom 3s ease, left 3s ease; background:radial-gradient(circle, rgba(212,191,232,0.9), rgba(198,171,224,0.35) 45%, transparent 72%); filter:blur(2px); }
 [data-theme="day"] .bg-sun{ opacity:var(--sun-opacity); }
 [data-theme="day"][data-daymood="sunrise"] .bg-sun{ left:8%; bottom:4%; }
 [data-theme="day"][data-daymood="midday"] .bg-sun{ left:70%; bottom:58%; width:170px; height:170px; }
@@ -209,7 +209,7 @@ a{ color:inherit; text-decoration:none; }
   -webkit-backdrop-filter:blur(24px) saturate(160%);
   border:1px solid var(--fy-border);
   padding:30px 34px 26px 46px;
-  filter:drop-shadow(0 24px 50px rgba(0,0,0,0.35)) drop-shadow(0 2px 10px rgba(0,0,0,0.22));
+  filter:drop-shadow(0 24px 50px rgba(64,54,74,0.35)) drop-shadow(0 2px 10px rgba(64,54,74,0.22));
   transition:background 1s ease, border-color 1s ease;
 }
 .flyout-tag{ font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--fy-color, var(--amber-light)); margin-bottom:10px; font-weight:600; }
@@ -226,11 +226,11 @@ a{ color:inherit; text-decoration:none; }
   padding:10px 22px; border-radius:10px;
   backdrop-filter:blur(10px) saturate(160%);
   -webkit-backdrop-filter:blur(10px) saturate(160%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(0,0,0,0.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 6px 16px rgba(64,54,74,0.18);
   transition:background .18s ease, transform .18s ease, box-shadow .18s ease;
   text-transform:uppercase;
 }
-.flyout-btn:hover{ background:rgba(var(--fy-color-rgb, 217,166,107), 0.24); transform:translateX(2px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.18), 0 8px 20px rgba(0,0,0,0.22); }
+.flyout-btn:hover{ background:rgba(var(--fy-color-rgb, 217,166,107), 0.24); transform:translateX(2px); box-shadow:inset 0 1px 0 rgba(255,255,255,0.18), 0 8px 20px rgba(64,54,74,0.22); }
 .flyout-btn{ border:none; font-family:inherit; }
 
 /* ===================== INLINE TOOL VIEWER ===================== */
@@ -244,20 +244,20 @@ body.tool-open{ overflow:hidden; }
 .tool-overlay.show{ opacity:1; pointer-events:auto; transform:scale(1); }
 .tool-bar{
   display:flex; align-items:center; gap:16px; padding:12px 20px;
-  background:linear-gradient(180deg, var(--navy) 0%, #202C3D 100%);
-  flex-shrink:0; box-shadow:0 4px 16px rgba(0,0,0,0.25); position:relative; z-index:1;
+  background:linear-gradient(180deg, var(--navy) 0%, #45394f 100%);
+  flex-shrink:0; box-shadow:0 4px 16px rgba(64,54,74,0.25); position:relative; z-index:1;
 }
 .tool-back-btn{
   display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700;
-  color:#F4F1E8; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18);
+  color:#eee6f6; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.18);
   padding:8px 16px; border-radius:9px; cursor:pointer; font-family:inherit;
   transition:background .15s ease, transform .15s ease;
 }
 .tool-back-btn:hover{ background:rgba(255,255,255,0.18); transform:translateX(-2px); }
 .tool-back-arrow{ display:inline-block; transition:transform .15s ease; }
 .tool-back-btn:hover .tool-back-arrow{ transform:translateX(-3px); }
-.tool-back-label{ font-size:12.5px; color:rgba(244,241,232,0.6); font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em; }
-.tool-iframe{ flex:1; width:100%; border:none; background:#fff; }
+.tool-back-label{ font-size:12.5px; color:rgba(238,230,246,0.6); font-family:'IBM Plex Mono',monospace; letter-spacing:0.02em; }
+.tool-iframe{ flex:1; width:100%; border:none; background:#ffffff; }
 
 /* ===================== CENTER STAGE ===================== */
 .stage{ display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 40px; text-align:center; overflow-y:auto; max-height:100vh; }
@@ -265,7 +265,7 @@ body.tool-open{ overflow:hidden; }
   font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.22em; text-transform:uppercase;
   color:var(--amber-light); display:flex; align-items:center; gap:10px; margin-bottom:14px;
 }
-.stage-badge .dot{ width:6px; height:6px; border-radius:50%; background:#6FBF8B; box-shadow:0 0 0 4px rgba(111,191,139,0.18); }
+.stage-badge .dot{ width:6px; height:6px; border-radius:50%; background:#987ab4; box-shadow:0 0 0 4px rgba(152,122,180,0.18); }
 .stage h1{ font-size:clamp(17px,1.7vw,21px); font-weight:500; color:rgba(var(--rgb-text),0.82); line-height:1.3; margin-bottom:8px; letter-spacing:0.01em; }
 .stage h1 em{ font-style:italic; font-weight:600; color:var(--amber-light); }
 .stage p.sub{ font-size:12.5px; color:var(--cream-soft); max-width:52ch; line-height:1.6; margin-bottom:14px; opacity:0.75; }
@@ -277,24 +277,24 @@ body.tool-open{ overflow:hidden; }
 .globe-badge{ position:absolute; width:30px; height:30px; margin-left:-15px; margin-top:-48px; cursor:pointer; z-index:3; }
 .globe-badge-inner{
   width:30px; height:30px; border-radius:9px; display:flex; align-items:center; justify-content:center;
-  font-size:15px; box-shadow:0 6px 14px rgba(0,0,0,0.4), 0 0 0 3px rgba(20,26,34,0.6);
+  font-size:15px; box-shadow:0 6px 14px rgba(64,54,74,0.4), 0 0 0 3px rgba(68,57,78,0.6);
   transition:transform .18s ease; background:var(--badge-color, var(--amber-light));
 }
 .globe-badge:hover .globe-badge-inner{ transform:translateY(-2px) scale(1.08); }
 .globe-badge-stem{ position:absolute; left:50%; top:30px; width:1px; height:16px; background:linear-gradient(rgba(var(--rgb-text),0.5), rgba(var(--rgb-text),0)); transform:translateX(-50%); }
 .globe-marker-ring{ position:absolute; width:14px; height:14px; margin-left:-7px; margin-top:-7px; border-radius:50%; border:2px solid rgba(var(--rgb-text),0.55); z-index:2; }
 .globe-marker-ring::after{ content:""; position:absolute; inset:3px; border-radius:50%; background:var(--badge-color, var(--amber-light)); }
-.globe-marker-base{ position:absolute; width:16px; height:5px; margin-left:-8px; margin-top:-2px; border-radius:50%; background:rgba(0,0,0,0.4); filter:blur(2px); z-index:1; }
+.globe-marker-base{ position:absolute; width:16px; height:5px; margin-left:-8px; margin-top:-2px; border-radius:50%; background:rgba(64,54,74,0.4); filter:blur(2px); z-index:1; }
 .globe-links{ position:absolute; inset:0; pointer-events:none; z-index:1; }
-.globe-links path{ fill:none; stroke:rgba(217,166,107,0.35); stroke-width:1; stroke-dasharray:3 4; }
+.globe-links path{ fill:none; stroke:rgba(163,136,188,0.35); stroke-width:1; stroke-dasharray:3 4; }
 .globe-tip{
   position:absolute; bottom:52px; left:50%; transform:translateX(-50%) translateY(6px); opacity:0; pointer-events:none;
-  white-space:nowrap; background:rgba(15,22,32,0.95); border:1px solid rgba(255,255,255,0.15);
-  padding:7px 14px; border-radius:10px; font-size:12.5px; color:#fff; transition:opacity .18s ease, transform .18s ease;
-  box-shadow:0 10px 24px rgba(0,0,0,0.4); z-index:4;
+  white-space:nowrap; background:rgba(69,58,80,0.95); border:1px solid rgba(255,255,255,0.15);
+  padding:7px 14px; border-radius:10px; font-size:12.5px; color:#ffffff; transition:opacity .18s ease, transform .18s ease;
+  box-shadow:0 10px 24px rgba(64,54,74,0.4); z-index:4;
 }
 .globe-tip .gt-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:600; color:var(--amber-light); margin-right:6px; }
-.globe-tip::after{ content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:rgba(15,22,32,0.95); }
+.globe-tip::after{ content:""; position:absolute; top:100%; left:50%; transform:translateX(-50%); border:5px solid transparent; border-top-color:rgba(69,58,80,0.95); }
 .globe-caption{ font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(var(--rgb-text),0.32); margin-bottom:18px; }
 
 /* ===================== STATS ROW ===================== */
@@ -303,7 +303,7 @@ body.tool-open{ overflow:hidden; }
   flex:1; text-align:left; padding:13px 16px 12px; border-radius:14px;
   background:linear-gradient(155deg, rgba(var(--rgb-panel),0.07), rgba(var(--rgb-panel),0.025));
   border:1px solid var(--glass-border);
-  box-shadow:inset 1px 1px 1px rgba(var(--rgb-panel),0.06), 0 8px 20px rgba(0,0,0,0.18);
+  box-shadow:inset 1px 1px 1px rgba(var(--rgb-panel),0.06), 0 8px 20px rgba(64,54,74,0.18);
 }
 .stat-spark{ width:100%; height:18px; display:block; margin-bottom:6px; }
 .stat-spark polyline{ fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
@@ -332,8 +332,8 @@ body.tool-open{ overflow:hidden; }
   border:1px solid rgba(var(--rgb-panel),0.16);
   box-shadow:
     inset 1px 1px 1px rgba(var(--rgb-panel),0.1),
-    inset -2px -2px 8px rgba(0,0,0,0.35),
-    0 14px 34px rgba(0,0,0,0.3);
+    inset -2px -2px 8px rgba(64,54,74,0.35),
+    0 14px 34px rgba(64,54,74,0.3);
 }
 .wod-label{ font-family:'IBM Plex Mono',monospace; font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:var(--amber-light); margin-bottom:4px; }
 .wod-word{ font-family:'Fraunces',serif; font-style:italic; font-weight:600; font-size:22px; color:var(--text-strong); line-height:1.1; flex-shrink:0; }
@@ -351,8 +351,8 @@ body.tool-open{ overflow:hidden; }
   border-radius:16px; padding:18px 19px; background:rgba(var(--rgb-panel),0.055);
   box-shadow:
     inset 1px 1px 1px rgba(var(--rgb-panel),0.09),
-    inset -2px -2px 6px rgba(0,0,0,0.35),
-    0 8px 20px rgba(0,0,0,0.25);
+    inset -2px -2px 6px rgba(64,54,74,0.35),
+    0 8px 20px rgba(64,54,74,0.25);
   border:1px solid rgba(var(--rgb-panel),0.1);
 }
 .widget-label{ font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(var(--rgb-text),0.4); margin-bottom:10px; }
@@ -375,8 +375,8 @@ body.tool-open{ overflow:hidden; }
 .cal-dow{ font-size:9px; text-align:center; color:rgba(var(--rgb-text),0.35); font-family:'IBM Plex Mono',monospace; padding-bottom:4px; }
 .cal-day{ aspect-ratio:1; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--cream-soft); border-radius:8px; font-family:'IBM Plex Mono',monospace; }
 .cal-day.empty{ visibility:hidden; }
-.cal-day.today{ background:var(--amber); color:#fff; font-weight:700; box-shadow:0 2px 8px rgba(201,122,43,0.5); }
-.cal-day.weekend{ color:rgba(217,166,107,0.6); }
+.cal-day.today{ background:var(--amber); color:#ffffff; font-weight:700; box-shadow:0 2px 8px rgba(123,102,142,0.5); }
+.cal-day.weekend{ color:rgba(163,136,188,0.6); }
 
 /* responsive fallback (basic) */
 @media (max-width:980px){
@@ -404,9 +404,9 @@ body.tool-open{ overflow:hidden; }
   document.documentElement.setAttribute('data-theme', isDay ? 'day' : 'night');
 })();
 </script>
-</head>
+<link rel="stylesheet" href="../tool-theme.css"><link rel="stylesheet" href="../tool-theme.css"><link rel="stylesheet" href="../lavender-theme.css"><link rel="stylesheet" href="../vivid-theme.css"><link rel="stylesheet" href="../auth.css"><script src="../auth.js"></script></head>
 <body>
-<div id="gatedContent" style="display:none">
+<div id="gatedContent" style="">
 
 
 
@@ -486,11 +486,11 @@ body.tool-open{ overflow:hidden; }
         <div class="stat-num">2200<span class="stat-plus">万+</span></div>
         <div class="stat-label">累计授课节数</div>
       </div>
-      <div class="stat-chip" style="--stat-color:#8B92E0">
+      <div class="stat-chip" style="--stat-color:#b6a1ca">
         <svg class="stat-spark" viewBox="0 0 100 24" preserveAspectRatio="none">
-          <defs><linearGradient id="sparkGrad3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:#8B92E0; stop-opacity:0.35"/><stop offset="100%" style="stop-color:#8B92E0; stop-opacity:0"/></linearGradient></defs>
+          <defs><linearGradient id="sparkGrad3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" style="stop-color:#b6a1ca; stop-opacity:0.35"/><stop offset="100%" style="stop-color:#b6a1ca; stop-opacity:0"/></linearGradient></defs>
           <polyline class="spark-fill" fill="url(#sparkGrad3)" points="0,22 0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5 100,22"/>
-          <polyline points="0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5" style="stroke:#8B92E0"/>
+          <polyline points="0,19 14,17 28,18 42,14 56,15 70,9 84,11 100,5" style="stroke:#b6a1ca"/>
         </svg>
         <div class="stat-num">7000<span class="stat-plus">+</span></div>
         <div class="stat-label">资深教师团队</div>
@@ -560,28 +560,25 @@ renderWordOfDay();
 </script>
 <script>
 const TOOLS = [
-  { color:'#C97A2B', tag:'教师 / 教研', label:'学习规划', title:'学习规划报告工作台', href:'planner.html',
+  { color:'#7b668e', tag:'教师 / 教研', label:'学习规划', title:'学习规划报告工作台', href:'planner.html',
     desc:'按学员实际完成课时生成阶段总结，自动给出下一阶段重点、国内考试对标建议，支持教师版/家长版切换，还能一键生成学习里程碑奖状。',
     features:['课时完成清单，支持跳课场景','教材 × Level 难度定位总览','阶段表现评估 + 亮点/待加强标签','学习里程碑奖状一键生成'] },
-  { color:'#A24A3D', tag:'教师 / 家长', label:'词汇报告', title:'课后学习报告生成器 · 词汇卡片版', href:'vocab.html',
+  { color:'#705e81', tag:'教师 / 家长', label:'词汇报告', title:'课后学习报告生成器 · 词汇卡片版', href:'vocab.html',
     desc:'单课时 / 单元两种模式，自动生成带词汇卡片、星级评价的课后报告，支持导出图片/PDF，方便直接发送给家长。',
     features:['单节课 / 整单元 双模式切换','词汇卡片可视化展示','星级评价 + 图标模式互动','一键导出图片，微信直接发送'] },
-  { color:'#33445A', tag:'教师 / 销售', label:'课程信息卡', title:'学员课程信息卡', href:'course-card.html',
-    desc:'按渠道、课包地区、购买方案自动生成课包价格与课时明细，填写学员姓名/教材/级别后一键导出高清课程凭证图片，可直接发送给家长确认。',
-    features:['渠道 / 地区 / 方案三级联动，自动核算总课时','约课规则、取消课步骤、退费政策一并展示','一键导出高清图片，学员姓名自动生成文件名'] },
-  { color:'#2E6B62', tag:'学生 / 家长', label:'练习工作单', title:'课后练习 · 图片版工作单', href:'worksheets.html',
+  { color:'#4d4059', tag:'学生 / 家长', label:'练习工作单', title:'课后练习 · 图片版工作单', href:'worksheets.html',
     desc:'选择教材版本、Level、Unit，直接浏览对应的课后练习题图片，一键下载高清图，方便家长打印给孩子独立完成，不含答案。',
     features:['Power Up + Reach Higher 双教材合一，覆盖全部 Level','按教材 → Level → Unit 三步定位','练习题以高清图片呈现，支持长按保存 / 一键下载'] },
-  { color:'#E8833A', tag:'学管老师专用', label:'教材速查', title:'LingoAce 教材速查台', href:'curriculum-lookup.html',
+  { color:'#9272b0', tag:'学管老师专用', label:'教材速查', title:'LingoAce 教材速查台', href:'curriculum-lookup.html',
     desc:'点选教材体系 → 级别 → 单元，查看该单元具体教什么、对标校内哪个年级/教材、比校内多出哪些亮点，附新课标政策解读与续费沟通话术。',
     features:['Power Up / Reach Higher / 自研教材三大体系全覆盖','逐单元对标校内年级教材，附详细异同分析','内置新课标政策解读、家长沟通话术'] },
-  { color:'#A24A3D', tag:'学管老师 / 家长', label:'学习画像', title:'学员学习画像与拓展资源库', href:'insights.html',
+  { color:'#705e81', tag:'学管老师 / 家长', label:'学习画像', title:'学员学习画像与拓展资源库', href:'insights.html',
     desc:'输入学员当前教材、Level、所在学校教材版本与考试需求，一键生成横纵向对比、当前内容解读、下一阶段规划，并匹配学员水平的课外绘本、动画、影视推荐。',
     features:['横向对比校内教材，纵向定位 LingoAce 体系进度','当前内容解读 + 下一阶段学习规划','按学员水平匹配绘本 / 动画 / 影视，附同 Level 词汇例句出处'] },
-  { color:'#D98A3D', tag:'学管老师', label:'学管工作台', title:'学管师服务工作台', href:'gm-workbench.html',
+  { color:'#8c6bab', tag:'学管老师', label:'学管工作台', title:'学管师服务工作台', href:'gm-workbench.html',
     desc:'填写学员信息，自动匹配自研 / Reach Higher / Power Up 官方课程大纲数据，一键生成续费话术、加课频对比、转介绍文案、可视化学情卡片四份物料。',
     features:['续费沟通话术，基于真实课程大纲能力对标','加课频对比表 + 话术，进度可视化说服力强','转介绍文案 + 私聊邀请话术一键生成','可视化学情卡片，一键导出发给家长'] },
-  { color:'#4A55C9', tag:'教师 / 教研', label:'学习方案', title:'学员个性化学习方案生成器', href:'learning-plan.html',
+  { color:'#8b69aa', tag:'教师 / 教研', label:'学习方案', title:'学员个性化学习方案生成器', href:'learning-plan.html',
     desc:'填写学员基础信息，或直接导入成绩单/机构课表，一键生成教材课程对标分析、教育政策与英语教学趋势解读，以及分阶段的个性化学习方案，支持投屏演示与导出高清图片。',
     features:['支持 PDF / Excel / 图片 / 文本智能提取学员信息','教材课程对标雷达图 + 政策趋势可视化','分阶段（基础巩固/能力提升/定向冲刺）学习路径','投屏模式、打印/导出PDF、导出高清图片三种输出方式'] }
 ];
@@ -741,8 +738,8 @@ setInterval(renderSunTimes, 60000);
   window.addEventListener('mousemove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; });
   window.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
 
-  const SPARKLE_COLORS_DAY = ['#E8A93D','#E88BA8','#7FA8D9','#8FB4D9'];
-  const SPARKLE_COLORS_NIGHT = ['#D9A66B','#9B6FF2','#E85BAE','#4DC9BE'];
+  const SPARKLE_COLORS_DAY = ['#9474b1','#baa6cd','#ad95c3','#b59fc9'];
+  const SPARKLE_COLORS_NIGHT = ['#a388bc','#b19bc6','#a287bc','#8c6bab'];
   window.addEventListener('click', (e) => {
     if (e.target.closest('.panel, .flyout, .nav-item, .widget, .rail-left, .rail-right')) return;
     const isDay = document.documentElement.getAttribute('data-theme') === 'day';
@@ -815,7 +812,7 @@ setInterval(renderSunTimes, 60000);
 const starsEl = document.getElementById('bgStars');
 if (starsEl){
   const starCount = 170;
-  const starColors = ['#fff','#fff','#fff','#E9D9FF','#FFE1F0','#D6ECFF'];
+  const starColors = ['#ffffff','#ffffff','#ffffff','#ece3f5','#f0e9f7','#ebe1f4'];
   for (let i=0;i<starCount;i++){
     const s = document.createElement('div');
     const isBig = Math.random() < 0.12;
@@ -969,14 +966,14 @@ CONTINENTS.forEach(poly => {
 
 /* ---------------- world map markers ---------------- */
 const WORLD_GREETINGS = [
-  { name:'美国', left:15, top:28, word:'Hello', lang:'英语', flag:'🇺🇸', color:'#DB8770' },
-  { name:'巴西', left:26, top:68, word:'Olá', lang:'葡萄牙语', flag:'🇧🇷', color:'#4FA396' },
-  { name:'法国', left:50, top:18, word:'Bonjour', lang:'法语', flag:'🇫🇷', color:'#8B92E0' },
-  { name:'俄罗斯', left:75, top:14, word:'Привет', lang:'俄语', flag:'🇷🇺', color:'#D98A3D' },
-  { name:'印度', left:70, top:42, word:'नमस्ते', lang:'印地语', flag:'🇮🇳', color:'#DB8770' },
-  { name:'日本', left:87, top:22, word:'こんにちは', lang:'日语', flag:'🇯🇵', color:'#4FA396' },
-  { name:'澳大利亚', left:85.5, top:73, word:"G'day", lang:'英语（澳式）', flag:'🇦🇺', color:'#8B92E0' },
-  { name:'中国', left:80, top:27, word:'你好', lang:'中文', flag:'🇨🇳', color:'#A24A3D' }
+  { name:'美国', left:15, top:28, word:'Hello', lang:'英语', flag:'🇺🇸', color:'#a68cbf' },
+  { name:'巴西', left:26, top:68, word:'Olá', lang:'葡萄牙语', flag:'🇧🇷', color:'#7a668c' },
+  { name:'法国', left:50, top:18, word:'Bonjour', lang:'法语', flag:'🇫🇷', color:'#b6a1ca' },
+  { name:'俄罗斯', left:75, top:14, word:'Привет', lang:'俄语', flag:'🇷🇺', color:'#8c6bab' },
+  { name:'印度', left:70, top:42, word:'नमस्ते', lang:'印地语', flag:'🇮🇳', color:'#a68cbf' },
+  { name:'日本', left:87, top:22, word:'こんにちは', lang:'日语', flag:'🇯🇵', color:'#7a668c' },
+  { name:'澳大利亚', left:85.5, top:73, word:"G'day", lang:'英语（澳式）', flag:'🇦🇺', color:'#b6a1ca' },
+  { name:'中国', left:80, top:27, word:'你好', lang:'中文', flag:'🇨🇳', color:'#705e81' }
 ];
 const LINK_PAIRS = [[0,2],[2,3],[4,5],[7,5]];
 const globeMarkers = document.getElementById('globeMarkers');
@@ -1031,50 +1028,5 @@ WORLD_GREETINGS.forEach(g => {
 </script>
 
 </div>
-<div id="authGate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#1E2A3A 0%,#202C3D 100%);font-family:'Inter',system-ui,sans-serif;">
-  <div style="width:100%;max-width:360px;padding:0 24px;text-align:center;">
-    <div style="width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;margin:0 auto 18px;">&#8963;</div>
-    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A66B;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">LingoAce &middot; &#21463;&#38480;&#35775;&#38382;</div>
-    <div style="font-size:15px;color:#F4F1E8;margin-bottom:22px;line-height:1.6;">&#35831;&#36755;&#20837;&#35775;&#38382;&#23494;&#30721;</div>
-    <input id="authGateInput" type="password" placeholder="&#23494;&#30721;" style="width:100%;padding:12px 14px;border-radius:9px;border:1px solid rgba(255,255,255,0.22);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;margin-bottom:12px;outline:none;box-sizing:border-box;text-align:center;">
-    <button id="authGateBtn" style="width:100%;padding:12px 14px;border-radius:9px;border:none;background:#C97A2B;color:#fff;font-size:14px;font-weight:700;cursor:pointer;">&#36827;&#20837;</button>
-    <div id="authGateError" style="color:#E39A8A;font-size:12.5px;margin-top:12px;display:none;">&#23494;&#30721;&#19981;&#27491;&#30830;&#65292;&#35831;&#37325;&#35797;</div>
-  </div>
-</div>
-<script>
-(function(){
-  var PASSWORD = "lyp82nlf";
-  var STORAGE_KEY = "la_tools_auth_v2";
-  var VALID_HOURS = 168;
-  function unlock(){
-    var g = document.getElementById('authGate');
-    var c = document.getElementById('gatedContent');
-    if (g) g.style.display = 'none';
-    if (c) c.style.display = '';
-  }
-  try{
-    var saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-    if (saved && saved.ok && (Date.now() - saved.ts) < VALID_HOURS*3600*1000){
-      unlock();
-    }
-  }catch(e){}
-  var btn = document.getElementById('authGateBtn');
-  var input = document.getElementById('authGateInput');
-  var err = document.getElementById('authGateError');
-  function tryLogin(){
-    if (input.value === PASSWORD){
-      try{ localStorage.setItem(STORAGE_KEY, JSON.stringify({ok:true, ts:Date.now()})); }catch(e){}
-      unlock();
-    } else {
-      err.style.display = 'block';
-      input.value = '';
-      input.focus();
-    }
-  }
-  if (btn) btn.addEventListener('click', tryLogin);
-  if (input) input.addEventListener('keydown', function(e){ if (e.key === 'Enter') tryLogin(); });
-  setTimeout(function(){ if (input) input.focus(); }, 50);
-})();
-</script>
 </body>
 </html>
