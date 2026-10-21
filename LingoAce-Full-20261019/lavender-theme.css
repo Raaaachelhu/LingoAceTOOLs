@@ -1,0 +1,120 @@
+/* Complete UI palette for teaching tools. The review/planning tool does not load this file. */
+html:root,html[data-theme],html body[data-theme]{
+  color-scheme:light;
+  --bg:#f7f3fc!important;--bg-page:#f7f3fc!important;--page-bg:#f7f3fc!important;
+  --bg-deep:#fbf8ff!important;--bg-mid:#f2ebfa!important;--bg-glow:#e6d7f5!important;
+  --paper:#f8f4fd!important;--card:#ffffff!important;--surface:#ffffffed!important;--surface-2:#f7f2fc!important;
+  --glass:#ffffffc9!important;--glass-strong:#fffffff0!important;--glass-border:#e2d7ed!important;
+  --ink:#463650!important;--ink-soft:#786588!important;--ink-faint:#816c91!important;
+  --text:#463650!important;--text-muted:#786588!important;--text-dim:#816c91!important;
+  --text-strong:#463650!important;--muted:#786588!important;--sub:#786588!important;
+  --line:#e5dbee!important;--line-strong:#d8cae7!important;
+  --primary:#8764aa!important;--accent:#8764aa!important;--purple:#8764aa!important;--purple2:#70508f!important;
+  --purple-1:#b19acb!important;--purple-2:#8866aa!important;--purple-deep:#63487f!important;
+  --navy:#8666a5!important;--navy-soft:#a58aba!important;--navy-deep:#f3ecfb!important;
+  --amber:#8866aa!important;--amber-d:#70508f!important;--amber-light:#b49bce!important;
+  --amber-soft:#e2d3f0!important;--amber-bg:#f2e9fc!important;
+  --teal:#9374ae!important;--teal2:#76538f!important;--teal-d:#76538f!important;--teal-bg:#f0e7fa!important;
+  --brick:#9272ad!important;--brick-d:#74548e!important;--brick-bg:#f5edfc!important;
+  --pink:#a582b7!important;--pink2:#805b94!important;
+  --indigo:#8667a8!important;--indigo-d:#6e4e92!important;--indigo-bg:#eee4fa!important;
+  --indigo-deep:#70508f!important;--lavender:#f2eafa!important;
+  --mint:#a88abe!important;--mint-bg:#f4edfb!important;--green:#8c6ba9!important;
+  --peach:#f6effc!important;--peach-line:#e5d5f1!important;--lav:#f2eafa!important;--lav-line:#ddcce9!important;
+  --gold:#a486bb!important;--coral:#9876b2!important;--cream:#51405f!important;--cream-soft:#867294!important;--cream-dim:#867294!important;
+  --stage1:#a085bd!important;--stage1-d:#7f619d!important;--stage1-pale:#f3ecfa!important;
+  --stage2:#9675b4!important;--stage2-d:#76558f!important;--stage2-pale:#f0e7fa!important;
+  --stage3:#8563a6!important;--stage3-d:#69498a!important;--stage3-pale:#eae0f6!important;
+  --ng-gold:#a488bc!important;--ng-gold-d:#7f609a!important;--ng-green:#8865a6!important;--ng-pale:#f2e9fb!important;
+  --cam-navy:#8562a7!important;--cam-crimson:#a283b8!important;--cam-pale:#f0e7fa!important;
+  --l0:#b29aca!important;--l1:#a082bd!important;--l2:#906dab!important;--l3:#805b9d!important;
+  --ring:#9675b5!important;--bookcolor:#9271ae!important;
+  --star-on:#a080bb!important;--star-off:#e4d9ed!important;--warn:#9a6d86!important;
+  --glow-1:#e8dbf580!important;--glow-2:#eee3fa80!important;
+  --shadow:0 2px 5px #6b468b06,0 9px 28px #6b468b0c!important;
+  --shadow-lg:0 15px 40px #6b468b16!important;--shadow-glass:0 8px 28px #6b468b0d!important;
+  --rgb-text:78,58,95!important;--rgb-panel:255,255,255!important;--ink-rgb:78,58,95!important;
+  --fy-bg-1:#efe4fa!important;--fy-bg-2:#f9f4fe!important;--fy-border:#e3d6ee!important;
+  --sky-1:#d4bfea!important;--sky-2:#e4d3f1!important;--sky-3:#d8c7ec!important;--sky-4:#e8dbf5!important;--sky-5:#ded0ee!important;
+  --vignette-a1:0!important;--vignette-a2:0!important;--particle-rgb:173,145,197!important;
+}
+html,body{background-color:#f7f3fc!important;color:#463650!important}
+body{background-image:radial-gradient(ellipse at 3% 0%,#e9dcf66b,transparent 45%),radial-gradient(ellipse at 100% 0%,#eee3fb80,transparent 45%)!important}
+::selection{background:#e2cff3;color:#543b6b}
+button,input,select,textarea{accent-color:#9571b5}
+input:not([type=checkbox]):not([type=radio]):not([type=range]),select,textarea{background-color:#fcf9ff!important;border-color:#dfd1eb!important;color:#51405f!important}
+input::placeholder,textarea::placeholder{color:#9784a7!important}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid #b799d1;outline-offset:3px}
+input:disabled,select:disabled,textarea:disabled{background:#f0e9f7!important;color:#a391b0!important}
+button:disabled{opacity:.45}
+
+/* Pale title areas, including old dark banners and report headers. */
+header.hero,.top,.topbar-v2,.sc-header,.report-top,.fc-header,.fc-report-header{
+  background:linear-gradient(115deg,#eee3f9,#f6effc 65%,#e8dbf5)!important;
+  color:#5c4372!important;border-color:#e1d2ee!important;
+}
+header.hero h1,header.hero h2,header.hero h3,.hero .wordmark,.top .brand,.brand-text .brand-title,.top .brand span,.sc-name,.sc-level-text .big,.fc-header .fc-brand,.fc-header h1,.fc-header h2{color:#5c4372!important}
+header.hero p,.hero-sub,.tagline,.brand-text .brand-sub,.sc-brand-row,.sc-meta,.sc-level-text .small,.fc-header .fc-sub,.fc-header .fc-meta{color:#826b96!important}
+.hero .eyebrow,.hero .eyebrow .dot,.dev-credit-top{color:#9a7cb3!important}
+.topbar{background:#ffffffd9!important;border-color:#e4d8ee!important;box-shadow:0 8px 28px #7e55a00b!important}
+.brand-mark,.brand .logo,.sc-avatar,.icon-box,.fc-logo{background:linear-gradient(135deg,#b79bd1,#8b68ad)!important;color:white!important;border-color:#e0d0ee!important}
+.dev-tag,.devcredit,.devcredit-pill,.dev-credit,.dev-badge,.dev-credit-top{background:#faf5ffb8!important;border-color:#ded0eb!important;color:#977baa!important}
+.dev-tag b,.dev-credit b,.dev-badge b{color:#77528f!important}
+.tb-waves{opacity:.22!important}
+.tb-waves path{stroke:#b89ad0!important}
+.mode-toggle{background:#e5d7f0!important}
+.mode-btn{color:#86649e!important}
+.mode-btn.active{background:#fff!important;color:#78518f!important;box-shadow:0 3px 8px #6c458b0b!important}
+
+/* Forms, side panels, generated cards and educational reports. */
+.panel,.card,.card-box,.report,.report-card,.report-shell,.report-preview,.preview-card,.r-card,.fc-card,.fc-report,.modal-box{background-color:#fff!important;border-color:#e5d9ef!important;box-shadow:0 6px 22px #6c458b09!important}
+.compare-card,.lesson-card,.fieldcard,.metabox,.chartbox,.unit-lesson-item,.skill-edit-card,.next-box,.fc-section,.fc-story,.fc-word,.fc-word-card,.fc-task,.script-card{background-color:#faf6fe!important;border-color:#e5d9ef!important}
+.card-box h3,.section-title,.field label,.panel-head .title,.block-head h3,.report-header h2,.fc-section-title{color:#7f5c9a!important}
+.report-header,.report-body,.fc-body,.sc-body{background-color:#fff!important;border-color:#eadff2!important}
+.focus-box,.callout,.policy-card.new,.fc-note,.next-box{background:#f3ebfb!important;border-color:#decbef!important}
+.tag,.tier-badge,.chip.active,.h-chip.on,.mode-btn.active,.book-btn.active,.level-btn.active,.levelbtn.active{border-color:#c6aedb!important}
+.tier-badge,.tag,.tag.pattern,.badge,.unit-tag,.h-chip,.chip{color:#84609f!important}
+.badge-pill,.badge-pill.c0,.badge-pill.c1,.badge-pill.c2,.badge-pill.c3,.badge-pill.c4,.block-num{background:#84609f!important;color:#fff!important}
+.chip.active,.h-chip.on{background:#eadcf7!important;color:#78558f!important}
+.tab.active,.tabs .active,.levelbtn.active{background:#eee3f9!important;color:#78518f!important}
+.tabbtn.active,.unitbtn.active{background:#84609f!important;color:#fff!important}
+.unit-card,.unit-tile,.lcell,.lcell .lf{border-color:#e4d6ee!important}
+.book-row button,.level-row button{border-color:#e4d6ee!important}
+.unit-card:hover,.unit-tile:hover,.book-row button:hover,.level-row button:hover{border-color:#b89acf!important;background-color:#f7effe!important}
+
+/* Action contrast stays readable on the pale surfaces. */
+.btn-primary,.btn-teal,.btn-pink,.btn-amber,.btn-gold,.copy-btn,.btn-export,.export-btn,.dl-btn,.download-btn,.fc-btn-primary{background:#84609f!important;border-color:#84609f!important;color:#fff!important;box-shadow:0 5px 14px #85609e19!important}
+.btn-primary:hover,.btn-teal:hover,.btn-pink:hover,.btn-amber:hover,.copy-btn:hover,.dl-btn:hover{background:#82609f!important;border-color:#82609f!important}
+.btn-secondary,.btn-glass,.btn-light,.btn-outline{background:#f5edfc!important;color:#85609f!important;border-color:#decdeb!important;box-shadow:none!important}
+.btn-secondary:hover,.btn-glass:hover,.btn-light:hover,.btn-outline:hover{background:#ebddf7!important}
+.btn.copied,.copy-btn.copied{background:#80629a!important;color:white!important}
+.cmp-table th,.compare-table th{background:#84609f!important;color:white!important}
+table td{border-color:#e6dcef!important}
+table tr:nth-child(even) td{background-color:#faf6fe!important}
+.card-export-wrap{background:linear-gradient(135deg,#ede1f8,#f6f0fc)!important}
+#studentCard{background:#fff!important;box-shadow:0 18px 44px #71508f1c!important}
+.sc-level-block{background:#ffffff8c!important;border-color:#dcc9ec!important}
+.sc-ring-inner{background:#f8f2fc!important;color:#81599a!important}
+.sc-item,.sc-highlight,.sc-progress-wrap{background:#fcf9ff!important;border-color:#e6d8f0!important}
+.sc-highlight{border-left-color:#a58abe!important;color:#725b83!important}
+.sc-item .label{background:#f1e8f9!important;color:#87669f!important}
+.sc-item .desc,.sc-progress-note,.sc-footer{color:#8a749b!important}
+.sc-cta{background:#eee2f8!important;color:#79558f!important}
+.sc-cta .txt,.sc-cta .txt b{color:#86629f!important}
+.sc-cta .icon{background:#b599cc!important;color:white!important}
+.sc-bar-track{background:#eee3f6!important}
+.sc-bar-fill{background:linear-gradient(90deg,#c6addd,#9979b7)!important}
+.reportframe,.img-frame,.viewer{background:#fbf8ff!important;border-color:#e3d5ef!important}
+.viewer-head,.viewer-title{color:#83629b!important}
+.unit-lesson-item.is-review{background:#f4edfa!important;border-color:#ddcceb!important}
+.sc-progress-top .label,.sc-progress-top .value,.unit-lesson-item .uli-title,.unit-lesson-item .uli-badge,.next-box .flag,.next-box .nl-title{color:#79598f!important}
+.error,.danger,[role=alert]{color:#aa4d6c!important}
+::-webkit-scrollbar-thumb{background:#d6c3e6!important;border-radius:10px}
+@media print{
+  html,body{background:#fff!important}
+  .panel,.card,.report,.fc-card,#studentCard{box-shadow:none!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* Mist gradient carried into each teaching tool; review tool remains independent. */
+body{background-image:radial-gradient(ellipse at 0% 0%,#e6e2f580,transparent 55%),radial-gradient(ellipse at 100% 100%,#f1dfe980,transparent 50%),linear-gradient(130deg,#f7f7fd,#f5f0fa 65%,#f8edf3)!important;background-attachment:fixed}

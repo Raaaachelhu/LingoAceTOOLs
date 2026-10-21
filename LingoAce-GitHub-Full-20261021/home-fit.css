@@ -1,0 +1,69 @@
+/* Desktop workbench only. All other navigation pages retain their layout. */
+@media(min-width:1101px) and (min-height:650px){
+ .home-page .shell{height:calc(100dvh - 44px);min-height:0;display:flex;flex-direction:column}
+ .home-page .shell>header{height:58px;flex-shrink:0}
+ .home-page main{flex:1;min-height:0;padding-top:12px;padding-bottom:14px;display:flex;flex-direction:column}
+ .home-page .shell>footer{padding-top:8px;padding-bottom:8px;flex-shrink:0}
+ .home-page .cockpit-heading{margin-bottom:16px;flex-shrink:0}
+ .home-page .cockpit-heading h1{font-size:31px;margin:5px 0}
+ .home-page .cockpit-grid{flex:1;min-height:0;align-items:stretch}
+ .home-page .cockpit-center{display:flex;flex-direction:column;min-height:0}
+ .home-page .world-panel{flex:1;min-height:0;display:flex;flex-direction:column;padding-top:20px;padding-bottom:12px}
+ .home-page .world-title-row{flex-shrink:0}
+ .home-page .world-title-row h2{font-size:22px;margin:6px 0}
+ .home-page .world-map{flex:0 1 auto;width:min(100%,max(240px,calc((100dvh - 510px)*2)));margin:auto;aspect-ratio:2/1}
+ .home-page .map-caption{bottom:-8px}
+ .home-page .cockpit-metrics{margin-top:18px;flex-shrink:0}
+ .home-page .cockpit-metrics>a{padding:13px 12px}
+ .home-page .cockpit-metrics b{font-size:28px}
+ .home-page .metric-note{margin-top:6px;flex-shrink:0}
+ .home-page .daily-word-panel{flex-shrink:0;min-height:76px;padding-top:12px;padding-bottom:12px;margin:14px 0 0}
+ .home-page .cockpit-rail{height:100%;min-height:0;grid-template-rows:108px minmax(0,1fr) minmax(0,1.25fr) 22px;gap:10px}
+ .home-page .glass-widget{min-height:0;padding:15px 19px}
+ .home-page .clock-display{margin-top:8px}
+ .home-page .clock-display time{font-size:42px}
+ .home-page .clock-display>span{font-size:17px}
+ .home-page .clock-date-line{font-size:10px;margin-top:6px}
+ .home-page .clock-footer{display:none}
+ .home-page .quote-widget{display:flex;flex-direction:column}
+ .home-page .quote-mark{display:none}
+ .home-page .quote-widget blockquote{font-size:clamp(16px,2.15vh,23px);line-height:1.4;margin:12px 0 10px}
+ .home-page .quote-widget>p{font-size:10px;line-height:1.65}
+ .home-page .quote-line,.home-page .quote-widget>small{display:none}
+ .home-page .calendar-widget{padding:15px 16px 12px}
+ .home-page .calendar-widget>.widget-eyebrow{margin-bottom:12px}
+ .home-page .calendar-head{margin-bottom:10px}
+ .home-page .calendar-head b{font-size:20px}
+ .home-page .calendar-week{margin-bottom:7px;font-size:9px}
+ .home-page .calendar-grid{gap:4px 0}
+ .home-page .cal-day{height:clamp(17px,2.5vh,27px);width:clamp(20px,2.7vh,29px);font-size:12px}
+ .home-page .calendar-note{display:none}
+ .home-page .cockpit-footnote{padding:0;gap:3px;align-content:center}
+ .home-page .cockpit-footnote>span{font-size:4px}
+ .home-page .cockpit-footnote b{font-size:7px}
+}
+@media(min-width:1101px) and (min-height:650px) and (max-height:780px){
+ .home-page .cockpit-heading{margin-bottom:12px}
+ .home-page .cockpit-heading h1{font-size:27px}
+ .home-page .cockpit-heading p{font-size:10px}
+ .home-page .cockpit-rail{grid-template-rows:94px minmax(0,1fr) minmax(0,1.2fr) 18px;gap:8px}
+ .home-page .glass-widget{padding:11px 16px}
+ .home-page .clock-display time{font-size:35px}
+ .home-page .clock-display>span{font-size:15px}
+ .home-page .clock-date-line{font-size:9px;margin-top:4px}
+ .home-page .quote-widget blockquote{font-size:15px;line-height:1.4;margin:8px 0}
+ .home-page .quote-widget>p{font-size:9px;line-height:1.5}
+ .home-page .calendar-widget{padding-top:9px;padding-bottom:9px}
+ .home-page .calendar-widget>.widget-eyebrow{display:none}
+ .home-page .calendar-head{margin-bottom:4px}
+ .home-page .calendar-head b{font-size:16px}
+ .home-page .calendar-week{font-size:7px;margin-bottom:3px}
+ .home-page .calendar-grid{gap:2px 0}
+ .home-page .cal-day{height:15px;width:21px;font-size:10px;border-radius:6px}
+ .home-page .world-panel{padding-top:16px}
+ .home-page .world-title-row h2{font-size:20px}
+ .home-page .cockpit-metrics>a{padding-top:10px;padding-bottom:10px}
+ .home-page .cockpit-metrics b{font-size:24px}
+ .home-page .daily-word-panel{min-height:66px;margin-top:10px;padding-top:8px;padding-bottom:8px}
+ .home-page .word-day-content b{font-size:21px}
+}
