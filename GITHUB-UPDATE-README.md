@@ -1,32 +1,29 @@
-# LingoAce 工作台 · GitHub 完整更新包
+# 自研 Level0 完整更新包（一个 ZIP）
 
-本包为完整静态网站，包含原海报、PU Level1–3、RH Level4–7、自研Level1–8听读与测评资源。解压后 index.html 就是首页，不需要安装或构建。
+本包是包含Level0更新后的完整静态网站，直接用于现有LingoAceTOOLs GitHub Pages工作台。原有图片、PU、RH、自研Level1–8，以及新增Level0的音频、PDF和页面数据全部包含，不需要其他分包。
 
-## 更新现有 GitHub 仓库（GitHub Desktop）
-1. 解压 ZIP。不要将 ZIP 本身上传。
-2. GitHub Desktop 选择你现有的 LingoAce 工作台仓库，点击 Fetch origin；若显示 Pull origin，先点击同步。
-3. 菜单 Repository → Show in Finder 打开仓库文件夹。
-4. 将解压后的全部文件和文件夹复制到现有 index.html 所在目录，合并文件夹并替换同名文件。不要复制外面多套的一层文件夹。保留仓库自己的 .git 和 .github。
-5. 若以下旧文件还在，删除：tools/learning-plan.html、tools/gm-workbench.html、tools/worksheets.html。新版已移除三个旧工具。
-6. 回到 GitHub Desktop，在 Summary 填写 Update LingoAce workspace，点击 Commit to main，再点击 Push origin。
-7. GitHub 仓库 Settings → Pages：Source 选择 Deploy from a branch；Branch 选择 main，目录选择 /(root)，保存。如果原来已配置正确，保持原配置。
-8. 等 Pages 部署成功，打开原 GitHub Pages 网址。Mac 按 Command+Shift+R 强制刷新。
+## 更新内容
+- 自研 Level0 Unit1–8，按现有教材单元目录编写补充资源。
+- 每单元：词汇与4组表达、原创故事及中文辅助理解、家庭活动、自然拼读示例词。
+- 每单元4条实际MP3：词汇、故事、测评听力、自然拼读示例词；共32条。
+- 每单元20道客观题、2项口语、学生卷和答案卷；16份单元PDF、2份整级合集。
+- 听力使用不同角色音色，每题两遍，预留约6秒；其他音频也有跟读停顿。为美式合成语音，不是官方教材原声。
+- 界面保留原有风格和已删除栏目的状态。自研听读入口显示Level0–8，共72单元；全部教材听读测评合计131单元。
+- Level0允许成人读题和选项；孩子可指认、动作或口答。口语仍按实际表达评分，不要求孩子独立读长句。
 
-## 目录检查
-仓库根目录应直接看到 index.html、app.js、auth.js、assets、tools、learning-lab、pu-learning。
-如果你原仓库从 /docs 发布，则全部内容放进 docs，Pages 继续选择 /docs。若原来使用自定义 Actions，请保留原工作流并让它发布本包所在目录，不要直接改成根目录。
+## Mac + GitHub Desktop 更新
+1. 把ZIP下载到仓库外，再解压。不要把ZIP本身上传。
+2. 打开GitHub Desktop，选现有LingoAceTOOLs仓库，Fetch origin；如显示Pull origin，先同步。
+3. 点Repository → Show in Finder。保持这个仓库窗口打开。
+4. 打开解压后的更新包文件夹，里面应直接看到index.html、app.js、assets、tools、learning-lab、pu-learning和更新说明。
+5. 复制这些内容到第3步的仓库目录，与原index.html同层。请复制文件夹里面的内容，不要把外层更新包文件夹整个复制进去。
+6. 同名文件选替换，同名文件夹选合并；不要选择保留两者。
+7. 回GitHub Desktop，Summary填“补齐自研Level0听读拓展与测评”，Commit to main，再Push origin。
+8. 等GitHub仓库Actions里的Pages部署成功，打开原网址。左侧自研听读与测评 → Level0 → Unit1–8。原单元资源页也有本单元听读入口。
 
-## 本次内容
-- RH Level4–7：每级Unit1–8，共32单元。
-- 自研Level1–8：每级Unit1–8，共64单元。
-- 加上PU Level1–3的27单元，共123个听读与测评单元、369条MP3。
-- 每单元含主题词、语言示例、拓展阅读、家庭活动、20道客观题、2项口语、学生卷与答案卷PDF。
-- 音频为美式神经网络合成朗读；听力分角色、每题两遍并留作答停顿，支持下载与调速。
-- 已去掉个性化学习规划、学管服务工作台、课后练习导航。保留阶段总结与规划。
+原GitHub网址：https://raaaachelhu.github.io/LingoAceTOOLs/#home
+访问密码沿用原设置。不要改Pages配置，不要新建仓库。已有音频与图片目录应继续保留。
 
-## 注意
-全部音频和图片已包含，无需单独找素材。所有新增资源使用相对路径，支持 GitHub Pages 的仓库子路径。
-访问密码沿用原工作台设置。入口密码是静态前端遮罩；公开GitHub仓库及Pages中的资源仍可被读取，请勿在仓库中加入学生隐私或密钥。
-此包只用于更新网站文件，不包含任何 .git、Sites 配置或平台访问令牌。
+包内包含完整网站及本次Level0更新，不是需要拼接的分卷压缩包。刷新仍显示旧版时，Mac用Command+Shift+R。
 
 Developer: Rachel Hu

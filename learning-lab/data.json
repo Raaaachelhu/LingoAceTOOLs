@@ -21751,6 +21751,3207 @@
     "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色"
   },
   {
+    "id": "A_L0_U01",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 1,
+    "title": "Hello!",
+    "titleCn": "",
+    "focus": "打招呼、介绍自己、数数1—5与Aa—Dd",
+    "words": [
+      [
+        "hello",
+        "你好"
+      ],
+      [
+        "Max",
+        "Max（人名）"
+      ],
+      [
+        "Melinda",
+        "Melinda（人名）"
+      ],
+      [
+        "Mili",
+        "Mili（人名）"
+      ],
+      [
+        "boy",
+        "男孩"
+      ],
+      [
+        "girl",
+        "女孩"
+      ],
+      [
+        "one",
+        "一"
+      ],
+      [
+        "two",
+        "二"
+      ],
+      [
+        "three",
+        "三"
+      ],
+      [
+        "four",
+        "四"
+      ],
+      [
+        "five",
+        "五"
+      ],
+      [
+        "hi",
+        "嗨"
+      ],
+      [
+        "goodbye",
+        "再见"
+      ],
+      [
+        "friend",
+        "朋友"
+      ],
+      [
+        "wave",
+        "挥手"
+      ]
+    ],
+    "coreCount": 11,
+    "phrases": [
+      [
+        "Hello! I am Max.",
+        "你好！我是Max。"
+      ],
+      [
+        "I am a boy.",
+        "我是一个男孩。"
+      ],
+      [
+        "How old are you? I am five.",
+        "你几岁？我五岁。"
+      ],
+      [
+        "Goodbye, my friend!",
+        "再见，我的朋友！"
+      ]
+    ],
+    "phonics": "Aa—Dd：用ant/apple、bird/bear、cat/car、dog/duck听词首音。先听整词，再轻轻模仿开头的声音；不要把字母名称与词首音混为一谈。",
+    "phonicsWords": [
+      [
+        "ant",
+        "蚂蚁"
+      ],
+      [
+        "apple",
+        "苹果"
+      ],
+      [
+        "bird",
+        "鸟"
+      ],
+      [
+        "bear",
+        "熊"
+      ],
+      [
+        "cat",
+        "猫"
+      ],
+      [
+        "car",
+        "汽车"
+      ],
+      [
+        "dog",
+        "狗"
+      ],
+      [
+        "duck",
+        "鸭子"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · Hello, New Friend!",
+    "story": "Hello! I am Max. I am a boy. I am five. This is Melinda. She is a girl. Mili has three toy bears. One, two, three! We wave and say, \"Hello, my friend!\"",
+    "storyZh": "你好！我是Max。我是一个男孩。我五岁。这是Melinda，她是一个女孩。Mili有三只玩具熊。一、二、三！我们挥挥手，说：“你好，我的朋友！”",
+    "questions": [
+      {
+        "prompt": "Who says hello? 谁在打招呼？",
+        "choices": [
+          "Mili",
+          "Max",
+          "Melinda"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Hello! I am Max. B: Hi, Max!",
+        "spoken": "A: Hello! I am Max. B: Hi, Max!"
+      },
+      {
+        "prompt": "How old is Mia? Mia几岁？",
+        "choices": [
+          "five",
+          "two",
+          "four"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: How old are you, Mia? B: I am four.",
+        "spoken": "A: How old are you, Mia? B: I am four."
+      },
+      {
+        "prompt": "How many bears? 几只熊？",
+        "choices": [
+          "two",
+          "three",
+          "one"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Look! One, two, three bears! B: Three bears!",
+        "spoken": "A: Look! One, two, three bears! B: Three bears!"
+      },
+      {
+        "prompt": "What does Ben say? Ben说什么？",
+        "choices": [
+          "I am a girl.",
+          "I am a bear.",
+          "I am a boy."
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I am Ben. I am a boy. B: Hello, Ben!",
+        "spoken": "A: I am Ben. I am a boy. B: Hello, Ben!"
+      },
+      {
+        "prompt": "What do they say at the end? 最后说什么？",
+        "choices": [
+          "Goodbye!",
+          "Touch!",
+          "Open!"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Goodbye, Mili! B: Goodbye, Max!",
+        "spoken": "A: Goodbye, Mili! B: Goodbye, Max!"
+      },
+      {
+        "prompt": "选择“你好”对应的英文；可由家长读选项。",
+        "choices": [
+          "five",
+          "hello",
+          "girl"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：hello"
+      },
+      {
+        "prompt": "选择“男孩”对应的英文；可由家长读选项。",
+        "choices": [
+          "five",
+          "hello",
+          "boy"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：boy"
+      },
+      {
+        "prompt": "选择“女孩”对应的英文；可由家长读选项。",
+        "choices": [
+          "hi",
+          "goodbye",
+          "girl"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：girl"
+      },
+      {
+        "prompt": "选择“一”对应的英文；可由家长读选项。",
+        "choices": [
+          "one",
+          "girl",
+          "boy"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：one"
+      },
+      {
+        "prompt": "选择“二”对应的英文；可由家长读选项。",
+        "choices": [
+          "one",
+          "friend",
+          "two"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：two"
+      },
+      {
+        "prompt": "Hello! I ___ Max.",
+        "choices": [
+          "are",
+          "am",
+          "is"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：am"
+      },
+      {
+        "prompt": "I am a ___. (男孩)",
+        "choices": [
+          "boy",
+          "bear",
+          "girl"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：boy"
+      },
+      {
+        "prompt": "How ___ are you? (几岁)",
+        "choices": [
+          "red",
+          "big",
+          "old"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：old"
+      },
+      {
+        "prompt": "One, two, ___.",
+        "choices": [
+          "five",
+          "three",
+          "one"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：three"
+      },
+      {
+        "prompt": "见面时说：___",
+        "choices": [
+          "Hello!",
+          "Close your book.",
+          "Goodbye!"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：Hello!"
+      },
+      {
+        "prompt": "Who is a boy? 谁是男孩？",
+        "choices": [
+          "Max",
+          "the toy bear",
+          "Melinda"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Max"
+      },
+      {
+        "prompt": "How old is Max? Max几岁？",
+        "choices": [
+          "three",
+          "two",
+          "five"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：five"
+      },
+      {
+        "prompt": "Who is a girl? 谁是女孩？",
+        "choices": [
+          "a bear",
+          "Max",
+          "Melinda"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Melinda"
+      },
+      {
+        "prompt": "How many toy bears does Mili have? Mili有几只玩具熊？",
+        "choices": [
+          "five",
+          "three",
+          "one"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：three"
+      },
+      {
+        "prompt": "What do the friends say? 朋友们说了什么？",
+        "choices": [
+          "Touch your nose.",
+          "Open your book.",
+          "Hello!"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Hello!"
+      }
+    ],
+    "oral": [
+      "用自己的名字打招呼；愿意的话补充年龄，允许先模仿。",
+      "摆出1—5个积木，选一组数出来；不要求认读数字单词。"
+    ],
+    "activity": "准备5个积木或玩具。家长先按词汇音频带孩子挥手打招呼，再放出1—5个积木，让孩子指着数；最后轮流给玩具起名，说 Hello! I am… 。每次3—5分钟，孩子说出名字或数字就给予具体回应。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U01-words.mp3",
+      "story": "audio/A_L0_U01-story.mp3",
+      "test": "audio/A_L0_U01-test.mp3",
+      "phonics": "audio/A_L0_U01-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U01-student.pdf",
+      "teacher": "pdf/A_L0_U01-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "hello": "👋",
+      "boy": "👦",
+      "girl": "👧",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U02",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 2,
+    "title": "My Face",
+    "titleCn": "",
+    "focus": "五官指认、数字6—10与Ee—Hh",
+    "words": [
+      [
+        "eyes",
+        "眼睛"
+      ],
+      [
+        "ears",
+        "耳朵"
+      ],
+      [
+        "mouth",
+        "嘴巴"
+      ],
+      [
+        "nose",
+        "鼻子"
+      ],
+      [
+        "six",
+        "六"
+      ],
+      [
+        "seven",
+        "七"
+      ],
+      [
+        "eight",
+        "八"
+      ],
+      [
+        "nine",
+        "九"
+      ],
+      [
+        "ten",
+        "十"
+      ],
+      [
+        "touch",
+        "触摸"
+      ],
+      [
+        "face",
+        "脸"
+      ],
+      [
+        "look",
+        "看"
+      ],
+      [
+        "smile",
+        "微笑"
+      ]
+    ],
+    "coreCount": 9,
+    "phrases": [
+      [
+        "Touch your nose.",
+        "摸摸你的鼻子。"
+      ],
+      [
+        "Touch your ears.",
+        "摸摸你的耳朵。"
+      ],
+      [
+        "She has two eyes.",
+        "她有两只眼睛。"
+      ],
+      [
+        "He has six eyes!",
+        "他有六只眼睛！（怪兽游戏）"
+      ]
+    ],
+    "phonics": "Ee—Hh：比较egg/elephant、fish/fan、gorilla/goat、horse/hat的开头。先听配对单词，让孩子指出哪个词和fish开头相同。",
+    "phonicsWords": [
+      [
+        "egg",
+        "鸡蛋"
+      ],
+      [
+        "elephant",
+        "大象"
+      ],
+      [
+        "fish",
+        "鱼"
+      ],
+      [
+        "fan",
+        "风扇"
+      ],
+      [
+        "gorilla",
+        "大猩猩"
+      ],
+      [
+        "goat",
+        "山羊"
+      ],
+      [
+        "horse",
+        "马"
+      ],
+      [
+        "hat",
+        "帽子"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · My Funny Face",
+    "story": "Look at my face! I have two eyes, two ears, one nose, and one mouth. Mili draws a funny monster. It has six eyes and three ears! \"Touch your nose,\" says Mili. Max touches his nose and smiles.",
+    "storyZh": "看看我的脸！我有两只眼睛、两只耳朵、一个鼻子和一张嘴。Mili画了一只好玩的怪兽。它有六只眼睛、三只耳朵！Mili说：“摸摸你的鼻子。”Max摸摸鼻子，笑了。",
+    "questions": [
+      {
+        "prompt": "What should you touch? 摸哪里？",
+        "choices": [
+          "mouth",
+          "ears",
+          "nose"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Touch your ears, please. B: My ears!",
+        "spoken": "A: Touch your ears, please. B: My ears!"
+      },
+      {
+        "prompt": "How many eyes? 几只眼睛？",
+        "choices": [
+          "ten",
+          "eight",
+          "six"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My monster has eight eyes. B: Eight!",
+        "spoken": "A: My monster has eight eyes. B: Eight!"
+      },
+      {
+        "prompt": "What does Mia draw? Mia画什么？",
+        "choices": [
+          "a nose",
+          "an ear",
+          "a mouth"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I draw a mouth. B: A big mouth!",
+        "spoken": "A: I draw a mouth. B: A big mouth!"
+      },
+      {
+        "prompt": "How many ears? 几只耳朵？",
+        "choices": [
+          "nine",
+          "seven",
+          "six"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: He has seven ears. B: What a funny monster!",
+        "spoken": "A: He has seven ears. B: What a funny monster!"
+      },
+      {
+        "prompt": "What should you touch now? 现在摸哪里？",
+        "choices": [
+          "ears",
+          "eyes",
+          "nose"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Touch your nose. B: Here is my nose.",
+        "spoken": "A: Touch your nose. B: Here is my nose."
+      },
+      {
+        "prompt": "选择“眼睛”对应的英文；可由家长读选项。",
+        "choices": [
+          "eyes",
+          "nose",
+          "smile"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：eyes"
+      },
+      {
+        "prompt": "选择“耳朵”对应的英文；可由家长读选项。",
+        "choices": [
+          "nose",
+          "eyes",
+          "ears"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：ears"
+      },
+      {
+        "prompt": "选择“嘴巴”对应的英文；可由家长读选项。",
+        "choices": [
+          "nose",
+          "ears",
+          "mouth"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：mouth"
+      },
+      {
+        "prompt": "选择“鼻子”对应的英文；可由家长读选项。",
+        "choices": [
+          "look",
+          "nose",
+          "seven"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：nose"
+      },
+      {
+        "prompt": "选择“六”对应的英文；可由家长读选项。",
+        "choices": [
+          "six",
+          "ears",
+          "eyes"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：six"
+      },
+      {
+        "prompt": "Touch your ___. (鼻子)",
+        "choices": [
+          "nose",
+          "eyes",
+          "ears"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：nose"
+      },
+      {
+        "prompt": "She ___ two eyes.",
+        "choices": [
+          "have",
+          "has",
+          "am"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：has"
+      },
+      {
+        "prompt": "Six, seven, ___.",
+        "choices": [
+          "two",
+          "five",
+          "eight"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：eight"
+      },
+      {
+        "prompt": "I have one ___. (嘴)",
+        "choices": [
+          "eyes",
+          "mouth",
+          "ears"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：mouth"
+      },
+      {
+        "prompt": "He has ten ___. (眼睛)",
+        "choices": [
+          "nose",
+          "eyes",
+          "mouth"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：eyes"
+      },
+      {
+        "prompt": "How many eyes does the child have? 小朋友有几只眼睛？",
+        "choices": [
+          "two",
+          "ten",
+          "six"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：two"
+      },
+      {
+        "prompt": "Who draws a monster? 谁画了怪兽？",
+        "choices": [
+          "Mili",
+          "the monster",
+          "Max"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Mili"
+      },
+      {
+        "prompt": "How many eyes does the monster have? 怪兽有几只眼睛？",
+        "choices": [
+          "two",
+          "six",
+          "one"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：six"
+      },
+      {
+        "prompt": "What does Max touch? Max摸了哪里？",
+        "choices": [
+          "his mouth",
+          "his nose",
+          "his ears"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：his nose"
+      },
+      {
+        "prompt": "What does Max do at the end? Max最后做了什么？",
+        "choices": [
+          "swims",
+          "smiles",
+          "sleeps"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：smiles"
+      }
+    ],
+    "oral": [
+      "听到 Touch your… 后指认两个五官；允许家长暂停音频。",
+      "画一只怪兽，指着它说一个五官和数量，如 six eyes。"
+    ],
+    "activity": "先照镜子指认眼、耳、鼻、嘴，再用纸画怪兽，给它画6—10只眼睛。家长播放指令，孩子指一指或做动作；别要求真实人物有不合理的五官数量，把夸张数量放在怪兽游戏中。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U02-words.mp3",
+      "story": "audio/A_L0_U02-story.mp3",
+      "test": "audio/A_L0_U02-test.mp3",
+      "phonics": "audio/A_L0_U02-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U02-student.pdf",
+      "teacher": "pdf/A_L0_U02-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "eyes": "👀",
+      "ears": "👂",
+      "mouth": "👄",
+      "nose": "👃",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U03",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 3,
+    "title": "Yummy Fruit",
+    "titleCn": "",
+    "focus": "颜色、水果表达与Ii—Ll",
+    "words": [
+      [
+        "red",
+        "红色"
+      ],
+      [
+        "blue",
+        "蓝色"
+      ],
+      [
+        "yellow",
+        "黄色"
+      ],
+      [
+        "green",
+        "绿色"
+      ],
+      [
+        "watermelon",
+        "西瓜"
+      ],
+      [
+        "kiwi",
+        "猕猴桃"
+      ],
+      [
+        "pear",
+        "梨"
+      ],
+      [
+        "pineapple",
+        "菠萝"
+      ],
+      [
+        "apple",
+        "苹果"
+      ],
+      [
+        "banana",
+        "香蕉"
+      ],
+      [
+        "yummy",
+        "好吃的"
+      ],
+      [
+        "share",
+        "分享"
+      ]
+    ],
+    "coreCount": 8,
+    "phrases": [
+      [
+        "It is green.",
+        "它是绿色的。"
+      ],
+      [
+        "A yellow pineapple.",
+        "一个黄色的菠萝。"
+      ],
+      [
+        "A green pear.",
+        "一个绿色的梨。"
+      ],
+      [
+        "A red apple.",
+        "一个红色的苹果。"
+      ]
+    ],
+    "phonics": "Ii—Ll：听iguana/igloo、jam/juice、kangaroo/kite、lion/lemon的词首音。让孩子从两张图中找同样开头的一组；暂不要求独立拼读整词。",
+    "phonicsWords": [
+      [
+        "iguana",
+        "鬣蜥"
+      ],
+      [
+        "igloo",
+        "冰屋"
+      ],
+      [
+        "jam",
+        "果酱"
+      ],
+      [
+        "juice",
+        "果汁"
+      ],
+      [
+        "kangaroo",
+        "袋鼠"
+      ],
+      [
+        "kite",
+        "风筝"
+      ],
+      [
+        "lion",
+        "狮子"
+      ],
+      [
+        "lemon",
+        "柠檬"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · The Fruit Picnic",
+    "story": "It is picnic time. Max has a green pear. Melinda has a yellow pineapple. Mili cuts a watermelon. It is red inside. A kiwi is green inside, too. \"Yummy fruit!\" says Max. We share the fruit.",
+    "storyZh": "野餐时间到了。Max有一个绿色的梨，Melinda有一个黄色的菠萝。Mili切开西瓜，里面是红色的。猕猴桃里面也是绿色的。Max说：“好吃的水果！”我们一起分享水果。",
+    "questions": [
+      {
+        "prompt": "Which fruit? 哪种水果？",
+        "choices": [
+          "pear",
+          "watermelon",
+          "pineapple"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Look at my pear. B: A green pear!",
+        "spoken": "A: Look at my pear. B: A green pear!"
+      },
+      {
+        "prompt": "Which color? 什么颜色？",
+        "choices": [
+          "blue",
+          "red",
+          "yellow"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: What color is it? B: It is blue.",
+        "spoken": "A: What color is it? B: It is blue."
+      },
+      {
+        "prompt": "Which fruit does Mia have? Mia有什么？",
+        "choices": [
+          "pear",
+          "pineapple",
+          "kiwi"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I have a pineapple. B: A yellow pineapple!",
+        "spoken": "A: I have a pineapple. B: A yellow pineapple!"
+      },
+      {
+        "prompt": "What color is the watermelon inside? 西瓜里面什么颜色？",
+        "choices": [
+          "green",
+          "red",
+          "blue"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Look inside the watermelon. B: It is red!",
+        "spoken": "A: Look inside the watermelon. B: It is red!"
+      },
+      {
+        "prompt": "What is green inside? 什么里面是绿色？",
+        "choices": [
+          "banana",
+          "kiwi",
+          "pineapple"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Cut the kiwi, please. B: It is green inside.",
+        "spoken": "A: Cut the kiwi, please. B: It is green inside."
+      },
+      {
+        "prompt": "选择“红色”对应的英文；可由家长读选项。",
+        "choices": [
+          "red",
+          "pineapple",
+          "green"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：red"
+      },
+      {
+        "prompt": "选择“蓝色”对应的英文；可由家长读选项。",
+        "choices": [
+          "kiwi",
+          "blue",
+          "yellow"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：blue"
+      },
+      {
+        "prompt": "选择“黄色”对应的英文；可由家长读选项。",
+        "choices": [
+          "blue",
+          "yellow",
+          "share"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：yellow"
+      },
+      {
+        "prompt": "选择“绿色”对应的英文；可由家长读选项。",
+        "choices": [
+          "pineapple",
+          "green",
+          "yummy"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：green"
+      },
+      {
+        "prompt": "选择“西瓜”对应的英文；可由家长读选项。",
+        "choices": [
+          "blue",
+          "watermelon",
+          "pear"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：watermelon"
+      },
+      {
+        "prompt": "It ___ green.",
+        "choices": [
+          "is",
+          "are",
+          "am"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：is"
+      },
+      {
+        "prompt": "A ___ pineapple. (黄色)",
+        "choices": [
+          "pink",
+          "blue",
+          "yellow"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：yellow"
+      },
+      {
+        "prompt": "A green ___. (梨)",
+        "choices": [
+          "ball",
+          "pen",
+          "pear"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：pear"
+      },
+      {
+        "prompt": "It is ___. (红色)",
+        "choices": [
+          "nose",
+          "book",
+          "red"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：red"
+      },
+      {
+        "prompt": "A ___ is green inside. (猕猴桃)",
+        "choices": [
+          "kiwi",
+          "crayon",
+          "shirt"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：kiwi"
+      },
+      {
+        "prompt": "What does Max have? Max有什么水果？",
+        "choices": [
+          "a pear",
+          "a pineapple",
+          "a banana"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a pear"
+      },
+      {
+        "prompt": "Who has a pineapple? 谁有菠萝？",
+        "choices": [
+          "Melinda",
+          "Max",
+          "Mili"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Melinda"
+      },
+      {
+        "prompt": "What is red inside? 什么水果里面是红色？",
+        "choices": [
+          "the kiwi",
+          "the watermelon",
+          "the pear"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：the watermelon"
+      },
+      {
+        "prompt": "What color is the kiwi inside? 猕猴桃里面是什么颜色？",
+        "choices": [
+          "green",
+          "blue",
+          "red"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：green"
+      },
+      {
+        "prompt": "What do they do with the fruit? 他们怎么处理水果？",
+        "choices": [
+          "hide it",
+          "throw it",
+          "share it"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：share it"
+      }
+    ],
+    "oral": [
+      "指认两种水果，并尝试说一个颜色加水果的短语。",
+      "选一张颜色卡说 It is…，或先跟读其中的颜色。"
+    ],
+    "activity": "准备水果实物或图片和红黄蓝绿4张色卡。家长播放词汇，孩子把水果图和合适色卡配对；可用蓝盘子承接blue，不把所有水果强行说成蓝色。切水果由成人完成。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U03-words.mp3",
+      "story": "audio/A_L0_U03-story.mp3",
+      "test": "audio/A_L0_U03-test.mp3",
+      "phonics": "audio/A_L0_U03-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U03-student.pdf",
+      "teacher": "pdf/A_L0_U03-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "red": "🔴",
+      "blue": "🔵",
+      "yellow": "🟡",
+      "green": "🟢",
+      "watermelon": "🍉",
+      "kiwi": "🥝",
+      "pear": "🍐",
+      "pineapple": "🍍",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U04",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 4,
+    "title": "My Online Class",
+    "titleCn": "",
+    "focus": "学习用品、课堂指令与Mm—Nn",
+    "words": [
+      [
+        "pencil",
+        "铅笔"
+      ],
+      [
+        "crayon",
+        "蜡笔"
+      ],
+      [
+        "book",
+        "书"
+      ],
+      [
+        "pen",
+        "钢笔"
+      ],
+      [
+        "open",
+        "打开"
+      ],
+      [
+        "close",
+        "关闭"
+      ],
+      [
+        "take out",
+        "拿出"
+      ],
+      [
+        "listen",
+        "听"
+      ],
+      [
+        "draw",
+        "画画"
+      ],
+      [
+        "ready",
+        "准备好的"
+      ],
+      [
+        "please",
+        "请"
+      ]
+    ],
+    "coreCount": 7,
+    "phrases": [
+      [
+        "It is a book.",
+        "这是一本书。"
+      ],
+      [
+        "Open your book, please.",
+        "请打开书。"
+      ],
+      [
+        "Close your book, please.",
+        "请合上书。"
+      ],
+      [
+        "Take out your pencil.",
+        "拿出你的铅笔。"
+      ]
+    ],
+    "phonics": "Mm—Nn：听monkey/milk和nose/net的词首音，再回顾Aa—Ll。用鼻子轻哼m、n时感受声音，避免在辅音后额外加“呃”。",
+    "phonicsWords": [
+      [
+        "monkey",
+        "猴子"
+      ],
+      [
+        "milk",
+        "牛奶"
+      ],
+      [
+        "nose",
+        "鼻子"
+      ],
+      [
+        "net",
+        "网"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · Open the Book",
+    "story": "Max is ready for class. He has a book, a pencil, a pen, and a crayon. \"Take out your pencil,\" says Mili. \"Open your book.\" Max draws a cat. \"Close your book,\" says Mili. \"Good job, Max!\"",
+    "storyZh": "Max准备上课了。他有一本书、一支铅笔、一支笔和一支蜡笔。Mili说：“拿出铅笔，打开书。”Max画了一只猫。Mili说：“合上书。Max，做得好！”",
+    "questions": [
+      {
+        "prompt": "What should you take out? 拿出什么？",
+        "choices": [
+          "crayon",
+          "pen",
+          "book"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Take out your crayon. B: My crayon is ready.",
+        "spoken": "A: Take out your crayon. B: My crayon is ready."
+      },
+      {
+        "prompt": "What should you do? 做什么？",
+        "choices": [
+          "close the book",
+          "open the book",
+          "throw the book"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Open your book, please. B: Okay!",
+        "spoken": "A: Open your book, please. B: Okay!"
+      },
+      {
+        "prompt": "Which thing? 什么物品？",
+        "choices": [
+          "pencil",
+          "pen",
+          "crayon"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: What is this? B: It is a pen.",
+        "spoken": "A: What is this? B: It is a pen."
+      },
+      {
+        "prompt": "What should you close? 合上什么？",
+        "choices": [
+          "book",
+          "toybox",
+          "window"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Close your book. B: My book is closed.",
+        "spoken": "A: Close your book. B: My book is closed."
+      },
+      {
+        "prompt": "What does Ben draw with? Ben用什么画？",
+        "choices": [
+          "ball",
+          "shoe",
+          "pencil"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I have a pencil. B: Draw a cat, Ben.",
+        "spoken": "A: I have a pencil. B: Draw a cat, Ben."
+      },
+      {
+        "prompt": "选择“铅笔”对应的英文；可由家长读选项。",
+        "choices": [
+          "listen",
+          "book",
+          "pencil"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：pencil"
+      },
+      {
+        "prompt": "选择“蜡笔”对应的英文；可由家长读选项。",
+        "choices": [
+          "crayon",
+          "draw",
+          "please"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：crayon"
+      },
+      {
+        "prompt": "选择“书”对应的英文；可由家长读选项。",
+        "choices": [
+          "ready",
+          "book",
+          "please"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：book"
+      },
+      {
+        "prompt": "选择“钢笔”对应的英文；可由家长读选项。",
+        "choices": [
+          "pen",
+          "take out",
+          "ready"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：pen"
+      },
+      {
+        "prompt": "选择“打开”对应的英文；可由家长读选项。",
+        "choices": [
+          "open",
+          "take out",
+          "draw"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：open"
+      },
+      {
+        "prompt": "It is ___ book.",
+        "choices": [
+          "an",
+          "a",
+          "am"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：a"
+      },
+      {
+        "prompt": "___ your book. (打开)",
+        "choices": [
+          "Close",
+          "Open",
+          "Catch"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：Open"
+      },
+      {
+        "prompt": "Take ___ your pencil.",
+        "choices": [
+          "five",
+          "out",
+          "red"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：out"
+      },
+      {
+        "prompt": "___ your book. (合上)",
+        "choices": [
+          "Close",
+          "Open",
+          "Throw"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：Close"
+      },
+      {
+        "prompt": "It is a ___. (蜡笔)",
+        "choices": [
+          "pear",
+          "nose",
+          "crayon"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：crayon"
+      },
+      {
+        "prompt": "Who is ready for class? 谁准备好上课了？",
+        "choices": [
+          "a dog",
+          "Max",
+          "a cat"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Max"
+      },
+      {
+        "prompt": "What should Max take out? Max要拿出什么？",
+        "choices": [
+          "a ball",
+          "a pencil",
+          "a hat"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a pencil"
+      },
+      {
+        "prompt": "What should Max open? Max要打开什么？",
+        "choices": [
+          "his bag",
+          "his book",
+          "his toybox"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：his book"
+      },
+      {
+        "prompt": "What does Max draw? Max画了什么？",
+        "choices": [
+          "a bird",
+          "a cat",
+          "a fish"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a cat"
+      },
+      {
+        "prompt": "What does Mili say near the end? Mili快结束时说了什么？",
+        "choices": [
+          "Throw the ball.",
+          "Close your book.",
+          "Touch your nose."
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Close your book."
+      }
+    ],
+    "oral": [
+      "根据音频完成“打开书、合上书、拿出铅笔”中的两项。",
+      "选两件文具，尝试用 It is a… 介绍，或说出物品名。"
+    ],
+    "activity": "摆好书、铅笔、蜡笔和笔，玩“孩子当老师”。先由家长示范Open/Close，再让孩子选一条指令带家长做。只用安全文具，每次做对一条就停顿回应。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U04-words.mp3",
+      "story": "audio/A_L0_U04-story.mp3",
+      "test": "audio/A_L0_U04-test.mp3",
+      "phonics": "audio/A_L0_U04-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U04-student.pdf",
+      "teacher": "pdf/A_L0_U04-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "pencil": "✏️",
+      "crayon": "🖍️",
+      "book": "📖",
+      "pen": "🖊️",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U05",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 5,
+    "title": "My Toybox",
+    "titleCn": "",
+    "focus": "玩具命名、邀请游戏与Oo—Rr",
+    "words": [
+      [
+        "teddy bear",
+        "泰迪熊"
+      ],
+      [
+        "alien",
+        "外星人"
+      ],
+      [
+        "game",
+        "游戏"
+      ],
+      [
+        "ball",
+        "球"
+      ],
+      [
+        "throw",
+        "扔"
+      ],
+      [
+        "catch",
+        "接住"
+      ],
+      [
+        "play with",
+        "和……玩；玩……"
+      ],
+      [
+        "find",
+        "找到"
+      ],
+      [
+        "toy",
+        "玩具"
+      ],
+      [
+        "toybox",
+        "玩具箱"
+      ],
+      [
+        "roll",
+        "滚动"
+      ],
+      [
+        "together",
+        "一起"
+      ]
+    ],
+    "coreCount": 8,
+    "phrases": [
+      [
+        "What is this? It is a teddy bear.",
+        "这是什么？是一只泰迪熊。"
+      ],
+      [
+        "It is an alien.",
+        "这是一个外星人。"
+      ],
+      [
+        "Let's play with the ball.",
+        "我们一起玩球吧。"
+      ],
+      [
+        "Catch the ball!",
+        "接住球！"
+      ]
+    ],
+    "phonics": "Oo—Rr：听octopus/ostrich、pen/panda、queen/quilt、rabbit/rose。Q通常和u一起出现，本页用queen、quilt听qu组合；不把q单独当成完整发音规律。",
+    "phonicsWords": [
+      [
+        "octopus",
+        "章鱼"
+      ],
+      [
+        "ostrich",
+        "鸵鸟"
+      ],
+      [
+        "pen",
+        "笔"
+      ],
+      [
+        "panda",
+        "熊猫"
+      ],
+      [
+        "queen",
+        "女王"
+      ],
+      [
+        "quilt",
+        "被子"
+      ],
+      [
+        "rabbit",
+        "兔子"
+      ],
+      [
+        "rose",
+        "玫瑰"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · The Lost Ball",
+    "story": "Max opens his toybox. He finds a teddy bear, an alien, and a ball. Melinda has a game. \"Let us play together,\" says Max. He throws the soft ball. Melinda catches it. The teddy bear watches the game.",
+    "storyZh": "Max打开玩具箱，找到泰迪熊、外星人玩具和一个球。Melinda有一个游戏。Max说：“我们一起玩吧。”他抛出软球，Melinda接住。泰迪熊在旁边看着游戏。",
+    "questions": [
+      {
+        "prompt": "Which toy? 哪个玩具？",
+        "choices": [
+          "alien",
+          "ball",
+          "teddy bear"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: What is this? B: It is a teddy bear.",
+        "spoken": "A: What is this? B: It is a teddy bear."
+      },
+      {
+        "prompt": "What should you catch? 接住什么？",
+        "choices": [
+          "ball",
+          "book",
+          "pencil"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Catch the ball! B: I have it!",
+        "spoken": "A: Catch the ball! B: I have it!"
+      },
+      {
+        "prompt": "What do they want to play? 想玩什么？",
+        "choices": [
+          "a lesson",
+          "a game",
+          "a song"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Let us play the game. B: Yes, let us play!",
+        "spoken": "A: Let us play the game. B: Yes, let us play!"
+      },
+      {
+        "prompt": "Which toy do they find? 找到什么？",
+        "choices": [
+          "teddy bear",
+          "ball",
+          "alien"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Let us find the alien. B: Here it is!",
+        "spoken": "A: Let us find the alien. B: Here it is!"
+      },
+      {
+        "prompt": "What should Ben do? Ben做什么？",
+        "choices": [
+          "close the book",
+          "throw the ball",
+          "touch his ears"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Throw the ball to me, Ben. B: Ready? Here it comes!",
+        "spoken": "A: Throw the ball to me, Ben. B: Ready? Here it comes!"
+      },
+      {
+        "prompt": "选择“泰迪熊”对应的英文；可由家长读选项。",
+        "choices": [
+          "teddy bear",
+          "toy",
+          "throw"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：teddy bear"
+      },
+      {
+        "prompt": "选择“外星人”对应的英文；可由家长读选项。",
+        "choices": [
+          "toy",
+          "alien",
+          "together"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：alien"
+      },
+      {
+        "prompt": "选择“游戏”对应的英文；可由家长读选项。",
+        "choices": [
+          "together",
+          "game",
+          "play with"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：game"
+      },
+      {
+        "prompt": "选择“球”对应的英文；可由家长读选项。",
+        "choices": [
+          "teddy bear",
+          "ball",
+          "toy"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：ball"
+      },
+      {
+        "prompt": "选择“扔”对应的英文；可由家长读选项。",
+        "choices": [
+          "throw",
+          "play with",
+          "ball"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：throw"
+      },
+      {
+        "prompt": "It is ___ alien.",
+        "choices": [
+          "am",
+          "a",
+          "an"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：an"
+      },
+      {
+        "prompt": "It is a ___. (球)",
+        "choices": [
+          "shirt",
+          "pear",
+          "ball"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：ball"
+      },
+      {
+        "prompt": "Let us ___ together.",
+        "choices": [
+          "playing",
+          "plays",
+          "play"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：play"
+      },
+      {
+        "prompt": "___ the ball! (接住)",
+        "choices": [
+          "Finds",
+          "Catch",
+          "Close"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：Catch"
+      },
+      {
+        "prompt": "Let us play ___ the teddy bear.",
+        "choices": [
+          "with",
+          "is",
+          "am"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：with"
+      },
+      {
+        "prompt": "What does Max open? Max打开什么？",
+        "choices": [
+          "his toybox",
+          "his window",
+          "his book"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：his toybox"
+      },
+      {
+        "prompt": "Which toy does Max find? Max找到了什么玩具？",
+        "choices": [
+          "a toy car",
+          "a toy boat",
+          "a teddy bear"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a teddy bear"
+      },
+      {
+        "prompt": "Who has a game? 谁有一个游戏？",
+        "choices": [
+          "Mili",
+          "the alien",
+          "Melinda"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Melinda"
+      },
+      {
+        "prompt": "What does Max throw? Max抛出了什么？",
+        "choices": [
+          "a soft ball",
+          "a book",
+          "a crayon"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a soft ball"
+      },
+      {
+        "prompt": "Who catches the ball? 谁接住了球？",
+        "choices": [
+          "Melinda",
+          "the teddy bear",
+          "the alien"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Melinda"
+      }
+    ],
+    "oral": [
+      "从玩具中选一件，说 It is a… 或 It is an alien。",
+      "邀请家人一起玩，再演示 catch 或 throw；允许用关键词。"
+    ],
+    "activity": "把3件玩具藏在毛巾下，播放或说Find the…让孩子寻找。再用软球近距离滚接，先说Let us play，再说Catch；避免把硬玩具当球抛。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U05-words.mp3",
+      "story": "audio/A_L0_U05-story.mp3",
+      "test": "audio/A_L0_U05-test.mp3",
+      "phonics": "audio/A_L0_U05-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U05-student.pdf",
+      "teacher": "pdf/A_L0_U05-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "teddy bear": "🧸",
+      "alien": "👽",
+      "game": "🎮",
+      "ball": "⚽",
+      "find": "🔍",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U06",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 6,
+    "title": "Family",
+    "titleCn": "",
+    "focus": "家人称呼、情绪表达与Ss—Vv",
+    "words": [
+      [
+        "mom",
+        "妈妈"
+      ],
+      [
+        "dad",
+        "爸爸"
+      ],
+      [
+        "brother",
+        "兄弟"
+      ],
+      [
+        "sister",
+        "姐妹"
+      ],
+      [
+        "grandpa",
+        "爷爷"
+      ],
+      [
+        "grandma",
+        "奶奶"
+      ],
+      [
+        "happy",
+        "开心"
+      ],
+      [
+        "sad",
+        "难过"
+      ],
+      [
+        "family",
+        "家人；家庭"
+      ],
+      [
+        "hug",
+        "拥抱"
+      ],
+      [
+        "love",
+        "爱"
+      ],
+      [
+        "photo",
+        "照片"
+      ]
+    ],
+    "coreCount": 8,
+    "phrases": [
+      [
+        "Who is this? He is my dad.",
+        "这是谁？他是我的爸爸。"
+      ],
+      [
+        "She is my sister.",
+        "她是我的姐妹。"
+      ],
+      [
+        "My grandma is happy.",
+        "我的奶奶很开心。"
+      ],
+      [
+        "My brother is sad.",
+        "我的兄弟很难过。"
+      ]
+    ],
+    "phonics": "Ss—Vv：听seal/sun、turtle/tiger、umbrella/uncle、van/vet的开头。用轻柔气流模仿s，发v时下唇轻碰上齿；不要要求孩子一次发准。",
+    "phonicsWords": [
+      [
+        "seal",
+        "海豹"
+      ],
+      [
+        "sun",
+        "太阳"
+      ],
+      [
+        "turtle",
+        "海龟"
+      ],
+      [
+        "tiger",
+        "老虎"
+      ],
+      [
+        "umbrella",
+        "雨伞"
+      ],
+      [
+        "uncle",
+        "叔叔；舅舅"
+      ],
+      [
+        "van",
+        "面包车"
+      ],
+      [
+        "vet",
+        "兽医"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · A Happy Family",
+    "story": "Look at my family photo. This is my mom. This is my dad. My brother is sad. My sister gives him a toy. Grandpa and Grandma smile. Now my brother is happy. \"I love my family,\" I say.",
+    "storyZh": "看看我的全家福。这是妈妈，这是爸爸。我的兄弟有点难过。我的姐妹给了他一个玩具。爷爷奶奶笑了。现在我的兄弟开心了。我说：“我爱我的家人。”",
+    "questions": [
+      {
+        "prompt": "Who is this? 这是谁？",
+        "choices": [
+          "dad",
+          "grandpa",
+          "brother"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Who is this? B: He is my grandpa.",
+        "spoken": "A: Who is this? B: He is my grandpa."
+      },
+      {
+        "prompt": "How does Grandma feel? 奶奶心情如何？",
+        "choices": [
+          "happy",
+          "angry",
+          "sad"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My grandma is happy. B: She is smiling!",
+        "spoken": "A: My grandma is happy. B: She is smiling!"
+      },
+      {
+        "prompt": "Who is in the photo? 照片里是谁？",
+        "choices": [
+          "sister",
+          "mom",
+          "grandma"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: She is my sister. B: Hello!",
+        "spoken": "A: She is my sister. B: Hello!"
+      },
+      {
+        "prompt": "How does the brother feel? 兄弟心情如何？",
+        "choices": [
+          "sleepy",
+          "happy",
+          "sad"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My brother is sad. B: Let us help him.",
+        "spoken": "A: My brother is sad. B: Let us help him."
+      },
+      {
+        "prompt": "Who says hello? 谁打招呼？",
+        "choices": [
+          "dad",
+          "brother",
+          "grandpa"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Hello! I am Max's dad. B: Hello!",
+        "spoken": "A: Hello! I am Max's dad. B: Hello!"
+      },
+      {
+        "prompt": "选择“妈妈”对应的英文；可由家长读选项。",
+        "choices": [
+          "mom",
+          "love",
+          "photo"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：mom"
+      },
+      {
+        "prompt": "选择“爸爸”对应的英文；可由家长读选项。",
+        "choices": [
+          "grandpa",
+          "brother",
+          "dad"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：dad"
+      },
+      {
+        "prompt": "选择“兄弟”对应的英文；可由家长读选项。",
+        "choices": [
+          "brother",
+          "dad",
+          "love"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：brother"
+      },
+      {
+        "prompt": "选择“姐妹”对应的英文；可由家长读选项。",
+        "choices": [
+          "sister",
+          "happy",
+          "brother"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：sister"
+      },
+      {
+        "prompt": "选择“爷爷”对应的英文；可由家长读选项。",
+        "choices": [
+          "grandpa",
+          "sister",
+          "brother"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：grandpa"
+      },
+      {
+        "prompt": "He ___ my dad.",
+        "choices": [
+          "am",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：is"
+      },
+      {
+        "prompt": "___ is my mom.",
+        "choices": [
+          "It",
+          "He",
+          "She"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：She"
+      },
+      {
+        "prompt": "My grandma is ___. (开心)",
+        "choices": [
+          "sad",
+          "red",
+          "happy"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：happy"
+      },
+      {
+        "prompt": "He is my ___. (兄弟)",
+        "choices": [
+          "sister",
+          "mom",
+          "brother"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：brother"
+      },
+      {
+        "prompt": "___ is this? (谁)",
+        "choices": [
+          "Who",
+          "How old",
+          "What color"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：Who"
+      },
+      {
+        "prompt": "What do we look at? 大家在看什么？",
+        "choices": [
+          "a family photo",
+          "a fruit basket",
+          "a toybox"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：a family photo"
+      },
+      {
+        "prompt": "Who is sad at first? 一开始谁难过？",
+        "choices": [
+          "Grandma",
+          "the brother",
+          "Dad"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：the brother"
+      },
+      {
+        "prompt": "Who gives him a toy? 谁给了他玩具？",
+        "choices": [
+          "Grandpa",
+          "the sister",
+          "Mom"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：the sister"
+      },
+      {
+        "prompt": "Who smiles? 谁笑了？",
+        "choices": [
+          "only Mom",
+          "only Dad",
+          "Grandpa and Grandma"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Grandpa and Grandma"
+      },
+      {
+        "prompt": "How does the brother feel at the end? 最后兄弟的心情怎样？",
+        "choices": [
+          "angry",
+          "sad",
+          "happy"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：happy"
+      }
+    ],
+    "oral": [
+      "指着照片或画介绍两位家人；可以先说称呼，再尝试He/She is…。",
+      "选开心或难过的表情图，尝试说happy/sad并配上表情。"
+    ],
+    "activity": "准备家庭照片或简笔画。家长指人，孩子用称呼回答；再给玩偶画happy/sad两张表情卡，让孩子选择。允许用孩子熟悉的家庭成员替换示例，不必凑齐所有人物。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U06-words.mp3",
+      "story": "audio/A_L0_U06-story.mp3",
+      "test": "audio/A_L0_U06-test.mp3",
+      "phonics": "audio/A_L0_U06-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U06-student.pdf",
+      "teacher": "pdf/A_L0_U06-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "mom": "👩",
+      "dad": "👨",
+      "brother": "👦",
+      "sister": "👧",
+      "grandpa": "👴",
+      "grandma": "👵",
+      "happy": "😊",
+      "sad": "😢",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U07",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 7,
+    "title": "Get Dressed",
+    "titleCn": "",
+    "focus": "衣物、颜色、有与没有及Ww—Zz",
+    "words": [
+      [
+        "shoes",
+        "鞋子"
+      ],
+      [
+        "dress",
+        "连衣裙"
+      ],
+      [
+        "pants",
+        "裤子"
+      ],
+      [
+        "shirt",
+        "衬衫"
+      ],
+      [
+        "purple",
+        "紫色"
+      ],
+      [
+        "orange",
+        "橙色"
+      ],
+      [
+        "pink",
+        "粉色"
+      ],
+      [
+        "white",
+        "白色"
+      ],
+      [
+        "black",
+        "黑色"
+      ],
+      [
+        "wear",
+        "穿着"
+      ],
+      [
+        "get dressed",
+        "穿好衣服"
+      ],
+      [
+        "pair",
+        "一双；一对"
+      ],
+      [
+        "choose",
+        "选择"
+      ]
+    ],
+    "coreCount": 9,
+    "phrases": [
+      [
+        "I have a pink shirt.",
+        "我有一件粉色衬衫。"
+      ],
+      [
+        "I have black shoes.",
+        "我有黑色的鞋子。"
+      ],
+      [
+        "I do not have purple pants.",
+        "我没有紫色裤子。"
+      ],
+      [
+        "I have an orange dress.",
+        "我有一条橙色连衣裙。"
+      ]
+    ],
+    "phonics": "Ww—Zz：听wolf/water、yo-yo/yogurt、zoo/zebra。x在fox和six里位于词尾，听的是/ks/组合，不是词首音；字母X的名称也不同于词中的声音。",
+    "phonicsWords": [
+      [
+        "wolf",
+        "狼"
+      ],
+      [
+        "water",
+        "水"
+      ],
+      [
+        "fox",
+        "狐狸"
+      ],
+      [
+        "six",
+        "六"
+      ],
+      [
+        "yo-yo",
+        "悠悠球"
+      ],
+      [
+        "yogurt",
+        "酸奶"
+      ],
+      [
+        "zoo",
+        "动物园"
+      ],
+      [
+        "zebra",
+        "斑马"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · Pink or Purple?",
+    "story": "It is time to get dressed. Mia has a pink shirt and black shoes. She has white pants. She does not have purple pants. Ben has an orange shirt. Mia and Ben choose their clothes. Now they are ready to play.",
+    "storyZh": "该穿衣服了。Mia有粉色衬衫和黑色鞋子，还有白色裤子。她没有紫色裤子。Ben有一件橙色衬衫。Mia和Ben选好衣服，现在准备去玩了。",
+    "questions": [
+      {
+        "prompt": "Which clothes? 哪件衣物？",
+        "choices": [
+          "dress",
+          "shirt",
+          "pants"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I have a dress. B: A pink dress!",
+        "spoken": "A: I have a dress. B: A pink dress!"
+      },
+      {
+        "prompt": "What color are the shoes? 鞋子什么颜色？",
+        "choices": [
+          "white",
+          "purple",
+          "black"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My shoes are white. B: White shoes!",
+        "spoken": "A: My shoes are white. B: White shoes!"
+      },
+      {
+        "prompt": "What does Ben have? Ben有什么？",
+        "choices": [
+          "purple shoes",
+          "orange pants",
+          "a pink dress"
+        ],
+        "answer": 1,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I have orange pants. B: Orange pants!",
+        "spoken": "A: I have orange pants. B: Orange pants!"
+      },
+      {
+        "prompt": "What does Mia NOT have? Mia没有什么？",
+        "choices": [
+          "white shoes",
+          "pink pants",
+          "a black shirt"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I do not have a black shirt. B: You can choose another shirt.",
+        "spoken": "A: I do not have a black shirt. B: You can choose another shirt."
+      },
+      {
+        "prompt": "Which color? 什么颜色？",
+        "choices": [
+          "orange",
+          "white",
+          "purple"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Look at my purple shoes. B: I like purple.",
+        "spoken": "A: Look at my purple shoes. B: I like purple."
+      },
+      {
+        "prompt": "选择“鞋子”对应的英文；可由家长读选项。",
+        "choices": [
+          "shoes",
+          "shirt",
+          "choose"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：shoes"
+      },
+      {
+        "prompt": "选择“连衣裙”对应的英文；可由家长读选项。",
+        "choices": [
+          "shoes",
+          "wear",
+          "dress"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：dress"
+      },
+      {
+        "prompt": "选择“裤子”对应的英文；可由家长读选项。",
+        "choices": [
+          "shirt",
+          "pants",
+          "get dressed"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：pants"
+      },
+      {
+        "prompt": "选择“衬衫”对应的英文；可由家长读选项。",
+        "choices": [
+          "shirt",
+          "dress",
+          "choose"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：shirt"
+      },
+      {
+        "prompt": "选择“紫色”对应的英文；可由家长读选项。",
+        "choices": [
+          "pink",
+          "dress",
+          "purple"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：purple"
+      },
+      {
+        "prompt": "I ___ a shirt.",
+        "choices": [
+          "have",
+          "am",
+          "has"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：have"
+      },
+      {
+        "prompt": "I have ___ pink shirt.",
+        "choices": [
+          "an",
+          "two",
+          "a"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：a"
+      },
+      {
+        "prompt": "I have black ___. (鞋子)",
+        "choices": [
+          "dress",
+          "shirt",
+          "shoes"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：shoes"
+      },
+      {
+        "prompt": "I do ___ have purple pants.",
+        "choices": [
+          "not",
+          "no",
+          "is"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：not"
+      },
+      {
+        "prompt": "I have ___ orange dress.",
+        "choices": [
+          "a",
+          "an",
+          "am"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：an"
+      },
+      {
+        "prompt": "What color is Mia's shirt? Mia的衬衫是什么颜色？",
+        "choices": [
+          "purple",
+          "pink",
+          "orange"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：pink"
+      },
+      {
+        "prompt": "What color are her shoes? 她的鞋是什么颜色？",
+        "choices": [
+          "black",
+          "white",
+          "pink"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：black"
+      },
+      {
+        "prompt": "What color are her pants? 她的裤子是什么颜色？",
+        "choices": [
+          "white",
+          "purple",
+          "orange"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：white"
+      },
+      {
+        "prompt": "What does she NOT have? 她没有什么？",
+        "choices": [
+          "a pink shirt",
+          "purple pants",
+          "black shoes"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：purple pants"
+      },
+      {
+        "prompt": "Who has an orange shirt? 谁有橙色衬衫？",
+        "choices": [
+          "Ben",
+          "Mili",
+          "Mia"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Ben"
+      }
+    ],
+    "oral": [
+      "选两件衣物，用I have…介绍；可以先说衣物名和颜色。",
+      "从有/没有两组卡片中各选一件，尝试说I have…及I do not have…。"
+    ],
+    "activity": "从孩子自己的衣物里选衬衫、裤子、鞋子，搭配颜色卡。让孩子自主选衣，并说I have…。没有某种颜色就用I do not have…，不要求按性别分配衣物。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U07-words.mp3",
+      "story": "audio/A_L0_U07-story.mp3",
+      "test": "audio/A_L0_U07-test.mp3",
+      "phonics": "audio/A_L0_U07-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U07-student.pdf",
+      "teacher": "pdf/A_L0_U07-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "shoes": "👟",
+      "dress": "👗",
+      "pants": "👖",
+      "shirt": "👕",
+      "purple": "🟣",
+      "orange": "🟠",
+      "pink": "🌸",
+      "white": "⚪",
+      "black": "⚫",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
+    "id": "A_L0_U08",
+    "series": "A",
+    "seriesName": "LingoAce 自研",
+    "level": 0,
+    "unit": 8,
+    "title": "My Pets",
+    "titleCn": "",
+    "focus": "宠物、动作、喜好与字母音复习",
+    "words": [
+      [
+        "dog",
+        "狗"
+      ],
+      [
+        "frog",
+        "青蛙"
+      ],
+      [
+        "bird",
+        "鸟"
+      ],
+      [
+        "fish",
+        "鱼"
+      ],
+      [
+        "run",
+        "跑"
+      ],
+      [
+        "jump",
+        "跳"
+      ],
+      [
+        "fly",
+        "飞"
+      ],
+      [
+        "swim",
+        "游泳"
+      ],
+      [
+        "pet",
+        "宠物"
+      ],
+      [
+        "hop",
+        "单脚跳；蹦跳"
+      ],
+      [
+        "move",
+        "移动"
+      ],
+      [
+        "watch",
+        "观看"
+      ]
+    ],
+    "coreCount": 8,
+    "phrases": [
+      [
+        "I like dogs.",
+        "我喜欢狗。"
+      ],
+      [
+        "The dog can run.",
+        "狗会跑。"
+      ],
+      [
+        "The frog can jump.",
+        "青蛙会跳。"
+      ],
+      [
+        "The fish can swim.",
+        "鱼会游泳。"
+      ]
+    ],
+    "phonics": "复习Aa—Zz：先用本页8个熟悉词做词首音配对，再分次回顾其他字母。不要一次抽查26个音；每轮挑2—3组，孩子能听出或指认即可。",
+    "phonicsWords": [
+      [
+        "apple",
+        "苹果"
+      ],
+      [
+        "bear",
+        "熊"
+      ],
+      [
+        "cat",
+        "猫"
+      ],
+      [
+        "dog",
+        "狗"
+      ],
+      [
+        "fish",
+        "鱼"
+      ],
+      [
+        "hat",
+        "帽子"
+      ],
+      [
+        "sun",
+        "太阳"
+      ],
+      [
+        "zebra",
+        "斑马"
+      ]
+    ],
+    "storyTitle": "Listen, Point, Say · Pets on the Move",
+    "story": "Max likes pets. His dog can run. A frog can jump. A bird can fly. A fish can swim. Max watches the animals. \"I can jump, too!\" he says. Max jumps beside Mili. They smile and wave to the pets.",
+    "storyZh": "Max喜欢宠物。他的狗会跑，青蛙会跳，鸟会飞，鱼会游泳。Max看着动物们说：“我也会跳！”他在Mili旁边跳了跳。他们笑着向宠物挥手。",
+    "questions": [
+      {
+        "prompt": "Which pet? 哪种宠物？",
+        "choices": [
+          "dog",
+          "fish",
+          "frog"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I like frogs. B: Frogs can jump!",
+        "spoken": "A: I like frogs. B: Frogs can jump!"
+      },
+      {
+        "prompt": "What can the dog do? 狗会做什么？",
+        "choices": [
+          "swim",
+          "fly",
+          "run"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My dog can run. B: Run, run, run!",
+        "spoken": "A: My dog can run. B: Run, run, run!"
+      },
+      {
+        "prompt": "Which animal can fly here? 对话中谁会飞？",
+        "choices": [
+          "frog",
+          "dog",
+          "bird"
+        ],
+        "answer": 2,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: Look at the bird. B: It can fly!",
+        "spoken": "A: Look at the bird. B: It can fly!"
+      },
+      {
+        "prompt": "What can the fish do? 鱼会做什么？",
+        "choices": [
+          "swim",
+          "jump",
+          "run"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: My fish can swim. B: Swim, little fish!",
+        "spoken": "A: My fish can swim. B: Swim, little fish!"
+      },
+      {
+        "prompt": "What can Mia do? Mia会做什么？",
+        "choices": [
+          "jump",
+          "swim",
+          "fly"
+        ],
+        "answer": 0,
+        "kind": "listening",
+        "points": 5,
+        "explanation": "听力原文：A: I am Mia. I can jump. B: Jump with me!",
+        "spoken": "A: I am Mia. I can jump. B: Jump with me!"
+      },
+      {
+        "prompt": "选择“狗”对应的英文；可由家长读选项。",
+        "choices": [
+          "dog",
+          "run",
+          "hop"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：dog"
+      },
+      {
+        "prompt": "选择“青蛙”对应的英文；可由家长读选项。",
+        "choices": [
+          "swim",
+          "move",
+          "frog"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：frog"
+      },
+      {
+        "prompt": "选择“鸟”对应的英文；可由家长读选项。",
+        "choices": [
+          "dog",
+          "bird",
+          "frog"
+        ],
+        "answer": 1,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：bird"
+      },
+      {
+        "prompt": "选择“鱼”对应的英文；可由家长读选项。",
+        "choices": [
+          "fish",
+          "frog",
+          "bird"
+        ],
+        "answer": 0,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：fish"
+      },
+      {
+        "prompt": "选择“跑”对应的英文；可由家长读选项。",
+        "choices": [
+          "move",
+          "dog",
+          "run"
+        ],
+        "answer": 2,
+        "kind": "vocabulary",
+        "points": 5,
+        "explanation": "答案：run"
+      },
+      {
+        "prompt": "I ___ dogs.",
+        "choices": [
+          "like",
+          "likes",
+          "am"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：like"
+      },
+      {
+        "prompt": "The dog ___ run.",
+        "choices": [
+          "is",
+          "cans",
+          "can"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：can"
+      },
+      {
+        "prompt": "The frog can ___.",
+        "choices": [
+          "read",
+          "jump",
+          "fly"
+        ],
+        "answer": 1,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：jump"
+      },
+      {
+        "prompt": "The fish can ___.",
+        "choices": [
+          "draw",
+          "run",
+          "swim"
+        ],
+        "answer": 2,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：swim"
+      },
+      {
+        "prompt": "The ___ can fly.",
+        "choices": [
+          "bird",
+          "fish",
+          "dog"
+        ],
+        "answer": 0,
+        "kind": "language",
+        "points": 4,
+        "explanation": "答案：bird"
+      },
+      {
+        "prompt": "Who likes pets? 谁喜欢宠物？",
+        "choices": [
+          "Max",
+          "the bird",
+          "the fish"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：Max"
+      },
+      {
+        "prompt": "What can the dog do? 狗会做什么？",
+        "choices": [
+          "run",
+          "draw",
+          "fly"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：run"
+      },
+      {
+        "prompt": "What can the bird do? 鸟会做什么？",
+        "choices": [
+          "swim",
+          "read",
+          "fly"
+        ],
+        "answer": 2,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：fly"
+      },
+      {
+        "prompt": "What can the fish do? 鱼会做什么？",
+        "choices": [
+          "swim",
+          "run",
+          "jump"
+        ],
+        "answer": 0,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：swim"
+      },
+      {
+        "prompt": "What does Max do beside Mili? Max在Mili旁边做了什么？",
+        "choices": [
+          "swims",
+          "jumps",
+          "sleeps"
+        ],
+        "answer": 1,
+        "kind": "reading",
+        "points": 4,
+        "explanation": "答案：jumps"
+      }
+    ],
+    "oral": [
+      "指认两种动物并模仿动作；尝试说The…can…。",
+      "选喜欢的宠物说I like…；可以先说动物名，再加like。"
+    ],
+    "activity": "摆出狗、青蛙、鸟和鱼的图片，听音频后把图片放到run/jump/fly/swim动作区。孩子可以做安全的小幅动作，再用I can…说自己会做什么；不用接触真实宠物也能完成。",
+    "minutes": "15–20，可分两次",
+    "parentNote": "Level0可由家长读题干和选项，孩子用指认、动作或口答选择；听力播放时不提前读原文。阅读题可先听故事再答，不要求独立读长句。记录是否有提示，分数仅用于本次复习。",
+    "audio": {
+      "words": "audio/A_L0_U08-words.mp3",
+      "story": "audio/A_L0_U08-story.mp3",
+      "test": "audio/A_L0_U08-test.mp3",
+      "phonics": "audio/A_L0_U08-phonics.mp3"
+    },
+    "pdf": {
+      "student": "pdf/A_L0_U08-student.pdf",
+      "teacher": "pdf/A_L0_U08-teacher.pdf"
+    },
+    "audioStyle": "Kokoro neural · 美式合成朗读 · 对话分角色 · 启蒙慢速",
+    "wordEmoji": {
+      "dog": "🐶",
+      "frog": "🐸",
+      "bird": "🐦",
+      "fish": "🐟",
+      "run": "🏃",
+      "jump": "🤸",
+      "fly": "🕊️",
+      "swim": "🏊",
+      "one": "1",
+      "two": "2",
+      "three": "3",
+      "four": "4",
+      "five": "5",
+      "six": "6",
+      "seven": "7",
+      "eight": "8",
+      "nine": "9",
+      "ten": "10"
+    }
+  },
+  {
     "id": "A_L1_U01",
     "series": "A",
     "seriesName": "LingoAce 自研",

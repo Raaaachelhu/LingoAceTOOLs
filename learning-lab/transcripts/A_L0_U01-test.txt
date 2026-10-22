@@ -1,0 +1,55 @@
+Level zero. Unit 1. Hello!.
+
+Listen two times. Point to your answer. You can pause if you need more time.
+
+Question 1. Who says hello?
+
+Hello! I am Max.
+
+Hi, Max!
+
+Hello! I am Max.
+
+Hi, Max!
+
+Question 2. How old is Mia? Mia
+
+How old are you, Mia?
+
+I am four.
+
+How old are you, Mia?
+
+I am four.
+
+Question 3. How many bears?
+
+Look! One, two, three bears!
+
+Three bears!
+
+Look! One, two, three bears!
+
+Three bears!
+
+Question 4. What does Ben say? Ben
+
+I am Ben. I am a boy.
+
+Hello, Ben!
+
+I am Ben. I am a boy.
+
+Hello, Ben!
+
+Question 5. What do they say at the end?
+
+Goodbye, Mili!
+
+Goodbye, Max!
+
+Goodbye, Mili!
+
+Goodbye, Max!
+
+That is the end. Thank you for listening!
