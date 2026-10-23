@@ -1,0 +1,4 @@
+A: Look at the horse!
+B: It runs fast.
+A: Can you see the frog?
+B: Yes. It is in the pond.

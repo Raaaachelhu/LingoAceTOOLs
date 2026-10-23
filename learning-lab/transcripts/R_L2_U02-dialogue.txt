@@ -1,0 +1,4 @@
+A: What are you planting?
+B: A small seed.
+A: Does the root grow up?
+B: No. The root grows down.

@@ -1,0 +1,4 @@
+A: What is your favorite season?
+B: Spring. I like the flowers.
+A: Is it sunny today?
+B: No. It is rainy.

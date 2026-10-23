@@ -1,0 +1,4 @@
+A: Do you live in a house?
+B: No. I live in an apartment.
+A: Where is the bakery?
+B: It is beside the library.

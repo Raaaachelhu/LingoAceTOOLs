@@ -1,0 +1,4 @@
+A: How many eyes do you have?
+B: I have two eyes.
+A: What can you do with your ears?
+B: I can hear a bird.

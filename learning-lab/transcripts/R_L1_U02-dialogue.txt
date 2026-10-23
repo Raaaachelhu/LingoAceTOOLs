@@ -1,0 +1,4 @@
+A: Who is this?
+B: This is my grandmother.
+A: Can your grandfather sing?
+B: Yes! He can sing.

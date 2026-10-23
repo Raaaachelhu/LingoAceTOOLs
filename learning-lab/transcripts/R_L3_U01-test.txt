@@ -1,0 +1,26 @@
+Listen to each question twice. Choose one answer.
+
+Question 1. Where does Leo live?
+A: Do you live in a house? B: No. I live in an apartment.
+Repeat the same question once.
+Leave five seconds to answer.
+
+Question 2. Where is the bakery?
+A: Where is the bakery? B: It is beside the library.
+Repeat the same question once.
+Leave five seconds to answer.
+
+Question 3. Where can Mia buy bread?
+A: I want some bread. B: You can buy it at the bakery.
+Repeat the same question once.
+Leave five seconds to answer.
+
+Question 4. Where is the ball?
+A: Is the ball on the table? B: No. It is under the table.
+Repeat the same question once.
+Leave five seconds to answer.
+
+Question 5. How does the girl travel?
+A: How do you go to the city center? B: I take the subway.
+Repeat the same question once.
+Leave five seconds to answer.

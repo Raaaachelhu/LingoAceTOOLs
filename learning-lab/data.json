@@ -9315,6 +9315,4624 @@
     "audioStyle": "Kokoro neural · 美式合成朗读"
   },
   {
+    "id": "R_L1_U01",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 1,
+    "unit": 1,
+    "title": "All About Me",
+    "titleCn": "关于我自己",
+    "focus": "身体与感官、情绪、天气和衣物；用完整句介绍自己",
+    "words": [
+      [
+        "eyes",
+        "眼睛"
+      ],
+      [
+        "ears",
+        "耳朵"
+      ],
+      [
+        "nose",
+        "鼻子"
+      ],
+      [
+        "hands",
+        "手"
+      ],
+      [
+        "mouth",
+        "嘴巴"
+      ],
+      [
+        "see",
+        "看见"
+      ],
+      [
+        "touch",
+        "触摸"
+      ],
+      [
+        "hear",
+        "听见"
+      ],
+      [
+        "smell",
+        "闻"
+      ],
+      [
+        "taste",
+        "品尝"
+      ],
+      [
+        "wash up",
+        "洗漱/洗碗"
+      ],
+      [
+        "build",
+        "建造"
+      ],
+      [
+        "paint",
+        "画画"
+      ],
+      [
+        "play",
+        "玩"
+      ],
+      [
+        "read",
+        "读"
+      ],
+      [
+        "sleep",
+        "睡觉"
+      ],
+      [
+        "bedroom",
+        "卧室"
+      ],
+      [
+        "living room",
+        "客厅"
+      ],
+      [
+        "bathroom",
+        "浴室"
+      ],
+      [
+        "dining room",
+        "餐厅"
+      ],
+      [
+        "yard",
+        "院子"
+      ],
+      [
+        "one",
+        "一"
+      ],
+      [
+        "two",
+        "二"
+      ],
+      [
+        "three",
+        "三"
+      ],
+      [
+        "four",
+        "四"
+      ],
+      [
+        "five",
+        "五"
+      ],
+      [
+        "six",
+        "六"
+      ],
+      [
+        "seven",
+        "七"
+      ],
+      [
+        "eight",
+        "八"
+      ],
+      [
+        "nine",
+        "九"
+      ],
+      [
+        "ten",
+        "十"
+      ],
+      [
+        "eleven",
+        "十一"
+      ],
+      [
+        "twelve",
+        "十二"
+      ],
+      [
+        "thirteen",
+        "十三"
+      ],
+      [
+        "fourteen",
+        "十四"
+      ],
+      [
+        "happy",
+        "开心"
+      ],
+      [
+        "scared",
+        "害怕的"
+      ],
+      [
+        "mad",
+        "生气的"
+      ],
+      [
+        "hungry",
+        "饿的"
+      ],
+      [
+        "sad",
+        "难过"
+      ],
+      [
+        "sleepy",
+        "困倦的"
+      ],
+      [
+        "jump",
+        "跳"
+      ],
+      [
+        "laugh",
+        "笑"
+      ],
+      [
+        "eat",
+        "吃"
+      ],
+      [
+        "stomp",
+        "跺脚"
+      ],
+      [
+        "cry",
+        "哭"
+      ],
+      [
+        "sweater",
+        "毛衣"
+      ],
+      [
+        "pants",
+        "裤子"
+      ],
+      [
+        "hat",
+        "帽子"
+      ],
+      [
+        "jacket",
+        "夹克"
+      ],
+      [
+        "gloves",
+        "手套"
+      ],
+      [
+        "scarf",
+        "围巾"
+      ],
+      [
+        "sunny",
+        "晴朗的"
+      ],
+      [
+        "windy",
+        "有风的"
+      ],
+      [
+        "cloudy",
+        "多云的"
+      ],
+      [
+        "rainy",
+        "下雨的"
+      ],
+      [
+        "snowy",
+        "下雪的"
+      ],
+      [
+        "fingers",
+        "手指"
+      ],
+      [
+        "listen",
+        "听"
+      ],
+      [
+        "feel",
+        "感觉"
+      ],
+      [
+        "count",
+        "数数"
+      ]
+    ],
+    "coreCount": 57,
+    "phrases": [
+      [
+        "I have two eyes.",
+        "我有两只眼睛。"
+      ],
+      [
+        "I can hear with my ears.",
+        "我能用耳朵听。"
+      ],
+      [
+        "I feel happy.",
+        "我觉得开心。"
+      ],
+      [
+        "It is rainy. I wear a jacket.",
+        "下雨了，我穿夹克。"
+      ],
+      [
+        "I read in the living room.",
+        "我在客厅看书。"
+      ]
+    ],
+    "phonics": "短元音 a：注意 cat、hat、mad 中间相同的短音；先听整词，再试着拼合。感官问答先做动作，再说句子。",
+    "phonicsWords": [
+      [
+        "cat",
+        "猫 · 短 a"
+      ],
+      [
+        "hat",
+        "帽子 · 短 a"
+      ],
+      [
+        "mad",
+        "生气的 · 短 a"
+      ]
+    ],
+    "storyTitle": "Five Ways to Notice",
+    "story": "Mia sees a red apple and smells it. She touches its smooth skin and hears a bird outside. At lunch, she tastes the apple. Her eyes, nose, hands, ears and mouth help her notice different things.",
+    "storyZh": "米娅看见一个红苹果并闻了闻。她摸摸光滑的果皮，还听见窗外的鸟叫。午餐时她尝了苹果，发现身体的不同部位能帮助自己观察。",
+    "activity": "孩子自己画一个表情，指出两处身体部位，再说一句 I feel… 和一句 I have…；最后播放词汇音频自查。家长只需看作品，不用纠音。",
+    "oral": [
+      "指着自己介绍两处身体部位，至少有一句包含数量。",
+      "选择一种真实心情或天气，说一句相关表达。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "How many eyes does Mia have?",
+        "choices": [
+          "one",
+          "four",
+          "two"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: How many eyes do you have? B: I have two eyes.",
+        "spoken": "A: How many eyes do you have? B: I have two eyes."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does Ben use to hear?",
+        "choices": [
+          "his ears",
+          "his nose",
+          "his hands"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: What can you do with your ears? B: I can hear a bird.",
+        "spoken": "A: What can you do with your ears? B: I can hear a bird."
+      },
+      {
+        "kind": "listening",
+        "prompt": "How does the girl feel?",
+        "choices": [
+          "happy",
+          "sad",
+          "sleepy"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: How do you feel today? B: I feel happy!",
+        "spoken": "A: How do you feel today? B: I feel happy!"
+      },
+      {
+        "kind": "listening",
+        "prompt": "What is the weather like?",
+        "choices": [
+          "snowy",
+          "sunny",
+          "rainy"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: What is the weather like? B: It is rainy. Take your jacket.",
+        "spoken": "A: What is the weather like? B: It is rainy. Take your jacket."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where does Sam read?",
+        "choices": [
+          "in the yard",
+          "in the bathroom",
+          "in the living room"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Where do you read? B: I read in the living room.",
+        "spoken": "A: Where do you read? B: I read in the living room."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“眼睛”的词。",
+        "choices": [
+          "mouth",
+          "eyes",
+          "play"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "eyes = 眼睛"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“读”的词。",
+        "choices": [
+          "bathroom",
+          "read",
+          "happy"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "read = 读"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“八”的词。",
+        "choices": [
+          "five",
+          "eight",
+          "sunny"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "eight = 八"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“笑”的词。",
+        "choices": [
+          "laugh",
+          "scared",
+          "stomp"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "laugh = 笑"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“下雪的”的词。",
+        "choices": [
+          "ten",
+          "snowy",
+          "hungry"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "snowy = 下雪的"
+      },
+      {
+        "kind": "language",
+        "prompt": "I have two ___.",
+        "choices": [
+          "noses",
+          "eyes",
+          "eye"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "two 后使用复数 eyes。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I hear with my ___.",
+        "choices": [
+          "nose",
+          "hands",
+          "ears"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "听声音使用 ears。"
+      },
+      {
+        "kind": "language",
+        "prompt": "How ___ hands do you have?",
+        "choices": [
+          "is",
+          "many",
+          "much"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "How many 询问可数事物的数量。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I ___ happy today.",
+        "choices": [
+          "hear",
+          "wear",
+          "feel"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "feel happy 表达感受。"
+      },
+      {
+        "kind": "language",
+        "prompt": "It is snowy. I wear a ___.",
+        "choices": [
+          "nose",
+          "scarf",
+          "mouth"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "寒冷天气可以戴 scarf。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What fruit does Mia see?",
+        "choices": [
+          "a green pear",
+          "a yellow banana",
+          "a red apple"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Mia sees a red apple"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does she hear?",
+        "choices": [
+          "a bird",
+          "a car",
+          "a dog"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：hears a bird outside"
+      },
+      {
+        "kind": "reading",
+        "prompt": "When does she taste the apple?",
+        "choices": [
+          "at lunch",
+          "at bedtime",
+          "before breakfast"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：At lunch, she tastes the apple"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does she touch?",
+        "choices": [
+          "a flower",
+          "the apple skin",
+          "a bird"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：touches its smooth skin"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What helps Mia notice things?",
+        "choices": [
+          "a school bus",
+          "her senses",
+          "a toy robot"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：Her eyes, nose, hands, ears and mouth help her notice"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "How many eyes do you have?"
+      ],
+      [
+        "B",
+        "I have two eyes."
+      ],
+      [
+        "A",
+        "What can you do with your ears?"
+      ],
+      [
+        "B",
+        "I can hear a bird."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L1_U01-words.mp3",
+      "story": "audio/R_L1_U01-story.mp3",
+      "dialogue": "audio/R_L1_U01-dialogue.mp3",
+      "phonics": "audio/R_L1_U01-phonics.mp3",
+      "test": "audio/R_L1_U01-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L1_U01-student.pdf",
+      "teacher": "pdf/R_L1_U01-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L1_U02",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 1,
+    "unit": 2,
+    "title": "My Family",
+    "titleCn": "我的家庭",
+    "focus": "家庭成员、动作、食物、宠物和形状；介绍家人与能力",
+    "words": [
+      [
+        "grandmother",
+        "奶奶/外婆"
+      ],
+      [
+        "grandfather",
+        "爷爷/外公"
+      ],
+      [
+        "father",
+        "爸爸"
+      ],
+      [
+        "mother",
+        "妈妈"
+      ],
+      [
+        "brother",
+        "兄弟"
+      ],
+      [
+        "sister",
+        "姐妹"
+      ],
+      [
+        "dance",
+        "跳舞"
+      ],
+      [
+        "sing",
+        "唱歌"
+      ],
+      [
+        "read",
+        "读"
+      ],
+      [
+        "draw",
+        "画画"
+      ],
+      [
+        "cook",
+        "做饭"
+      ],
+      [
+        "swim",
+        "游泳"
+      ],
+      [
+        "fish",
+        "鱼"
+      ],
+      [
+        "soup",
+        "汤"
+      ],
+      [
+        "pizza",
+        "披萨"
+      ],
+      [
+        "fries",
+        "薯条"
+      ],
+      [
+        "apple pie",
+        "苹果派"
+      ],
+      [
+        "carrots",
+        "胡萝卜"
+      ],
+      [
+        "potatoes",
+        "土豆"
+      ],
+      [
+        "onions",
+        "洋葱"
+      ],
+      [
+        "beans",
+        "豆子"
+      ],
+      [
+        "corn",
+        "玉米"
+      ],
+      [
+        "cat",
+        "猫"
+      ],
+      [
+        "rabbit",
+        "兔子"
+      ],
+      [
+        "dog",
+        "狗"
+      ],
+      [
+        "bird",
+        "鸟"
+      ],
+      [
+        "run",
+        "跑"
+      ],
+      [
+        "jump",
+        "跳"
+      ],
+      [
+        "climb",
+        "爬"
+      ],
+      [
+        "fly",
+        "飞"
+      ],
+      [
+        "dolls",
+        "玩偶"
+      ],
+      [
+        "bears",
+        "熊（复数）"
+      ],
+      [
+        "blocks",
+        "积木"
+      ],
+      [
+        "robots",
+        "机器人"
+      ],
+      [
+        "yo-yos",
+        "悠悠球"
+      ],
+      [
+        "circle",
+        "圆形"
+      ],
+      [
+        "star",
+        "星星"
+      ],
+      [
+        "rectangle",
+        "长方形"
+      ],
+      [
+        "heart",
+        "心形"
+      ],
+      [
+        "square",
+        "正方形"
+      ],
+      [
+        "family",
+        "家人"
+      ],
+      [
+        "together",
+        "一起"
+      ],
+      [
+        "help",
+        "帮助"
+      ],
+      [
+        "share",
+        "分享"
+      ]
+    ],
+    "coreCount": 40,
+    "phrases": [
+      [
+        "Who is this? This is my grandmother.",
+        "这是谁？这是我的奶奶/外婆。"
+      ],
+      [
+        "My grandfather can sing.",
+        "我的爷爷/外公会唱歌。"
+      ],
+      [
+        "My sister can draw.",
+        "我的姐妹会画画。"
+      ],
+      [
+        "The rabbit can jump.",
+        "兔子会跳。"
+      ],
+      [
+        "I see a square and a heart.",
+        "我看见一个正方形和一个心形。"
+      ]
+    ],
+    "phonics": "短元音 i：听 fish、sing、sit 中间的短音。sing 的词尾是 ng 的鼻音，不要额外加一个明显的 g 音。",
+    "phonicsWords": [
+      [
+        "fish",
+        "鱼 · 短 i"
+      ],
+      [
+        "sing",
+        "唱歌 · 短 i"
+      ],
+      [
+        "sit",
+        "坐 · 短 i"
+      ]
+    ],
+    "storyTitle": "The Family Picture",
+    "story": "A girl draws her mother, father, brother and sister. Her grandmother likes to read, and her grandfather likes to sing. Each person adds something to the picture. It becomes a picture of a family doing things together.",
+    "storyZh": "女孩画了妈妈、爸爸、兄弟和姐妹。奶奶喜欢阅读，爷爷喜欢唱歌。每个人都给画加上一点内容，组成了一幅家人共同活动的图画。",
+    "activity": "孩子用自己的画或家庭照片介绍两位家人。不会说的先指一指，听示例后再说。没有照片也可用玩偶代替，不要求家长提供英语示范。",
+    "oral": [
+      "介绍两位家人，各说 This is my…；称呼可按自己的家庭情况选择。",
+      "介绍一位家人会做的事，再说一种宠物会做的动作。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "Who is in the picture?",
+        "choices": [
+          "brother",
+          "father",
+          "grandmother"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Who is this? B: This is my grandmother.",
+        "spoken": "A: Who is this? B: This is my grandmother."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What can Grandpa do?",
+        "choices": [
+          "sing",
+          "cook",
+          "swim"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Can your grandfather sing? B: Yes! He can sing.",
+        "spoken": "A: Can your grandfather sing? B: Yes! He can sing."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does the family eat?",
+        "choices": [
+          "pizza and fries",
+          "fish and corn",
+          "soup and carrots"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: What is for lunch? B: We have soup and carrots.",
+        "spoken": "A: What is for lunch? B: We have soup and carrots."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which pet can fly?",
+        "choices": [
+          "a bird",
+          "a rabbit",
+          "a cat"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Can your bird fly? B: Yes, it can fly.",
+        "spoken": "A: Can your bird fly? B: Yes, it can fly."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What shape is the block?",
+        "choices": [
+          "a circle",
+          "a square",
+          "a star"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Is this block a square? B: Yes, it has four equal sides.",
+        "spoken": "A: Is this block a square? B: Yes, it has four equal sides."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“奶奶/外婆”的词。",
+        "choices": [
+          "grandmother",
+          "yo-yos",
+          "corn"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "grandmother = 奶奶/外婆"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“做饭”的词。",
+        "choices": [
+          "cook",
+          "onions",
+          "robots"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "cook = 做饭"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“豆子”的词。",
+        "choices": [
+          "beans",
+          "robots",
+          "family"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "beans = 豆子"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“飞”的词。",
+        "choices": [
+          "carrots",
+          "potatoes",
+          "fly"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "fly = 飞"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“正方形”的词。",
+        "choices": [
+          "square",
+          "together",
+          "draw"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "square = 正方形"
+      },
+      {
+        "kind": "language",
+        "prompt": "This ___ my mother.",
+        "choices": [
+          "am",
+          "are",
+          "is"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "介绍单个人使用 This is。"
+      },
+      {
+        "kind": "language",
+        "prompt": "My brother can ___.",
+        "choices": [
+          "swimming",
+          "swims",
+          "swim"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "can 后接动词原形。"
+      },
+      {
+        "kind": "language",
+        "prompt": "Who is this? This is my ___.",
+        "choices": [
+          "circle",
+          "father",
+          "soup"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "介绍人物时选择家庭成员 father。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The bird can ___.",
+        "choices": [
+          "fly",
+          "draw",
+          "cook"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "鸟可以飞，fly。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I see a ___. It is round.",
+        "choices": [
+          "circle",
+          "rectangle",
+          "square"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "circle 表示圆形。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does the girl draw?",
+        "choices": [
+          "a school bus",
+          "her family",
+          "only a pet"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：draws her mother, father, brother and sister"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who likes to read?",
+        "choices": [
+          "the girl only",
+          "her grandfather",
+          "her grandmother"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Her grandmother likes to read"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who likes to sing?",
+        "choices": [
+          "her grandfather",
+          "her sister",
+          "her grandmother"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：her grandfather likes to sing"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who adds something to the picture?",
+        "choices": [
+          "only the girl",
+          "only the teacher",
+          "each person"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Each person adds something"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What is the picture about?",
+        "choices": [
+          "a rainy day",
+          "a family doing things together",
+          "a farm of animals"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：a family doing things together"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "Who is this?"
+      ],
+      [
+        "B",
+        "This is my grandmother."
+      ],
+      [
+        "A",
+        "Can your grandfather sing?"
+      ],
+      [
+        "B",
+        "Yes! He can sing."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L1_U02-words.mp3",
+      "story": "audio/R_L1_U02-story.mp3",
+      "dialogue": "audio/R_L1_U02-dialogue.mp3",
+      "phonics": "audio/R_L1_U02-phonics.mp3",
+      "test": "audio/R_L1_U02-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L1_U02-student.pdf",
+      "teacher": "pdf/R_L1_U02-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L1_U03",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 1,
+    "unit": 3,
+    "title": "My Life",
+    "titleCn": "我的生活",
+    "focus": "学习用品、校园活动、星期、出行和运动；说出物品与用途",
+    "words": [
+      [
+        "backpack",
+        "背包"
+      ],
+      [
+        "book",
+        "书"
+      ],
+      [
+        "notebook",
+        "笔记本"
+      ],
+      [
+        "pencil",
+        "铅笔"
+      ],
+      [
+        "crayon",
+        "蜡笔"
+      ],
+      [
+        "glue stick",
+        "胶棒"
+      ],
+      [
+        "reading",
+        "阅读"
+      ],
+      [
+        "drawing",
+        "画画"
+      ],
+      [
+        "painting",
+        "画"
+      ],
+      [
+        "writing",
+        "写作"
+      ],
+      [
+        "sticking",
+        "粘贴"
+      ],
+      [
+        "classroom",
+        "教室"
+      ],
+      [
+        "dining room",
+        "餐厅"
+      ],
+      [
+        "art room",
+        "美术教室"
+      ],
+      [
+        "music room",
+        "音乐教室"
+      ],
+      [
+        "playground",
+        "操场"
+      ],
+      [
+        "Monday",
+        "星期一"
+      ],
+      [
+        "Tuesday",
+        "星期二"
+      ],
+      [
+        "Wednesday",
+        "星期三"
+      ],
+      [
+        "Thursday",
+        "星期四"
+      ],
+      [
+        "Friday",
+        "星期五"
+      ],
+      [
+        "Saturday",
+        "星期六"
+      ],
+      [
+        "Sunday",
+        "星期日"
+      ],
+      [
+        "bike",
+        "自行车"
+      ],
+      [
+        "car",
+        "汽车"
+      ],
+      [
+        "bus",
+        "公交车"
+      ],
+      [
+        "on foot",
+        "步行"
+      ],
+      [
+        "baseball",
+        "棒球"
+      ],
+      [
+        "ping-pong ball",
+        "乒乓球"
+      ],
+      [
+        "basketball",
+        "篮球"
+      ],
+      [
+        "volleyball",
+        "排球"
+      ],
+      [
+        "football",
+        "足球"
+      ],
+      [
+        "throw",
+        "扔"
+      ],
+      [
+        "hit",
+        "打"
+      ],
+      [
+        "catch",
+        "接住"
+      ],
+      [
+        "bounce",
+        "弹跳"
+      ],
+      [
+        "kick",
+        "踢"
+      ],
+      [
+        "burgers",
+        "汉堡"
+      ],
+      [
+        "muffins",
+        "松饼"
+      ],
+      [
+        "cookies",
+        "饼干"
+      ],
+      [
+        "chocolates",
+        "巧克力"
+      ],
+      [
+        "candies",
+        "糖果"
+      ],
+      [
+        "mushrooms",
+        "蘑菇"
+      ],
+      [
+        "bananas",
+        "香蕉"
+      ],
+      [
+        "tomatoes",
+        "西红柿"
+      ],
+      [
+        "lollipops",
+        "棒棒糖"
+      ],
+      [
+        "eggs",
+        "鸡蛋"
+      ],
+      [
+        "share",
+        "分享"
+      ],
+      [
+        "put away",
+        "收好"
+      ],
+      [
+        "helpful",
+        "乐于帮助的"
+      ],
+      [
+        "table",
+        "桌子"
+      ]
+    ],
+    "coreCount": 47,
+    "phrases": [
+      [
+        "What's this? It's a pencil.",
+        "这是什么？这是一支铅笔。"
+      ],
+      [
+        "I have a book in my backpack.",
+        "我的背包里有一本书。"
+      ],
+      [
+        "I draw with a crayon.",
+        "我用蜡笔画画。"
+      ],
+      [
+        "I go to school by bus.",
+        "我乘公交车去上学。"
+      ],
+      [
+        "I can kick a football.",
+        "我会踢足球。"
+      ]
+    ],
+    "phonics": "短元音 o：听 hot、not、box 中间的元音。把 notebook 等长词分成清晰的音节来听，不要为了追求速度吞掉词尾。",
+    "phonicsWords": [
+      [
+        "hot",
+        "热的 · 短 o"
+      ],
+      [
+        "not",
+        "不 · 短 o"
+      ],
+      [
+        "box",
+        "盒子 · 短 o"
+      ]
+    ],
+    "storyTitle": "A Helpful Backpack",
+    "story": "Leo puts a book, a notebook and a pencil in his backpack. At school, his friend needs a crayon. Leo shares one, and they start drawing. Before going home, they put away the glue stick and clean their table.",
+    "storyZh": "利奥把书、本子和铅笔装进背包。到学校后，朋友需要蜡笔，他就分享了一支。画画结束，回家之前，他们收好胶棒并整理桌面。",
+    "activity": "孩子自己整理书包，拿出三件物品各说一句 It is a…；选择一个动作做给家人看。家长只需听成果，不需要跟课陪练。",
+    "oral": [
+      "拿三件学习用品，各用 It is a… 介绍。",
+      "选择一种交通方式或运动，说一个完整句并配上动作。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "What is in the backpack?",
+        "choices": [
+          "a book and a pencil",
+          "a doll and a bear",
+          "a hat and a scarf"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: What is in your backpack? B: A book and a pencil.",
+        "spoken": "A: What is in your backpack? B: A book and a pencil."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does the girl need?",
+        "choices": [
+          "a bus",
+          "a cookie",
+          "a crayon"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: May I have a crayon? B: Yes. Here you are.",
+        "spoken": "A: May I have a crayon? B: Yes. Here you are."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where do they play?",
+        "choices": [
+          "on the bus",
+          "in the dining room",
+          "in the playground"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Where do you play at school? B: We play in the playground.",
+        "spoken": "A: Where do you play at school? B: We play in the playground."
+      },
+      {
+        "kind": "listening",
+        "prompt": "How does Ben go to school?",
+        "choices": [
+          "on foot",
+          "by bike",
+          "by bus"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Do you walk to school? B: No. I go by bus.",
+        "spoken": "A: Do you walk to school? B: No. I go by bus."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which action does the boy do?",
+        "choices": [
+          "kick",
+          "throw",
+          "catch"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Can you kick the football? B: Yes! Watch me kick it.",
+        "spoken": "A: Can you kick the football? B: Yes! Watch me kick it."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“背包”的词。",
+        "choices": [
+          "drawing",
+          "backpack",
+          "lollipops"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "backpack = 背包"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“餐厅”的词。",
+        "choices": [
+          "candies",
+          "dining room",
+          "chocolates"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "dining room = 餐厅"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“自行车”的词。",
+        "choices": [
+          "throw",
+          "classroom",
+          "bike"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "bike = 自行车"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“接住”的词。",
+        "choices": [
+          "lollipops",
+          "eggs",
+          "catch"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "catch = 接住"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“鸡蛋”的词。",
+        "choices": [
+          "pencil",
+          "eggs",
+          "bus"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "eggs = 鸡蛋"
+      },
+      {
+        "kind": "language",
+        "prompt": "What's this? ___ a book.",
+        "choices": [
+          "I'm",
+          "It's",
+          "They're"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "单数物品用 It is / It's。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I draw with a ___.",
+        "choices": [
+          "burger",
+          "bus",
+          "crayon"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "crayon 用于画画。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I go to school ___ bus.",
+        "choices": [
+          "in front",
+          "by",
+          "under"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "by bus 表示乘公交。"
+      },
+      {
+        "kind": "language",
+        "prompt": "One pencil, two ___.",
+        "choices": [
+          "penciles",
+          "pencil",
+          "pencils"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "规则复数 pencils。"
+      },
+      {
+        "kind": "language",
+        "prompt": "Please put ___ your books.",
+        "choices": [
+          "rainy",
+          "happy",
+          "away"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "put away 表示收好。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who packs the backpack?",
+        "choices": [
+          "Tom",
+          "Leo",
+          "Mia"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：Leo puts a book"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does his friend need?",
+        "choices": [
+          "a hat",
+          "a crayon",
+          "a football"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：his friend needs a crayon"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Leo do?",
+        "choices": [
+          "shares a crayon",
+          "goes home at once",
+          "hides the crayon"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：Leo shares one"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What do they start doing?",
+        "choices": [
+          "cooking",
+          "swimming",
+          "drawing"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：they start drawing"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What do they do before going home?",
+        "choices": [
+          "buy a new backpack",
+          "put things away and clean the table",
+          "leave everything on the floor"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：put away the glue stick and clean their table"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "What is in your backpack?"
+      ],
+      [
+        "B",
+        "A book and a pencil."
+      ],
+      [
+        "A",
+        "May I have a crayon?"
+      ],
+      [
+        "B",
+        "Yes. Here you are."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L1_U03-words.mp3",
+      "story": "audio/R_L1_U03-story.mp3",
+      "dialogue": "audio/R_L1_U03-dialogue.mp3",
+      "phonics": "audio/R_L1_U03-phonics.mp3",
+      "test": "audio/R_L1_U03-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L1_U03-student.pdf",
+      "teacher": "pdf/R_L1_U03-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L2_U01",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 2,
+    "unit": 1,
+    "title": "Animals",
+    "titleCn": "动物世界",
+    "focus": "动物特征、栖息地、幼崽和动作；用线索描述动物",
+    "words": [
+      [
+        "goat",
+        "山羊"
+      ],
+      [
+        "horse",
+        "马"
+      ],
+      [
+        "goose",
+        "鹅"
+      ],
+      [
+        "cow",
+        "奶牛"
+      ],
+      [
+        "fast",
+        "快的"
+      ],
+      [
+        "slow",
+        "慢的"
+      ],
+      [
+        "big",
+        "大的"
+      ],
+      [
+        "little",
+        "小的"
+      ],
+      [
+        "loud",
+        "大声的"
+      ],
+      [
+        "quiet",
+        "安静的"
+      ],
+      [
+        "frog",
+        "青蛙"
+      ],
+      [
+        "bird",
+        "鸟"
+      ],
+      [
+        "deer",
+        "鹿"
+      ],
+      [
+        "sea turtle",
+        "海龟"
+      ],
+      [
+        "pond",
+        "池塘"
+      ],
+      [
+        "nest",
+        "鸟巢"
+      ],
+      [
+        "forest",
+        "森林"
+      ],
+      [
+        "ocean",
+        "海洋"
+      ],
+      [
+        "barn",
+        "谷仓"
+      ],
+      [
+        "blue",
+        "蓝色"
+      ],
+      [
+        "green",
+        "绿色"
+      ],
+      [
+        "black",
+        "黑色"
+      ],
+      [
+        "red",
+        "红色"
+      ],
+      [
+        "elephant",
+        "大象"
+      ],
+      [
+        "monkey",
+        "猴子"
+      ],
+      [
+        "lion",
+        "狮子"
+      ],
+      [
+        "tiger",
+        "老虎"
+      ],
+      [
+        "panda",
+        "熊猫"
+      ],
+      [
+        "giraffe",
+        "长颈鹿"
+      ],
+      [
+        "penguin",
+        "企鹅"
+      ],
+      [
+        "zebra",
+        "斑马"
+      ],
+      [
+        "calf",
+        "小牛"
+      ],
+      [
+        "piglet",
+        "小猪"
+      ],
+      [
+        "chick",
+        "小鸡"
+      ],
+      [
+        "gosling",
+        "小鹅"
+      ],
+      [
+        "duckling",
+        "小鸭子"
+      ],
+      [
+        "kid",
+        "小山羊"
+      ],
+      [
+        "head",
+        "头"
+      ],
+      [
+        "tail",
+        "尾巴"
+      ],
+      [
+        "wings",
+        "翅膀"
+      ],
+      [
+        "legs",
+        "腿"
+      ],
+      [
+        "feet",
+        "脚"
+      ],
+      [
+        "have",
+        "有"
+      ],
+      [
+        "has",
+        "有（第三人称）"
+      ],
+      [
+        "habitat",
+        "栖息地"
+      ],
+      [
+        "feathers",
+        "羽毛"
+      ],
+      [
+        "baby animal",
+        "动物幼崽"
+      ],
+      [
+        "move",
+        "移动"
+      ]
+    ],
+    "coreCount": 44,
+    "phrases": [
+      [
+        "I see a horse. It is fast.",
+        "我看见一匹马，它跑得快。"
+      ],
+      [
+        "A frog lives in a pond.",
+        "青蛙生活在池塘里。"
+      ],
+      [
+        "The bird has two wings.",
+        "鸟有两只翅膀。"
+      ],
+      [
+        "A chick is a baby chicken.",
+        "小鸡是鸡的幼崽。"
+      ],
+      [
+        "A kid is a baby goat.",
+        "kid 在这里指小山羊。"
+      ]
+    ],
+    "phonics": "辅音组合 sh：sheep、fish、shop 中 sh 一起发音。sea turtle 中 turtle 的词尾要轻，不需要把每个字母都单独念出来。",
+    "phonicsWords": [
+      [
+        "sheep",
+        "绵羊 · sh"
+      ],
+      [
+        "fish",
+        "鱼 · sh"
+      ],
+      [
+        "shop",
+        "商店 · sh"
+      ]
+    ],
+    "storyTitle": "Fast and Slow",
+    "story": "A little frog watches a horse run. “You are fast,” says the frog. A goat walks slowly beside the cow. The frog jumps into a pond. Every animal has its own way to move.",
+    "storyZh": "小青蛙看见一匹跑得很快的马。山羊在奶牛身旁慢慢走着，青蛙则跳进池塘。不同动物有不同的移动方式。",
+    "activity": "孩子画一种动物，先不说名字，录三条线索：颜色、身体部位和动作。最后揭晓动物名称；家长只需听猜谜成果。",
+    "oral": [
+      "选一种动物，说出一个身体特征和一个动作。",
+      "比较两种动物，至少用到 fast / slow 或 big / little 中的一组词。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "Which animal is fast?",
+        "choices": [
+          "the frog",
+          "the goose",
+          "the horse"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Look at the horse! B: It runs fast.",
+        "spoken": "A: Look at the horse! B: It runs fast."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where is the frog?",
+        "choices": [
+          "in a barn",
+          "in the pond",
+          "in the ocean"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Can you see the frog? B: Yes. It is in the pond.",
+        "spoken": "A: Can you see the frog? B: Yes. It is in the pond."
+      },
+      {
+        "kind": "listening",
+        "prompt": "How many wings does the bird have?",
+        "choices": [
+          "six",
+          "four",
+          "two"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Does the bird have wings? B: Yes. It has two wings.",
+        "spoken": "A: Does the bird have wings? B: Yes. It has two wings."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What is a kid here?",
+        "choices": [
+          "a baby goat",
+          "a baby duck",
+          "a baby cow"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Is a kid a baby cow? B: No. Here, a kid is a baby goat.",
+        "spoken": "A: Is a kid a baby cow? B: No. Here, a kid is a baby goat."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which animal lives in the ocean?",
+        "choices": [
+          "a sea turtle",
+          "a goat",
+          "a horse"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Where does a sea turtle live? B: It lives in the ocean.",
+        "spoken": "A: Where does a sea turtle live? B: It lives in the ocean."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“山羊”的词。",
+        "choices": [
+          "goat",
+          "red",
+          "has"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "goat = 山羊"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“鸟”的词。",
+        "choices": [
+          "green",
+          "bird",
+          "tiger"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "bird = 鸟"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“红色”的词。",
+        "choices": [
+          "chick",
+          "red",
+          "has"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "red = 红色"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“小猪”的词。",
+        "choices": [
+          "zebra",
+          "piglet",
+          "wings"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "piglet = 小猪"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“有（第三人称）”的词。",
+        "choices": [
+          "black",
+          "little",
+          "has"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "has = 有（第三人称）"
+      },
+      {
+        "kind": "language",
+        "prompt": "The bird ___ two wings.",
+        "choices": [
+          "has",
+          "is",
+          "have"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "单数主语 the bird 配 has。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I see ___ elephant.",
+        "choices": [
+          "two",
+          "a",
+          "an"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "elephant 的首音是元音，使用 an。"
+      },
+      {
+        "kind": "language",
+        "prompt": "A frog lives in a ___.",
+        "choices": [
+          "bakery",
+          "pond",
+          "classroom"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "pond 是合适的主题栖息地。"
+      },
+      {
+        "kind": "language",
+        "prompt": "A baby goat is a ___.",
+        "choices": [
+          "kid",
+          "chick",
+          "calf"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "kid 在动物语境表示小山羊。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The horse is fast. The turtle is ___.",
+        "choices": [
+          "red",
+          "loud",
+          "slow"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "fast 与 slow 在这里形成速度对比。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What animal does the frog watch?",
+        "choices": [
+          "a horse",
+          "a penguin",
+          "a lion"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：watches a horse run"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does the frog say to the horse?",
+        "choices": [
+          "You can fly.",
+          "You are blue.",
+          "You are fast."
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：You are fast"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Which animal walks slowly?",
+        "choices": [
+          "a horse",
+          "a bird",
+          "a goat"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：A goat walks slowly"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Where does the frog jump?",
+        "choices": [
+          "into a pond",
+          "onto a table",
+          "into the ocean"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：jumps into a pond"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What is the main idea?",
+        "choices": [
+          "all animals can fly",
+          "animals move in different ways",
+          "all animals are fast"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：Every animal has its own way to move"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "Look at the horse!"
+      ],
+      [
+        "B",
+        "It runs fast."
+      ],
+      [
+        "A",
+        "Can you see the frog?"
+      ],
+      [
+        "B",
+        "Yes. It is in the pond."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L2_U01-words.mp3",
+      "story": "audio/R_L2_U01-story.mp3",
+      "dialogue": "audio/R_L2_U01-dialogue.mp3",
+      "phonics": "audio/R_L2_U01-phonics.mp3",
+      "test": "audio/R_L2_U01-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L2_U01-student.pdf",
+      "teacher": "pdf/R_L2_U01-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L2_U02",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 2,
+    "unit": 2,
+    "title": "Magic Garden",
+    "titleCn": "神奇花园",
+    "focus": "植物生长、蔬果和昆虫；观察变化并按顺序表达",
+    "words": [
+      [
+        "carrot",
+        "胡萝卜"
+      ],
+      [
+        "potato",
+        "土豆"
+      ],
+      [
+        "peach",
+        "桃子"
+      ],
+      [
+        "pear",
+        "梨"
+      ],
+      [
+        "onion",
+        "洋葱"
+      ],
+      [
+        "seed",
+        "种子"
+      ],
+      [
+        "root",
+        "根"
+      ],
+      [
+        "leaf",
+        "叶子"
+      ],
+      [
+        "flower",
+        "花"
+      ],
+      [
+        "grow",
+        "生长"
+      ],
+      [
+        "read",
+        "读"
+      ],
+      [
+        "write",
+        "写"
+      ],
+      [
+        "apple pie",
+        "苹果派"
+      ],
+      [
+        "pasta",
+        "意大利面"
+      ],
+      [
+        "soup",
+        "汤"
+      ],
+      [
+        "pizza",
+        "披萨"
+      ],
+      [
+        "salad",
+        "沙拉"
+      ],
+      [
+        "water",
+        "水"
+      ],
+      [
+        "put",
+        "放"
+      ],
+      [
+        "pick",
+        "摘/挑选"
+      ],
+      [
+        "cut",
+        "切"
+      ],
+      [
+        "make",
+        "制作"
+      ],
+      [
+        "food",
+        "食物"
+      ],
+      [
+        "eat",
+        "吃"
+      ],
+      [
+        "bee",
+        "蜜蜂"
+      ],
+      [
+        "ladybug",
+        "瓢虫"
+      ],
+      [
+        "butterfly",
+        "蝴蝶"
+      ],
+      [
+        "caterpillar",
+        "毛毛虫"
+      ],
+      [
+        "plant",
+        "种植"
+      ],
+      [
+        "go",
+        "去"
+      ],
+      [
+        "bite",
+        "咬"
+      ],
+      [
+        "see",
+        "看见"
+      ],
+      [
+        "swim",
+        "游泳"
+      ],
+      [
+        "nap",
+        "小睡"
+      ],
+      [
+        "run",
+        "跑"
+      ],
+      [
+        "sunlight",
+        "阳光"
+      ],
+      [
+        "soil",
+        "土壤"
+      ],
+      [
+        "observe",
+        "观察"
+      ],
+      [
+        "change",
+        "变化"
+      ]
+    ],
+    "coreCount": 35,
+    "phrases": [
+      [
+        "I plant a seed.",
+        "我种下一颗种子。"
+      ],
+      [
+        "The root grows down.",
+        "根向下生长。"
+      ],
+      [
+        "The leaf grows up.",
+        "叶子向上生长。"
+      ],
+      [
+        "Water is good for a plant.",
+        "水有助于植物生长。"
+      ],
+      [
+        "First I plant a seed. Then I give it water.",
+        "我先种种子，然后浇水。"
+      ]
+    ],
+    "phonics": "长元音 ee：seed、bee、see 中 ee 一起发长音。用 seed 对应种子图，用 bee 对应昆虫图，听音后自己指出对应词。",
+    "phonicsWords": [
+      [
+        "seed",
+        "种子 · ee"
+      ],
+      [
+        "bee",
+        "蜜蜂 · ee"
+      ],
+      [
+        "see",
+        "看见 · ee"
+      ]
+    ],
+    "storyTitle": "The Small Seed",
+    "story": "Nina plants a seed in the garden. A root grows down, and a leaf grows up. She gives the plant water and watches it carefully. One day, a flower opens. Nina draws every change in her notebook.",
+    "storyZh": "妮娜在花园种下一颗种子。根向下生长，叶子向上长出。她浇水并仔细观察，等到花开时，把每一次变化都画在本子里。",
+    "activity": "孩子在纸上画 seed → root → leaf → flower 四格图。先听故事，再用 first / then 说两步变化；不要求当天种植或等待发芽。",
+    "oral": [
+      "按顺序说出植物生长图里的至少三个部分。",
+      "用一句话说明植物需要什么，再描述一只花园昆虫。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "What does Nina plant?",
+        "choices": [
+          "an apple pie",
+          "a flower pot only",
+          "a seed"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: What are you planting? B: A small seed.",
+        "spoken": "A: What are you planting? B: A small seed."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which part grows down?",
+        "choices": [
+          "the flower",
+          "the leaf",
+          "the root"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Does the root grow up? B: No. The root grows down.",
+        "spoken": "A: Does the root grow up? B: No. The root grows down."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does the plant need now?",
+        "choices": [
+          "a scarf",
+          "water",
+          "pizza"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: The soil is dry. B: Let us give the plant some water.",
+        "spoken": "A: The soil is dry. B: Let us give the plant some water."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which insect can they see?",
+        "choices": [
+          "a frog",
+          "a bee",
+          "a bird"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: What is on the flower? B: A bee is on it.",
+        "spoken": "A: What is on the flower? B: A bee is on it."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What happens first?",
+        "choices": [
+          "pick a flower",
+          "plant a seed",
+          "make a salad"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: First I plant a seed. B: Then I give it water.",
+        "spoken": "A: First I plant a seed. B: Then I give it water."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“胡萝卜”的词。",
+        "choices": [
+          "nap",
+          "carrot",
+          "pick"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "carrot = 胡萝卜"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“花”的词。",
+        "choices": [
+          "pick",
+          "flower",
+          "apple pie"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "flower = 花"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“水”的词。",
+        "choices": [
+          "root",
+          "water",
+          "seed"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "water = 水"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“蝴蝶”的词。",
+        "choices": [
+          "butterfly",
+          "cut",
+          "sunlight"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "butterfly = 蝴蝶"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“跑”的词。",
+        "choices": [
+          "run",
+          "soup",
+          "go"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "run = 跑"
+      },
+      {
+        "kind": "language",
+        "prompt": "A seed can ___.",
+        "choices": [
+          "drives",
+          "grow",
+          "wear"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "can 后接原形 grow。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The root grows ___.",
+        "choices": [
+          "delicious",
+          "down",
+          "raincoat"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "根向下生长，选择 down。"
+      },
+      {
+        "kind": "language",
+        "prompt": "Water is good ___ a plant.",
+        "choices": [
+          "under the",
+          "for",
+          "from a"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "be good for 表示有益于。"
+      },
+      {
+        "kind": "language",
+        "prompt": "First, plant a seed. ___, give it water.",
+        "choices": [
+          "Then",
+          "Who",
+          "Where"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "Then 表示接下来的步骤。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I see ___ bee on the flower.",
+        "choices": [
+          "a",
+          "three",
+          "an"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "bee 以辅音开头，单数用 a。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who plants a seed?",
+        "choices": [
+          "Ben",
+          "Tom",
+          "Nina"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Nina plants a seed"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Where does the root grow?",
+        "choices": [
+          "into a notebook",
+          "down",
+          "over the moon"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：A root grows down"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Nina give the plant?",
+        "choices": [
+          "water",
+          "soup",
+          "milk"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：She gives the plant water"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What opens one day?",
+        "choices": [
+          "a shop",
+          "a flower",
+          "a school"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：One day, a flower opens"
+      },
+      {
+        "kind": "reading",
+        "prompt": "How does Nina record the changes?",
+        "choices": [
+          "she hides the plant",
+          "she cuts every leaf",
+          "she draws them"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Nina draws every change in her notebook"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "What are you planting?"
+      ],
+      [
+        "B",
+        "A small seed."
+      ],
+      [
+        "A",
+        "Does the root grow up?"
+      ],
+      [
+        "B",
+        "No. The root grows down."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L2_U02-words.mp3",
+      "story": "audio/R_L2_U02-story.mp3",
+      "dialogue": "audio/R_L2_U02-dialogue.mp3",
+      "phonics": "audio/R_L2_U02-phonics.mp3",
+      "test": "audio/R_L2_U02-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L2_U02-student.pdf",
+      "teacher": "pdf/R_L2_U02-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L2_U03",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 2,
+    "unit": 3,
+    "title": "Is It Spring Yet",
+    "titleCn": "春天到了吗",
+    "focus": "季节、天气、衣物与感官；用天气线索说明穿衣选择",
+    "words": [
+      [
+        "spring",
+        "春天"
+      ],
+      [
+        "summer",
+        "夏天"
+      ],
+      [
+        "fall",
+        "秋天"
+      ],
+      [
+        "winter",
+        "冬天"
+      ],
+      [
+        "favorite",
+        "最喜欢的"
+      ],
+      [
+        "hot",
+        "热"
+      ],
+      [
+        "cold",
+        "冷"
+      ],
+      [
+        "warm",
+        "温暖的"
+      ],
+      [
+        "cool",
+        "凉爽的"
+      ],
+      [
+        "wear",
+        "穿"
+      ],
+      [
+        "jacket",
+        "夹克"
+      ],
+      [
+        "raincoat",
+        "雨衣"
+      ],
+      [
+        "T-shirt",
+        "T恤"
+      ],
+      [
+        "dress",
+        "连衣裙"
+      ],
+      [
+        "sweater",
+        "毛衣"
+      ],
+      [
+        "scarf",
+        "围巾"
+      ],
+      [
+        "windy",
+        "有风的"
+      ],
+      [
+        "sunny",
+        "晴朗的"
+      ],
+      [
+        "rainy",
+        "下雨的"
+      ],
+      [
+        "snowy",
+        "下雪的"
+      ],
+      [
+        "weather",
+        "天气"
+      ],
+      [
+        "hear",
+        "听见"
+      ],
+      [
+        "smell",
+        "闻"
+      ],
+      [
+        "see",
+        "看见"
+      ],
+      [
+        "taste",
+        "品尝"
+      ],
+      [
+        "touch",
+        "触摸"
+      ],
+      [
+        "ear",
+        "耳朵"
+      ],
+      [
+        "nose",
+        "鼻子"
+      ],
+      [
+        "eye",
+        "眼睛"
+      ],
+      [
+        "fingers",
+        "手指"
+      ],
+      [
+        "tongue",
+        "舌头"
+      ],
+      [
+        "autumn",
+        "秋天"
+      ],
+      [
+        "choose",
+        "选择"
+      ],
+      [
+        "outside",
+        "在外面"
+      ],
+      [
+        "temperature",
+        "温度"
+      ]
+    ],
+    "coreCount": 31,
+    "phrases": [
+      [
+        "My favorite season is spring.",
+        "我最喜欢的季节是春天。"
+      ],
+      [
+        "It is hot in summer.",
+        "夏天很热。"
+      ],
+      [
+        "It is rainy. I wear a raincoat.",
+        "下雨了，我穿雨衣。"
+      ],
+      [
+        "Fall is another word for autumn.",
+        "fall 在这里表示秋天。"
+      ],
+      [
+        "I can smell the flowers.",
+        "我能闻到花香。"
+      ]
+    ],
+    "phonics": "长元音 ai：rain、train、tail 中 ai 一起发音。rain 和 rainy 意义相关，但不是同一个词；听完再把两个词分别读清楚。",
+    "phonicsWords": [
+      [
+        "rain",
+        "雨 · ai"
+      ],
+      [
+        "train",
+        "火车 · ai"
+      ],
+      [
+        "tail",
+        "尾巴 · ai"
+      ]
+    ],
+    "storyTitle": "A Jacket for Spring",
+    "story": "Tom puts on a warm jacket in winter. In spring, he sees flowers and takes a raincoat outside. Summer feels hot, but fall feels cool. He watches the weather before choosing what to wear.",
+    "storyZh": "汤姆冬天穿保暖夹克，春天看见花开，出门带上雨衣。故事里夏天热、秋天凉，他先看看天气，再选择衣服。",
+    "activity": "孩子自己看窗外天气，从衣柜选一件合适衣物，用 It is… / I wear… 说两句。此活动按当天真实天气表达，不强迫所有季节都符合故事描述。",
+    "oral": [
+      "说出最喜欢的季节，并说一个天气或活动理由。",
+      "根据一张天气图选择衣物，说出两句相关表达。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "Which season is the girl’s favorite?",
+        "choices": [
+          "summer",
+          "spring",
+          "winter"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: What is your favorite season? B: Spring. I like the flowers.",
+        "spoken": "A: What is your favorite season? B: Spring. I like the flowers."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What is the weather like?",
+        "choices": [
+          "sunny",
+          "snowy",
+          "rainy"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: Is it sunny today? B: No. It is rainy.",
+        "spoken": "A: Is it sunny today? B: No. It is rainy."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does Ben wear in the rain?",
+        "choices": [
+          "a raincoat",
+          "gloves only",
+          "a T-shirt only"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: What will you wear outside? B: My raincoat. It is raining.",
+        "spoken": "A: What will you wear outside? B: My raincoat. It is raining."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which season comes after summer?",
+        "choices": [
+          "spring",
+          "winter",
+          "fall"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: What comes after summer? B: Fall comes next.",
+        "spoken": "A: What comes after summer? B: Fall comes next."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which sense does Mia use?",
+        "choices": [
+          "hear",
+          "smell",
+          "taste"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: What can you smell? B: I can smell the flowers.",
+        "spoken": "A: What can you smell? B: I can smell the flowers."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“春天”的词。",
+        "choices": [
+          "spring",
+          "ear",
+          "wear"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "spring = 春天"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“凉爽的”的词。",
+        "choices": [
+          "smell",
+          "autumn",
+          "cool"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "cool = 凉爽的"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“围巾”的词。",
+        "choices": [
+          "scarf",
+          "jacket",
+          "nose"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "scarf = 围巾"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“闻”的词。",
+        "choices": [
+          "sweater",
+          "smell",
+          "autumn"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "smell = 闻"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“舌头”的词。",
+        "choices": [
+          "tongue",
+          "winter",
+          "outside"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "tongue = 舌头"
+      },
+      {
+        "kind": "language",
+        "prompt": "It is hot ___ summer.",
+        "choices": [
+          "on",
+          "at",
+          "in"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "季节前通常用 in。"
+      },
+      {
+        "kind": "language",
+        "prompt": "My favorite ___ is winter.",
+        "choices": [
+          "finger",
+          "table",
+          "season"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "winter 属于 season。"
+      },
+      {
+        "kind": "language",
+        "prompt": "It is rainy. I wear a ___.",
+        "choices": [
+          "pizza",
+          "raincoat",
+          "pencil"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "raincoat 适用于下雨场景。"
+      },
+      {
+        "kind": "language",
+        "prompt": "Fall means ___ in this unit.",
+        "choices": [
+          "jump down",
+          "autumn",
+          "spring"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "此单元的 fall 表示秋天。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I smell with my ___.",
+        "choices": [
+          "nose",
+          "ears",
+          "fingers"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "闻气味使用 nose。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Tom wear in winter?",
+        "choices": [
+          "a swimming hat only",
+          "a school backpack only",
+          "a warm jacket"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：a warm jacket in winter"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does he see in spring?",
+        "choices": [
+          "a boat",
+          "only snow",
+          "flowers"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：In spring, he sees flowers"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does he take outside in spring?",
+        "choices": [
+          "an apple pie",
+          "a raincoat",
+          "a football"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：takes a raincoat outside"
+      },
+      {
+        "kind": "reading",
+        "prompt": "How does fall feel in the story?",
+        "choices": [
+          "very noisy",
+          "hot",
+          "cool"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：fall feels cool"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Tom check before choosing clothes?",
+        "choices": [
+          "a lunch menu",
+          "the weather",
+          "a bus ticket"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：watches the weather before choosing what to wear"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "What is your favorite season?"
+      ],
+      [
+        "B",
+        "Spring. I like the flowers."
+      ],
+      [
+        "A",
+        "Is it sunny today?"
+      ],
+      [
+        "B",
+        "No. It is rainy."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L2_U03-words.mp3",
+      "story": "audio/R_L2_U03-story.mp3",
+      "dialogue": "audio/R_L2_U03-dialogue.mp3",
+      "phonics": "audio/R_L2_U03-phonics.mp3",
+      "test": "audio/R_L2_U03-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L2_U03-student.pdf",
+      "teacher": "pdf/R_L2_U03-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L3_U01",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 3,
+    "unit": 1,
+    "title": "I Like It Here",
+    "titleCn": "我喜欢这里",
+    "focus": "社区地点、居住方式、方位与交通；用地图说明位置",
+    "words": [
+      [
+        "library",
+        "图书馆"
+      ],
+      [
+        "bakery",
+        "面包店"
+      ],
+      [
+        "store",
+        "商店"
+      ],
+      [
+        "restaurant",
+        "餐厅"
+      ],
+      [
+        "city",
+        "城市"
+      ],
+      [
+        "country",
+        "乡村"
+      ],
+      [
+        "on",
+        "在……上面"
+      ],
+      [
+        "under",
+        "在……下面"
+      ],
+      [
+        "in front of",
+        "在……前面"
+      ],
+      [
+        "behind",
+        "在……后面"
+      ],
+      [
+        "beside",
+        "在……旁边"
+      ],
+      [
+        "banana",
+        "香蕉"
+      ],
+      [
+        "bread",
+        "面包"
+      ],
+      [
+        "muffins",
+        "松饼"
+      ],
+      [
+        "cereal",
+        "麦片"
+      ],
+      [
+        "soup",
+        "汤"
+      ],
+      [
+        "buy",
+        "买"
+      ],
+      [
+        "sell",
+        "卖"
+      ],
+      [
+        "house",
+        "房子"
+      ],
+      [
+        "apartment",
+        "公寓"
+      ],
+      [
+        "hut",
+        "小屋"
+      ],
+      [
+        "boathouse",
+        "船屋"
+      ],
+      [
+        "igloo",
+        "冰屋"
+      ],
+      [
+        "cabin",
+        "小木屋"
+      ],
+      [
+        "carry",
+        "携带"
+      ],
+      [
+        "subway",
+        "地铁"
+      ],
+      [
+        "playground",
+        "操场"
+      ],
+      [
+        "slide",
+        "滑梯"
+      ],
+      [
+        "swing",
+        "荡秋千"
+      ],
+      [
+        "grocery store",
+        "杂货店"
+      ],
+      [
+        "sandwich",
+        "三明治"
+      ],
+      [
+        "walk",
+        "走"
+      ],
+      [
+        "go",
+        "去"
+      ],
+      [
+        "ice cream truck",
+        "冰淇淋车"
+      ],
+      [
+        "garbage truck",
+        "垃圾车"
+      ],
+      [
+        "fire engine",
+        "消防车"
+      ],
+      [
+        "van",
+        "面包车"
+      ],
+      [
+        "map",
+        "地图"
+      ],
+      [
+        "visitor",
+        "访客"
+      ],
+      [
+        "neighborhood",
+        "社区"
+      ],
+      [
+        "find",
+        "找到"
+      ]
+    ],
+    "coreCount": 37,
+    "phrases": [
+      [
+        "I live in an apartment.",
+        "我住在公寓里。"
+      ],
+      [
+        "The bakery is beside the library.",
+        "面包店在图书馆旁边。"
+      ],
+      [
+        "The park is behind the restaurant.",
+        "公园在餐厅后面。"
+      ],
+      [
+        "I buy bread at the bakery.",
+        "我在面包店买面包。"
+      ],
+      [
+        "She plays on the slide.",
+        "她玩滑梯。"
+      ]
+    ],
+    "phonics": "辅音组合 bl 和 pl：听 black、blue、play 的词首连读，避免在两个辅音中间额外加元音。方位句要读清地点词和介词。",
+    "phonicsWords": [
+      [
+        "black",
+        "黑色 · bl"
+      ],
+      [
+        "blue",
+        "蓝色 · bl"
+      ],
+      [
+        "play",
+        "玩 · pl"
+      ]
+    ],
+    "storyTitle": "The Neighborhood Walk",
+    "story": "A family walks past the library and the bakery. Their favorite restaurant is beside a store. A child draws a map and puts the park behind the restaurant. The map helps a visitor find a place to buy bread.",
+    "storyZh": "一家人经过图书馆和面包店，他们喜欢的餐厅在商店旁边。孩子画了地图，把公园标在餐厅后面。地图帮助访客找到买面包的地方。",
+    "activity": "孩子用四个纸片当作图书馆、面包店、餐厅和公园，摆出自己的小地图，录两句位置说明。家长无需现场翻译或当陪练。",
+    "oral": [
+      "用两句方位句介绍自己摆出的小地图。",
+      "介绍自己的居住方式，再说明去一个社区地点能做什么。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "Where does Leo live?",
+        "choices": [
+          "in an apartment",
+          "in an igloo",
+          "in a bakery"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Do you live in a house? B: No. I live in an apartment.",
+        "spoken": "A: Do you live in a house? B: No. I live in an apartment."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where is the bakery?",
+        "choices": [
+          "behind the school",
+          "beside the library",
+          "under the bus"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Where is the bakery? B: It is beside the library.",
+        "spoken": "A: Where is the bakery? B: It is beside the library."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where can Mia buy bread?",
+        "choices": [
+          "at the bakery",
+          "at the library",
+          "on the slide"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: I want some bread. B: You can buy it at the bakery.",
+        "spoken": "A: I want some bread. B: You can buy it at the bakery."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where is the ball?",
+        "choices": [
+          "on the table",
+          "under the table",
+          "in front of the door"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Is the ball on the table? B: No. It is under the table.",
+        "spoken": "A: Is the ball on the table? B: No. It is under the table."
+      },
+      {
+        "kind": "listening",
+        "prompt": "How does the girl travel?",
+        "choices": [
+          "by plane",
+          "by boat",
+          "by subway"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "听力依据：A: How do you go to the city center? B: I take the subway.",
+        "spoken": "A: How do you go to the city center? B: I take the subway."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“图书馆”的词。",
+        "choices": [
+          "store",
+          "library",
+          "muffins"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "library = 图书馆"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“在……后面”的词。",
+        "choices": [
+          "bread",
+          "map",
+          "behind"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "behind = 在……后面"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“房子”的词。",
+        "choices": [
+          "house",
+          "soup",
+          "walk"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "house = 房子"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“滑梯”的词。",
+        "choices": [
+          "carry",
+          "slide",
+          "behind"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "slide = 滑梯"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“面包车”的词。",
+        "choices": [
+          "behind",
+          "neighborhood",
+          "van"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "van = 面包车"
+      },
+      {
+        "kind": "language",
+        "prompt": "I live ___ an apartment.",
+        "choices": [
+          "under",
+          "on",
+          "in"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "住在某种居所里用 live in。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The bakery is ___ the library. They are next to each other.",
+        "choices": [
+          "under",
+          "inside",
+          "beside"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "beside 表示在旁边。"
+      },
+      {
+        "kind": "language",
+        "prompt": "___ plays on the slide. The girl is happy.",
+        "choices": [
+          "He",
+          "It",
+          "She"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "根据 the girl 选择 She。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I buy bread ___ the bakery.",
+        "choices": [
+          "at",
+          "under",
+          "between of"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "在面包店这一地点用 at。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The ball is ___ the table. Look below it.",
+        "choices": [
+          "above",
+          "on",
+          "under"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "below 提示 under。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who walks around the neighborhood?",
+        "choices": [
+          "a family",
+          "a teacher alone",
+          "a firefighter alone"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：A family walks past"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Where is their favorite restaurant?",
+        "choices": [
+          "inside a bus",
+          "beside a store",
+          "under the library"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：restaurant is beside a store"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does the child draw?",
+        "choices": [
+          "a clock",
+          "only a flower",
+          "a map"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：A child draws a map"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Where is the park on the map?",
+        "choices": [
+          "under a house",
+          "inside the bakery",
+          "behind the restaurant"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：park behind the restaurant"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does the map help the visitor find?",
+        "choices": [
+          "a new schoolbag",
+          "a place to swim",
+          "a place to buy bread"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：a place to buy bread"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "Do you live in a house?"
+      ],
+      [
+        "B",
+        "No. I live in an apartment."
+      ],
+      [
+        "A",
+        "Where is the bakery?"
+      ],
+      [
+        "B",
+        "It is beside the library."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L3_U01-words.mp3",
+      "story": "audio/R_L3_U01-story.mp3",
+      "dialogue": "audio/R_L3_U01-dialogue.mp3",
+      "phonics": "audio/R_L3_U01-phonics.mp3",
+      "test": "audio/R_L3_U01-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L3_U01-student.pdf",
+      "teacher": "pdf/R_L3_U01-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L3_U02",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 3,
+    "unit": 2,
+    "title": "Jobs People Do",
+    "titleCn": "人们的职业",
+    "focus": "职业、工作地点、工具和动作；解释职业如何帮助社区",
+    "words": [
+      [
+        "doctor",
+        "医生"
+      ],
+      [
+        "nurse",
+        "护士"
+      ],
+      [
+        "waiter",
+        "服务员"
+      ],
+      [
+        "teacher",
+        "老师"
+      ],
+      [
+        "baker",
+        "面包师"
+      ],
+      [
+        "school",
+        "学校"
+      ],
+      [
+        "hospital",
+        "医院"
+      ],
+      [
+        "restaurant",
+        "餐厅"
+      ],
+      [
+        "bakery",
+        "面包店"
+      ],
+      [
+        "dentist",
+        "牙医"
+      ],
+      [
+        "driver",
+        "司机"
+      ],
+      [
+        "pilot",
+        "飞行员"
+      ],
+      [
+        "policeman",
+        "警察"
+      ],
+      [
+        "firefighter",
+        "消防员"
+      ],
+      [
+        "dance",
+        "跳舞"
+      ],
+      [
+        "dancer",
+        "舞者"
+      ],
+      [
+        "sing",
+        "唱歌"
+      ],
+      [
+        "singer",
+        "歌手"
+      ],
+      [
+        "write",
+        "写"
+      ],
+      [
+        "writer",
+        "作家"
+      ],
+      [
+        "play",
+        "玩"
+      ],
+      [
+        "basketball player",
+        "篮球运动员"
+      ],
+      [
+        "fork",
+        "叉子"
+      ],
+      [
+        "hammer",
+        "锤子"
+      ],
+      [
+        "mop",
+        "拖把"
+      ],
+      [
+        "tools",
+        "工具"
+      ],
+      [
+        "pen",
+        "钢笔"
+      ],
+      [
+        "eat",
+        "吃"
+      ],
+      [
+        "build",
+        "建造"
+      ],
+      [
+        "clean",
+        "打扫；清洁"
+      ],
+      [
+        "waitress",
+        "女服务员"
+      ],
+      [
+        "farmer",
+        "农民"
+      ],
+      [
+        "cleaner",
+        "清洁工"
+      ],
+      [
+        "delivery man",
+        "送货员"
+      ],
+      [
+        "community",
+        "社区"
+      ],
+      [
+        "thank-you note",
+        "感谢卡"
+      ],
+      [
+        "worker",
+        "工作者"
+      ],
+      [
+        "deliver",
+        "递送"
+      ]
+    ],
+    "coreCount": 34,
+    "phrases": [
+      [
+        "What is her job? She is a nurse.",
+        "她做什么工作？她是护士。"
+      ],
+      [
+        "The baker works at a bakery.",
+        "面包师在面包店工作。"
+      ],
+      [
+        "A teacher helps children learn.",
+        "老师帮助孩子学习。"
+      ],
+      [
+        "The cleaner uses a mop.",
+        "清洁工使用拖把。"
+      ],
+      [
+        "A writer writes stories.",
+        "作家写故事。"
+      ]
+    ],
+    "phonics": "词尾 er：听 teacher、baker、writer 的结尾，注意美国英语中轻而清晰的 r 音。职业词与动作词分别练，如 write / writer。",
+    "phonicsWords": [
+      [
+        "teacher",
+        "老师 · er"
+      ],
+      [
+        "baker",
+        "面包师 · er"
+      ],
+      [
+        "writer",
+        "作家 · er"
+      ]
+    ],
+    "storyTitle": "People Who Help",
+    "story": "A baker makes bread before the town wakes up. A teacher welcomes children to school, and a nurse helps people at the hospital. Mia writes a thank-you note to each worker. She learns that many different jobs help a community.",
+    "storyZh": "面包师在人们醒来前做面包，老师迎接孩子到校，护士在医院帮助人们。米娅给工作者写感谢卡，理解不同职业怎样服务社区。",
+    "activity": "孩子挑选一位身边的工作者，画一张感谢卡，自己说出职业、地点和一个帮助别人的动作。可先听示例，再录一次；不用家长提供职业英语。",
+    "oral": [
+      "选一种职业，介绍人物、工作地点和一件会做的事。",
+      "用简单句说明一种工具由谁使用、用来做什么。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "What is the woman’s job?",
+        "choices": [
+          "a pilot",
+          "a nurse",
+          "a baker"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Does she help people at the hospital? B: Yes. She is a nurse.",
+        "spoken": "A: Does she help people at the hospital? B: Yes. She is a nurse."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Where does the baker work?",
+        "choices": [
+          "at the bakery",
+          "at the school",
+          "at the airport"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Where does the baker work? B: At the bakery.",
+        "spoken": "A: Where does the baker work? B: At the bakery."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Which tool does the cleaner use?",
+        "choices": [
+          "a mop",
+          "a crayon",
+          "a fork"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: What does the cleaner use? B: A mop to clean the floor.",
+        "spoken": "A: What does the cleaner use? B: A mop to clean the floor."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Who writes stories?",
+        "choices": [
+          "a writer",
+          "a driver",
+          "a dancer"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: Who writes these stories? B: A writer does.",
+        "spoken": "A: Who writes these stories? B: A writer does."
+      },
+      {
+        "kind": "listening",
+        "prompt": "Who helps children learn?",
+        "choices": [
+          "a delivery worker",
+          "a teacher",
+          "a farmer"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: What does a teacher do? B: A teacher helps children learn.",
+        "spoken": "A: What does a teacher do? B: A teacher helps children learn."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“医生”的词。",
+        "choices": [
+          "community",
+          "doctor",
+          "waiter"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "doctor = 医生"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“面包店”的词。",
+        "choices": [
+          "baker",
+          "fork",
+          "bakery"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "bakery = 面包店"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“唱歌”的词。",
+        "choices": [
+          "sing",
+          "mop",
+          "hammer"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "sing = 唱歌"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“工具”的词。",
+        "choices": [
+          "write",
+          "tools",
+          "restaurant"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "tools = 工具"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“送货员”的词。",
+        "choices": [
+          "driver",
+          "delivery man",
+          "play"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "delivery man = 送货员"
+      },
+      {
+        "kind": "language",
+        "prompt": "She is ___ nurse.",
+        "choices": [
+          "an",
+          "a",
+          "two"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "nurse 以辅音音素开头，用 a。"
+      },
+      {
+        "kind": "language",
+        "prompt": "A baker ___ bread.",
+        "choices": [
+          "making",
+          "makes",
+          "make"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "单数主语 a baker 配 makes。"
+      },
+      {
+        "kind": "language",
+        "prompt": "A teacher works at a ___.",
+        "choices": [
+          "school",
+          "bakery",
+          "fire engine"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "school 是此题老师的工作地点。"
+      },
+      {
+        "kind": "language",
+        "prompt": "A writer ___ stories.",
+        "choices": [
+          "flies",
+          "writes",
+          "cooks"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "writer 对应动作 write。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The cleaner uses a ___ to clean the floor.",
+        "choices": [
+          "mop",
+          "fork",
+          "pencil"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "mop 用于清洁地板。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who makes bread?",
+        "choices": [
+          "a baker",
+          "a teacher",
+          "a nurse"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：A baker makes bread"
+      },
+      {
+        "kind": "reading",
+        "prompt": "When does the baker start?",
+        "choices": [
+          "before the town wakes up",
+          "only at noon",
+          "after everyone goes to bed"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：before the town wakes up"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who welcomes children to school?",
+        "choices": [
+          "a pilot",
+          "a teacher",
+          "a nurse"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：A teacher welcomes children to school"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Mia write?",
+        "choices": [
+          "a bus timetable",
+          "a shopping list",
+          "thank-you notes"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Mia writes a thank-you note"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Mia learn?",
+        "choices": [
+          "different jobs help a community",
+          "all workers do the same thing",
+          "only one job matters"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "短文依据：many different jobs help a community"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "Does she help people at the hospital?"
+      ],
+      [
+        "B",
+        "Yes. She is a nurse."
+      ],
+      [
+        "A",
+        "Where does the baker work?"
+      ],
+      [
+        "B",
+        "At the bakery."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L3_U02-words.mp3",
+      "story": "audio/R_L3_U02-story.mp3",
+      "dialogue": "audio/R_L3_U02-dialogue.mp3",
+      "phonics": "audio/R_L3_U02-phonics.mp3",
+      "test": "audio/R_L3_U02-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L3_U02-student.pdf",
+      "teacher": "pdf/R_L3_U02-teacher.pdf"
+    }
+  },
+  {
+    "id": "R_L3_U03",
+    "series": "R",
+    "seriesName": "Reach Higher",
+    "level": 3,
+    "unit": 3,
+    "title": "The Sun and Moon",
+    "titleCn": "太阳和月亮",
+    "focus": "一天的时间、日常安排和反义词；按顺序叙述自己的日程",
+    "words": [
+      [
+        "morning",
+        "早上"
+      ],
+      [
+        "noon",
+        "中午"
+      ],
+      [
+        "afternoon",
+        "下午"
+      ],
+      [
+        "night",
+        "夜晚"
+      ],
+      [
+        "fun",
+        "有趣"
+      ],
+      [
+        "one",
+        "一"
+      ],
+      [
+        "two",
+        "二"
+      ],
+      [
+        "three",
+        "三"
+      ],
+      [
+        "four",
+        "四"
+      ],
+      [
+        "five",
+        "五"
+      ],
+      [
+        "six",
+        "六"
+      ],
+      [
+        "seven",
+        "七"
+      ],
+      [
+        "eight",
+        "八"
+      ],
+      [
+        "nine",
+        "九"
+      ],
+      [
+        "ten",
+        "十"
+      ],
+      [
+        "eleven",
+        "十一"
+      ],
+      [
+        "twelve",
+        "十二"
+      ],
+      [
+        "get up",
+        "起床"
+      ],
+      [
+        "go to school",
+        "去上学"
+      ],
+      [
+        "have lunch",
+        "吃午餐"
+      ],
+      [
+        "do homework",
+        "做作业"
+      ],
+      [
+        "take a bath",
+        "洗澡"
+      ],
+      [
+        "go to bed",
+        "上床睡觉"
+      ],
+      [
+        "rises",
+        "升起"
+      ],
+      [
+        "sets",
+        "落下（太阳）"
+      ],
+      [
+        "shines",
+        "闪耀"
+      ],
+      [
+        "high",
+        "高的"
+      ],
+      [
+        "low",
+        "低的"
+      ],
+      [
+        "bright",
+        "明亮的"
+      ],
+      [
+        "dark",
+        "黑暗的"
+      ],
+      [
+        "light",
+        "光/灯"
+      ],
+      [
+        "early",
+        "早的"
+      ],
+      [
+        "late",
+        "晚的"
+      ],
+      [
+        "daily plan",
+        "日程安排"
+      ],
+      [
+        "before",
+        "在……之前"
+      ],
+      [
+        "after",
+        "在……之后"
+      ],
+      [
+        "evening",
+        "傍晚"
+      ]
+    ],
+    "coreCount": 33,
+    "phrases": [
+      [
+        "I get up in the morning.",
+        "我早上起床。"
+      ],
+      [
+        "I have lunch at noon.",
+        "我中午吃午餐。"
+      ],
+      [
+        "I do homework in the afternoon.",
+        "我下午做作业。"
+      ],
+      [
+        "I go to bed at night.",
+        "我晚上上床睡觉。"
+      ],
+      [
+        "The sun rises in the morning.",
+        "太阳在早晨升起。"
+      ]
+    ],
+    "phonics": "igh 字母组合：听 night、light、high 中相同的长元音。night 与 light 的首音不同，后面押韵。月亮有时白天也能看见，不用“只在夜晚出现”作为判断。",
+    "phonicsWords": [
+      [
+        "night",
+        "夜晚 · igh"
+      ],
+      [
+        "light",
+        "光 · igh"
+      ],
+      [
+        "high",
+        "高的 · igh"
+      ]
+    ],
+    "storyTitle": "A Day of Light",
+    "story": "In the morning, Ben gets up and goes to school. At noon, he has lunch with his friends. In the afternoon, he does homework. At night, he takes a bath and goes to bed. He draws the sun and moon beside his daily plan.",
+    "storyZh": "本早上起床去上学，中午和朋友吃午餐，下午做作业，晚上洗澡睡觉。他在日程旁画上太阳和月亮，整理一天的活动。",
+    "activity": "孩子自己画早晨、中午、下午、夜晚四格日程。听完音频后，用时间词说至少三句。任务结束就展示画和录音，家长不必逐句陪练。",
+    "oral": [
+      "用三句以上介绍自己的日程，至少含两种时间表达。",
+      "选一组反义词 early / late、high / low 或 light / dark，说出一个有意义的对比。"
+    ],
+    "questions": [
+      {
+        "kind": "listening",
+        "prompt": "When does Ben get up?",
+        "choices": [
+          "at noon",
+          "in the morning",
+          "at night"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: When do you get up? B: In the morning.",
+        "spoken": "A: When do you get up? B: In the morning."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does he do at noon?",
+        "choices": [
+          "takes a bath",
+          "has lunch",
+          "goes to bed"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Do you do homework at noon? B: No. I have lunch at noon.",
+        "spoken": "A: Do you do homework at noon? B: No. I have lunch at noon."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What does Mia do in the afternoon?",
+        "choices": [
+          "has breakfast",
+          "does homework",
+          "gets up"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: What do you do after school? B: I do homework in the afternoon.",
+        "spoken": "A: What do you do after school? B: I do homework in the afternoon."
+      },
+      {
+        "kind": "listening",
+        "prompt": "What is the opposite of early?",
+        "choices": [
+          "high",
+          "late",
+          "bright"
+        ],
+        "answer": 1,
+        "points": 5,
+        "explanation": "听力依据：A: Is this bus early? B: No. It is late.",
+        "spoken": "A: Is this bus early? B: No. It is late."
+      },
+      {
+        "kind": "listening",
+        "prompt": "When does the girl go to bed?",
+        "choices": [
+          "at night",
+          "in the morning",
+          "at noon"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "听力依据：A: When do you go to bed? B: At night, after my bath.",
+        "spoken": "A: When do you go to bed? B: At night, after my bath."
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“早上”的词。",
+        "choices": [
+          "morning",
+          "one",
+          "go to bed"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "morning = 早上"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“四”的词。",
+        "choices": [
+          "four",
+          "morning",
+          "three"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "four = 四"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“十二”的词。",
+        "choices": [
+          "twelve",
+          "daily plan",
+          "morning"
+        ],
+        "answer": 0,
+        "points": 5,
+        "explanation": "twelve = 十二"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“落下（太阳）”的词。",
+        "choices": [
+          "eleven",
+          "go to school",
+          "sets"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "sets = 落下（太阳）"
+      },
+      {
+        "kind": "vocabulary",
+        "prompt": "选择本单元中表示“晚的”的词。",
+        "choices": [
+          "afternoon",
+          "seven",
+          "late"
+        ],
+        "answer": 2,
+        "points": 5,
+        "explanation": "late = 晚的"
+      },
+      {
+        "kind": "language",
+        "prompt": "I get up ___ the morning.",
+        "choices": [
+          "in",
+          "under",
+          "at"
+        ],
+        "answer": 0,
+        "points": 4,
+        "explanation": "in the morning 是固定时间表达。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I have lunch ___ noon.",
+        "choices": [
+          "in",
+          "on the",
+          "at"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "at noon 是固定时间表达。"
+      },
+      {
+        "kind": "language",
+        "prompt": "I go to bed ___ night.",
+        "choices": [
+          "on the",
+          "at",
+          "in the"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "at night 是固定时间表达。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The opposite of high is ___.",
+        "choices": [
+          "early",
+          "bright",
+          "low"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "high 与 low 是反义词。"
+      },
+      {
+        "kind": "language",
+        "prompt": "The sun ___ in the morning.",
+        "choices": [
+          "rising",
+          "rises",
+          "rise"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "单数主语 the sun 配 rises。"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who is the story about?",
+        "choices": [
+          "Mia",
+          "Nina",
+          "Ben"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：Ben gets up"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does Ben do in the morning?",
+        "choices": [
+          "takes a bath and sleeps",
+          "has lunch with friends",
+          "gets up and goes to school"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：gets up and goes to school"
+      },
+      {
+        "kind": "reading",
+        "prompt": "Who has lunch with Ben?",
+        "choices": [
+          "only his teacher",
+          "his friends",
+          "only his brother"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：has lunch with his friends"
+      },
+      {
+        "kind": "reading",
+        "prompt": "When does he do homework?",
+        "choices": [
+          "at noon",
+          "before getting up",
+          "in the afternoon"
+        ],
+        "answer": 2,
+        "points": 4,
+        "explanation": "短文依据：In the afternoon, he does homework"
+      },
+      {
+        "kind": "reading",
+        "prompt": "What does he draw beside the plan?",
+        "choices": [
+          "a frog and horse",
+          "the sun and moon",
+          "a bakery and library"
+        ],
+        "answer": 1,
+        "points": 4,
+        "explanation": "短文依据：draws the sun and moon beside his daily plan"
+      }
+    ],
+    "minutes": "20-30（可分次）",
+    "parentNote": "先听音频，再指认或开口；每次选一小组词练习即可。家长不必逐句陪读或纠音；测评建议由老师组织，孩子也可先自测客观题。",
+    "audioStyle": "Kokoro offline neural TTS · 美式合成朗读 · 双音色对话与测评",
+    "contentSource": "按工作台已有内部RH级别与单元词表编写的原创拓展，非出版社原录音或官方试卷。",
+    "dialogue": [
+      [
+        "A",
+        "When do you get up?"
+      ],
+      [
+        "B",
+        "In the morning."
+      ],
+      [
+        "A",
+        "Do you do homework at noon?"
+      ],
+      [
+        "B",
+        "No. I have lunch at noon."
+      ]
+    ],
+    "audio": {
+      "words": "audio/R_L3_U03-words.mp3",
+      "story": "audio/R_L3_U03-story.mp3",
+      "dialogue": "audio/R_L3_U03-dialogue.mp3",
+      "phonics": "audio/R_L3_U03-phonics.mp3",
+      "test": "audio/R_L3_U03-test.mp3"
+    },
+    "pdf": {
+      "student": "pdf/R_L3_U03-student.pdf",
+      "teacher": "pdf/R_L3_U03-teacher.pdf"
+    }
+  },
+  {
     "id": "R_L4_U01",
     "series": "R",
     "seriesName": "Reach Higher",

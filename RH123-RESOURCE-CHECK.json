@@ -1,0 +1,279 @@
+{
+  "version": "20261023-rh123",
+  "units": 9,
+  "new_audio_count": 45,
+  "new_pdf_count": 24,
+  "all_learning_units": 140,
+  "mp3": [
+    {
+      "path": "learning-lab/audio/R_L1_U01-words.mp3",
+      "seconds": 96.888,
+      "bytes": 1162989,
+      "sha256": "2435dee8cb062da400557df493af6301c8f7546cf13b26fd6dc69b63b377f10e"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U01-story.mp3",
+      "seconds": 15.576,
+      "bytes": 187245,
+      "sha256": "2174deee7952c5b96be26345b8991204408d680c882ca3709907703c17c949d4"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U01-dialogue.mp3",
+      "seconds": 11.472,
+      "bytes": 137997,
+      "sha256": "ade79471b5a4284d96e27f7c6471a0082b9e1b8c42efe0c08295b0a4e70291e0"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U01-phonics.mp3",
+      "seconds": 4.8,
+      "bytes": 57933,
+      "sha256": "babd9f61b8a4670c676a7c1e71af7d20b3c12d093506f63f2f9ebf940a4c93e4"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U01-test.mp3",
+      "seconds": 114.744,
+      "bytes": 1377261,
+      "sha256": "565099abe8474a38e83cdbd11321828b7f71f38c53222314e68ec26c0b9fa5b8"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U02-words.mp3",
+      "seconds": 79.632,
+      "bytes": 955917,
+      "sha256": "444e07ed54e6bf7f5902f5c88d5b839ba247ba928c3d2f877bb16a0a77829c04"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U02-story.mp3",
+      "seconds": 15.816,
+      "bytes": 190125,
+      "sha256": "0a24b67645a51c629f05cfd2ec012645243902073a656cf8d609ad729847dc85"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U02-dialogue.mp3",
+      "seconds": 10.848,
+      "bytes": 130509,
+      "sha256": "5b1a12d0222cc5e07df5f2436ce1bd9c5265efc1bd73f6710b526b6f499046bf"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U02-phonics.mp3",
+      "seconds": 5.376,
+      "bytes": 64845,
+      "sha256": "9cdc9680efb54e80234c4783b071d314564bb44d8defa2c8e4656775d729caf5"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U02-test.mp3",
+      "seconds": 112.464,
+      "bytes": 1349901,
+      "sha256": "48f7c6696aaa286e69762371d334fbb11cfe99744dcc5ecc7f665683cff14f74"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U03-words.mp3",
+      "seconds": 103.416,
+      "bytes": 1241325,
+      "sha256": "9331017db9d6bca4bd8171057d3593e9e54340266a81d322a42106f7aefa3f1c"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U03-story.mp3",
+      "seconds": 15.264,
+      "bytes": 183501,
+      "sha256": "db7a366594e3e9ddfad7ab8d1c4358adedb298c6f772bce8eea2439c2539edb5"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U03-dialogue.mp3",
+      "seconds": 11.016,
+      "bytes": 132525,
+      "sha256": "4e8c42745d0118c2ad58bc047179d8b7e59e5069f13d25ff2807efc70fc38ede"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U03-phonics.mp3",
+      "seconds": 6.432,
+      "bytes": 77517,
+      "sha256": "f3c37a37441352852f49a1be6a76d3c82c973033fbc50acee175ce2f3ebe4804"
+    },
+    {
+      "path": "learning-lab/audio/R_L1_U03-test.mp3",
+      "seconds": 112.776,
+      "bytes": 1353645,
+      "sha256": "0935076d75ddec9ee317720c86bd719702ee2a23397c298c169300ce5fba3892"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U01-words.mp3",
+      "seconds": 75.408,
+      "bytes": 905229,
+      "sha256": "72c19074ea8185be03d211c097a121b4a8eac393cb8715fba6c43b5d0c198ae4"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U01-story.mp3",
+      "seconds": 13.464,
+      "bytes": 161901,
+      "sha256": "186884ec3339539356d4961a475a9e827d7520fc845558e8747297521d59bd19"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U01-dialogue.mp3",
+      "seconds": 11.064,
+      "bytes": 133101,
+      "sha256": "1d3e958d46402f6d29c60abed715010db86d20c253f91c353a79a08fc0edc160"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U01-phonics.mp3",
+      "seconds": 5.4,
+      "bytes": 65133,
+      "sha256": "08d1723d3bf9ee124d5f1eaeb7d560f258ade529f96a6133f1461b7dfdab6ef5"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U01-test.mp3",
+      "seconds": 115.296,
+      "bytes": 1383885,
+      "sha256": "21bd8825cf80d6bbb4aa961e46d5846edd75110dd02292817b4e5fbd1f9f2688"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U02-words.mp3",
+      "seconds": 65.832,
+      "bytes": 790317,
+      "sha256": "48005535654bd5f54f62cded827a62b54e8130aefaa4c0292dd5c201a388021c"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U02-story.mp3",
+      "seconds": 14.448,
+      "bytes": 173709,
+      "sha256": "1aaae131d3a89013586ffa534531ee98e33f8c1c1424cac51be7e24042b5e1fa"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U02-dialogue.mp3",
+      "seconds": 11.016,
+      "bytes": 132525,
+      "sha256": "3837d2bf001d58d372e598bd3a8edae4f60b8265eef9a9053dc83317cbecc587"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U02-phonics.mp3",
+      "seconds": 4.848,
+      "bytes": 58509,
+      "sha256": "4e8d2e69e0567a3208a22c024c3ce732ae0863f16601d1313360d28c273d15f2"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U02-test.mp3",
+      "seconds": 111.168,
+      "bytes": 1334349,
+      "sha256": "574ca211cf6437d0acf60f55d8fd2c957c150ecd0dee7dcffd10eedc0448fd70"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U03-words.mp3",
+      "seconds": 59.568,
+      "bytes": 715149,
+      "sha256": "57b84e2ecd130d11747495d9a7f022b4140fe2f844707e17b91eaa1651a2576e"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U03-story.mp3",
+      "seconds": 14.04,
+      "bytes": 168813,
+      "sha256": "3d9b7a6d340121652bc11ecdc111f109c91b889567ff225fabc57b515167fd07"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U03-dialogue.mp3",
+      "seconds": 11.28,
+      "bytes": 135693,
+      "sha256": "a456fcfe70efb6fab211b1c44eee93ebfc23f5a2dda2d311db104b16a3576983"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U03-phonics.mp3",
+      "seconds": 6.264,
+      "bytes": 75501,
+      "sha256": "1d0c87dba107d716bdf6578927334cb7e0898df6bcf69890eafdb84401495eec"
+    },
+    {
+      "path": "learning-lab/audio/R_L2_U03-test.mp3",
+      "seconds": 43.663,
+      "bytes": 524288,
+      "sha256": "2306721cc5d11f811507fa4d31e387b51d795faf505d03ec3d7c7b55f450a9fe"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U01-words.mp3",
+      "seconds": 73.392,
+      "bytes": 881037,
+      "sha256": "3d8d7965552d465ccda2fbf01981d05dc5c7d2f57c668b7a3d46ecbdd75d845b"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U01-story.mp3",
+      "seconds": 14.472,
+      "bytes": 173997,
+      "sha256": "1896e4cca62ab1c84b0147391968dcf0fbe4e87bf277d71bddeb68f8263515e4"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U01-dialogue.mp3",
+      "seconds": 12.144,
+      "bytes": 146061,
+      "sha256": "73c9e86e234470e66c661bfc5ff279ed0f00e1c160397d9ed57b5cfac70d8bba"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U01-phonics.mp3",
+      "seconds": 5.664,
+      "bytes": 68301,
+      "sha256": "a1b7a533fcffae14fb82e1648851e5f26f848d66b00613eefa73c079dfd04c87"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U01-test.mp3",
+      "seconds": 114.408,
+      "bytes": 1373229,
+      "sha256": "5e2c46b46b35d293e413d90c702b6930831451aa591b070076eb44099e1a9aff"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U02-words.mp3",
+      "seconds": 71.232,
+      "bytes": 855117,
+      "sha256": "c957fb564cb8e2f706f55425422a77eb87d72b3b5c50fcb0350bd7364baf597a"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U02-story.mp3",
+      "seconds": 15.192,
+      "bytes": 182637,
+      "sha256": "6ec79b523f7edd7a34a61cfb32a091fd775a37d00bfe06810543d60a10379b01"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U02-dialogue.mp3",
+      "seconds": 11.208,
+      "bytes": 134829,
+      "sha256": "69dfa8ecdc0266b7454cf5772dec43f6df4adf6f2a53391799145b0ba8d360f6"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U02-phonics.mp3",
+      "seconds": 5.736,
+      "bytes": 69165,
+      "sha256": "6cf8902907c4cfcbf4ca6e9f553bd06de9291c0d46a44b4098fdf42f75927577"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U02-test.mp3",
+      "seconds": 113.136,
+      "bytes": 1357965,
+      "sha256": "c889cfc4f5daf63a24be0990c425da6dfc5b86443b2f4ecbec18e8d523f95fe3"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U03-words.mp3",
+      "seconds": 65.016,
+      "bytes": 780525,
+      "sha256": "3d7b3d9e4e12266a781c7f25ac629eaa565480e32efb7c1090b9d5b2cf1b5abe"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U03-story.mp3",
+      "seconds": 15.456,
+      "bytes": 185805,
+      "sha256": "ee12f61af4101b36e72b8d0876ad2a9f17a502257ee8e366f5c64227110ebf2a"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U03-dialogue.mp3",
+      "seconds": 11.232,
+      "bytes": 135117,
+      "sha256": "b3be4ec6d1dd06455a3630d91bf54ac92b98fb54519faf5cecdce411711e75a3"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U03-phonics.mp3",
+      "seconds": 4.248,
+      "bytes": 51309,
+      "sha256": "6294630d7bf58888631802d872908500aa04455b996311ced684dc8af43876ae"
+    },
+    {
+      "path": "learning-lab/audio/R_L3_U03-test.mp3",
+      "seconds": 112.872,
+      "bytes": 1354797,
+      "sha256": "9669afb039fb3e71ccefffad6ce746ee612457158296763395b3771982714786"
+    }
+  ]
+}
