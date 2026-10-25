@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="140单元词义与语法应用学习页"><title>词义与语法应用 · LingoAce</title><link rel="stylesheet" href="unit-application.css?v=20261025-image4k"><link rel="stylesheet" href="auth.css"><script src="auth.js"></script></head><body class="ua-page"><div class="ua-standalone"><div class="ua-brand">lingoace<small>词义与语法应用 · From Rachel Hu</small></div><nav class="ua-nav ua" aria-label="选择学习单元"><label for="ua-unit">选择单元</label><select id="ua-unit"></select><input id="ua-search" type="search" placeholder="搜索教材、主题、词汇或语法" aria-label="搜索单元"><span class="ua-total" id="ua-total" aria-live="polite"></span></nav><main id="ua-content"></main></div><script src="unit-application-data.js?v=20261025-image4k"></script><script src="unit-application-export.js?v=20261025-image4k"></script><script src="unit-application.js?v=20261025-image4k"></script><script>(()=>{
+ const all=window.UNIT_APPLICATION_DATA.units;
+ const select=document.getElementById('ua-unit');
+ const search=document.getElementById('ua-search');
+ const main=document.getElementById('ua-content');
+ const total=document.getElementById('ua-total');
+ const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function options(){
+  const q=search.value.trim().toLowerCase();
+  const visible=all.filter(u=>!q||(u.id+' '+u.material+' '+u.level+' '+u.title+' '+u.grammar.map(g=>g.title).join(' ')+' '+u.senses.map(s=>s.word).join(' ')).toLowerCase().includes(q));
+  select.innerHTML=visible.map(u=>`<option value="${escape(u.id)}">${escape(u.material)} · L${escape(u.level)} · ${escape(u.title)}</option>`).join('');
+  total.textContent=`${visible.length} / ${all.length} 个单元`;
+  select.disabled=!visible.length;
+  const requested=decodeURIComponent(location.hash.slice(1));
+  const unit=visible.find(u=>u.id===requested)||visible[0];
+  if(unit){select.value=unit.id;main.innerHTML=window.UnitApplication.render(unit.id);document.title=unit.title+' · 词义与语法应用';}
+  else{main.innerHTML='<div class="ua-empty">没有匹配的单元。可以搜索教材名称、单元主题、词汇或语法。</div>';}
+ }
+ select.addEventListener('change',()=>{location.hash=select.value;window.scrollTo({top:0});});
+ search.addEventListener('input',options);
+ window.addEventListener('hashchange',options);
+ options();
+})();
+</script></body></html>

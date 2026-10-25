@@ -1,0 +1,12 @@
+/* Only the decorative glass skin deforms; content and hit areas remain stable. */
+#sidebar.liquid-ready,.home-page .glass-widget.liquid-ready{background:transparent!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;transform:none!important;isolation:isolate}
+#sidebar.liquid-ready::before,#sidebar.liquid-ready::after,.glass-widget.liquid-ready::before,.glass-widget.liquid-ready::after{display:none!important}
+.home-page .glass-widget.liquid-ready{overflow:visible!important}
+.liquid-surface{position:absolute;inset:0;pointer-events:none;z-index:-1;filter:drop-shadow(0 9px 13px #64508012);isolation:isolate}
+.liquid-fill{position:absolute;inset:0;background:var(--liquid-paint);backdrop-filter:blur(22px) saturate(155%);-webkit-backdrop-filter:blur(22px) saturate(155%);overflow:hidden}
+.liquid-fill::before{content:'';position:absolute;inset:-35%;background:radial-gradient(ellipse at var(--liquid-x,30%) var(--liquid-y,10%),#ffffffd6,transparent 57%),linear-gradient(var(--liquid-angle,120deg),transparent 14%,#ffffff00 26%,#ffffff57 39%,#ffffff08 48%,transparent 63%);transform:translate(var(--liquid-fx,0px),var(--liquid-fy,0px));opacity:.85}
+.liquid-fill::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at var(--liquid-tail-x,60%) var(--liquid-tail-y,80%),#c5a9e52b,transparent 62%),linear-gradient(130deg,#ffffff30,transparent 60%,#efcbe22b);opacity:.8}
+.liquid-edge{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.liquid-edge .outer{fill:none;stroke:#ffffffd9;stroke-width:1.25;vector-effect:non-scaling-stroke}.liquid-edge .inner{fill:none;stroke:#9d7fbc1c;stroke-width:3;vector-effect:non-scaling-stroke}
+#sidebar .nav-item{transform:none!important;border-radius:var(--liquid-button-radius,13px)!important;transition:background .2s,border-radius .22s cubic-bezier(.2,1.4,.4,1),box-shadow .2s}
+@media(prefers-reduced-motion:reduce){.liquid-fill::before{transform:none!important}#sidebar .nav-item{transition:none!important}}

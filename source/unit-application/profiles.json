@@ -1,0 +1,688 @@
+{
+  "place": [
+    "位置介词：用句子说明在哪里",
+    "用Where is询问一个物品；用in、on、under、next to说明位置。多个物品用Where are ...? / They are ...。",
+    "The crayon is under the desk.",
+    "The crayon under the desk.",
+    "描述位置也需要is或are，不能只写物品和介词。"
+  ],
+  "havegot": [
+    "have got：描述自己拥有的东西或特征",
+    "I/you/we/they用have got；提问把Have移到前面；否定用haven't got。",
+    "Have you got brown hair?",
+    "Do you have got brown hair?",
+    "have got问句用Have开头；Do you have也是正确结构，但两种结构不能拼在一起。"
+  ],
+  "hasgot": [
+    "has got：介绍一个人或动物的特征",
+    "he/she/it和单数名词用has got；问句用Has ... got；否定用hasn't got。",
+    "The horse has got a long tail.",
+    "The horse have got a long tail.",
+    "单数第三人称在这里用has got。"
+  ],
+  "likes": [
+    "一般现在时：表达喜好与询问喜好",
+    "I like；he/she/it likes。问句用Do/Does ... like；否定用don't/doesn't like。",
+    "Does he like apples?",
+    "Does he likes apples?",
+    "Does已经承担人称变化，后面的like要用原形。"
+  ],
+  "possess": [
+    "名词所有格：说明东西属于谁",
+    "人名后加's表示所属；Whose ...?询问主人。所有格后可以接物品，也可在语境明确时省略物品。",
+    "It is Jim's bike.",
+    "It is Jim bike.",
+    "表示吉姆的自行车，需要Jim's。复数s结尾名词用s'，children用children's。"
+  ],
+  "there": [
+    "There be：介绍有、没有与数量",
+    "一个或不可数事物用There is；多个用There are。提问用Is/Are there；否定用isn't/aren't。",
+    "There are two chairs.",
+    "There is two chairs.",
+    "two chairs是复数，搭配are。"
+  ],
+  "progressive": [
+    "现在进行时：描述此刻正在做什么",
+    "结构是am/is/are + 动词-ing；疑问句把be动词提前。根据主语选择am、is或are。",
+    "She is swimming.",
+    "She swimming.",
+    "进行时不能漏掉be动词；不是把每个动词加-ing就成句。"
+  ],
+  "can": [
+    "can / can't：表达能力或许可",
+    "can表示能、会，也可在场景中表示允许；can't表示不能或不允许。后接动词原形；Can ...?用于提问，简答用can/can't。",
+    "She can swim.",
+    "She can swims.",
+    "can后面用动词原形。"
+  ],
+  "imperative": [
+    "祈使句：听懂并发出动作指令",
+    "用动词原形开头；通常省略you。Don't + 动词原形表示不要做某事；加please更礼貌。",
+    "Open your book, please.",
+    "Opens your book, please.",
+    "指令开头使用动词原形open。"
+  ],
+  "routine": [
+    "一般现在时：介绍习惯、工作与作息",
+    "I/you/we/they用动词原形；he/she/it用第三人称单数形式。问句用Do/Does，后接动词原形。",
+    "He goes to school at seven.",
+    "He go to school at seven.",
+    "第三人称单数肯定句需要goes；Does he go中的go仍用原形。"
+  ],
+  "must": [
+    "must / mustn't：说明必须做与禁止做的事",
+    "must + 动词原形表示必须；mustn't + 动词原形表示禁止。mustn't不是不必，不必通常用don't have to。",
+    "You must wear a helmet.",
+    "You must to wear a helmet.",
+    "must后直接接动词原形，不加to。"
+  ],
+  "why": [
+    "Why / because：提问原因并给出解释",
+    "Why引导原因问句；because后接主语和谓语构成的完整从句。可以先问答，再合成一个句子。",
+    "I like art because it is fun.",
+    "Because it is fun, so I like art.",
+    "标准英语中because和so不在同一句中成对引导同一因果关系。"
+  ],
+  "compare": [
+    "比较级：比较两个人或事物",
+    "短形容词常加-er，长形容词常用more；两者比较用than。big变bigger，clean变cleaner。",
+    "My room is bigger than yours.",
+    "My room is more bigger than yours.",
+    "bigger本身就是比较级，不再叠加more。"
+  ],
+  "superlative": [
+    "最高级：在一个范围里选出最突出的",
+    "最高级前通常加the；短形容词常加-est，长形容词常用most。说明范围，如here或in our class。",
+    "It is the biggest animal here.",
+    "It is biggest animal here.",
+    "普通最高级名词短语前通常需要the。"
+  ],
+  "pastbe": [
+    "was / were与There was / were：描述过去状态",
+    "I/he/she/it过去用was；you/we/they用were。过去存在用There was/were；否定加not。",
+    "It was cold yesterday.",
+    "It is cold yesterday.",
+    "yesterday定位过去，描述当时状态用was。"
+  ],
+  "past": [
+    "一般过去时：回顾已经发生的事情",
+    "肯定句用过去式；问句Did + 主语 + 动词原形；否定didn't + 动词原形。go→went，buy→bought。",
+    "Did you go to the park?",
+    "Did you went to the park?",
+    "Did之后用go，不再使用过去式went。"
+  ],
+  "longcompare": [
+    "more / most：比较感受与事物特点",
+    "较长形容词的比较级常用more ... than；最高级常用the most ...。exciting、beautiful属于这一组。",
+    "This trip is more exciting.",
+    "This trip is excitinger.",
+    "exciting的比较级用more exciting。"
+  ],
+  "could": [
+    "could / couldn't：回顾过去的能力",
+    "could表示过去一般具备的能力，后接动词原形；用when I was ...交代年龄。can常用于现在能力。",
+    "I could swim when I was five.",
+    "I could swam when I was five.",
+    "could后用动词原形swim。"
+  ],
+  "relative": [
+    "关系从句：用额外信息说明是哪一个人或物",
+    "who常指人，which/that常指物；where说明地点。从句修饰前面的名词，已经由关系词承担的成分不要重复。",
+    "This is the book that I bought.",
+    "This is the book that I bought it.",
+    "that已经代表book作bought的宾语，后面不再加it。"
+  ],
+  "asas": [
+    "as ... as：表达一样或不一样",
+    "as + 形容词原级 + as表示同样；not as ... as表示不如。中间不用比较级。",
+    "Paul is as strong as Mike.",
+    "Paul is as stronger as Mike.",
+    "as ... as中间使用原级strong。"
+  ],
+  "adverbcompare": [
+    "副词及副词比较级：说明动作怎样发生",
+    "quickly、carefully、quietly修饰动作；这类副词比较级用more ... than。fast→faster，well→better。",
+    "She walks more carefully than I do.",
+    "She walks more careful than I do.",
+    "修饰walks的方式使用副词carefully。"
+  ],
+  "material": [
+    "be made of：说明材料；to do：说明用途",
+    "be made of + 材料，常用于仍能辨认出原材料的物品；to + 动词原形可表示做某事的目的。",
+    "The mask is made of paper.",
+    "The mask made of paper.",
+    "完整陈述句需要is；made of在这里不能独立作完整谓语。"
+  ],
+  "purpose": [
+    "to + 动词原形：解释做一件事的目的",
+    "先说去哪里或做什么，再用to + 动词原形说明为了什么。问Why时也可以用To ...作简短回答。",
+    "I go to the library to read.",
+    "I go to the library to reading.",
+    "表示目的的不定式to后用动词原形。"
+  ],
+  "goingto": [
+    "be going to：介绍计划与打算",
+    "am/is/are going to + 动词原形；表示打算成为某职业时用be going to be。",
+    "She is going to be an artist.",
+    "She going to be an artist.",
+    "going to前需要与主语对应的be动词。"
+  ],
+  "direction": [
+    "方向介词与指令：把路线说清楚",
+    "across表示从一侧到另一侧，through表示从内部穿过，past表示经过；配合walk、go、turn组织路线。",
+    "Walk across the bridge.",
+    "Walk cross the bridge.",
+    "walk后用介词across；cross本身是动词，可以直接说Cross the bridge。"
+  ],
+  "ed-ing": [
+    "-ed / -ing形容词：区分感受与带来感受的事物",
+    "excited/tired/interested常描述感受；exciting/tiring/interesting常描述引起这种感受的事物或人。",
+    "I am interested in the trip.",
+    "I am interesting in the trip.",
+    "表达自己感兴趣用interested；interesting表达令人觉得有趣。"
+  ],
+  "has": [
+    "have / has与Does ... have：说明特征",
+    "单数第三人称肯定句用has；其他主语常用have。Does问句及doesn't否定句后用have。",
+    "Does it have wings?",
+    "Does it has wings?",
+    "Does后恢复为have。"
+  ],
+  "sequence": [
+    "顺序表达：把步骤讲完整",
+    "用First、Next、Then、Last/Finally串联完整句子。描述习惯步骤用一般现在时；发指令时用动词原形。",
+    "First, I wash the carrots.",
+    "First, wash I the carrots.",
+    "叙述句保持主语I在动词wash前；指令可以说First, wash the carrots。"
+  ],
+  "weather": [
+    "It is ...与Let's ...：描述天气并安排活动",
+    "天气用It is + 形容词，如sunny、rainy、cold；季节前常用in；Let's后接动词原形提出共同活动。",
+    "It is rainy today.",
+    "It rainy today.",
+    "天气形容词前需要is。"
+  ],
+  "timeprep": [
+    "in / on / at：把活动放进时间或地点",
+    "常用in the morning/afternoon，at night/at seven，on Monday；地点搭配随场景选择，如in the park。",
+    "I get up at seven.",
+    "I get up in seven o'clock.",
+    "具体钟点前用at。"
+  ],
+  "plural": [
+    "名词单复数：让数量、代词与句子一致",
+    "可数名词表示多个时通常用复数；child→children，country→countries，valley→valleys。专有名词开头大写。",
+    "There are two children.",
+    "There are two childs.",
+    "child的复数是不规则形式children。"
+  ],
+  "adjective": [
+    "形容词：把颜色、大小和状态说具体",
+    "形容词可以放在名词前，也可以放在be动词后；英语形容词本身通常不随名词复数变化。",
+    "The plants are green.",
+    "The plants are greens.",
+    "描述颜色时形容词green不加-s。greens另有绿叶蔬菜的名词用法。"
+  ],
+  "agreement": [
+    "主谓一致：主语变了，动词也要对应",
+    "单数第三人称常搭配is、has或动词-s；复数常搭配are、have或动词原形。先找句子真正的主语。",
+    "The volunteers help us.",
+    "The volunteers helps us.",
+    "volunteers是复数，动词用help。"
+  ],
+  "pronoun": [
+    "主格代词：避免重复，同时指代清楚",
+    "单个动物或事物常用it，多个用they；人物可用he/she，自己用I。代词作主语放在谓语前。",
+    "The butterflies are here. They can fly.",
+    "The butterflies are here. It can fly.",
+    "butterflies为复数，后文用they指代。"
+  ],
+  "question": [
+    "疑问句：把想了解的信息问出来",
+    "be动词问句把am/is/are提前；一般现在时行为动词常用Do/Does；What/Where/How等放在问题开头。",
+    "Is it a pencil?",
+    "It is a pencil?",
+    "规范的一般疑问句把is移到主语it之前。"
+  ],
+  "pastfuture": [
+    "过去与将来：把时间线说清楚",
+    "已经发生的事用过去式；计划用be going to + 原形；将来预测、承诺等可用will + 原形。通过时间词判断。",
+    "We will visit the site tomorrow.",
+    "We will visited the site tomorrow.",
+    "will后面接动词原形visit。"
+  ],
+  "be": [
+    "am / is / are：介绍身份、年龄与状态",
+    "I用am；he/she/it和单数用is；you/we/they和复数用are。年龄直接用I am five，不用I have five。",
+    "I am five years old.",
+    "I have five years old.",
+    "英语介绍年龄用be动词。"
+  ],
+  "article": [
+    "a / an / the：首次介绍与再次指代",
+    "首次介绍一个可数事物常用a/an；元音音素前用an；再次提到明确的同一事物常用the。看发音，不只看字母。",
+    "It is an alien.",
+    "It is a alien.",
+    "alien以元音音素开头，用an。"
+  ],
+  "sentencetypes": [
+    "不同句式：陈述、询问、指令与感叹",
+    "陈述句提供信息，问句索取信息，祈使句给指令，感叹句表达强烈感受。语序和标点与目的对应。",
+    "What a long shadow!",
+    "What long a shadow!",
+    "此处感叹结构为What + a + 形容词 + 单数名词。"
+  ],
+  "posspronoun": [
+    "物主代词：不用重复物品名称",
+    "my/your/his/her/our/their后要接名词；mine/yours/his/hers/ours/theirs可独立使用，不再接名词。",
+    "This guitar is hers.",
+    "This guitar is her.",
+    "名词已经作主语出现，表所属用独立形式hers。"
+  ],
+  "compound": [
+    "连接词：让两个想法有清楚的关系",
+    "and连接并列信息，but表示转折，so表示结果；because引导原因。根据意思选择，不只是把句子接长。",
+    "Water is scarce, so animals move away.",
+    "Because water is scarce, so animals move away.",
+    "同一因果结构通常选because或so其中一种。"
+  ],
+  "countable": [
+    "可数与不可数：把数量说准确",
+    "seeds等可数名词可用数字、many；water、soil、sand等在本语境下不可数，用some/much或合适的计量表达。",
+    "There is some soil.",
+    "There are three soils in the pot.",
+    "说盆里的土量不用three soils；需要具体计量，如three bags of soil。不同土壤类型另当别论。"
+  ],
+  "when": [
+    "When ...：解释条件或时间与变化",
+    "用When + 主语 + 动词描述某事发生的条件或时间，再用完整主句说明结果；一般规律可用一般现在时。",
+    "When ice gets warm, it melts.",
+    "When ice get warm, it melt.",
+    "ice在这里作单数不可数主语，gets和melts都要对应。"
+  ],
+  "adverb": [
+    "副词和介词短语：说明怎样、在哪里发生",
+    "carefully、quickly等副词解释动作方式；toward the shore等介词短语解释方向或位置。",
+    "They move quickly toward the shore.",
+    "They move quick toward the shore.",
+    "此处正式表达用副词quickly修饰move。"
+  ],
+  "compoundsubject": [
+    "并列主语：让两个参与者共同完成动作",
+    "A and B作主语通常按复数处理，搭配are、have及行为动词原形；只有单个主语时再判断第三人称单数。",
+    "My mother and my aunt weave baskets.",
+    "My mother and my aunt weaves baskets.",
+    "由and连接的两个参与者在这里构成复数主语，使用weave。"
+  ],
+  "measure": [
+    "How + 形容词与数量单位：解释测量结果",
+    "How long询问长度，How large询问范围大小，How fast询问速度；数值后接对应单位，多个可数单位用复数。",
+    "The average speed is five meters per second.",
+    "The average speed is five meter per seconds.",
+    "five meters用复数；per second中的second按一个单位用单数。"
+  ],
+  "have": [
+    "have / don't have：介绍拥有与缺少的东西",
+    "I have后接物品；否定为I don't have。单数可数名词常需a/an，pants/shoes等常用复数形式。",
+    "I have a white shirt.",
+    "I have white shirt.",
+    "shirt是单数可数名词，此处需a。"
+  ],
+  "possessiveadj": [
+    "his / her / your：介绍谁的名字和喜好",
+    "his表示他的，her表示她的，your表示你的；在这些表达中后接name、toy等名词。",
+    "Her name is Mia.",
+    "She name is Mia.",
+    "she是主格代词；修饰name要用her。"
+  ],
+  "any": [
+    "some / any：检查有没有物品",
+    "any常见于疑问、否定句，后接可数复数或不可数名词；some常见于肯定句以及期待肯定回答的请求、提议。",
+    "We don't have any apples.",
+    "We don't have any apple.",
+    "询问或否定有无苹果时一般用可数复数apples。"
+  ],
+  "lets": [
+    "Let's + 动词：提出共同活动并回应",
+    "Let's后接动词原形。Good idea表示接受；也可礼貌表达不想参加，再提出替代活动。",
+    "Let's make a sandcastle.",
+    "Let's making a sandcastle.",
+    "Let's后用make，不用making。"
+  ],
+  "does": [
+    "Does问句：询问单数主语的需求、愿望或拥有",
+    "单数主语用Does + 主语 + 动词原形；回答Yes, ... does或No, ... doesn't。陈述句中的has/wants在Does问句中恢复have/want。",
+    "Does he want a robot?",
+    "Does he wants a robot?",
+    "Does后面使用动词原形want。"
+  ],
+  "price": [
+    "How much / How many：区分价格与数量",
+    "询问价格用How much is/are ...；单数或不可数用is，复数用are；询问可数物品数量用How many。",
+    "How much are the eggs?",
+    "How many are the eggs?",
+    "询问鸡蛋的价格用How much；数量问题应为How many eggs ...?。"
+  ],
+  "demonstrative": [
+    "this / that / these / those：区分远近与数量",
+    "近处单个this，远处单个that；近处多个these，远处多个those。跟随其后的名词要匹配单复数。",
+    "Put those shoes in the closet.",
+    "Put that shoes in the closet.",
+    "shoes为复数，用those。"
+  ],
+  "gerund": [
+    "like + doing：表达喜欢的活动",
+    "like后可接动词-ing形式描述喜好，也常可接to do；球类通常play football，乐器通常play the guitar。 enjoy后只能接doing，不能接to do。",
+    "I like playing football.",
+    "I like play football.",
+    "like后的活动用playing football或to play football。"
+  ],
+  "howmany": [
+    "How many：询问家庭人数与亲属数量",
+    "How many后接可数复数；How many ... are there询问有多少；How many ... do you have询问你拥有多少。",
+    "How many sisters do you have?",
+    "How many sister do you have?",
+    "many后接复数sisters。"
+  ],
+  "shouldpermission": [
+    "should与Can I：区分建议和征求许可",
+    "We should + 原形提出建议；Can I + 原形询问是否允许自己做某事；回答用Yes, you can或No, you can't。",
+    "Can I go camping?",
+    "Can I going camping?",
+    "Can I后接go；go camping是活动表达。"
+  ],
+  "presentcontrast": [
+    "一般现在时与现在进行时：习性和此刻的区别",
+    "平常吃什么、具有什么特征用一般现在时；此刻正在做什么用am/is/are + 动词-ing。",
+    "Dolphins eat fish. They are playing now.",
+    "Dolphins are eat fish.",
+    "习性用eat；此刻正在吃应说are eating，不能are eat。"
+  ],
+  "quantity": [
+    "量词结构：把不可数食物按份表达",
+    "a piece/bottle/bowl/glass of后接食物或饮料；份数增加时主要变化量词，如two bottles of juice。",
+    "Two bottles of juice, please.",
+    "Two bottle of juices, please.",
+    "这里两瓶果汁说two bottles of juice；bottle变复数，juice按不可数处理。"
+  ],
+  "date": [
+    "日期与on：把生日和活动时间说清楚",
+    "日期用序数词，如March third / March 3rd；具体某日之前用on；只有月份时常用in。",
+    "My birthday is on March third.",
+    "My birthday is in March third.",
+    "具体日期前用on。"
+  ],
+  "frequency": [
+    "频率副词：说明事情多久发生一次",
+    "always、usually、sometimes、never常放在主要行为动词前、be动词后；sometimes也可以放句首。",
+    "She usually washes the dishes.",
+    "She washes usually the dishes.",
+    "此处usually放在行为动词washes前更自然。"
+  ],
+  "compare-super": [
+    "比较级和最高级：两者比较与组内排名",
+    "A比较B用比较级+than；在一个群体中最突出用the+最高级。heavy→heavier/heaviest，beautiful→more/most beautiful。",
+    "Whales are the heaviest animals.",
+    "Whales are the most heaviest animals.",
+    "heaviest已经是最高级，不再加most。"
+  ],
+  "pastcause": [
+    "过去时与so：解释过去发生的因果",
+    "用过去式说发生了什么，so连接后续结果；had、went、gave是不规则过去式。",
+    "I had a fever, so I stayed home.",
+    "I have a fever yesterday, so I stay home.",
+    "回顾昨天的事情用had和stayed。"
+  ],
+  "pastcontrast": [
+    "过去时与but：讲事件并补充转折",
+    "先用过去式说发生的事，再用but说与预期不同的结果；没有受伤可用wasn't hurt。",
+    "I fell down, but I wasn't hurt.",
+    "I falled down, but I wasn't hurt.",
+    "fall的过去式是fell，不是falled。"
+  ],
+  "pastcontinuous": [
+    "过去进行时与when：描述背景和突然发生的事",
+    "was/were + doing描述过去当时正在进行的动作；when后常用一般过去时引出发生的事件。",
+    "I was walking when I saw the accident.",
+    "I was walk when I saw the accident.",
+    "was后用walking构成过去进行时。"
+  ],
+  "perfect": [
+    "现在完成时：询问经历或截至现在的完成情况",
+    "have/has + 过去分词；ever询问经历，yet常用于疑问和否定句。不要把明确结束的过去时间直接与现在完成时搭配。",
+    "Have you bought the tickets yet?",
+    "Have you buy the tickets yet?",
+    "完成时需要过去分词bought。"
+  ],
+  "future": [
+    "be going to与will：表达计划及将来想法",
+    "be going to常表达已有计划或迹象，will常表达预测、临时决定、承诺等；两者有重叠，需结合语境，后面都接原形。",
+    "I will travel to space one day.",
+    "I will to travel to space one day.",
+    "will后直接用动词原形travel。"
+  ],
+  "politerequest": [
+    "Could you与would like：礼貌请求和点餐",
+    "Could you please + 动词原形用于请求；I would like + 名词用于点餐或表达想要；I'd是I would缩写。",
+    "Could you bring me a fork?",
+    "Could you to bring me a fork?",
+    "Could you后直接接bring。"
+  ],
+  "verbforms": [
+    "动名词与不定式：让动词搭配自然",
+    "enjoy + doing；plan/want/need + to do。like/love等可接doing或to do，意思与语境有关，不能把所有动词一律归类。",
+    "I enjoy cooking and plan to learn more.",
+    "I enjoy to cook and plan learning more.",
+    "这里用enjoy cooking与plan to learn。"
+  ],
+  "passive": [
+    "一般现在时被动语态：突出赛事和活动本身",
+    "am/is/are + 过去分词；重点是动作承受者。需要说明执行者时可加by ...。主语单复数决定be形式。",
+    "The race is planned by the coach.",
+    "The race is plan by the coach.",
+    "被动结构用过去分词planned。"
+  ],
+  "should": [
+    "should / shouldn't：给出建议",
+    "should和shouldn't后都接动词原形；表达建议，通常不等同于必须遵守的强制命令。",
+    "You should bring your passport.",
+    "You should to bring your passport.",
+    "should后用原形bring，不加to。"
+  ],
+  "perfectjust": [
+    "现在完成时与just：汇报刚刚完成的事",
+    "have/has + just + 过去分词，说明刚完成且与现在有关。just通常位于have/has之后、过去分词之前。",
+    "The show has just begun.",
+    "The show has just began.",
+    "begin的过去分词为begun，began是一般过去式。"
+  ],
+  "zeroif": [
+    "零条件句：解释装置和规律怎样工作",
+    "If + 一般现在时，一般现在时，用于一般规律或可重复的结果。If从句在前时通常加逗号。",
+    "If you press the button, the machine starts.",
+    "If you will press the button, the machine starts.",
+    "本句解释一般工作规律，if从句直接用press。"
+  ],
+  "tooenough": [
+    "too / enough：表达过度与是否足够",
+    "too + 形容词 + to do表示太……而不能；形容词 + enough + to do表示足够……可以；not ... enough表示不够。",
+    "The soup is too hot to drink.",
+    "The soup is hot too to drink.",
+    "too放在形容词hot前；enough则放在形容词后。"
+  ],
+  "sosuch": [
+    "so ... that / such ... that：突出程度与结果",
+    "so + 形容词/副词 + that；such + 名词短语 + that。单数可数名词通常用such a/an + 形容词 + 名词。",
+    "It is such a peaceful valley that we stay.",
+    "It is so a peaceful valley that we stay.",
+    "后接a peaceful valley这个名词短语，用such。"
+  ],
+  "indirect": [
+    "间接疑问句：礼貌提问时使用陈述语序",
+    "Do you know / Can you tell me后面的嵌入问句使用主语+谓语语序，不再把be或助动词倒装。",
+    "Do you know where the captain is?",
+    "Do you know where is the captain?",
+    "嵌入问句里使用the captain is。"
+  ],
+  "bydoing": [
+    "by + doing：解释通过什么方式实现目标",
+    "by是介词，后面的动作用-ing；可配合can、should说明行动方式，再用so that说明目的。",
+    "We save energy by using less fuel.",
+    "We save energy by use less fuel.",
+    "by后接动名词using。"
+  ],
+  "pastpurpose": [
+    "used ... to do：解释过去物品的用途",
+    "used是use的过去式，use A to do B表示用A做B；注意与used to do表示过去习惯的结构不同。",
+    "They used cloth to wrap the mummies.",
+    "They used cloth to wrapping the mummies.",
+    "目的不定式to后用wrap；used cloth to含有具体工具cloth。"
+  ],
+  "gerundsubject": [
+    "动名词作主语：把活动本身作为讨论对象",
+    "动词-ing短语可作主语；讨论一项活动时通常按单数处理，后接is、takes等。",
+    "Floating in the air is fun.",
+    "Floating in the air are fun.",
+    "此处Floating in the air指一项活动，谓语用is。"
+  ],
+  "usedto": [
+    "used to：对比过去的习惯或状态与现在",
+    "used to + 动词原形表示过去常常或过去曾经；否定常用didn't use to；区别be used to + 名词/doing表示习惯于。",
+    "He used to be an explorer.",
+    "He used to was an explorer.",
+    "used to后用be原形。"
+  ],
+  "sincefor": [
+    "since / for与现在完成时：表达持续时间",
+    "for后接时间段；since后接起始时间或表示起点的从句；持续到现在常使用现在完成时。",
+    "I have been here for two weeks.",
+    "I have been here since two weeks.",
+    "two weeks是时间段，用for；since Monday表示从周一起。"
+  ],
+  "because": [
+    "because / because of：用不同结构解释原因",
+    "because后接完整从句；because of后接名词、代词或动名词短语。原因相同，结构可以转换。",
+    "I admire her because of her courage.",
+    "I admire her because of she is brave.",
+    "完整从句she is brave前用because，不用because of。"
+  ],
+  "comparedegree": [
+    "程度副词修饰比较级；not as ... as",
+    "much、far、a lot表示差异大；a bit、a little表示差异小。not as + 原级 + as表达不如另一者。",
+    "This film is much more interesting.",
+    "This film is very more interesting.",
+    "比较级前在这里用much，不用very。"
+  ],
+  "advice": [
+    "should / had better：提出建议与提醒",
+    "should/ought to表达应该；had better常用于带有现实后果的较强提醒。had better + 原形，否定had better not + 原形。",
+    "You had better not share your password.",
+    "You had better don't share your password.",
+    "had better的否定形式是在better后加not。"
+  ],
+  "reported": [
+    "间接引语：转述陈述和疑问",
+    "过去语境转述时常有时态、人称和时间词变化；间接疑问句用陈述语序。具体是否回移取决于原话和转述语境。",
+    "He asked me where I lived.",
+    "He asked me where did I live.",
+    "间接问句使用I lived，不保留did I live的倒装。"
+  ],
+  "tag": [
+    "附加问句：确认信息或寻求认同",
+    "通常前肯后否、前否后肯；附加部分助动词与前句时态、主语对应。注意语境和语调影响含义。",
+    "It is important, isn't it?",
+    "It is important, doesn't it?",
+    "前句用is，附加问句对应isn't。"
+  ],
+  "passiveif": [
+    "过去时被动与unless：报告影响并提出条件",
+    "was/were + 过去分词表示过去被怎样；unless意为除非，常相当于if ... not；真实将来条件从句常用现在时。",
+    "The houses were damaged by the flood.",
+    "The houses was damaged by the flood.",
+    "houses为复数，过去时被动用were damaged。"
+  ],
+  "secondif": [
+    "第二条件句与wish：表达现在的假设或愿望",
+    "If + 过去式，would/could + 原形，常用于与现实不同或可能性较低的假设。I wish + 过去式表达现在难实现的愿望。",
+    "If I were an astronaut, I would explore Mars.",
+    "If I would be an astronaut, I would explore Mars.",
+    "本结构if从句用过去式were，不用would be。"
+  ],
+  "thirdif": [
+    "第三条件句：回顾没有发生的过去可能性",
+    "If + had + 过去分词，would/could have + 过去分词，用于假设与过去事实相反的情况；不要与未来真实条件混淆。",
+    "If I had asked, I wouldn't have been punished.",
+    "If I asked yesterday, I wouldn't have been punished.",
+    "这里明确反事实回顾过去，if从句用had asked。"
+  ],
+  "haveto": [
+    "have to / don't have to：说明要求与不必",
+    "have to + 原形；单数第三人称has to。提问Does ... have to，否定doesn't have to表示不必，区别mustn't表示禁止。",
+    "He doesn't have to get up early.",
+    "He doesn't has to get up early.",
+    "doesn't后恢复have；不必不等于禁止。"
+  ],
+  "needwant": [
+    "need / want + to do：表达需要与愿望",
+    "need/want + 名词表示需要或想要某物；need/want + to + 动词原形表示需要或想做某事。肯定句注意needs/wants的人称变化。",
+    "He needs to rest.",
+    "He needs rest to.",
+    "动作前使用不定式to rest；也可说He needs some rest，其中rest作名词。"
+  ],
+  "wantbe": [
+    "want to be：表达想成为的职业",
+    "want to be + a/an + 职业；第三人称单数用wants to be。想做某事用want to + 动词原形。",
+    "She wants to be a writer.",
+    "She wants be a writer.",
+    "want后用to be，职业单数名词前通常要a/an。"
+  ],
+  "goodat": [
+    "be good at：说明擅长的学科与活动",
+    "am/is/are good at + 名词或动词-ing；at是介词，后面的动作用-ing形式。否定时在be后加not。",
+    "She is good at drawing.",
+    "She is good at draw.",
+    "介词at后用drawing。"
+  ],
+  "wouldlike": [
+    "would like to与by：表达想去哪里以及交通方式",
+    "would like to + 动词原形；I'd是I would。交通方式常用by plane/train/boat，不在by后加a/the。",
+    "I'd like to go by plane.",
+    "I'd like go by a plane.",
+    "like后接to go；交通方式用by plane。"
+  ],
+  "prefer": [
+    "prefer / would rather与反身代词：表达偏好和自己完成",
+    "prefer A to B表示更喜欢A；would rather + 动词原形；by herself强调独自完成，herself可强调亲自完成。",
+    "I'd rather have spinach.",
+    "I'd rather to have spinach.",
+    "would rather后用have原形，不加to。"
+  ],
+  "indefinite": [
+    "不定代词：说清某个人、每个人或没有人",
+    "someone、everyone、no one通常按单数主语处理；谓语用is/has或动词第三人称单数。否定意义的no one通常不再叠加not。",
+    "Everyone is talking about the video.",
+    "Everyone are talking about the video.",
+    "everyone按单数处理，用is。"
+  ],
+  "shortagreement": [
+    "So / Neither + 助动词 + 主语：表示也一样",
+    "肯定认同用So do/am/can I等；否定认同用Neither do/am/can I等。助动词与原句的时态和结构相对应。",
+    "I am excited. So am I.",
+    "I am excited. So do I.",
+    "原句使用am，回应也使用am。"
+  ],
+  "firstif": [
+    "第一条件句：讨论真实可能的将来结果",
+    "If/unless从句常用一般现在时，主句可用will + 原形。unless相当于if ... not，避免无意中重复否定。",
+    "If we act now, we will reduce waste.",
+    "If we will act now, we will reduce waste.",
+    "在这个将来条件结构中，if从句用act。"
+  ],
+  "possibility": [
+    "could / might / shall：提出可能性与建议",
+    "could/might + 动词原形可表示可能；Shall we + 动词原形用于建议共同做某事。结合语境区别could表示过去能力的用法。",
+    "He might win the race.",
+    "He might wins the race.",
+    "might后使用win原形。"
+  ]
+}

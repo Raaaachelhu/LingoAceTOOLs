@@ -1,0 +1,140 @@
+P_L1_U01|place|找回教室里丢失的蜡笔|Where is the crayon?|蜡笔在哪里？|It is under the desk, next to my bag.|它在课桌下面、我的书包旁边。|把蜡笔放进书包，再回答同一个问题。|It is in my bag.
+P_L1_U02|havegot|用镜子描述自己的外貌|I have got brown hair.|我长着棕色头发。|Have you got blue eyes? No, I haven't.|你长着蓝眼睛吗？不，我没有。|把brown hair换成black hair，介绍自己。|I have got black hair.
+P_L1_U03|hasgot|给农场动物制作身份卡|The horse has got a long tail.|这匹马有一条长尾巴。|Has the duck got four legs? No, it hasn't.|这只鸭子有四条腿吗？不，它没有。|说出鸭子有两条腿。|The duck has got two legs.
+P_L1_U04|likes|为朋友准备野餐|I like apples, but Harry likes mangoes.|我喜欢苹果，但哈里喜欢芒果。|Does Harry like chocolate? No, he doesn't.|哈里喜欢巧克力吗？不，他不喜欢。|把Harry改成I，说自己不喜欢巧克力。|I don't like chocolate.
+P_L1_U05|possess|寻找生日派对上玩具的主人|Whose bike is this? It is Jim's bike.|这是谁的自行车？它是吉姆的自行车。|His bike is orange. My bike is blue.|他的自行车是橙色的。我的自行车是蓝色的。|这只泰迪熊属于Mia，回答Whose teddy is this?|It is Mia's teddy.
+P_L1_U06|there|介绍公园里有什么|There is a bus near the park.|公园附近有一辆公共汽车。|Are there any shops? Yes, there are two shops.|有商店吗？有，有两家商店。|把two shops改成one shop，介绍公园附近的商店。|There is one shop near the park.
+P_L1_U07|progressive|运动场上的现场解说|What is she doing? She is throwing a ball.|她正在做什么？她正在扔球。|Are they playing tennis? No, they are swimming.|他们正在打网球吗？不，他们正在游泳。|看到一个男孩正在骑自行车，用He开头说一句。|He is riding a bike.
+P_L1_U08|can|介绍家人的才艺|I can swim, but I can't play the guitar.|我会游泳，但不会弹吉他。|Can your sister play the piano? Yes, she can.|你姐姐会弹钢琴吗？是的，她会。|把your sister换成your brother，提问他是否会游泳。|Can your brother swim?
+P_L1_U09|imperative|海边收拾行李与衣物|Put the hat on the table.|把帽子放到桌子上。|Take these pencils and put them in the bag.|拿上这些铅笔，把它们放进包里。|提醒朋友收起那些衣服，用Pick up开头。|Pick up those clothes.
+P_L2_U01|routine|分享上学日的作息|What time do you get up? I get up at seven.|你几点起床？我七点起床。|What time does school finish? It finishes at four.|学校几点放学？四点放学。|介绍Mia七点起床，注意动词变化。|Mia gets up at seven.
+P_L2_U02|must|制作轮滑安全提示牌|You must wear a helmet.|你必须戴头盔。|You mustn't wear your skates in the house.|你不可以在家里穿轮滑鞋。|提醒朋友运动前必须热身。|You must warm up before you play sports.
+P_L2_U03|why|猜一猜朋友为什么穿着戏服|Why are you wearing a pirate's costume?|你为什么穿着海盗服？|Because I am going to a costume party.|因为我要去参加化装舞会。|朋友说Because I love asking questions，补出为什么问这么多问题。|Why are you asking so many questions?
+P_L2_U04|compare|比较两个家人的房间|My room is bigger than Sam's room.|我的房间比萨姆的房间大。|His room is smaller, but it is cleaner.|他的房间更小，但更干净。|用cleaner比较your room和my room。|Your room is cleaner than my room.
+P_L2_U05|superlative|给动物颁发特色奖|The bear is the biggest animal here.|熊是这里最大的动物。|The kangaroo has got the longest tail.|袋鼠的尾巴最长。|用prettiest给鹦鹉颁奖，限定范围here。|The parrot is the prettiest bird here.
+P_L2_U06|pastbe|对比昨天和今天的天气|It was sunny yesterday, but it is cold today.|昨天阳光明媚，但今天很冷。|Were you in the park yesterday? No, I wasn't.|昨天你在公园吗？不，我不在。|说昨天桌子上有一个包，使用There was。|There was a bag on the table yesterday.
+P_L2_U07|past|回忆昨天做的晚餐|We fried fish and boiled pasta last night.|昨晚我们煎了鱼，还煮了意大利面。|Did you cook dinner? No, I didn't. I washed the dishes.|你做晚饭了吗？不，我没有。我洗了碗。|用didn't说自己昨天没有吃鱼。|I didn't eat fish yesterday.
+P_L2_U08|past|讲述周六的城市出行|We went to the library and got a book.|我们去了图书馆，借到了一本书。|Did you catch a bus home? Yes, we did.|你们坐公共汽车回家了吗？是的。|用bought说爸爸在游乐场买了票。|Dad bought tickets at the funfair.
+P_L2_U09|longcompare|比较两次旅行的感受|This adventure is more exciting than our last trip.|这次冒险比我们上次的旅行更令人兴奋。|It is the most exciting trip of the year.|这是今年最令人兴奋的一次旅行。|用more beautiful比较the blue flower和the orange flower。|The blue flower is more beautiful than the orange flower.
+P_L3_U01|could|分享小时候会做的事情|I could hop on one leg when I was four.|我四岁时就会单脚跳。|I couldn't skip then, but I can skip now.|那时我不会跳绳，但现在我会了。|用could说自己五岁时会跳舞。|I could dance when I was five.
+P_L3_U02|relative|给早餐旅行照片写说明|This is the teacher who taught May.|这就是教过梅的那位老师。|This is the place where May grew up.|这就是梅长大的地方。|用who把This is the cook和He made our pancakes合成一句。|This is the cook who made our pancakes.
+P_L3_U03|asas|比较运动员，表达健康需要|Paul is as strong as Mike.|保罗和迈克一样强壮。|Alex is not as strong as Paul. He needs to exercise.|亚历克斯没有保罗强壮。他需要锻炼。|用as tall as说Mia和Ben一样高。|Mia is as tall as Ben.
+P_L3_U04|adverbcompare|观察丛林里动物怎样移动|The monkey climbs quickly.|猴子爬得很快。|The monkey climbs more quickly than the bear.|猴子比熊爬得更快。|用more quietly说蛇移动得比我们更安静。|The snake moves more quietly than we do.
+P_L3_U05|material|后台道具制作：主题拓展|The mask is made of paper.|这个面具是纸做的。|We can reuse the box to make a prop.|我们可以再次利用这个盒子制作道具。|用made of说明这把道具剑是木制的。|The prop sword is made of wood.
+P_L3_U06|purpose|准备课堂项目：主题拓展|We work together to finish our science project.|我们一起合作完成科学项目。|I revise my work to make it clearer.|我修改自己的作品，让它更清楚。|用to说明你请求反馈是为了改进项目。|I ask for feedback to improve my project.
+P_L3_U07|goingto|介绍职业愿望：主题拓展|I am going to be an engineer.|我打算成为一名工程师。|I am going to practise my skills every week.|我打算每周练习技能。|把职业换成artist，介绍你的计划。|I am going to be an artist.
+P_L3_U08|direction|设计城市步行路线：主题拓展|Walk across the bridge and go past the museum.|走过桥，再经过博物馆。|Then walk through the park to the theatre.|然后穿过公园去剧院。|让朋友先穿过公园，再在拐角左转。|Walk through the park, then turn left at the corner.
+P_L3_U09|ed-ing|写旅行感受：主题拓展|The journey was tiring, so I felt tired.|旅途很累人，所以我感到疲倦。|The landscape was exciting, and we were excited.|景色令人兴奋，我们都很激动。|用interesting和interested说路线很有趣、你对它感兴趣。|The route is interesting, and I am interested in it.
+R_L1_U01|can|用身体部位解释五感|What can you do with your ears?|你能用耳朵做什么？|I can hear with my ears. I can smell with my nose.|我能用耳朵听。我能用鼻子闻。|换成eyes，介绍你能做什么。|I can see with my eyes.
+R_L1_U02|likes|采访家人的喜好|What do you like to do? I like to draw.|你喜欢做什么？我喜欢画画。|Do you like soup? No, I don't. I like pizza.|你喜欢汤吗？不，我不喜欢。我喜欢比萨。|用I like to介绍自己喜欢游泳。|I like to swim.
+R_L1_U03|progressive|给校园活动照片配音|What are you doing? I am reading.|你正在做什么？我正在阅读。|My friend is drawing in the art room.|我的朋友正在美术教室画画。|用They介绍两个孩子正在写字。|They are writing.
+R_L2_U01|has|制作动物特征卡|A bird has two wings.|鸟有两只翅膀。|Birds have two wings, but a frog has no wings.|鸟有两只翅膀，但青蛙没有翅膀。|把A bird has two feet改成Birds开头。|Birds have two feet.
+R_L2_U02|sequence|讲解制作沙拉的步骤|First, I wash the vegetables. Next, I cut them.|首先，我洗蔬菜。接着，我把它们切好。|Last, I put them in a bowl and make a salad.|最后，我把它们放进碗里，做成沙拉。|用First和Next说先种种子，再浇水。|First, I plant a seed. Next, I water it.
+R_L2_U03|weather|按季节选择衣服|What's the weather like in winter? It is cold.|冬天天气怎么样？很冷。|I wear a scarf in winter. I can play in the snow.|我冬天戴围巾。我可以在雪里玩。|说夏天很热，你穿T恤。|It is hot in summer. I wear a T-shirt.
+R_L3_U01|routine|介绍社区里的人与地点|She goes to the bakery to buy bread.|她去面包店买面包。|The bakery is beside the library.|面包店在图书馆旁边。|用He开头说他去商店买麦片。|He goes to the store to buy cereal.
+R_L3_U02|routine|采访社区职业|What does a baker do? A baker makes bread.|面包师做什么？面包师制作面包。|What does a doctor need? A doctor needs tools.|医生需要什么？医生需要工具。|用A teacher开头，说老师在学校工作。|A teacher works at a school.
+R_L3_U03|timeprep|介绍一天里的活动|I go to school in the morning.|我早上去上学。|I go to bed at nine o'clock at night.|我晚上九点睡觉。|用in和at分别说下午做作业、六点吃晚饭。|I do homework in the afternoon. I have dinner at six.
+R_L4_U01|plural|介绍全家人的共同活动|My brother helps me. My parents help me, too.|我哥哥帮助我。我的父母也帮助我。|There are three children in our extended family.|我们的大家庭里有三个孩子。|用two children说两个孩子一起玩。|Two children play together.
+R_L4_U02|adjective|比较健康植物与缺水植物|This plant is tall and green.|这株植物又高又绿。|The dry plant needs water and light.|那株干枯的植物需要水和光。|用small和yellow介绍另一株植物。|The other plant is small and yellow.
+R_L4_U03|agreement|模拟商店与配送|The worker has a delivery for us.|这位工作人员有一个要送给我们的包裹。|The workers have deliveries for our neighbors.|这些工作人员有一些要送给我们邻居的包裹。|把The shop is open改成The shops开头。|The shops are open.
+R_L4_U04|pronoun|用代词讲蝴蝶的成长|The caterpillar eats leaves. It grows bigger.|毛毛虫吃叶子。它越长越大。|The butterflies have wings. They can fly.|蝴蝶有翅膀。它们会飞。|用They替换The baby birds，写出它们在巢里。|They are in the nest.
+R_L4_U05|agreement|比较两种动物的身体特征|A tiger has fur, but an alligator has scales.|老虎有毛，但短吻鳄有鳞片。|Tigers have fur. Alligators have scales.|老虎有毛。短吻鳄有鳞片。|把A bird has feathers改成Birds开头。|Birds have feathers.
+R_L4_U06|question|采访朋友喜欢的天气|Wind can blow leaves away.|风可以把叶子吹走。|What can wind blow away? It can blow leaves away.|风能吹走什么？它能吹走叶子。|把You like windy weather变成Do开头的问句。|Do you like windy weather?
+R_L4_U07|pastfuture|制作通信方式的过去与未来时间线|Long ago, people sent messages by telegraph.|很久以前，人们用电报传递信息。|In the future, I will use new tools to communicate.|将来，我会使用新工具交流。|用will说你明天会给奶奶发一条消息。|I will send Grandma a message tomorrow.
+R_L4_U08|direction|用地图带朋友去图书馆|Turn left at the corner and walk slowly.|在拐角左转，然后慢慢走。|The library is between the park and the school.|图书馆在公园和学校之间。|用Turn right指示朋友在公园处右转。|Turn right at the park.
+R_L5_U01|possess|为社区人物写介绍|This is our neighbor's garden.|这是我们邻居的花园。|The children's school is near the park.|孩子们的学校在公园附近。|用teacher's说老师的办公室在图书馆旁。|The teacher's office is next to the library.
+R_L5_U02|be|描述动物与栖息地|I am safe in this shelter.|我在这个庇护处里很安全。|The animal is safe. Its babies are safe, too.|这只动物很安全。它的幼崽们也很安全。|用are介绍这些动物适应了它们的栖息地。|These animals are adapted to their habitat.
+R_L5_U03|article|讲解水的循环|A cloud forms above the lake.|湖的上空形成了一朵云。|The cloud brings rain to the land.|这朵云给陆地带来了雨。|首次提到一片海洋，用an完成This is ... ocean。|This is an ocean.
+R_L5_U04|agreement|写一张感谢志愿者的卡片|Our leader helps the neighbors.|我们的负责人帮助邻居们。|The volunteers help our community every week.|志愿者们每周帮助我们的社区。|把The hero saves lives改成The heroes开头。|The heroes save lives.
+R_L5_U05|sentencetypes|观察影子并邀请朋友一起实验|Why does the shadow change?|影子为什么会变化？|Look at its shape! What a long shadow!|看看它的形状！多么长的影子啊！|用祈使句邀请朋友观察月亮。|Look at the moon.
+R_L5_U06|posspronoun|分配团队任务与物品|This is our plan. That plan is theirs.|这是我们的计划。那个计划是他们的。|These tools are ours. Please share them.|这些工具是我们的。请分享它们。|把This is my notebook改成The notebook开头。|The notebook is mine.
+R_L5_U07|pastfuture|回顾观察动物并计划下次行动|We saw two animals helping each other.|我们看见两只动物互相帮助。|Tomorrow, we are going to observe them again.|明天，我们打算再次观察它们。|用will说你会记录动物的行为。|I will record the animals' behavior.
+R_L5_U08|timeprep|介绍节日庆祝的时间和地点|We celebrate in our town on this holiday.|我们在这个节日在镇上庆祝。|We put lights around the monument at night.|我们晚上在纪念碑周围布置灯。|用in和at说你们晚上在公园唱歌。|We sing in the park at night.
+R_L6_U01|agreement|介绍社区志愿服务的变化|One volunteer improves the garden.|一名志愿者改善花园。|Many volunteers improve the whole neighborhood.|许多志愿者改善整个社区。|把This action makes a difference改成These actions开头。|These actions make a difference.
+R_L6_U02|compound|解释生态平衡中的关系|The river is low, so the animals have less water.|河水水位很低，所以动物能用的水更少了。|Some plants survive, but others die.|有些植物活了下来，但另一些死去了。|用so连接There is a drought和Water is scarce。|There is a drought, so water is scarce.
+R_L6_U03|countable|观察花园土壤里的东西|There are three seeds in the soil.|土壤里有三颗种子。|There is some water, but there isn't much sand.|有一些水，但沙子不多。|用How many询问有多少种子。|How many seeds are there?
+R_L6_U04|agreement|为农产品市场写宣传介绍|The farmer has fresh crops for sale.|这位农民有新鲜的农作物出售。|The buyers want fresh food, and the seller wants a fair price.|买家想要新鲜食物，卖家想要合理价格。|把The farmer grows crops改成The farmers开头。|The farmers grow crops.
+R_L6_U05|when|观察冰在不同温度下的变化|When ice gets warm, it melts.|冰变暖时会融化。|When water freezes, it becomes solid.|水结冰时会变成固体。|用When开头，说冰融化时会变成液态水。|When ice melts, it becomes liquid water.
+R_L6_U06|posspronoun|比较两代人的音乐收藏|My grandparents have their favorite songs.|我的祖父母有他们最喜欢的歌曲。|Their collection is old, but mine is new.|他们的收藏年代久远，而我的是新的。|用ours替换our music，说这段音乐是我们的。|This music is ours.
+R_L6_U07|adverb|描述火山活动与救援行动|Lava flows slowly down the mountain.|熔岩沿着山坡缓缓流下。|The rescuers move quickly toward the shore.|救援人员迅速向岸边移动。|用carefully说科学家们仔细观察火山。|The scientists observe the volcano carefully.
+R_L6_U08|pastfuture|回顾远足并制定下一段旅程|We walked five kilometers yesterday.|昨天我们步行了五千米。|We will reach our next destination tomorrow.|明天我们会到达下一个目的地。|用going to说你打算为旅程做准备。|I am going to prepare for the journey.
+R_L7_U01|compoundsubject|介绍传统活动里的分工|My mother and my aunt weave baskets.|我的妈妈和阿姨编篮子。|My grandfather performs music at the ceremony.|我的祖父在仪式上演奏音乐。|用My brother and I作主语，说你们制作陶器。|My brother and I make pottery.
+R_L7_U02|compound|用证据讨论动物智力|The animal faces a problem, but it finds a solution.|这只动物遇到了问题，但它找到了解决办法。|I agree because its behavior shows a useful strategy.|我赞同，因为它的行为展示了一种有用的策略。|用so连接The prey hides和The predator cannot see it。|The prey hides, so the predator cannot see it.
+R_L7_U03|plural|给地貌展览写说明|The two valleys lie below the plateau.|这两处山谷位于高原下方。|Asia has many countries and different landforms.|亚洲有许多国家和不同地貌。|把one country改成three countries，写成There are句。|There are three countries on this map.
+R_L7_U04|routine|解释可再生能源的工作方式|The wind turns the blades and generates electricity.|风带动叶片转动并产生电能。|Wind turbines convert wind energy into electrical energy.|风力涡轮机把风能转化为电能。|把A turbine generates electricity改成Turbines开头。|Turbines generate electricity.
+R_L7_U05|possess|记录实验中的霉菌样本|The scientist's experiment compares two environments.|这位科学家的实验比较了两种环境。|The students' samples are in separate containers.|学生们的样本放在不同容器中。|用scientists'说科学家们的记录展示了变化。|The scientists' records show changes.
+R_L7_U06|posspronoun|在考古队里分配工具|The compass is hers, and the map is mine.|指南针是她的，地图是我的。|Our team examines the artifact before we preserve it.|我们团队在保存这件文物之前先检查它。|把These are their tools改成These tools开头。|These tools are theirs.
+R_L7_U07|measure|解释运动测量结果：句型拓展|The car travels ten meters in two seconds.|这辆车在两秒内行驶了十米。|Its average speed is five meters per second.|它的平均速度是每秒五米。|路程为十二米、时间为三秒，用average speed说结果。|Its average speed is four meters per second.
+R_L7_U08|pastfuture|回顾保护行动并提出新计划|The volunteers protected the ancient site.|志愿者们保护了这处古迹。|They will record its history for the next generation.|他们将为下一代记录它的历史。|用didn't说志愿者们没有移动那些物件。|The volunteers didn't move the objects.
+A_L0_U01|be|初次见面介绍自己|Hello! I am Mia.|你好！我是米娅。|How old are you? I am five.|你几岁？我五岁。|把名字换成Ben、年龄换成four，介绍自己。|Hello! I am Ben. I am four.
+A_L0_U02|imperative|和玩偶一起认识五官|Touch your nose.|摸摸你的鼻子。|Touch your ears, then touch your mouth.|摸摸你的耳朵，再摸摸你的嘴。|请朋友摸摸眼睛，用Touch开头。|Touch your eyes.
+A_L0_U03|adjective|给水果画涂颜色|It is a yellow pear.|这是一个黄色的梨。|It is a green kiwi.|这是一个绿色的猕猴桃。|用red和watermelon介绍一个红色的西瓜。|It is a red watermelon.
+A_L0_U04|imperative|跟随指令准备线上课堂|Open your book.|打开你的书。|Take out your pencil, then close your book.|拿出铅笔，然后合上书。|请朋友拿出蜡笔。|Take out your crayon.
+A_L0_U05|article|从玩具盒里猜玩具|What's this? It is a ball.|这是什么？这是一个球。|It is an alien. Let's find the alien.|这是一个外星人。我们来找那个外星人吧。|用a介绍一只泰迪熊。|It is a teddy bear.
+A_L0_U06|be|介绍家人和他们的心情|She is my grandma. She is happy.|她是我的奶奶。她很开心。|He is my brother. He is sad.|他是我的哥哥。他很难过。|介绍爸爸很开心，用He开头。|He is my dad. He is happy.
+A_L0_U07|have|收拾出门要穿的衣服|I have a white shirt.|我有一件白衬衫。|I don't have black shoes.|我没有黑色的鞋子。|说自己有一条粉色连衣裙。|I have a pink dress.
+A_L0_U08|can|给宠物展示动作|The dog can run.|狗会跑。|The fish can swim, but it can't fly.|鱼会游泳，但不会飞。|说青蛙会跳。|The frog can jump.
+A_L1_U01|question|认识新同学|What's your name? My name is Mia.|你叫什么名字？我叫米娅。|How old are you? I am seven.|你几岁？我七岁。|询问朋友的名字，再用自己的名字回答。|What's your name? My name is Ben.
+A_L1_U02|question|摸袋子猜文具|What's this? It is a pencil.|这是什么？这是一支铅笔。|Is it a pen? No, it isn't. It is a pencil.|这是一支钢笔吗？不，它不是。它是一支铅笔。|猜到尺子，用Is it提问。|Is it a ruler?
+A_L1_U03|possessiveadj|介绍朋友最喜欢的玩具|What is her name? Her name is Mia.|她叫什么名字？她叫米娅。|What is his favorite toy? His favorite toy is a train.|他最喜欢的玩具是什么？他最喜欢的玩具是火车。|用Her说她最喜欢的玩具是风筝。|Her favorite toy is a kite.
+A_L1_U04|place|寻找躲起来的宠物|The lizard is in the bag.|蜥蜴在包里。|The spider is under the bag, but the rat is on it.|蜘蛛在包下面，而老鼠在包上面。|把狗放在桌子下面，描述它的位置。|The dog is under the table.
+A_L1_U05|any|购物前检查食物|Do we have any carrots? Yes, we do.|我们有胡萝卜吗？是的，有。|We have twelve carrots, but we don't have any apples.|我们有十二根胡萝卜，但没有苹果。|用Do we have any询问家里有没有香蕉。|Do we have any bananas?
+A_L1_U06|routine|安排一周的课外活动|I play soccer on Saturdays.|我每周六踢足球。|Do you go swimming on Sundays? Yes, I do.|你每周日去游泳吗？是的。|说自己每周五唱歌。|I sing on Fridays.
+A_L1_U07|there|当小导游介绍房间|There is a sofa in the living room.|客厅里有一张沙发。|Are there any chairs? Yes, there are four chairs.|有椅子吗？有，有四把椅子。|用How many询问卧室里有多少盏灯。|How many lamps are there in the bedroom?
+A_L1_U08|progressive|根据穿着找到朋友|Tom is wearing a red sweater.|汤姆正穿着一件红毛衣。|Is he wearing blue shoes? No, he isn't.|他正穿着蓝色的鞋子吗？不，他没有。|介绍Mia正穿着黄色T恤。|Mia is wearing a yellow T-shirt.
+A_L2_U01|can|玩身体动作挑战|I can touch my toes.|我能摸到自己的脚趾。|Can she jump rope? Yes, she can.|她会跳绳吗？是的，她会。|说自己不会单脚站立。|I can't stand on one leg.
+A_L2_U02|there|介绍新教室里的摆设|There is a bookcase in the classroom.|教室里有一个书柜。|How many chairs are there? There are eleven chairs.|有多少把椅子？有十一把椅子。|说教室里没有钟。|There isn't a clock in the classroom.
+A_L2_U03|lets|和朋友商量海边活动|Let's make a sandcastle. Good idea!|我们来堆沙堡吧。好主意！|Let's read a book. Sorry, I don't want to.|我们来读书吧。抱歉，我不想。|邀请朋友听音乐。|Let's listen to music.
+A_L2_U04|likes|介绍动物的食物喜好|The monkey likes bananas.|这只猴子喜欢香蕉。|Does the tiger like carrots? No, it doesn't.|这只老虎喜欢胡萝卜吗？不，它不喜欢。|说鹦鹉不喜欢胡萝卜。|The parrot doesn't like carrots.
+A_L2_U05|routine|分享家人的一天|I get up at six o'clock.|我六点起床。|Melinda gets dressed at seven and watches TV at four.|梅琳达七点穿衣服，四点看电视。|用He说他九点睡觉。|He goes to bed at nine o'clock.
+A_L2_U06|does|查看社区设施|Does your town have a library? Yes, it does.|你的镇上有图书馆吗？是的，有。|Does your town have a hospital? No, it doesn't.|你的镇上有医院吗？不，没有。|询问朋友的镇上有没有公园。|Does your town have a park?
+A_L2_U07|price|在市场购买水果|How much is the fish? It is twenty-eight dollars.|这条鱼多少钱？二十八美元。|How much are the mangoes? They are twenty-two dollars.|这些芒果多少钱？二十二美元。|询问这些鸡蛋多少钱。|How much are the eggs?
+A_L2_U08|progressive|给交通出行照片配音|What are you doing? I am waiting for a bus.|你正在做什么？我正在等公共汽车。|My dad is driving a car, and my sister is taking the train.|爸爸正在开车，姐姐正在乘火车。|介绍自己正在骑摩托车。|I am riding a motorcycle.
+A_L3_U01|has|设计并描述一个外星人|The alien has long, curly hair.|这个外星人长着长长的卷发。|Does it have sharp teeth? Yes, it does.|它有锋利的牙齿吗？是的，有。|用has描述它有一条长脖子。|It has a long neck.
+A_L3_U02|demonstrative|整理房间并找物品主人|Whose pillows are these? They are Melinda's.|这些是谁的枕头？它们是梅琳达的。|Put this rug under your bed. Put those shoes in the closet.|把这块地毯放在床下。把那些鞋放进衣柜。|把近处的一个枕头称为this pillow，放到床上。|Put this pillow on the bed.
+A_L3_U03|gerund|采访朋友的运动喜好|I like playing badminton.|我喜欢打羽毛球。|Do you like watching football? Yes, I do. It is exciting.|你喜欢看足球吗？是的。我觉得它很精彩。|用like doing说自己喜欢打乒乓球。|I like playing table tennis.
+A_L3_U04|why|解释最喜欢的学科|Why do you like science? Because it is interesting.|你为什么喜欢科学？因为它很有趣。|I like art because I am good at drawing.|我喜欢美术，因为我擅长画画。|用because说你喜欢数学，因为你擅长数学。|I like math because I am good at it.
+A_L3_U05|howmany|用全家福介绍家庭人数|How many people are in your family? There are six.|你家有几口人？有六口人。|How many sisters do you have? I have two sisters.|你有几个姐妹？我有两个姐妹。|询问朋友有几个兄弟。|How many brothers do you have?
+A_L3_U06|shouldpermission|商量周末计划并征求许可|What should we do today? We should go hiking.|我们今天应该做什么？我们应该去远足。|Can I visit my cousins tomorrow? Yes, you can.|我明天可以去看望堂表兄弟姐妹吗？可以。|征求明天下午去露营的许可。|Can I go camping tomorrow afternoon?
+A_L3_U07|weather|看天气决定今天做什么|How is the weather? It is snowy.|天气怎么样？下雪了。|It is snowy outside. Let's make a snowman.|外面下雪了。我们来堆雪人吧。|今天下雨，建议带上雨伞。|It is rainy today. Let's take our umbrella.
+A_L3_U08|presentcontrast|给水族馆导览配音|What are the dolphins doing? They are playing.|海豚正在做什么？它们正在玩耍。|What do dolphins eat? Dolphins eat fish.|海豚吃什么？海豚吃鱼。|企鹅正在游泳，描述此刻的动作。|The penguins are swimming.
+A_L4_U01|quantity|在野餐时分发食物|Can I have a piece of cheese?|我可以要一块奶酪吗？|I would like a bottle of juice and a bowl of pasta.|我想要一瓶果汁和一碗意大利面。|用a glass of要一杯柠檬水。|Can I have a glass of lemonade?
+A_L4_U02|date|邀请朋友参加生日派对|When is your birthday? It is on March third.|你的生日是什么时候？三月三日。|What should we bring? We should bring a present.|我们应该带什么？我们应该带一份礼物。|说你的派对在十一月四日。|My party is on November fourth.
+A_L4_U03|frequency|介绍家务分工的频率|My sister always cooks dinner on Mondays.|我姐姐每周一总是做晚饭。|I usually wash the dishes, but I never feed the dog.|我通常洗碗，但从不喂狗。|用sometimes说Amanda有时遛狗。|Amanda sometimes takes the dog out.
+A_L4_U04|compare-super|比较真实动物与幻想生物|Tigers have sharper teeth than rabbits.|老虎的牙齿比兔子的更锋利。|I think whales are the heaviest animals.|我认为鲸是最重的动物。|用more beautiful比较unicorns和dinosaurs。|Unicorns are more beautiful than dinosaurs.
+A_L4_U05|purpose|规划放学后的购物路线|I am going to the supermarket to buy vegetables.|我要去超市买蔬菜。|The coffee shop is across from the supermarket.|咖啡馆在超市对面。|用to说明你去医院是为了看医生。|I am going to the hospital to see a doctor.
+A_L4_U06|pastcause|说明昨天为什么缺课|I had a fever, so I missed school.|我发烧了，所以没去上学。|I went to the hospital, and the doctor gave me medicine.|我去了医院，医生给我开了药。|用so说你头疼，所以待在家里。|I had a headache, so I stayed home.
+A_L4_U07|pastcontrast|分享周末发生的小插曲|I fell down, but I was not hurt.|我摔倒了，但没有受伤。|My cousins came over, and we had a picnic.|我的堂表兄弟姐妹来做客，我们一起野餐。|用but说你看了电影，但电影不好看。|I saw a movie, but it was not good.
+A_L4_U08|past|采访朋友的假期|Where did you go on vacation? I went to Italy.|你假期去了哪里？我去了意大利。|We visited a museum, but we didn't go shopping.|我们参观了博物馆，但没有购物。|询问朋友假期做了什么。|What did you do on vacation?
+A_L5_U01|purpose|讲解博物馆里的骑士装备|The knight carries a shield to protect himself.|骑士带着盾牌来保护自己。|Knights wore helmets to protect their heads.|骑士们戴头盔保护头部。|用to说明骑士拿剑是为了战斗。|The knight carries a sword to fight.
+A_L5_U02|direction|根据地图设计户外路线|We can take a path through the forest.|我们可以沿着一条小路穿过森林。|We crossed the bridge to get to the village.|我们过桥去了村庄。|用through说你们穿过田野到达湖边。|We walked through the field to get to the lake.
+A_L5_U03|pastcontinuous|向救援人员描述事故经过|The man was helping a cat when he fell out of the tree.|那个人从树上掉下来时正在帮助一只猫。|I was walking home when I saw the accident.|我走路回家时看到了那场事故。|用was doing ... when说你正在睡觉时听到了响声。|I was sleeping when I heard a noise.
+A_L5_U04|posspronoun|音乐会后寻找乐器主人|Whose guitar is this? It is hers.|这是谁的吉他？是她的。|This is my violin. That violin is his.|这是我的小提琴。那把小提琴是他的。|把It is our piano换成独立的物主代词表达。|The piano is ours.
+A_L5_U05|perfect|核对旅行准备是否已经完成|Have you booked your hotel yet? Yes, I have.|你已经订好酒店了吗？是的。|I have bought the tickets, but I haven't packed yet.|我已经买好票了，但还没收拾行李。|询问朋友是否曾去过另一个国家。|Have you ever traveled to another country?
+A_L5_U06|future|讲述自己的太空梦想与计划|I am going to look for planets tonight.|今晚我打算寻找行星。|One day, I will travel to space in a spaceship.|有一天，我会乘坐飞船去太空。|用going to说她打算成为宇航员。|She is going to be an astronaut.
+A_L5_U07|politerequest|在餐厅礼貌提出需求|Could you please bring me a clean fork?|请给我拿一把干净的叉子，好吗？|What would you like for dessert? I'd like some ice cream.|你想要什么甜点？我想要一些冰激凌。|礼貌请求服务员多拿一些餐巾。|Could you please bring us more napkins?
+A_L5_U08|measure|介绍雨林的范围和物种|How long is the river? It is thousands of kilometers long.|这条河有多长？有数千千米长。|How many types of birds are there? There are many types.|有多少种鸟？有许多种。|用How large询问雨林的面积。|How large is the rainforest?
+A_L6_U01|verbforms|把职业愿望变成行动计划|I enjoy making models, so I want to be an engineer.|我喜欢做模型，所以想成为工程师。|I plan to gain experience by joining a science club.|我计划通过参加科学俱乐部积累经验。|用enjoy和plan说你喜欢做饭，计划学习新食谱。|I enjoy cooking, and I plan to learn new recipes.
+A_L6_U02|past|回顾科学实验的步骤|We measured the liquid before we heated it.|我们加热液体之前先测量了它。|Did you cool the liquid first? No, we didn't.|你们先冷却液体了吗？不，没有。|询问朋友做了什么实验。|What experiment did you do?
+A_L6_U03|passive|介绍学校体育赛事|The race is held every year.|这场比赛每年举行。|The prizes are given to the winners after the race.|比赛后，奖品会发给获胜者。|把The coach plans the race改为The race开头的被动句。|The race is planned by the coach.
+A_L6_U04|should|为出行提供建议|You should bring a guidebook.|你应该带一本旅行指南。|You shouldn't carry too much luggage.|你不应该带太多行李。|建议朋友随身带好护照。|You should bring your passport.
+A_L6_U05|perfectjust|汇报校园剧的最新进展|We have just finished practising for the play.|我们刚刚完成这部剧的排练。|The curtain has just opened, and the show has begun.|幕布刚刚拉开，演出已经开始了。|用just说演员们刚刚穿好戏服。|The actors have just put on their costumes.
+A_L6_U06|zeroif|讲解博物馆互动装置|If you press the button, the machine starts.|如果按下按钮，机器就会启动。|If you shut down the computer, the screen goes dark.|如果关闭电脑，屏幕就会变暗。|用If说打开开关时，灯会亮。|If you turn on the switch, the light comes on.
+A_L6_U07|tooenough|点餐时解释口味需求|The curry is too spicy for me to eat.|这份咖喱太辣，我吃不了。|The tea isn't sweet enough for me.|这杯茶对我来说不够甜。|用too ... to说汤太烫，不能喝。|The soup is too hot to drink.
+A_L6_U08|sosuch|推荐一个风景优美的旅行地点|The valley is so peaceful that we want to stay.|这片山谷如此宁静，让我们想留下来。|It is such a beautiful place that we take many photos.|这是一个如此美丽的地方，我们拍了许多照片。|用so ... that说景色很美，所以你想再去。|The scenery is so beautiful that I want to go back.
+A_L7_U01|relative|介绍学校的新设施与工作人员|This is the person who serves meals in the cafeteria.|这就是在食堂为大家供餐的人。|The bike rack that stands near the gate is new.|立在大门附近的自行车架是新的。|用that合并This is the bin和We use it for recycling。|This is the bin that we use for recycling.
+A_L7_U02|indirect|在船上礼貌询问位置|Do you know where the cabins are?|你知道船舱在哪里吗？|Can you tell me where the captain is?|你能告诉我船长在哪里吗？|把Where is the lifeboat?改成Do you know开头。|Do you know where the lifeboat is?
+A_L7_U03|future|给冒险故事安排下一幕|We are sailing to the island today.|我们今天要航行去那座岛。|In two days, we will relax on the beach.|两天后，我们会在海滩上休息。|用will说你们下周会找到宝藏。|We will find the treasure next week.
+A_L7_U04|bydoing|为环保行动解释做法|We can reduce pollution by using public transportation.|我们可以通过乘坐公共交通减少污染。|We should use solar energy so that we use less fuel.|我们应该利用太阳能，以减少燃料使用。|用by doing说通过骑车去学校来帮助环境。|I can help the environment by riding a bike to school.
+A_L7_U05|pastpurpose|讲解古埃及建筑与历史|The Egyptians used cloth to wrap the mummies.|古埃及人用布包裹木乃伊。|It was difficult to move the heavy blocks.|移动沉重的石块很困难。|用used ... to说古埃及人用石块建造金字塔。|The Egyptians used stone blocks to build the pyramids.
+A_L7_U06|gerundsubject|向宇航员学员介绍训练|Floating in the air is fun.|在空中漂浮很有趣。|Landing on the moon takes careful planning.|登陆月球需要周密计划。|用Collecting开头，说采集岩石很有挑战性。|Collecting rocks is challenging.
+A_L7_U07|usedto|比较北极过去与现在|My grandfather used to be an explorer.|我的祖父过去是一名探险家。|The polar bear population used to be larger.|北极熊的数量过去更多。|用used to说过去这里有更多冰。|There used to be more ice here.
+A_L7_U08|sincefor|介绍露营经历的持续时间|I have been ready for this trip for two weeks.|我为这次旅行准备就绪已经两周了。|I have seen few people since I arrived at the campsite.|自从到达营地，我见到的人很少。|用since说你从周一开始一直待在这里。|I have been here since Monday.
+A_L8_U01|because|解释自己为什么敬佩某个人|I admire her because she inspires other people.|我敬佩她，因为她鼓舞他人。|People respect her because of her achievements.|人们因为她的成就而尊重她。|把because she is brave改成because of her bravery，写完整句。|I admire her because of her bravery.
+A_L8_U02|comparedegree|比较不同类型的影视作品|This documentary is much more interesting than that show.|这部纪录片比那个节目有趣得多。|The comedy is not as scary as the horror film.|这部喜剧没有那部恐怖片吓人。|用a bit more exciting比较the action film和the drama。|The action film is a bit more exciting than the drama.
+A_L8_U03|advice|为朋友提供网络安全建议|You shouldn't post your password online.|你不应该把密码发布到网上。|You had better check the privacy settings.|你最好检查隐私设置。|用had better not建议朋友不要分享个人照片。|You had better not share personal photos.
+A_L8_U04|reported|转述侦探采访时听到的话|The witness said, "I saw a man."|目击者说：“我看到了一个男人。”|The reporter said that the witness had seen a man.|记者说，目击者看到过一个男人。|把The detective asked, "Where do you live?"改为间接引语，听话者用me。|The detective asked me where I lived.
+A_L8_U05|tag|讨论尊重不同文化的习俗|We should respect other cultures, shouldn't we?|我们应该尊重其他文化，对吧？|The ceremony isn't over, is it?|仪式还没结束，是吗？|给It is important to preserve traditions补上附加问句。|It is important to preserve traditions, isn't it?
+A_L8_U06|passiveif|报道洪水影响并提出预防办法|Several houses were damaged by the flood.|几座房屋被洪水损坏了。|The damage will get worse unless we take action.|除非我们采取行动，否则损害会加重。|用were rescued说幸存者被志愿者救出了。|The survivors were rescued by volunteers.
+A_L8_U07|secondif|讨论尚未实现的太空探索设想|If we had the right spacecraft, we could travel farther.|如果我们有合适的飞船，就能走得更远。|I wish we knew more about this planet.|但愿我们对这颗行星了解得更多。|假设你是宇航员，用If和would说你会探索火星。|If I were an astronaut, I would explore Mars.
+A_L8_U08|thirdif|回顾违反规则后的后果|If I had asked for permission, I wouldn't have got into trouble.|如果我当时征求了许可，就不会惹麻烦了。|If we follow the rules now, we will avoid problems.|如果我们现在遵守规则，就会避免问题。|过去没道歉而受罚，用If表达“如果当时道歉，就不会受罚”。|If I had apologized, I wouldn't have been punished.
